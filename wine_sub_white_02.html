@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAQ: Discover our selection of wines, beers and spirits online</title>
+    <script src="js/jquery-3.6.4.slim.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/saq.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <div>
+            <form action="searchresult.html">
+                <input type="text" placeholder="Search products, pairings and content">
+                <input type="submit" value="submit" disabled>
+                <input type="button" value="close" class="closePanel deleteBtn">
+            </form>
+        </div>
+    </div>
+    <div id="accountPanel">
+        <div>
+            <form action="index.html">
+                <a href="account_myorder.html">My Orders</a>
+                <a href="account_wishlist.html">Wish List</a>
+                <a href="account_cartlist.html">Cart List</a>
+                <a href="account_detail.html">Account Details</a>
+                <a href="account_addressbook.html">Address Book</a>
+                <a href="account_savedcards.html">Saved Cards</a>
+                <input type="submit" value="Sign out">
+            </form>
+        </div>
+    </div>
+    <div id="menuPanel">
+        <input type="button" value="close" class="closePanel">
+        <span class="crrLanguage">English</span>
+        <ul>
+            <li><a href="wine_sub_sale_01.html">Sale</a></li>
+            <li><a href="wine_sub_white_01.html">White</a></li>
+            <li><a href="wine_sub_red_01.html">Red</a></li>
+            <li><a href="wine_sub_rose_01.html">Rosé</a></li>
+            <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
+            <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
+            <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+        </ul>
+        <ul>
+            <li><a href="account_main.html">My Account</a></li>
+            <li><a href="account_wishlist.html">Wish List</a></li>
+        </ul>
+        <a href="index.html">Sign out</a>
+    </div>
+    
+    <header>
+        <ol>
+            <li class="active"><a href="wine_sub_white_01.html">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
+            <li><a href="wine_sub_white_01.html">Meet a variety of high-quality wines.</a></li>
+            <li><a href="wine_sub_sale_01.html">Spend to save up to 25% sale for a limited time only.</a></li>
+        </ol>   
+        <div>
+            <span class="crrLanguage">English</span>
+            <input type="button" value="menu" data-panel="menuPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo_header.png" alt="SAQ">
+                </a>
+            </h1>
+            <ul>
+                <li data-panel="searchPanel">search</li>
+                <li><a href="account_wishlist.html">wishlist</a></li>
+                <li><a href="account_cartlist.html">cart</a></li>
+                <li data-panel="accountPanel">account</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="wine_sub_sale_01.html">Sale</a></li>
+                <li><a href="wine_sub_white_01.html">White</a></li>
+                <li><a href="wine_sub_red_01.html">Red</a></li>
+                <li><a href="wine_sub_rose_01.html">Rosé</a></li>
+                <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
+                <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
+                <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ? Header Fin -->
+
+    <div class="productContainer">
+        <div class="bg white">
+            <div>
+                <h2>White wine</h2>
+            </div>
+        </div>
+        <div>
+            <div id="filterPopup">
+                <div>
+                    <h3>Filter</h3>
+                    <input type="button" value="closePopup" class="closePopup">
+                    <ul>
+                        <li>
+                            <strong>Category</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="whiteWinePopup">
+                                    <label for="whiteWine">White Wine</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="redWinePopup">
+                                    <label for="redWine">Red Wine</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="RoséWinePopup">
+                                    <label for="RoséWine">Rosé Wine</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="SparklingWinePopup">
+                                    <label for="SparklingWine">Sparkling Wine</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="DessertWinePopup">
+                                    <label for="DessertWine">Dessert Wine</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Sugar content</strong>
+                            <div class="cp range" id="sugarPopup">
+                                <div class="range-price">      
+                                    <div>
+                                        <label for="sugarminPopup">Min (g/L)</label>
+                                        <input type="number" class="min" id="sugarminPopup" value="1" readonly>
+                                    </div>
+                                    <div>
+                                        <label for="sugarmaxPopup">Max (g/L)</label>
+                                        <input type="number" class="max" id="sugarmaxPopup" value="271" readonly>
+                                    </div>   
+                                </div>
+                                <div class="range-slider">
+                                    <span class="range-selected"></span>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="sugarmin" min="1" max="271" value="1" step="1">
+                                    <input type="range" class="sugarmax" min="1" max="271" value="271" step="1">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Degree of alcohol</strong>
+                            <div class="cp range" id="alcoholPopup">
+                                <div class="range-price">      
+                                    <div>
+                                        <label for="alcoholminPopup">Min (%)</label>
+                                        <input type="number" class="min" id="alcoholminPopup" value="10" readonly>
+                                    </div>
+                                    <div>
+                                        <label for="alcoholmaxPopup">Max (%)</label>
+                                        <input type="number" class="max" id="alcoholmaxPopup" value="16" readonly>
+                                    </div>   
+                                </div>
+                                <div class="range-slider">
+                                    <span class="range-selected"></span>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="alcoholmin" min="10" max="16" value="10" step="1">
+                                    <input type="range" class="alcoholmax" min="10" max="16" value="16" step="1">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Grape variety</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="AcadieblancPopup">
+                                    <label for="Acadieblanc">Acadie blanc</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="ChardonnayPopup">
+                                    <label for="Chardonnay">Chardonnay</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="EonaPopup">
+                                    <label for="Eona">Eona</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="FrontenacPopup">
+                                    <label for="Frontenac">Frontenac</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="FrontenacblancPopup">
+                                    <label for="Frontenacblanc">Frontenac blanc</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="FrontenacGrisPopup">
+                                    <label for="FrontenacGris">Frontenac Gris</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="GeisenheimPopup">
+                                    <label for="Geisenheim">Geisenheim</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="LouiseSwensonPopup">
+                                    <label for="LouiseSwenson">Louise Swenson</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="LucieKuhlmannPopup">
+                                    <label for="LucieKuhlmann">Lucie Kuhlmann</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="MaréchalFochPopup">
+                                    <label for="MaréchalFoch">Maréchal Foch</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="MarquettePopup">
+                                    <label for="Marquette">Marquette</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="PerlenoirePopup">
+                                    <label for="Perlenoire">Perle noire</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="PinotnoirPopup">
+                                    <label for="Pinotnoir">Pinot noir</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="RadissonPopup">
+                                    <label for="Radisson">Radisson</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="RieslingPopup">
+                                    <label for="Riesling">Riesling</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SabrevoisPopup">
+                                    <label for="Sabrevois">Sabrevois</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SainteCroixPopup">
+                                    <label for="SainteCroix">Sainte-Croix</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SeyvalPopup">
+                                    <label for="Seyval">Seyval</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SeyvalNoirPopup">
+                                    <label for="SeyvalNoir">Seyval Noir</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SomersetPopup">
+                                    <label for="Somerset">Somerset</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="StPépinPopup">
+                                    <label for="StPépin">St-Pépin</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="VandalClichePopup">
+                                    <label for="VandalCliche">Vandal-Cliche</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="VidalPopup">
+                                    <label for="Vidal">Vidal</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Vintage</strong>
+                            <ul>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2011_popup">
+                                    <label for="c_box_2011">2011</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2015_popup">
+                                    <label for="c_box_2015">2015</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2017_popup">
+                                    <label for="c_box_2017">2017</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2018_popup">
+                                    <label for="c_box_2018">2018</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2019_popup">
+                                    <label for="c_box_2019">2019</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2020_popup">
+                                    <label for="c_box_2020">2020</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2021_popup">
+                                    <label for="c_box_2021">2021</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2022_popup">
+                                    <label for="c_box_2022">2022</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter">
+                <div>
+                    <input type="button" value="Filter" class="filterBtn" data-popup="filterPopup">
+                    <span>34 Results</span>
+                    <ul>
+                        <li>
+                            <strong>Category</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="whiteWine">
+                                    <label for="whiteWine">White Wine</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="redWine">
+                                    <label for="redWine">Red Wine</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="RoséWine">
+                                    <label for="RoséWine">Rosé Wine</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="SparklingWine">
+                                    <label for="SparklingWine">Sparkling Wine</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="category" id="DessertWine">
+                                    <label for="DessertWine">Dessert Wine</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Sugar content</strong>
+                            <div class="cp range" id="sugar">
+                                <div class="range-price">      
+                                    <div>
+                                        <label for="sugarmin">Min (g/L)</label>
+                                        <input type="number" class="min" id="sugarmin" value="1" readonly>
+                                    </div>
+                                    <div>
+                                        <label for="sugarmax">Max (g/L)</label>
+                                        <input type="number" class="max" id="sugarmax" value="271" readonly>
+                                    </div>   
+                                </div>
+                                <div class="range-slider">
+                                    <span class="range-selected"></span>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="sugarmin" min="1" max="271" value="1" step="1">
+                                    <input type="range" class="sugarmax" min="1" max="271" value="271" step="1">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Degree of alcohol</strong>
+                            <div class="cp range" id="alcohol">
+                                <div class="range-price">      
+                                    <div>
+                                        <label for="alcoholmin">Min (%)</label>
+                                        <input type="number" class="min" id="alcoholmin" value="10" readonly>
+                                    </div>
+                                    <div>
+                                        <label for="alcoholmax">Max (%)</label>
+                                        <input type="number" class="max" id="alcoholmax" value="16" readonly>
+                                    </div>   
+                                </div>
+                                <div class="range-slider">
+                                    <span class="range-selected"></span>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="alcoholmin" min="10" max="16" value="10" step="1">
+                                    <input type="range" class="alcoholmax" min="10" max="16" value="16" step="1">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Grape variety</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Acadieblanc">
+                                    <label for="Acadieblanc">Acadie blanc</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Chardonnay">
+                                    <label for="Chardonnay">Chardonnay</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Eona">
+                                    <label for="Eona">Eona</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Frontenac">
+                                    <label for="Frontenac">Frontenac</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Frontenacblanc">
+                                    <label for="Frontenacblanc">Frontenac blanc</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="FrontenacGris">
+                                    <label for="FrontenacGris">Frontenac Gris</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Geisenheim">
+                                    <label for="Geisenheim">Geisenheim</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="LouiseSwenson">
+                                    <label for="LouiseSwenson">Louise Swenson</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="LucieKuhlmann">
+                                    <label for="LucieKuhlmann">Lucie Kuhlmann</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="MaréchalFoch">
+                                    <label for="MaréchalFoch">Maréchal Foch</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Marquette">
+                                    <label for="Marquette">Marquette</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Perlenoire">
+                                    <label for="Perlenoire">Perle noire</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Pinotnoir">
+                                    <label for="Pinotnoir">Pinot noir</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Radisson">
+                                    <label for="Radisson">Radisson</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Riesling">
+                                    <label for="Riesling">Riesling</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Sabrevois">
+                                    <label for="Sabrevois">Sabrevois</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SainteCroix">
+                                    <label for="SainteCroix">Sainte-Croix</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Seyval">
+                                    <label for="Seyval">Seyval</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SeyvalNoir">
+                                    <label for="SeyvalNoir">Seyval Noir</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Somerset">
+                                    <label for="Somerset">Somerset</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="StPépin">
+                                    <label for="StPépin">St-Pépin</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="VandalCliche">
+                                    <label for="VandalCliche">Vandal-Cliche</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="Vidal">
+                                    <label for="Vidal">Vidal</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="active">
+                            <strong>Vintage</strong>
+                            <ul>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2011">
+                                    <label for="c_box_2011">2011</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2015">
+                                    <label for="c_box_2015">2015</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2017">
+                                    <label for="c_box_2017">2017</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2018">
+                                    <label for="c_box_2018">2018</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2019">
+                                    <label for="c_box_2019">2019</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2020">
+                                    <label for="c_box_2020">2020</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2021">
+                                    <label for="c_box_2021">2021</label>
+                                </li>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_2022">
+                                    <label for="c_box_2022">2022</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ? Filter Fin -->
+            
+            <div>
+                <select class="sortmenu">
+                    <option value="atoz">Product name(A-Z)</option>
+                    <option value="ztoa">Product name(Z-A)</option>
+                    <option value="hightolow">Price High to Low</option>
+                    <option value="lowtohigh">Price Low to High</option>
+                </select>
+                <ul>
+                    <li>
+                        <a href="wine_white_019.html">
+                            <img src="images/img_whitewine_019.png" alt="whitewine019">
+                            <strong>Domaine de la Vallée Du Bras Omerto Barrique de Cerisier et Châtaignier</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $25.95
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_020.html">
+                            <img src="images/img_whitewine_020.png" alt="whitewine020">
+                            <strong>Domaine de la Vallée du Bras Omerto Moelleux</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $24.70
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_021.html">
+                            <img src="images/img_whitewine_021.png" alt="whitewine021">
+                            <strong>Domaine de la Vallée du Bras Omerto sec</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $24.70
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_022.html">
+                            <img src="images/img_whitewine_022.png" alt="whitewine022">
+                            <strong>Domaine de Lavoie 2021</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $16.20
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_023.html">
+                            <img src="images/img_whitewine_023.png" alt="whitewine023">
+                            <strong>Domaine de Lavoie Réserve du Domaine 2021</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $19.95
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_024.html">
+                            <img src="images/img_whitewine_024.png" alt="whitewine024">
+                            <strong>Domaine de Lavoie SV-318 2021</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                <del>$16.05</del>
+                                <mark>$15.05</mark>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_025.html">
+                            <img src="images/img_whitewine_025.png" alt="whitewine025">
+                            <strong>Domaine des Côtes D'Ardoise Gewurztraminer 2021</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $27.85
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_026.html">
+                            <img src="images/img_whitewine_026.png" alt="whitewine026">
+                            <strong>Domaine des Côtes d'Ardoise La Maredoise 2020</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $17.00
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_027.html">
+                            <img src="images/img_whitewine_027.png" alt="whitewine027">
+                            <strong>Domaine des Côtes d'Ardoise Riesling 2021</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $25.00
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_028.html">
+                            <img src="images/img_whitewine_028.png" alt="whitewine028">
+                            <strong>Domaine des Salamandres Vendange Tardive 2016</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $28.80
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_029.html">
+                            <img src="images/img_whitewine_029.png" alt="whitewine029">
+                            <strong>Domaine du Ridge Couleur</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $19.95
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_030.html">
+                            <img src="images/img_whitewine_030.png" alt="whitewine030">
+                            <strong>Domaine du Ridge Le Stanbridge 2021</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $19.75
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_031.html">
+                            <img src="images/img_whitewine_031.png" alt="whitewine031">
+                            <strong>Domaine du Ridge Vent d'Ouest 2020</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $15.15
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_032.html">
+                            <img src="images/img_whitewine_032.png" alt="whitewine032">
+                            <strong>Domaine du Ridge Vidal du Ridge 2014</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $9.25
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_033.html">
+                            <img src="images/img_whitewine_033.png" alt="whitewine033">
+                            <strong>Domaine l'Ange Gardien 2020</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $16.45
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_034.html">
+                            <img src="images/img_whitewine_034.png" alt="whitewine034">
+                            <strong>Domaine L'Ange Gardien 2020</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                <del>$15.45</del>
+                                <mark>$13.45</mark>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_035.html">
+                            <img src="images/img_whitewine_035.png" alt="whitewine035">
+                            <strong>Domaine l'Ange Gardien Réserve Swenson 2020</strong>
+                            <span>
+                                <em>
+                                    White wine
+                                </em>
+                                $19.95
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_white_036.html">
+                            <img src="images/img_whitewine_036.png" alt="whitewine036">
+                            <strong>Domaine Labranche 2021</strong>
+                            <span>
+                                <em>
+                                    white wine
+                                </em>
+                                $16.95
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pager">
+            <a href="#">back to top</a>
+            <div>
+                <div>
+                    <a href="wine_sub_white_01.html">FirstPage</a>
+                    <a href="wine_sub_white_01.html">Previous</a>        
+                </div>
+                <div>
+                    <a href="wine_sub_white_03.html">Next</a>
+                    <a href="wine_sub_white_06.html">LastPage</a>        
+                </div>
+                page <span>2</span> of <span>6</span> 
+            </div>
+        </div>
+    </div>
+    <!-- ? suggestContainer Fin -->
+
+    <footer>
+        <ul>
+            <li><a href="aboutus_termsofsale.html">Home delivery</a></li>
+            <li><a href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
+            <li><a href="aboutus_contactus.html">Contact us</a></li>
+            <li><a href="aboutus_termsofsale.html">Free in-store returns</a></li>
+        </ul>
+        <div>
+            <div>
+                <div>
+                    <form>
+                        <h4>Create my account</h4>
+                        <p>Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
+                        <input type="email" placeholder="your@address.com">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <ul>
+                        <li><a href="https://www.youtube.com/user/SAQTchinTchin">Youtube</a></li>
+                        <li><a href="https://www.facebook.com/SAQ">Facebook</a></li>
+                        <li><a href="https://twitter.com/LaSAQ_officiel">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/lasaq/">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Call us</h3>
+                    <address>
+                        <span>
+                            Toll free: <a href="tel:+18668732020">1 866 873-2020</a>
+                        </span>
+                        <span>
+                            Greater Montreal: <a href="tel:+5142542020">514 254-2020</a>
+                        </span>
+                        <div>
+                            LOCATION &amp; LANGUAGE<span class="crrLanguage">English</span>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>About your purchase</h3>
+                <ol>
+                    <li><a href="account_main.html">My Profile</a></li>
+                    <li><a href="account_myorder.html">Track an Orders</a></li>
+                    <li><a href="aboutus_FAQ.html">Frequently asked questions</a></li>
+                    <li><a href="aboutus_confidentialpolicy.html">Shipping and delivery</a></li>
+                    <li><a href="aboutus_termsofsale.html">Terms and conditions</a></li>
+                    <li><a href="aboutus_confidentialpolicy.html">Confidentiality Policy</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>About the SAQ</h3>
+                <ol>
+                    <li><a href="aboutus_profileandmandate.html">Profile and mandate</a></li>
+                    <li><a href="aboutus_accesstoinformation.html">Access to information</a></li>
+                    <li><a href="aboutus_contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus_ourhistory.html">Our history</a></li>
+                    <li><a href="inspiration_list.html">Inspiration</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>SAQ pairing recipes</h3>
+                <p>Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
+                <a href="wine_sub_pairing_01.html" class="fillBtn">Visit Now</a>
+                <div>
+                    <h4>SAQ ACCEPTS</h4>
+                    <ul>
+                        <li>Paypal</li>
+                        <li>VISA</li>
+                        <li>Mastercard</li>
+                        <li>Maestro</li>
+                        <li>AmericanExpress</li>
+                        <li>JCB</li>
+                        <li>UnionPay</li>
+                        <li>DELTA</li>
+                        <li>applepay</li>
+                        <li>klarna</li>
+                    </ul>
+                </div>
+                <span>
+                    © All rights reserved, SAQ 2023 <img src="images/logo_spirit.png" alt="the spirit of sharing SAQ."><img src="images/logo_footer.png" alt="logo_footer">
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- ? Footer Fin -->
+    
+    <script src="js/range.js"></script>
+</body>
+</html>

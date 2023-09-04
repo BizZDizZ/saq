@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAQ: Discover our selection of wines, beers and spirits online</title>
+    <script src="js/jquery-3.6.4.slim.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/saq.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <div>
+            <form action="searchresult.html">
+                <input type="text" placeholder="Search products, pairings and content">
+                <input type="submit" value="submit" disabled>
+                <input type="button" value="close" class="closePanel deleteBtn">
+            </form>
+        </div>
+    </div>
+    <div id="accountPanel">
+        <div>
+            <form action="index.html">
+                <a href="account_myorder.html">My Orders</a>
+                <a href="account_wishlist.html">Wish List</a>
+                <a href="account_cartlist.html">Cart List</a>
+                <a href="account_detail.html">Account Details</a>
+                <a href="account_addressbook.html">Address Book</a>
+                <a href="account_savedcards.html">Saved Cards</a>
+                <input type="submit" value="Sign out">
+            </form>
+        </div>
+    </div>
+    <div id="menuPanel">
+        <input type="button" value="close" class="closePanel">
+        <span class="crrLanguage">English</span>
+        <ul>
+            <li><a href="wine_sub_sale_01.html">Sale</a></li>
+            <li><a href="wine_sub_white_01.html">White</a></li>
+            <li><a href="wine_sub_red_01.html">Red</a></li>
+            <li><a href="wine_sub_rose_01.html">Rosé</a></li>
+            <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
+            <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
+            <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+        </ul>
+        <ul>
+            <li><a href="account_main.html">My Account</a></li>
+            <li><a href="account_wishlist.html">Wish List</a></li>
+        </ul>
+        <a href="index.html">Sign out</a>
+    </div>
+    
+    <header>
+        <ol>
+            <li class="active"><a href="wine_sub_white_01.html">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
+            <li><a href="wine_sub_white_01.html">Meet a variety of high-quality wines.</a></li>
+            <li><a href="wine_sub_sale_01.html">Spend to save up to 25% sale for a limited time only.</a></li>
+        </ol>   
+        <div>
+            <span class="crrLanguage">English</span>
+            <input type="button" value="menu" data-panel="menuPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo_header.png" alt="SAQ">
+                </a>
+            </h1>
+            <ul>
+                <li data-panel="searchPanel">search</li>
+                <li><a href="account_wishlist.html">wishlist</a></li>
+                <li><a href="account_cartlist.html">cart</a></li>
+                <li data-panel="accountPanel">account</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="wine_sub_sale_01.html">Sale</a></li>
+                <li><a href="wine_sub_white_01.html">White</a></li>
+                <li><a href="wine_sub_red_01.html">Red</a></li>
+                <li><a href="wine_sub_rose_01.html">Rosé</a></li>
+                <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
+                <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
+                <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ? Header Fin -->
+
+    <div class="productContainer">
+        <div class="bg pairing">
+            <div>
+                <h2>Recipe</h2>
+            </div>
+        </div>
+        <div>
+            <div id="filterPopup">
+                <div>
+                    <h3>Filter</h3>
+                    <input type="button" value="closePopup" class="closePopup">
+                    <ul>
+                        <li>
+                            <strong>Type of dish</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="fishandseafoodPopup">
+                                    <label for="fishandseafoodPopup">Fish and seafood</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="startersandappetizersPopup">
+                                    <label for="startersandappetizersPopup">Starters and appetizers</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="soupsandsaladsPopup">
+                                    <label for="soupsandsaladsPopup">Soups and salads</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="redmeatsPopup">
+                                    <label for="redmeatsPopup">Red meats</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="sandwichesandpâtésPopup">
+                                    <label for="sandwichesandpâtésPopup">Sandwiches and pâtés</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="whitemeatsPopup">
+                                    <label for="whitemeatsPopup">White meats</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="poultryPopup">
+                                    <label for="poultryPopup">Poultry</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="pastaandpizzaPopup">
+                                    <label for="pastaandpizzaPopup">Pasta and pizza</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="DessertsPopup">
+                                    <label for="DessertsPopup">Desserts</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="CheesePopup">
+                                    <label for="CheesePopup">Cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="coldcutsandoffalPopup">
+                                    <label for="coldcutsandoffalPopup">Cold cuts and offal</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="GamePopup">
+                                    <label for="GamePopup">Game</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Main ingredient</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="vegetablesPopup">
+                                    <label for="vegetablesPopup">Vegetables</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="firmcheesePopup">
+                                    <label for="firmcheesePopup">Firm cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="fruitPopup">
+                                    <label for="fruitPopup">Fruit</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="beefPopup">
+                                    <label for="beefPopup">Beef</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="porkPopup">
+                                    <label for="porkPopup">Pork</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="chickenPopup">
+                                    <label for="chickenPopup">Chicken</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="eggsPopup">
+                                    <label for="eggsPopup">Eggs</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="breadPopup">
+                                    <label for="breadPopup">Bread</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="creamPopup">
+                                    <label for="creamPopup">Cream</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="spaghettimacaroniPopup">
+                                    <label for="spaghettimacaroniPopup">Spaghetti / macaroni</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="shrimpPopup">
+                                    <label for="shrimpPopup">Shrimp</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="semifirmcheesePopup">
+                                    <label for="semifirmcheesePopup">Semi-firm cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="softcheesePopup">
+                                    <label for="softcheesePopup">Soft cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="salmonPopup">
+                                    <label for="salmonPopup">Salmon</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="softcurdcheesePopup">
+                                    <label for="softcurdcheesePopup">Soft curd cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="hamPopup">
+                                    <label for="hamPopup">Ham</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="lambPopup">
+                                    <label for="lambPopup">Lamb</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="vealPopup">
+                                    <label for="vealPopup">Veal</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="whitefleshedfishPopup">
+                                    <label for="whitefleshedfishPopup">White fleshed fish</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="nutsandpeanutsPopup">
+                                    <label for="nutsandpeanutsPopup">Nuts and peanuts</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="sausagesPopup">
+                                    <label for="sausagesPopup">Sausages</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="duckPopup">
+                                    <label for="duckPopup">Duck</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="legumesPopup">
+                                    <label for="legumesPopup">Legumes</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="prosciuttopancettaPopup">
+                                    <label for="prosciuttopancettaPopup">Prosciutto / Pancetta</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="lobsterPopup">
+                                    <label for="lobsterPopup">Lobster</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="ricePopup">
+                                    <label for="ricePopup">Rice</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="scallopPopup">
+                                    <label for="scallopPopup">Scallop</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="bluecheesePopup">
+                                    <label for="bluecheesePopup">Blue cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="chocolatePopup">
+                                    <label for="chocolatePopup">Chocolate</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="fishPopup">
+                                    <label for="fishPopup">Fish</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="icecreamanddairyproductsPopup">
+                                    <label for="icecreamanddairyproductsPopup">Ice cream and dairy products</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="smokedfishPopup">
+                                    <label for="smokedfishPopup">Smoked fish</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="bisonPopup">
+                                    <label for="bisonPopup">Bison</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="crabPopup">
+                                    <label for="crabPopup">Crab</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="lasagnamanicottiPopup">
+                                    <label for="lasagnamanicottiPopup">Lasagna / manicotti</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="turkeyPopup">
+                                    <label for="turkeyPopup">Turkey</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="venisonPopup">
+                                    <label for="venisonPopup">Venison</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="crepesPopup">
+                                    <label for="crepesPopup">Crêpes</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="tofuPopup">
+                                    <label for="tofuPopup">Tofu</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="couscousPopup">
+                                    <label for="couscousPopup">Couscous</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="musselsPopup">
+                                    <label for="musselsPopup">Mussels</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="oystersPopup">
+                                    <label for="oystersPopup">Oysters</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="rabbitPopup">
+                                    <label for="rabbitPopup">Rabbit</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="clamsPopup">
+                                    <label for="clamsPopup">Clams</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="foiegrasPopup">
+                                    <label for="foiegrasPopup">Foie gras</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="liverPopup">
+                                    <label for="liverPopup">Liver</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="squidPopup">
+                                    <label for="squidPopup">Squid</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="tunaPopup">
+                                    <label for="tunaPopup">Tuna</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="boarPopup">
+                                    <label for="boarPopup">Boar</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="guineafowlPopup">
+                                    <label for="guineafowlPopup">Guinea fowl</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="pheasantPopup">
+                                    <label for="pheasantPopup">Pheasant</label>
+                                </li>
+                            </ul>
+                        </li>                    
+                        <li>
+                            <strong>Cooking method</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="ovenbakedPopup">
+                                    <label for="ovenbakedPopup">Oven-baked</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="grilledPopup">
+                                    <label for="grilledPopup">Grilled</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="panfriedPopup">
+                                    <label for="panfriedPopup">Pan-fried</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="stewedPopup">
+                                    <label for="stewedPopup">Stewed</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="sanscuissonPopup">
+                                    <label for="sanscuissonPopup">Sans cuisson</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="boiledPopup">
+                                    <label for="boiledPopup">Boiled</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="friedPopup">
+                                    <label for="friedPopup">Fried</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="braisedPopup">
+                                    <label for="braisedPopup">Braised</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="poachedPopup">
+                                    <label for="poachedPopup">Poached</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="steamedPopup">
+                                    <label for="steamedPopup">Steamed</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter">
+                <div>
+                    <input type="button" value="Filter" class="filterBtn" data-popup="filterPopup">
+                    <span>247 Results</span>
+                    <ul>
+                        <li>
+                            <strong>Type of dish</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="fishandseafood">
+                                    <label for="fishandseafood">Fish and seafood</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="startersandappetizers">
+                                    <label for="startersandappetizers">Starters and appetizers</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="soupsandsalads">
+                                    <label for="soupsandsalads">Soups and salads</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="redmeats">
+                                    <label for="redmeats">Red meats</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="sandwichesandpâtés">
+                                    <label for="sandwichesandpâtés">Sandwiches and pâtés</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="whitemeats">
+                                    <label for="whitemeats">White meats</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="poultry">
+                                    <label for="poultry">Poultry</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="pastaandpizza">
+                                    <label for="pastaandpizza">Pasta and pizza</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="Desserts">
+                                    <label for="Desserts">Desserts</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="typeofdish" id="Cheese">
+                                    <label for="Cheese">Cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="coldcutsandoffal">
+                                    <label for="coldcutsandoffal">Cold cuts and offal</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="Game">
+                                    <label for="Game">Game</label>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Main ingredient</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="vegetables">
+                                    <label for="vegetables">Vegetables</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="firmcheese">
+                                    <label for="firmcheese">Firm cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="fruit">
+                                    <label for="fruit">Fruit</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="beef">
+                                    <label for="beef">Beef</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="pork">
+                                    <label for="pork">Pork</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="chicken">
+                                    <label for="chicken">Chicken</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="eggs">
+                                    <label for="eggs">Eggs</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="bread">
+                                    <label for="bread">Bread</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="cream">
+                                    <label for="cream">Cream</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="spaghettimacaroni">
+                                    <label for="spaghettimacaroni">Spaghetti / macaroni</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="shrimp">
+                                    <label for="shrimp">Shrimp</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="semifirmcheese">
+                                    <label for="semifirmcheese">Semi-firm cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="softcheese">
+                                    <label for="softcheese">Soft cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="salmon">
+                                    <label for="salmon">Salmon</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="softcurdcheese">
+                                    <label for="softcurdcheese">Soft curd cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="ham">
+                                    <label for="ham">Ham</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="lamb">
+                                    <label for="lamb">Lamb</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="veal">
+                                    <label for="veal">Veal</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="whitefleshedfish">
+                                    <label for="whitefleshedfish">White fleshed fish</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="nutsandpeanuts">
+                                    <label for="nutsandpeanuts">Nuts and peanuts</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="sausages">
+                                    <label for="sausages">Sausages</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="duck">
+                                    <label for="duck">Duck</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="legumes">
+                                    <label for="legumes">Legumes</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="prosciuttopancetta">
+                                    <label for="prosciuttopancetta">Prosciutto / Pancetta</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="lobster">
+                                    <label for="lobster">Lobster</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="rice">
+                                    <label for="rice">Rice</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="scallop">
+                                    <label for="scallop">Scallop</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="bluecheese">
+                                    <label for="bluecheese">Blue cheese</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="chocolate">
+                                    <label for="chocolate">Chocolate</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="fish">
+                                    <label for="fish">Fish</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="icecreamanddairyproducts">
+                                    <label for="icecreamanddairyproducts">Ice cream and dairy products</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="smokedfish">
+                                    <label for="smokedfish">Smoked fish</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="bison">
+                                    <label for="bison">Bison</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="crab">
+                                    <label for="crab">Crab</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="lasagnamanicotti">
+                                    <label for="lasagnamanicotti">Lasagna / manicotti</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="turkey">
+                                    <label for="turkey">Turkey</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="venison">
+                                    <label for="venison">Venison</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="crepes">
+                                    <label for="crepes">Crêpes</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="tofu">
+                                    <label for="tofu">Tofu</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="couscous">
+                                    <label for="couscous">Couscous</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="mussels">
+                                    <label for="mussels">Mussels</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="oysters">
+                                    <label for="oysters">Oysters</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="rabbit">
+                                    <label for="rabbit">Rabbit</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="clams">
+                                    <label for="clams">Clams</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="foiegras">
+                                    <label for="foiegras">Foie gras</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="liver">
+                                    <label for="liver">Liver</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="squid">
+                                    <label for="squid">Squid</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="tuna">
+                                    <label for="tuna">Tuna</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="boar">
+                                    <label for="boar">Boar</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="guineafowl">
+                                    <label for="guineafowl">Guinea fowl</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="ingredient" id="pheasant">
+                                    <label for="pheasant">Pheasant</label>
+                                </li>
+                            </ul>
+                        </li>                    
+                        <li>
+                            <strong>Cooking method</strong>
+                            <ul>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="ovenbaked">
+                                    <label for="ovenbaked">Oven-baked</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="grilled">
+                                    <label for="grilled">Grilled</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="panfried">
+                                    <label for="panfried">Pan-fried</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="stewed">
+                                    <label for="stewed">Stewed</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="sanscuisson">
+                                    <label for="sanscuisson">Sans cuisson</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="boiled">
+                                    <label for="boiled">Boiled</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="fried">
+                                    <label for="fried">Fried</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="braised">
+                                    <label for="braised">Braised</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="poached">
+                                    <label for="poached">Poached</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="method" id="steamed">
+                                    <label for="steamed">Steamed</label>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ? Filter Fin -->
+            
+            <div>
+                <select class="sortmenu">
+                    <option value="atoz">Product name(A-Z)</option>
+                    <option value="ztoa">Product name(Z-A)</option>
+                    <option value="hightolow">Price High to Low</option>
+                    <option value="lowtohigh">Price Low to High</option>
+                </select>
+                <ul>
+                    <li>
+                        <a href="wine_pairing_raspberryPavlovaWreath.html">
+                            <img src="images/img_pairing_raspberryPavlovaWreath.png" alt="raspberryPavlovaWreath">
+                            <strong>Raspberry pavlova wreath</strong>
+                            <span>
+                                Preparation 30 minutes<br>Cooking time 50 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_raspberryTiramisu.html">
+                            <img src="images/img_pairing_raspberryTiramisu.png" alt="raspberryTiramisu">
+                            <strong>Raspberry tiramisu</strong>
+                            <span>
+                                Preparation 25 minutes<br>Cooking time none
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_rhubarbAndGinger.html">
+                            <img src="images/img_pairing_rhubarbAndGinger.png" alt="rhubarbAndGinger">
+                            <strong>Rhubarb-and-ginger Pop-tarts</strong>
+                            <span>
+                                Preparation 20 minutes<br>Cooking time 20 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_roastChickenWithsage.html">
+                            <img src="images/img_pairing_roastChickenWithsage.png" alt="roastChickenWithsage">
+                            <strong>Roast chicken</strong>
+                            <span>
+                                Preparation 10 minutes<br>Cooking time 2 hours
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_roastedCodFillet.html">
+                            <img src="images/img_pairing_roastedCodFillet.png" alt="roastedCodFillet">
+                            <strong>Roasted cod filets</strong>
+                            <span>
+                                Preparation 10 minutes<br>Cooking time 25 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_roastedGuineaFowlWithHerbs.html">
+                            <img src="images/img_pairing_roastedGuineaFowlWithHerbs.png" alt="roastedGuineaFowlWithHerbs">
+                            <strong>Roasted guinea fowl</strong>
+                            <span>
+                                Preparation 15 minutes<br>Cooking time 1 hour 25 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_roastedRootVegetable.html">
+                            <img src="images/img_pairing_roastedRootVegetable.png" alt="roastedRootVegetable">
+                            <strong>Roasted root vegetables</strong>
+                            <span>
+                                Preparation 20 minutes<br>Cooking time 40 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_roastedVegetableSalad.html">
+                            <img src="images/img_pairing_roastedVegetableSalad.png" alt="roastedVegetableSalad">
+                            <strong>Roasted vegetable salad</strong>
+                            <span>
+                                Preparation 15 minutes<br>Cooking time none
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_rusticDuckPork.html">
+                            <img src="images/img_pairing_rusticDuckPork.png" alt="rusticDuckPork">
+                            <strong>Rustic duck, pork, cranberry and onion pie</strong>
+                            <span>
+                                Preparation 15 minutes<br>Cooking time 1 hour
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_salmonALaPlancha.html">
+                            <img src="images/img_pairing_salmonALaPlancha.png" alt="salmonALaPlancha">
+                            <strong>Salmon à la plancha</strong>
+                            <span>
+                                Preparation 15 minutes<br>Cooking time 20 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_salmonAndPotatoPotPie.html">
+                            <img src="images/img_pairing_salmonAndPotatoPotPie.png" alt="salmonAndPotatoPotPie">
+                            <strong>Salmon and potato pot pie</strong>
+                            <span>
+                                Preparation 30 minutes<br>Cooking time 45 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_smokedSalmonAndAndCucumberCanapes.html">
+                            <img src="images/img_pairing_smokedSalmonAndAndCucumberCanapes.png" alt="smokedSalmonAndAndCucumberCanapes">
+                            <strong>Salmon and vegetables</strong>
+                            <span>
+                                Preparation 30 minutes<br>Cooking time 12 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_salmonCurryWithCoconutMilk.html">
+                            <img src="images/img_pairing_salmonCurryWithCoconutMilk.png" alt="salmonCurryWithCoconutMilk">
+                            <strong>Salmon curry</strong>
+                            <span>
+                                Preparation 10 minutes<br>Cooking time 10 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_salmonRillettes.html">
+                            <img src="images/img_pairing_salmonRillettes.png" alt="salmonRillettes">
+                            <strong>Salmon rillettes</strong>
+                            <span>
+                                Preparation 15 minutes<br>Cooking time none
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_salmonTartare.html">
+                            <img src="images/img_pairing_salmonTartare.png" alt="salmonTartare">
+                            <strong>Salmon tartare</strong>
+                            <span>
+                                Preparation 20 to 25 minutes<br>Cooking time none
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_salmonTartareTrio.html">
+                            <img src="images/img_pairing_salmonTartareTrio.png" alt="salmonTartareTrio">
+                            <strong>Salmon tartare trio</strong>
+                            <span>
+                                Preparation 20 minutes<br>Cooking time none
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_saltCodBrandade.html">
+                            <img src="images/img_pairing_saltCodBrandade.png" alt="saltCodBrandade">
+                            <strong>Salt cod brandade</strong>
+                            <span>
+                                Preparation 10 minutes<br>Cooking time 25 to 30 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_sauteedVegetableFrittata.html">
+                            <img src="images/img_pairing_sauteedVegetableFrittata.png" alt="sauteedVegetableFrittata">
+                            <strong>Sautéed-Vegetable Frittata</strong>
+                            <span>
+                                Preparation 15 minutes<br>Cooking time 15 to 20 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_scallopAndSalsaBites.html">
+                            <img src="images/img_pairing_scallopAndSalsaBites.png" alt="scallopAndSalsaBites">
+                            <strong>Scallop and salsa bites</strong>
+                            <span>
+                                Preparation 30 minutes<br>Cooking time none
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_scallopsAndShrimp.html">
+                            <img src="images/img_pairing_scallopsAndShrimp.png" alt="scallopsAndShrimp">
+                            <strong>Scallops and shrimp</strong>
+                            <span>
+                                Preparation 10 minutes<br>Cooking time 12 to 15 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_seafoodLasagna.html">
+                            <img src="images/img_pairing_seafoodLasagna.png" alt="seafoodLasagna">
+                            <strong>Seafood lasagna</strong>
+                            <span>
+                                Preparation 30 minutes<br>Cooking time 35 to 45 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_seafoodPaella.html">
+                            <img src="images/img_pairing_seafoodPaella.png" alt="seafoodPaella">
+                            <strong>Seafood Paella</strong>
+                            <span>
+                                Preparation 30 to 35 minutes<br>Cooking time 40 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_seafoodVolauvent.html">
+                            <img src="images/img_pairing_seafoodVolauvent.png" alt="seafoodVolauvent">
+                            <strong>Seafood vol-au-vent</strong>
+                            <span>
+                                Preparation 10 minutes<br>Cooking time 20 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_shreddedBeefSalad.html">
+                            <img src="images/img_pairing_shreddedBeefSalad.png" alt="shreddedBeefSalad">
+                            <strong>shredded-beef salad</strong>
+                            <span>
+                                Preparation 10 minutes<br>Cooking time none
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_shreddedDuckVolauvent.html">
+                            <img src="images/img_pairing_shreddedDuckVolauvent.png" alt="shreddedDuckVolauvent">
+                            <strong>Shredded duck vol-au-vent</strong>
+                            <span>
+                                Preparation 20 minutes<br>Cooking time 10 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_shrimpAndAvocadoCanape.html">
+                            <img src="images/img_pairing_shrimpAndAvocadoCanape.png" alt="shrimpAndAvocadoCanape">
+                            <strong>Shrimp and avocado canapés</strong>
+                            <span>
+                                Preparation 20 minutes<br>Cooking time 5 to 8 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_shrimpCocktail.html">
+                            <img src="images/img_pairing_shrimpCocktail.png" alt="shrimpCocktail">
+                            <strong>Shrimp Cocktail</strong>
+                            <span>
+                                Preparation 15 minutes<br>Cooking time 30 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_shrimpCurryWithCoconutMilk.html">
+                            <img src="images/img_pairing_shrimpCurryWithCoconutMilk.png" alt="shrimpCurryWithCoconutMilk">
+                            <strong>Shrimp curry</strong>
+                            <span>
+                                Preparation 30 minutes<br>Cooking time 1 hour 40 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_shrimpPestoAndGoatCheesePizza.html">
+                            <img src="images/img_pairing_shrimpPestoAndGoatCheesePizza.png" alt="shrimpPestoAndGoatCheesePizza">
+                            <strong>Shrimp, pesto, and goat cheese pizza</strong>
+                            <span>
+                                Preparation 15 minutes<br>Cooking time 15 minutes
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wine_pairing_sicilianCaponata.html">
+                            <img src="images/img_pairing_sicilianCaponata.png" alt="sicilianCaponata">
+                            <strong>Sicilian caponata</strong>
+                            <span>
+                                Preparation 20 minutes<br>Cooking time 35 minutes
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pager">
+            <a href="#">back to top</a>
+            <div>
+                <div>
+                    <a href="wine_sub_pairing_01.html">FirstPage</a>
+                    <a href="wine_sub_pairing_06.html">Previous</a>        
+                </div>
+                <div>
+                    <a href="wine_sub_pairing_08.html">Next</a>
+                    <a href="wine_sub_pairing_09.html">LastPage</a>        
+                </div>
+                page <span>7</span> of <span>9</span> 
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <ul>
+            <li><a href="aboutus_termsofsale.html">Home delivery</a></li>
+            <li><a href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
+            <li><a href="aboutus_contactus.html">Contact us</a></li>
+            <li><a href="aboutus_termsofsale.html">Free in-store returns</a></li>
+        </ul>
+        <div>
+            <div>
+                <div>
+                    <form>
+                        <h4>Create my account</h4>
+                        <p>Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
+                        <input type="email" placeholder="your@address.com">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <ul>
+                        <li><a href="https://www.youtube.com/user/SAQTchinTchin">Youtube</a></li>
+                        <li><a href="https://www.facebook.com/SAQ">Facebook</a></li>
+                        <li><a href="https://twitter.com/LaSAQ_officiel">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/lasaq/">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Call us</h3>
+                    <address>
+                        <span>
+                            Toll free: <a href="tel:+18668732020">1 866 873-2020</a>
+                        </span>
+                        <span>
+                            Greater Montreal: <a href="tel:+5142542020">514 254-2020</a>
+                        </span>
+                        <div>
+                            LOCATION &amp; LANGUAGE<span class="crrLanguage">English</span>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>About your purchase</h3>
+                <ol>
+                    <li><a href="account_main.html">My Profile</a></li>
+                    <li><a href="account_myorder.html">Track an Orders</a></li>
+                    <li><a href="aboutus_FAQ.html">Frequently asked questions</a></li>
+                    <li><a href="aboutus_confidentialpolicy.html">Shipping and delivery</a></li>
+                    <li><a href="aboutus_termsofsale.html">Terms and conditions</a></li>
+                    <li><a href="aboutus_confidentialpolicy.html">Confidentiality Policy</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>About the SAQ</h3>
+                <ol>
+                    <li><a href="aboutus_profileandmandate.html">Profile and mandate</a></li>
+                    <li><a href="aboutus_accesstoinformation.html">Access to information</a></li>
+                    <li><a href="aboutus_contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus_ourhistory.html">Our history</a></li>
+                    <li><a href="inspiration_list.html">Inspiration</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>SAQ pairing recipes</h3>
+                <p>Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
+                <a href="wine_sub_pairing_01.html" class="fillBtn">Visit Now</a>
+                <div>
+                    <h4>SAQ ACCEPTS</h4>
+                    <ul>
+                        <li>Paypal</li>
+                        <li>VISA</li>
+                        <li>Mastercard</li>
+                        <li>Maestro</li>
+                        <li>AmericanExpress</li>
+                        <li>JCB</li>
+                        <li>UnionPay</li>
+                        <li>DELTA</li>
+                        <li>applepay</li>
+                        <li>klarna</li>
+                    </ul>
+                </div>
+                <span>
+                    © All rights reserved, SAQ 2023 <img src="images/logo_spirit.png" alt="the spirit of sharing SAQ."><img src="images/logo_footer.png" alt="logo_footer">
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- ? Footer Fin -->
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAQ: Discover our selection of wines, beers and spirits online</title>
+    <script src="js/jquery-3.6.4.slim.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script> 
+    <script src="js/saq.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <div>
+            <form action="searchresult.html">
+                <input type="text" placeholder="Search products, pairings and content">
+                <input type="submit" value="submit" disabled>
+                <input type="button" value="close" class="closePanel deleteBtn">
+            </form>
+        </div>
+    </div>
+    <div id="accountPanel">
+        <div>
+            <form action="index.html">
+                <a href="account_myorder.html">My Orders</a>
+                <a href="account_wishlist.html">Wish List</a>
+                <a href="account_cartlist.html">Cart List</a>
+                <a href="account_detail.html">Account Details</a>
+                <a href="account_addressbook.html">Address Book</a>
+                <a href="account_savedcards.html">Saved Cards</a>
+                <input type="submit" value="Sign out">
+            </form>
+        </div>
+    </div>
+    <div id="menuPanel">
+        <input type="button" value="close" class="closePanel">
+        <span class="crrLanguage">English</span>
+        <ul>
+            <li><a href="wine_sub_sale_01.html">Sale</a></li>
+            <li><a href="wine_sub_white_01.html">White</a></li>
+            <li><a href="wine_sub_red_01.html">Red</a></li>
+            <li><a href="wine_sub_rose_01.html">Rosé</a></li>
+            <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
+            <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
+            <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+        </ul>
+        <ul>
+            <li><a href="account_main.html">My Account</a></li>
+            <li><a href="account_wishlist.html">Wish List</a></li>
+        </ul>
+        <a href="index.html">Sign out</a>
+    </div>
+    
+    <header>
+        <ol>
+            <li class="active"><a href="wine_sub_white_01.html">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
+            <li><a href="wine_sub_white_01.html">Meet a variety of high-quality wines.</a></li>
+            <li><a href="wine_sub_sale_01.html">Spend to save up to 25% sale for a limited time only.</a></li>
+        </ol>   
+        <div>
+            <span class="crrLanguage">English</span>
+            <input type="button" value="menu" data-panel="menuPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo_header.png" alt="SAQ">
+                </a>
+            </h1>
+            <ul>
+                <li data-panel="searchPanel">search</li>
+                <li><a href="account_wishlist.html">wishlist</a></li>
+                <li><a href="account_cartlist.html">cart</a></li>
+                <li data-panel="accountPanel">account</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="wine_sub_sale_01.html">Sale</a></li>
+                <li><a href="wine_sub_white_01.html">White</a></li>
+                <li><a href="wine_sub_red_01.html">Red</a></li>
+                <li><a href="wine_sub_rose_01.html">Rosé</a></li>
+                <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
+                <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
+                <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ? Header Fin -->
+
+    <section class="aboutusContainer history">
+        <ol>
+            <li>
+                <h2>
+                    <small>before</small>
+                    1921
+                </h2>
+                <div>
+                    <strong>A total prohibition… except in Québec</strong>
+                    <p>
+                        In 1917, a prohibition comes into effect all over Canada. Québec
+                        is the only province to tolerate alcohol consumption.
+                    </p>
+                    <p>   
+                        In 1919, French-speaking Quebecers vote in favour of legalizing the
+                        sale of beer and wine, paving the way to the creation of the
+                        Commission des liqueurs a few years later.
+                    </p>
+                </div>
+                <img src="images/img_history_01.png" alt="history01">
+            </li>
+            <li>
+                <h2>1921</h2>
+                <div>
+                    <strong>The Commission des liqueurs de Québec is created May 1st, 1921.</strong>
+                    <p>
+                        The sale of alcoholic beverages is now allowed, under the State’s
+                        control, with the exception of domestic beer, which is available off
+                        the shelves.
+                    </p>
+                    <strong>La Commission</strong>
+                    <p>
+                        Lots of people from Ontario and the United States come visit
+                        Québec’s top attractions . . . especially the Commission’s stores!
+                    </p>
+                </div>
+                <img src="images/img_history_02.png" alt="history02">
+            </li>
+            <li>
+                <h2>1960s</h2>
+                <div>
+                    <strong>La boisson Caribou</strong>
+                    <p>
+                        The first official mention of the Caribou drink dates back to 1960,
+                        when served by Lionel Faucher, a Saint-Sauveur resident, to help
+                        them “warm up” Québec Winter Carnival goers. Legend has it that
+                        the Caribou drink was in fact invented by fur traders, who would
+                        mix caribou blood with alcohol… at least, that’s what the folklore
+                        tales say!
+                    </p>
+                </div>
+                <img src="images/img_history_03.png" alt="history03">
+            </li>
+            <li>
+                <h2>1970</h2>
+                <div>
+                    <strong>The first self-serve store in sherbrooke</strong>
+                    <p>
+                        Customers are now able to see and touch the products! The
+                        concept is such a huge success that it pushes the Régie to speed up
+                        the modernization of its network of stores, a process completed in
+                        1983.
+                    </p>
+                </div>
+                <img src="images/img_history_04.png" alt="history04">
+            </li>
+            <li>
+                <h2>1975</h2>
+                <div>
+                    <strong>Vins nouveaux: the birth of a new tradition</strong>
+                    <p>
+                        The first shipments of some 200 cases of new wines arrive, and
+                        customers are thrilled! It’s such a huge success that by 1980, more
+                        than 8,000 cases are commercialized.
+                    </p>
+                </div>
+                <img src="images/img_history_05.png" alt="history05">
+            </li>
+            <li>
+                <h2>1990</h2>
+                <div>
+                    <strong>First flyers</strong>
+                    <p>
+                        The 90s mark the beginning of a new, more commercial era, and
+                        the very first SAQ flyers are printed and distributed.
+                    </p>
+                </div>
+                <img src="images/img_history_06.png" alt="history06">
+            </li>
+            <li>
+                <h2>2000</h2>
+                <div>
+                    <strong>Large-scale economies</strong>
+                    <p>
+                        The first SAQ Dépôt opens its doors in downtown Hull, spanning
+                        some 21,000 square feet. A total of 250 products are available.
+                    </p>
+                    <strong>SAQ.COM</strong>
+                    <p>
+                        Launch of the transactional website SAQ.COM, one of the first of its
+                        kind in Québec.
+                    </p>
+                </div>
+                <img src="images/img_history_07.png" alt="history07">
+            </li>
+            <li>
+                <h2>2011</h2>
+                <div>
+                    <strong>$1,000,000,000</strong>
+                    <p>
+                        After 90 years of existence, the company surpasses the one billion
+                        dollar mark in net benefits given to the Québec government.
+                    </p>
+                </div>
+                <img src="images/img_history_08.png" alt="history08">
+            </li>
+            <li>
+                <h2>2020</h2>
+                <div>
+                    <strong>Shared growth</strong>
+                    <p>
+                        The Québec product family grows thanks to the creation of new
+                        identifications: Made in Québec and Bottled in Québec.
+                    </p>
+                </div>
+                <img src="images/img_history_09.png" alt="history09">
+            </li>
+            <li>
+                <h2>Future</h2>
+                <div>
+                    <strong>The next evolution</strong>
+                    <p>
+                        Integrated, personalized, and inspiring experience.<br>
+                        Better fluidity between points of contact.<br>
+                        Wider product accessibility, both in-store and online.<br>
+                        Societal values at the heart of all its activities.
+                    </p>
+                </div>
+                <img src="images/img_history_10.png" alt="history10">
+            </li>
+        </ol>
+    </section>
+    
+    <footer>
+        <ul>
+            <li><a href="aboutus_termsofsale.html">Home delivery</a></li>
+            <li><a href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
+            <li><a href="aboutus_contactus.html">Contact us</a></li>
+            <li><a href="aboutus_termsofsale.html">Free in-store returns</a></li>
+        </ul>
+        <div>
+            <div>
+                <div>
+                    <form>
+                        <h4>Create my account</h4>
+                        <p>Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
+                        <input type="email" placeholder="your@address.com">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <ul>
+                        <li><a href="https://www.youtube.com/user/SAQTchinTchin">Youtube</a></li>
+                        <li><a href="https://www.facebook.com/SAQ">Facebook</a></li>
+                        <li><a href="https://twitter.com/LaSAQ_officiel">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/lasaq/">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Call us</h3>
+                    <address>
+                        <span>
+                            Toll free: <a href="tel:+18668732020">1 866 873-2020</a>
+                        </span>
+                        <span>
+                            Greater Montreal: <a href="tel:+5142542020">514 254-2020</a>
+                        </span>
+                        <div>
+                            LOCATION &amp; LANGUAGE<span class="crrLanguage">English</span>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h3>About your purchase</h3>
+                <ol>
+                    <li><a href="account_main.html">My Profile</a></li>
+                    <li><a href="account_myorder.html">Track an Orders</a></li>
+                    <li><a href="aboutus_FAQ.html">Frequently asked questions</a></li>
+                    <li><a href="aboutus_confidentialpolicy.html">Shipping and delivery</a></li>
+                    <li><a href="aboutus_termsofsale.html">Terms and conditions</a></li>
+                    <li><a href="aboutus_confidentialpolicy.html">Confidentiality Policy</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>About the SAQ</h3>
+                <ol>
+                    <li><a href="aboutus_profileandmandate.html">Profile and mandate</a></li>
+                    <li><a href="aboutus_accesstoinformation.html">Access to information</a></li>
+                    <li><a href="aboutus_contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus_ourhistory.html">Our history</a></li>
+                    <li><a href="inspiration_list.html">Inspiration</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>SAQ pairing recipes</h3>
+                <p>Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
+                <a href="wine_sub_pairing_01.html" class="fillBtn">Visit Now</a>
+                <div>
+                    <h4>SAQ ACCEPTS</h4>
+                    <ul>
+                        <li>Paypal</li>
+                        <li>VISA</li>
+                        <li>Mastercard</li>
+                        <li>Maestro</li>
+                        <li>AmericanExpress</li>
+                        <li>JCB</li>
+                        <li>UnionPay</li>
+                        <li>DELTA</li>
+                        <li>applepay</li>
+                        <li>klarna</li>
+                    </ul>
+                </div>
+                <span>
+                    © All rights reserved, SAQ 2023 <img src="images/logo_spirit.png" alt="the spirit of sharing SAQ."><img src="images/logo_footer.png" alt="logo_footer">
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- ? Footer Fin -->
+</body>
+</html>
