@@ -575,7 +575,7 @@
         margin-bottom: 30px; display: flex; flex-flow: row nowrap; height: 167px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect li{
-        flex: 1; transition: flex 0.75s ease-in-out;
+        flex: 1; transition: flex 0.75s ease-in-out; text-indent: -9999px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect li a{
         display: block; background-size: cover; background-position: center;
@@ -1073,6 +1073,10 @@
     }
     .loginContainer div form p a{
         display: inline-block; margin: 0;
+    }
+    .loginContainer div form > label:nth-last-of-type(1),
+    .loginContainer div form > label:nth-last-of-type(2){
+        display: none;
     }
     .loginContainer div b{
         display: block; text-align: center; margin-bottom: 30px;
@@ -2639,12 +2643,12 @@
         margin-bottom: 100px;
     }
     .indexContainer > div:nth-of-type(2) figure{
-        width: 47%; rder-box;
+        width: 47%; float: left;
     }
     .indexContainer > div:nth-of-type(2) figure img{
         width: 100%; margin-bottom: 20px;
     }
-    .indexContainer > div:nth-of-type(2) figure:not(:last-of-type){
+    .indexContainer > div:nth-of-type(2) figure:first-of-type{
         margin-left: 2%; box-sizing: border-box;
     }
     .indexContainer > div:nth-of-type(2) figure:last-of-type{
@@ -2723,7 +2727,7 @@
         margin-bottom: 60px; display: flex; flex-flow: row nowrap; height: 595px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect li{
-        flex: 1; transition: flex 0.75s ease-in-out;
+        flex: 1; transition: flex 0.75s ease-in-out; text-indent: -9999px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect li a{
         display: block; background-size: cover; background-position: center;
@@ -3207,6 +3211,10 @@
     }
     .loginContainer div form p a{
         display: inline-block; margin: 0;
+    }
+    .loginContainer div form > label:nth-last-of-type(1),
+    .loginContainer div form > label:nth-last-of-type(2){
+        display: none;
     }
     .loginContainer div b{
         display: block; text-align: center; padding-top: 30px; border-top: 1px solid #cbcbcb;
@@ -4849,7 +4857,7 @@
     }
     .indexContainer > div:last-of-type ol.hoverEffect li a{
         display: block; background-size: cover; background-position: center;
-        background-repeat: no-repeat; height: 100%;
+        background-repeat: no-repeat; height: 100%; text-indent: -9999px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(1) a{
         background-image: url('../images/img_cardimage_01.png');
@@ -5332,6 +5340,10 @@
     }
     .loginContainer div form p a{
         display: inline-block; margin: 0;
+    }
+    .loginContainer div form > label:nth-last-of-type(1),
+    .loginContainer div form > label:nth-last-of-type(2){
+        display: none;
     }
     .loginContainer div b{
         display: block; text-align: center; padding-top: 30px; border-top: 1px solid #cbcbcb;
