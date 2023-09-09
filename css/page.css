@@ -1403,6 +1403,9 @@
     .accountdetailContainer > div > ul > li > div #birthYear{
         text-align: left;
     }
+    .accountdetailContainer > div > ul > li > div:last-of-type label:not(:first-of-type){
+        display: none;
+    }
     .accountdetailContainer > div > ul > li > div:last-of-type{
         margin-bottom: 20px;
     }
@@ -3533,6 +3536,9 @@
     .accountdetailContainer > div > ul > li > div #birthYear{
         text-align: left;
     }
+    .accountdetailContainer > div > ul > li > div:last-of-type label:not(:first-of-type){
+        display: none;
+    }
     .accountdetailContainer > div > ul > li > div:last-of-type{
         margin-bottom: 30px;
     }
@@ -5384,10 +5390,10 @@
     /* ? accountMenu */
 
     .accountContainer{
-        padding-top: 200px;
+        padding-top: 200px; margin: 0 auto;
     }
     .accountContainer > *:not(.bg){
-        max-width: 1440px; margin: 0 auto;
+        max-width: 1440px; margin: 0 2%; box-sizing: border-box;
     }
     .accountContainer .bg{
         background-image: url('../images/ban_08.png'); margin-bottom: 150px;
@@ -5399,7 +5405,7 @@
         position: absolute; left: 4%; bottom: 0;
     }
     .accountContainer ul{
-        width: 100%; text-align: center;
+        width: 96%; text-align: center;
     }
     .accountContainer ul li{
         width: 28%; float: left; border: 1px solid #cbcbcb; border-radius: 3px;
@@ -5495,6 +5501,9 @@
 
     .accountBase{
         margin: 0 auto; max-width: 1440px; padding-top: 290px; position: relative;
+    }
+    .accountBase > *{
+        margin: 0 2%;
     }
     .accountBase h2{
         text-align: center; margin-bottom: 20px;
@@ -5593,7 +5602,7 @@
     }
     .accountdetailContainer > div > ul > li{
         width: 100%; border: 1px solid #cbcbcb; padding: 40px 2.5% 30px; margin-bottom: 30px;
-        border-radius: 3px;
+        border-radius: 3px; box-sizing: border-box;
     }
     .accountdetailContainer > div > ul > li h4{
         margin-bottom: 30px;
@@ -5650,6 +5659,9 @@
     .accountdetailContainer > div > ul > li > div #birthMonth,
     .accountdetailContainer > div > ul > li > div #birthYear{
         text-align: left;
+    }
+    .accountdetailContainer > div > ul > li > div:last-of-type label:not(:first-of-type){
+        display: none;
     }
     .accountdetailContainer > div > ul > li > div:last-of-type{
         margin-bottom: 30px;
@@ -5794,6 +5806,9 @@
     .paymentContainer{
         margin: 0 auto; max-width: 700px; padding-top: 290px;
     }
+    .paymentContainer > *{
+        margin: 0 2%;
+    }
     .paymentContainer .numbStepper{
         width: 100%; counter-reset: step;
     }
@@ -5916,6 +5931,9 @@
     }
     .paymentContainer div:nth-of-type(4) > label:first-of-type img{
         width: 9%; margin-left: 2%;
+    }
+    .paymentContainer div:nth-of-type(4) > div > label:not(:last-of-type){
+        display: none;
     }
     .paymentContainer div:nth-of-type(4) > #exPaypal+label+div{
         display: none;
@@ -6347,7 +6365,7 @@
     /* ? profile */
 
     .aboutusContainer.termsofsale h2:first-of-type{
-        margin-top: 100px;
+        margin-top: 75px;
     }
     .aboutusContainer.termsofsale h2{
         margin: 0 2% 50px;
