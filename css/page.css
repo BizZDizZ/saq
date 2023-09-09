@@ -763,6 +763,9 @@
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3){
         width: 96%; margin: 0 2%; float: left;
     }
+    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) label{
+        display: none;
+    }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu{
         margin: 0 0 50px auto; width: 170px; height: 30px; display: block;
         padding-left: 10px; outline: none; border: 1px solid #cbcbcb; border-radius: 3px;
@@ -2909,6 +2912,9 @@
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3){
         width: 96%; margin: 100px 2%; float: left;
     }
+    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) label{
+        display: none;
+    }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu{
         margin: 0 0 20px auto; width: 200px; height: 30px; display: block;
         padding-left: 10px; outline: none; border: 1px solid #cbcbcb; border-radius: 3px;
@@ -5035,6 +5041,9 @@
 
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3){
         width: 70%; margin: 80px 2% 0 6%; float: left; max-width: 1008px;
+    }
+    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) label{
+        display: none;
     }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu{
         margin: 0 0 20px auto; width: 200px; height: 30px; display: block;
