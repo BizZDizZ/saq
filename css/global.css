@@ -298,6 +298,9 @@ input:-webkit-autofill{
     footer > div:first-of-type > div form p{
         margin-bottom: 20px;
     }
+    footer > div:first-of-type > div form label{
+        display: none;
+    }
     footer > div:first-of-type > div form input{
         margin-bottom: 25px;
     }
@@ -611,6 +614,9 @@ input:-webkit-autofill{
     footer > div:first-of-type > div form p{
         margin-bottom: 20px;
     }
+    footer > div:first-of-type > div form label{
+        display: none;
+    }
     footer > div:first-of-type > div form input{
         margin-bottom: 25px;
     }
@@ -909,6 +915,9 @@ input:-webkit-autofill{
     }
     footer > div:first-of-type > div form p{
         margin-bottom: 26px; max-width: 350px;
+    }
+    footer > div:first-of-type > div form label{
+        display: none;
     }
     footer > div:first-of-type > div form input{
         margin-bottom: 36px;
