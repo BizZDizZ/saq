@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    // screensizeCheck();    
     sliders(".detailslider", false, true, 1, 1, 720, 0);
     sliders(".discoverslider", false, true, 4, 1, 300, 80);
     sliders(".carouselSlider", false, true, 4, 1, 400, 60);
@@ -24,6 +23,7 @@ $(document).ready(function(){
     parentactiveControl(".aboutusContainer.FAQ div .accComponent li h4")
     permissionCheck();
     backBtn();
+    classchange();
 });
 
 function permissionCheck(){
@@ -96,4 +96,17 @@ function newvisibleControl(target){
             $("#newuserPW").attr("type", "password");
         }
     });
+}
+function classchange(){
+	var count = 0;
+	setInterval(time, 3000);
+	function time(){
+		var list = $("header ol li");
+		list.removeClass("active");
+		list.eq(count).addClass("active");
+		count++;
+		if(count >= list.length){
+            count = 0;
+        }
+	}
 }
