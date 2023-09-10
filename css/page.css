@@ -402,7 +402,7 @@
     }
     .backBtn{
         background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
-        padding-left: 20px; position: absolute; left: 2%; top: 85px;
+        padding-left: 20px; position: absolute; left: 0; top: 85px;
     }
     .passwordField,
     .newpasswordField{
@@ -1304,7 +1304,7 @@
     /* ? addressbook */
 
     .wishContainer > div:nth-of-type(2){
-        width: 96%; margin: 0 2%;
+        width: 100%;
     }
     .wishContainer > div > ul{
         width: 100%; box-sizing: border-box;
@@ -1342,7 +1342,7 @@
     /* ? wishlist */
 
     .accountdetailContainer > div{
-        margin: 0 2%; box-sizing: border-box; width: 96%;
+        box-sizing: border-box; width: 100%;
     }
     .accountdetailContainer > div > ul{
         box-sizing: border-box;
@@ -2562,7 +2562,7 @@
     }
     .backBtn{
         background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
-        padding-left: 20px; position: absolute; left: 2%; top: 180px;
+        padding-left: 20px; position: absolute; left: 0; top: 180px;
     }
     .passwordField,
     .newpasswordField{
@@ -3380,6 +3380,9 @@
     .accountBase{
         margin: 0 auto; padding-top: 180px; position: relative;
     }
+    .accountBase > *{
+        margin: 0 2%;
+    }
     .accountBase h2{
         text-align: center; margin-bottom: 20px;
     }
@@ -3389,7 +3392,7 @@
     }
     .accountBase div h3{
         text-align: center; padding-bottom: 50px; border-bottom: 1px solid #f0f0f0;
-        width: 96%; margin: 0 2% 50px; display: block;
+        width: 100%; margin-bottom: 50px; display: block;
     }
     .accountBase .pager{
         width: 96%; margin: 0 2%;
@@ -3417,9 +3420,8 @@
         width: 100%; display: flex; flex-wrap: wrap;
     }
     .addressbookContainer > div > ul > li{
-        margin-bottom: 60px; width: 47%; border: 1px solid #f0f0f0; border-radius: 3px;
+        margin-bottom: 60px; width: 49%; border: 1px solid #f0f0f0; border-radius: 3px;
         box-sizing: border-box; padding: 40px 3% 25px; box-shadow: 0 0 15px 3px #cbcbcb;
-        margin-left: 2%;
     }
     .addressbookContainer > div > ul > li:first-of-type{
         text-align: center; vertical-align: middle; align-content: stretch;
@@ -3428,8 +3430,8 @@
         height: 100%; background: url('../images/bul_add.png') no-repeat left;
         background-size: 20px; padding-left: 25px;
     }
-    .addressbookContainer > div > ul > li:last-of-type{
-        margin-right: 2%;
+    .addressbookContainer > div > ul > li:last-of-type{        
+        margin-left: 2%;
     }
     .addressbookContainer > div > ul > li > address{
         font-style: normal; padding-bottom: 40px; margin-bottom: 25px;
@@ -5411,10 +5413,10 @@
     /* ? accountMenu */
 
     .accountContainer{
-        padding-top: 200px; margin: 0 auto;
+        padding-top: 200px;
     }
     .accountContainer > *:not(.bg){
-        max-width: 1440px; margin: 0 2%; box-sizing: border-box;
+        max-width: 1440px; box-sizing: border-box;
     }
     .accountContainer .bg{
         background-image: url('../images/ban_08.png'); margin-bottom: 150px;
@@ -5426,7 +5428,7 @@
         position: absolute; left: 4%; bottom: 0;
     }
     .accountContainer ul{
-        width: 96%; text-align: center;
+        width: 96%; text-align: center; margin: 0 auto;
     }
     .accountContainer ul li{
         width: 28%; float: left; border: 1px solid #cbcbcb; border-radius: 3px;
@@ -5746,6 +5748,9 @@
 
     .cartlistContainer{
         margin: 0 auto; max-width: 1440px; padding-top: 290px; position: relative;
+    }
+    .cartlistContainer > *{
+        margin: 0 2%;
     }
     .cartlistContainer > .emptyBg{
         background-image: url('../images/ico_cart_empty.png');

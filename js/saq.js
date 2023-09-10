@@ -25,22 +25,7 @@ $(document).ready(function(){
     permissionCheck();
     backBtn();
 });
-// function screensizeCheck(){
-//     const mediaQueryList = window.matchMedia('(max-width: 767px)');
 
-//     if(mediaQueryList.matches){
-//         sliders(".carouselSlider", false, true, 1, 1, 280, 0);
-//     }else{
-//         sliders(".carouselSlider", false, true, 4, 1, 185, 60);
-//     }
-//     // mediaQueryList.addEventListener('change', event =>{
-//     //     if(event.matches){
-//     //         sliders(".carouselSlider", false, true, 1, 1, 280, 0);
-//     //     }else{
-//     //         sliders(".carouselSlider", false, true, 4, 1, 185, 60);
-//     //     }
-//     // })
-// }
 function permissionCheck(){
     $(".before a").click(function(){
         $(this).attr("href","login.html");
