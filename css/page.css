@@ -1247,7 +1247,7 @@
         width: 100%; margin-bottom : 30px; display: block;
     }
     .accountBase .pager{
-        width: 100%;
+        width: 100%; margin: 0 auto;
     }
     /* ? accountBase */
 
@@ -2964,7 +2964,7 @@
     }
     .pager > div{
         border-top: 1px; border-color: #cbcbcb; border-style: solid; opacity: 50%; position: relative;
-        padding-top: 15px;
+        padding-top: 15px; margin: 0 2%;
     }
     .pager > div > div,
     .pager > div > div > a{
@@ -3380,7 +3380,7 @@
     .accountBase{
         margin: 0 auto; padding-top: 180px; position: relative;
     }
-    .accountBase > *{
+    .accountBase > *:not(.pager){
         margin: 0 2%;
     }
     .accountBase h2{
@@ -3395,7 +3395,7 @@
         width: 100%; margin-bottom: 50px; display: block;
     }
     .accountBase .pager{
-        width: 96%; margin: 0 2%;
+        width: 100%;
     }
     /* ? accountBase */
 
@@ -5084,10 +5084,13 @@
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark{
         margin-left: 10px;
     }
+    .productContainer .pager > div{
+        margin: 0 2%;
+    }
     /* ? product */
 
     .pager{
-        text-align: center; width: 100%; margin: 0 auto;
+        text-align: center; width: 96%; margin: 0 auto;
     }
     .pager > a{
         background: url('../images/bul_backtotop.svg') no-repeat; text-indent: -9999px; display: inline-block;
