@@ -4791,7 +4791,7 @@
     }
     .indexContainer > div:nth-of-type(3) > div:first-of-type,
     .indexContainer > div:nth-of-type(5) > div:first-of-type{
-        flex: 1 auto; align-self: center; margin-left: 2%;
+        width: 26%; align-self: center; margin-left: 2%;
     }
     .indexContainer > div:nth-of-type(3) div span{
         margin-bottom: 10px; display: block;
@@ -4813,7 +4813,7 @@
     }
     .indexContainer > div:nth-of-type(3) > .bx-wrapper,
     .indexContainer > div:nth-of-type(5) > .bx-wrapper{
-        flex: 2 auto; text-align: center; margin-right: 2%;
+        width: 68%; text-align: center; margin: 0 2%;
     }
     .indexContainer > div:nth-of-type(4){
         margin-bottom: 150px;

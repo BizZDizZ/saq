@@ -1,7 +1,7 @@
 $(document).ready(function(){
     sliders(".detailslider", false, true, 1, 1, 720, 0);
     sliders(".discoverslider", false, true, 4, 1, 300, 80);
-    sliders(".carouselSlider", false, true, 4, 1, 400, 60);
+    sliders(".carouselSlider", false, true, 4, 1, 270, 60);
     panelControl("header > div ul li:first-of-type");
     panelControl("header > div ul li:last-of-type");
     panelControl("header > div input");
