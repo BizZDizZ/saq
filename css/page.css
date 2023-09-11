@@ -4892,7 +4892,7 @@
         max-width: 1440px; margin: 0 auto; height: 300px; position: relative;
     }
     .productContainer .bg div h2{
-        position: absolute; left: 4%; bottom: 0;
+        position: absolute; left: 4%; bottom: -20px;
     }
     .productContainer .bg.sale{background-image: url('../images/ban_02.png');}
     .productContainer .bg.white{background-image: url('../images/ban_03.png');}
