@@ -434,7 +434,7 @@
     #birthMonth,
     #birthYear,
     #phoneNum{
-        padding-left: 2.8%; width: 100%; height: 50px; border-radius: 3px; box-sizing: border-box;
+        padding-left: 10px; width: 100%; height: 50px; border-radius: 3px; box-sizing: border-box;
     }
     #userPW,
     #newuserPW{
@@ -2630,7 +2630,7 @@
     }
 
     .indexContainer{
-        padding-top: 130px;
+        padding-top: 128px;
     }
     .indexContainer > *:not(.bg){
         max-width: 1440px; margin: 0 auto;
@@ -2756,7 +2756,7 @@
     /* ? indexContainer */
 
     .productContainer{
-        padding-top: 130px;
+        padding-top: 128px;
     }
     .productContainer > *:not(.bg){
         margin: 0 auto;
@@ -3255,7 +3255,7 @@
     /* ? accountMenu */
 
     .accountContainer{
-        padding-top: 130px;
+        padding-top: 128px;
     }
     .accountContainer .bg{
         background-image: url('../images/ban_08.png'); margin-bottom: 50px;
