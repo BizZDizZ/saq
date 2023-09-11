@@ -915,7 +915,7 @@
         background-image: url('../images/bul_arrow_up.png');
     }
     .wineContainer > div:nth-of-type(2) table caption.active+tbody{
-        display: block; margin-bottom: ;
+        display: block;
     }
     .wineContainer > div:last-of-type h3{
         margin: 40px 0 30px;
