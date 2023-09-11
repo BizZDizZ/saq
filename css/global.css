@@ -772,10 +772,10 @@ input:-webkit-autofill{
         z-index: 101; box-sizing: border-box; position: fixed; top: 100px; width: 100%;
     }
     #accountPanel div{
-        position: relative; max-width: 1440px; margin: 0 auto;        
+        position: relative; max-width: 1440px; margin: 0 auto;
     }
     #accountPanel div form{
-        background-color: #ffffff; width: 180px; border-radius: 3px;
+        background-color: #ffffff; width: 200px; border-radius: 3px; padding: 10px 0;
         position: absolute; right: 0; background-position: 25px; border: 1px solid #cbcbcb;
     }
     #accountPanel div a{
