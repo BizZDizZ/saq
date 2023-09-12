@@ -980,13 +980,13 @@
         position: relative; box-sizing: border-box; margin: 30px 2% 0; width: 96%; display: block;
     }
     .pairingContainer > div mark{
-        display: block; margin-bottom: 20px;
+        display: block; margin: 0 25px 25px;
     }
     .pairingContainer > div mark span{
         margin-left: 20px;
     }
     .pairingContainer > div h2{
-        width: 100%; margin-bottom: 25px;
+        margin: 0 25px 25px;
     }
     .pairingContainer > div > img{
         width: 200px; height: 200px; object-fit: cover; border-radius: 100px; margin: 0 auto 25px; display: block;
