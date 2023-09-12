@@ -739,7 +739,7 @@ input:-webkit-autofill{
 }
 /* ? Tablet */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px){
     #searchPanel{
         background-color: #ffffff; color: #cbcbcb; width: 100%;
         position: fixed; top: 200px; z-index: 51; border-bottom: 1px solid #cbcbcb;
@@ -1033,3 +1033,8 @@ input:-webkit-autofill{
     /* ? Footer */
 }
 /* ? Desktop */
+
+@media screen and (min-width: 768px){
+
+}
+/* ? Desktop + Tablet */
