@@ -533,8 +533,8 @@
     .indexContainer > div:nth-of-type(5) > .bx-wrapper{
         text-align: center; margin: 0 auto;
     }
-    .indexContainer > div:nth-of-type(3) > .bx-wrapper a,
-    .indexContainer > div:nth-of-type(5) > .bx-wrapper a{
+    .indexContainer > div:nth-of-type(3) > .bx-wrapper .bx-controls .bx-controls-direction a,
+    .indexContainer > div:nth-of-type(5) > .bx-wrapper .bx-controls .bx-controls-direction a{
         width: 14px; height: 25px; background-size: 14px 25px;
     }
     .indexContainer > div:nth-of-type(4){
