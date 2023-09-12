@@ -1042,7 +1042,7 @@
         padding-left: 45px;
     }
     .pairingContainer aside ul:last-of-type li input:checked + label{
-        background: url('../images/bul_check.png') no-repeat left;
+        background: url('../images/bul_check.png') no-repeat left; background-size: 20px;
     }
     /* ? pairing detail */
 
@@ -1548,7 +1548,7 @@
         width: 100%; margin-bottom: 20px;
     }
     .cartlistContainer div .summary ul li{
-        float: left; width: 50px; margin-left: 15px;
+        float: left; width: 15%; margin-left: 2%;
     }
     .cartlistContainer div .summary ul li:first-of-type{
         margin-left: 0;

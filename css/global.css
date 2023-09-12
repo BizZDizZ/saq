@@ -380,9 +380,6 @@ input:-webkit-autofill{
     footer > div:last-of-type > div:last-of-type div h4{
         margin-top: 25px; font-size: 14px; font-weight: 700;
     }
-    footer > div:last-of-type > div:last-of-type div:last-of-type{
-        max-width: 590px; margin-left: auto;
-    }
     footer > div:last-of-type > div:last-of-type div ul{
         margin: 10px 0 20px;
     }
@@ -704,16 +701,19 @@ input:-webkit-autofill{
         margin-top: 30px; font-size: 14px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type div:last-of-type{
-        max-width: 590px; margin-left: auto;
+        max-width: 525px; margin-left: auto;
     }
     footer > div:last-of-type > div:last-of-type div ul{
         margin: 10px 0 20px;
     }
+    footer > div:last-of-type > div:last-of-type div ul:after{
+        clear: both; content: ''; display: block;
+    }
     footer > div:last-of-type > div:last-of-type div ul li{
-        display: inline-block; width: 48px; height: 32px; text-indent: -9999px;
+        float: left; width: 48px; height: 32px; text-indent: -9999px;
         background-position: center; background-repeat: no-repeat;
     }
-    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 6px;}
+    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 5px;}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(3){background-image: url('../images/ico_Mastercard.png')}
@@ -996,16 +996,16 @@ input:-webkit-autofill{
         margin-top: 18px; font-size: 14px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type div:last-of-type{
-        max-width: 590px; margin-left: auto;
+        max-width: 525px; margin-left: auto;
     }
     footer > div:last-of-type > div:last-of-type div ul{
         margin: 10px 0 70px;
     }
     footer > div:last-of-type > div:last-of-type div ul li{
-        display: inline-block; width: 48px; height: 32px; text-indent: -9999px;
+        float: left; width: 48px; height: 32px; text-indent: -9999px;
         background-position: center; background-repeat: no-repeat;
     }
-    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 6px;}
+    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 5px;}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(3){background-image: url('../images/ico_Mastercard.png')}
