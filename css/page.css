@@ -5120,10 +5120,10 @@
 
     .wineContainer{
         margin: 0 auto; max-width: 1440px; padding-top: 300px;
-    }    
+    }
     .wineContainer .bx-wrapper:first-of-type,
     .wineContainer div:first-of-type{
-        width: 50%; float: left;
+        width: 48%; float: left; margin-left: 2%;
     }
     .wineContainer div:first-of-type ul{
         display: flex;
@@ -5135,7 +5135,7 @@
         width: 100%;
     }
     .wineContainer > div:nth-of-type(2){
-        float: left; width: 47%; margin-left: 3%;
+        float: left; width: 45%; margin: 0 2% 0 3%;
     }
     .wineContainer > div:nth-of-type(2) b{
         display: block; margin-bottom: 35px;
@@ -5188,10 +5188,10 @@
         display: block; margin-bottom: 300px;
     }
     .wineContainer > div:last-of-type h3{
-        margin: 1380px 0 75px 1%;
+        margin: 1380px 2% 75px;
     }
     .wineContainer .bx-wrapper:last-of-type{
-        width: 100%; margin-bottom: 200px;
+        width: 96%; margin: 0 2% 200px;
     }
     .wineContainer .bx-wrapper:last-of-type .discoverslider li a img{
         margin-bottom: 20px;
@@ -5217,11 +5217,11 @@
         max-width: 1440px; margin: 0 auto; display: flex;
     }
     .suggestContainer h3{
-        display: block; background-color: #ffffff; box-sizing: border-box;
-        float: left; width: 25%; align-self: stretch; padding: 110px 0 0 1%; line-height: 40px;
+        display: block; background-color: #ffffff; box-sizing: border-box; margin-left: 2%;
+        float: left; width: 25%; align-self: stretch; padding: 110px 1% 0; line-height: 40px;
     }
     .suggestContainer ul{
-        float: left; width: 75%; margin: 110px 0; box-sizing: border-box;
+        float: left; width: 71%; margin: 110px 2% 110px 0; box-sizing: border-box;
     }
     .suggestContainer ul li{
         float: left; margin-left: 2%; width: 31.3%; background-color: #ffffff;
