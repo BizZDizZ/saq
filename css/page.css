@@ -980,19 +980,19 @@
         position: relative; box-sizing: border-box; margin: 30px 2% 0; width: 96%; display: block;
     }
     .pairingContainer > div mark{
-        display: block; margin: 0 25px 25px;
+        display: block; margin: 0 10px 25px;
     }
     .pairingContainer > div mark span{
         margin-left: 20px;
     }
     .pairingContainer > div h2{
-        margin: 0 25px 25px;
+        margin: 0 10px 25px;
     }
     .pairingContainer > div > img{
         width: 200px; height: 200px; object-fit: cover; border-radius: 100px; margin: 0 auto 25px; display: block;
     }
     .pairingContainer > div div h3{
-        line-height: 50px; width: 225px; margin: 0 0 35px -10%; padding-left: 40px;
+        line-height: 50px; width: 225px; margin: 0 0 35px -30px; padding-left: 40px;
         background-color: #ff0055;
     }
     .pairingContainer > div div ol{
@@ -3136,7 +3136,7 @@
         margin-top: 265px;
     }
     .pairingContainer > div div h3{
-        line-height: 60px; width: 225px; margin: 0 0 45px -11%; padding-left: 75px;
+        line-height: 60px; width: 225px; margin: 0 0 45px -60px; padding-left: 60px;
         background-color: #ff0055;
     }
     .pairingContainer > div div ol{
