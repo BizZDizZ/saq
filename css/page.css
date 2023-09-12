@@ -5244,9 +5244,12 @@
     /* ? suggest */
 
     .pairingContainer{
-        margin: 250px auto 0; max-width: 1440px; padding: 45px 0;
+        margin: 250px auto 0; max-width: 1382px; padding: 45px 0;
         background: linear-gradient(to bottom, #5b001e, #7e002b);
         border-radius: 35px; display: flex;
+    }
+    .pairingContainer > *{
+        margin: 0 auto;
     }
     .pairingContainer > div{
         float: left; width: 54%; position: relative; box-sizing: border-box;
