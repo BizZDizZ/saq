@@ -1383,7 +1383,7 @@
     .accountdetailContainer #birthDay,
     .accountdetailContainer #birthMonth,
     .accountdetailContainer #birthYear{
-        height: fit-content; border: none; box-sizing: border-box;
+        height: fit-content; border: none; box-sizing: border-box; padding: 0;
     }
     .accountdetailContainer #firstName:focus,
     .accountdetailContainer #lastName:focus,
@@ -3522,7 +3522,7 @@
     .accountdetailContainer #birthDay,
     .accountdetailContainer #birthMonth,
     .accountdetailContainer #birthYear{
-        height: fit-content; border: none; box-sizing: border-box;
+        height: fit-content; border: none; box-sizing: border-box; padding: 0;
     }
     .accountdetailContainer #firstName:focus,
     .accountdetailContainer #lastName:focus,
@@ -5656,7 +5656,7 @@
     .accountdetailContainer #birthDay,
     .accountdetailContainer #birthMonth,
     .accountdetailContainer #birthYear{
-        height: fit-content; border: none; box-sizing: border-box; 
+        height: fit-content; border: none; box-sizing: border-box; padding: 0;
     }
     .accountdetailContainer #firstName:focus,
     .accountdetailContainer #lastName:focus,
