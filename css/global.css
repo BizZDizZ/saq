@@ -204,7 +204,7 @@ input:-webkit-autofill{
         display: none;
     }
     header > div input{
-        background: url('../images/ico_menu.png') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 20px; padding: 0;
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 20px; padding: 0;
         background-position: center; border: none; text-indent: -9999px;
     }
     header > div h1{
@@ -217,10 +217,10 @@ input:-webkit-autofill{
         right: 2%; top: 20px;
     }
     header > div ul li{
-        display: inline-block; width: 15px; height: 15px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat;
+        display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat; background-size: 20px;
     }
-    header > div ul li:nth-child(1){background-image: url('../images/ico_search.png');}
+    header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg');}
     header > div ul li:nth-child(2){display: none;}
     header > div ul li:nth-child(3){display: none;}
     header > div ul li:nth-child(4){display: none;}
@@ -381,13 +381,12 @@ input:-webkit-autofill{
         margin-top: 25px; font-size: 14px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 20px;
+        margin: 10px 0 20px; display: flex; flex-wrap: wrap;
     }
     footer > div:last-of-type > div:last-of-type div ul li{
-        display: inline-block; width: 44px; height: 30px; text-indent: -9999px;
+        width: 42px; height: 30px; text-indent: -9999px; margin-right: 10px;
         background-position: center; background-repeat: no-repeat; margin-bottom: 10px;
     }
-    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 10px;}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
     footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(3){background-image: url('../images/ico_Mastercard.png')}
@@ -523,7 +522,7 @@ input:-webkit-autofill{
         left: 2%; display: none;
     }
     header > div input{
-        background: url('../images/ico_menu.png') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 35px; padding: 0;
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 35px; padding: 0;
         background-position: center; border: none; text-indent: -9999px;
     }
     header > div h1{
@@ -536,13 +535,13 @@ input:-webkit-autofill{
         right: 2%; top: 35px;
     }
     header > div ul li{
-        display: inline-block; width: 15px; height: 15px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat;
+        display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat; background-size: 20px;
     }
-    header > div ul li:not(:first-child){margin-left: 15px;}
-    header > div ul li:nth-child(1){background-image: url('../images/ico_search.png');}
+    header > div ul li:not(:first-child){margin-left: 10px;}
+    header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg');}
     header > div ul li:nth-child(2){display: none;}
-    header > div ul li:nth-child(3){background-image: url('../images/ico_cart.png');}
+    header > div ul li:nth-child(3){background-image: url('../images/ico_cart.svg');}
     header > div ul li:nth-child(4){display: none;}
     header > nav{
         display: none;
@@ -832,14 +831,17 @@ input:-webkit-autofill{
         right: 2%;
     }
     header > div ul li{
-        display: inline-block; width: 15px; height: 15px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat;
+        display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
+        background-position: center; background-repeat: no-repeat; background-size: 20px;
     }
-    header > div ul li:not(:first-child){margin-left: 15px;}
-    header > div ul li:nth-child(1){background-image: url('../images/ico_search.png'); cursor: pointer;}
-    header > div ul li:nth-child(2){background-image: url('../images/ico_wishlist.png');}
-    header > div ul li:nth-child(3){background-image: url('../images/ico_cart.png');}
-    header > div ul li:nth-child(4){background-image: url('../images/ico_account.png'); cursor: pointer;}
+    header > div ul li:not(:first-child){margin-left: 10px;}
+    header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg'); cursor: pointer;}
+    header > div ul li:nth-child(2){background-image: url('../images/ico_wishlist.svg');}
+    header > div ul li:nth-child(3){background-image: url('../images/ico_cart.svg');}
+    header > div ul li:nth-child(4){background-image: url('../images/ico_account.svg'); cursor: pointer;}
+    header > div ul li a{
+        height: 20px;
+    }
     header > nav ul{
         text-align: center;
     }

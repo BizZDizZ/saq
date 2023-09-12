@@ -142,11 +142,9 @@
     .articleContainer ul li a,
     .articleContainer.cocktail div:nth-of-type(2) div strong,
     .aboutusContainer.contact h3,
-    .aboutusContainer.FAQ strong,
-    .aboutusContainer.FAQ h4{
+    .aboutusContainer.FAQ strong{
         font-size: 16px; font-weight: 700;
     }
-
     .wishContainer > div > ul li .fillBtn{
         font-size: 18px; font-weight: 400;
     }
@@ -154,7 +152,8 @@
         font-size: 18px; font-weight: 500;
     }
     #payEndPopup h4,
-    #contactEndPopup h3{
+    #contactEndPopup h3,
+    .aboutusContainer.FAQ h4{
         font-size: 18px; font-weight: 700;
     }
     .wineContainer > div:nth-of-type(2) a{
@@ -1019,9 +1018,9 @@
     .pairingContainer aside ul:first-of-type li{
         padding-left: 45px; line-height: 25px;
     }
-    .pairingContainer aside ul:first-of-type li:nth-of-type(1){background: url('../images/bul_preparation.png') no-repeat left; margin-bottom: 20px;}
-    .pairingContainer aside ul:first-of-type li:nth-of-type(2){background: url('../images/bul_cookingtime.png') no-repeat left; margin-bottom: 20px;}
-    .pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.png') no-repeat left; margin-bottom: 0;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(1){background: url('../images/bul_preparation.svg') no-repeat left; margin-bottom: 20px;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(2){background: url('../images/bul_cookingtime.svg') no-repeat left; margin-bottom: 20px;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.svg') no-repeat left; margin-bottom: 0;}
     .pairingContainer aside h3{
         margin-bottom: 30px;
     }
@@ -2076,7 +2075,7 @@
         padding-left: 5%; position: relative;
     }
     .aboutusContainer.history ol li div:before{
-        position: absolute; content: ''; width: 16px; height: 16px; border-radius: 50%; left: 0; top: 0;
+        position: absolute; content: ''; width: 12px; height: 12px; border-radius: 50%; left: 0; top: 0;
         border: 1px solid #000000; background-color: #000000; transform: translate(-50%, -50%);
     }
     .aboutusContainer.history ol li div strong{
@@ -2282,7 +2281,6 @@
     }
     .articleContainer ul li h3,
     .paymentContainer > div > div > h3,
-    .aboutusContainer.FAQ h4,
     .aboutusContainer.FAQ strong,
     .aboutusContainer.profile > div strong{
         font-size: 20px; font-weight: 700;
@@ -2290,6 +2288,9 @@
     .cartlistContainer div ul li div a strong,
     .cartlistContainer div aside h4{
         font-size: 22px; font-weight: 600;
+    }
+    .aboutusContainer.FAQ h4{
+        font-size: 22px; font-weight: 700;
     }
     .wineContainer > div:nth-of-type(2) table tbody td,
     .loginContainer div form a{
@@ -3158,9 +3159,9 @@
     .pairingContainer aside ul:first-of-type li{
         padding-left: 45px; line-height: 25px;
     }
-    .pairingContainer aside ul:first-of-type li:nth-of-type(1){background: url('../images/bul_preparation.png') no-repeat left; margin-bottom: 35px;}
-    .pairingContainer aside ul:first-of-type li:nth-of-type(2){background: url('../images/bul_cookingtime.png') no-repeat left; margin-bottom: 35px;}
-    .pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.png') no-repeat left; margin-bottom: 0;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(1){background: url('../images/bul_preparation.svg') no-repeat left; margin-bottom: 35px;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(2){background: url('../images/bul_cookingtime.svg') no-repeat left; margin-bottom: 35px;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.svg') no-repeat left; margin-bottom: 0;}
     .pairingContainer aside h3{
         margin-bottom: 40px;
     }
@@ -4226,7 +4227,7 @@
         padding-left: 3%; align-self: stretch; position: relative;
     }
     .aboutusContainer.history ol li div:before{
-        position: absolute; content: ''; width: 16px; height: 16px; border-radius: 50%; left: 0; top: 0;
+        position: absolute; content: ''; width: 14px; height: 14px; border-radius: 50%; left: 0; top: 0;
         border: 1px solid #000000; background-color: #000000; transform: translate(-50%, -50%);
     }
     .aboutusContainer.history ol li div strong{
@@ -4405,7 +4406,6 @@
         font-size: 20px; font-weight: 400;
     }
     .paymentContainer > div > div > h3,
-    .aboutusContainer.FAQ h4,
     .aboutusContainer.FAQ strong,
     .aboutusContainer.profile > div strong{
         font-size: 20px; font-weight: 700;
@@ -4453,6 +4453,9 @@
     .cartlistContainer h3,
     .paymentContainer h2{
         font-size: 26px; font-weight: 600;
+    }
+    .aboutusContainer.FAQ h4{
+        font-size: 26px; font-weight: 700;
     }
     .pairingContainer > div div h3,
     .pairingContainer aside h3,
@@ -5290,9 +5293,9 @@
     .pairingContainer aside ul:first-of-type li{
         padding-left: 45px; line-height: 25px;
     }
-    .pairingContainer aside ul:first-of-type li:nth-of-type(1){background: url('../images/bul_preparation.png') no-repeat left; margin-bottom: 35px;}
-    .pairingContainer aside ul:first-of-type li:nth-of-type(2){background: url('../images/bul_cookingtime.png') no-repeat left; margin-bottom: 35px;}
-    .pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.png') no-repeat left; margin-bottom: 0;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(1){background: url('../images/bul_preparation.svg') no-repeat left; margin-bottom: 35px;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(2){background: url('../images/bul_cookingtime.svg') no-repeat left; margin-bottom: 35px;}
+    .pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.svg') no-repeat left; margin-bottom: 0;}
     .pairingContainer aside h3{
         margin-bottom: 40px;
     }
