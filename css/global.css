@@ -415,52 +415,13 @@ input:-webkit-autofill{
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
     #searchPanel{
-        background-color: #ffffff; color: #cbcbcb; width: 100%;
-        position: fixed; top: 130px; z-index: 51; border-bottom: 1px solid #cbcbcb;
-    }
-    #searchPanel div{
-        max-width: 1440px; margin: 0 auto; position: relative;
-    }
-    #searchPanel label{
-        display: none;
+        top: 130px;
     }
     #searchPanel input[type='text']{
-        border: none; border-bottom: 3px solid #000000;
-        font-size: 25px; font-weight: 400; width: 96%;
-        margin: 30px 2%; padding: 0 10px; box-sizing: border-box;
-    }
-    #searchPanel input[type='text']:focus{
-        outline: none;
+        margin: 30px 2%; padding: 0 10px;
     }
     #searchPanel input[type='button']{
-        background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
-        padding: 0; width: 25px; height: 25px; position: absolute; right: 25px; top: 35px; text-indent: -9999px;
-        border: none; background-color: #ffffff;
-    }
-    #searchPanel input[type='submit']{
-        display: none;
-    }
-
-    #accountPanel{
-        z-index: 101; box-sizing: border-box; position: fixed; top: 100px; width: 100%;
-    }
-    #accountPanel div{
-        position: relative; max-width: 1440px; margin: 0 auto;        
-    }
-    #accountPanel div form{
-        background-color: #ffffff; width: 180px; border-radius: 3px;
-        position: absolute; right: 0; background-position: 25px; border: 1px solid #cbcbcb;
-    }
-    #accountPanel div a{
-        color: #333333; margin: 0 20px; line-height: 50px; box-sizing: border-box; display: block;
-    }
-    #accountPanel div a:last-of-type{
-        border-bottom: 1px solid #cbcbcb;
-    }
-    #accountPanel div input{
-        background: url('../images/ico_logout.png') no-repeat left; color: #333333; display: block;
-        background-size: 20px; padding: 0 0 0 30px; line-height: 50px; box-sizing: border-box; border: none;
-        margin: 0 20px;
+        right: 25px; top: 35px;
     }
 
     #menuPanel{
@@ -492,15 +453,266 @@ input:-webkit-autofill{
         background-image: url('../images/ico_login.png');
     }
 
-    header > div{
-        max-width: 1440px; margin: 0 auto;
-    }
     header{
-        background-color: #000000; padding-bottom: 20px; position: fixed; width: 100%; left: 0; top: 0;
-        font-size: 14px; font-weight: 600; color: #ffffff; z-index: 100;
+        padding-bottom: 20px;
     }
-    header a{
-        color: inherit; display: block;
+    header > div span{
+        display: none;
+    }
+    header > div input{
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 35px; padding: 0;
+        background-position: center; border: none; text-indent: -9999px;
+    }
+    header > div h1{
+        max-width: 100px; margin: 0 auto;
+    }
+    header > div ul li:nth-child(2){display: none;}
+    header > div ul li:nth-child(4){display: none;}
+    header > nav{
+        display: none;
+    }
+    /* ? header */
+
+    footer > div:first-of-type > div{
+        padding: 30px 0 40px;
+    }
+    footer > div:first-of-type > div > div:first-of-type{
+        margin: 0 2% 65px;
+    }
+    footer > div:first-of-type > div > div:last-of-type{
+        margin: 0 2%;
+    }
+    footer > div:first-of-type > div form h4,
+    footer > div:first-of-type > div:last-of-type h3{
+        margin-bottom: 15px;
+    }
+    footer > div:first-of-type > div form p{
+        margin-bottom: 20px;
+    }
+    footer > div:first-of-type > div form input{
+        margin-bottom: 25px;
+    }
+    footer > div:first-of-type > div:last-child address span{
+        display: inline-block; line-height: 24px;
+    }
+    footer > div:first-of-type > div:last-child address > span:last-of-type{
+        margin-left: 4%;
+    }
+    footer > div:first-of-type > div:last-child address div{
+        margin-left: 5%; line-height: 24px; min-width: 260px; float: right;
+    }
+    footer > div:last-of-type{
+        padding: 0 2% 20px;
+    }
+    footer > div:last-of-type > div:not(:last-of-type){
+        border-bottom: 1px solid #cbcbcb;
+    }
+    footer > div:last-of-type > div h3{
+        padding: 35px 0;
+    }
+    footer > div:last-of-type > div:not(:last-of-type) h3{
+        background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 30px;
+    }
+    footer > div:last-of-type > div:not(:last-of-type).active h3{
+        background-image: url('../images/bul_arrow_up.png');
+    }
+    footer > div:last-of-type > div:not(:last-of-type) *:not(h3){
+        display: none;
+    }
+    footer > div:last-of-type > div:not(:last-of-type).active *:not(h3){
+        display: block;
+    }
+    footer > div:last-of-type > div ol li:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    footer > div:last-of-type > div ol li:last-of-type{
+        margin-bottom: 35px;
+    }
+    footer > div:last-of-type > div:last-of-type p{
+        margin-bottom: 20px;
+    }
+    footer > div:last-of-type > div:last-of-type div h4{
+        margin-top: 30px;
+    }
+    footer > div:last-of-type > div:last-of-type div ul{
+        margin: 10px 0 20px;
+    }
+    /* ? Footer */
+}
+/* ? Tablet */
+
+@media screen and (min-width: 1280px){
+    #searchPanel{
+        top: 200px;
+    }
+    #searchPanel div{
+        max-width: 1440px;
+    }
+    #searchPanel input[type='text']{
+        margin: 40px 2%; padding: 0 15px;
+    }
+    #searchPanel input[type='button']{
+        right: 35px; top: 45px; cursor: pointer;
+    }
+
+    #accountPanel{
+        z-index: 101; box-sizing: border-box; position: fixed; top: 100px; width: 100%;
+    }
+    #accountPanel div{
+        position: relative; max-width: 1440px; margin: 0 auto;
+    }
+    #accountPanel div form{
+        background-color: #ffffff; width: 200px; border-radius: 3px; padding: 10px 0; box-sizing: border-box;
+        position: absolute; right: 2%; background-position: 25px; border: 1px solid #cbcbcb;
+    }
+    #accountPanel div a{
+        color: #333333; margin: 0 20px; line-height: 50px; box-sizing: border-box; display: block;
+    }
+    #accountPanel div a:last-of-type{
+        border-bottom: 1px solid #cbcbcb;
+    }
+    #accountPanel div input{
+        background: url('../images/ico_logout.png') no-repeat left; color: #333333; display: block;
+        background-size: 20px; padding: 0 0 0 30px; line-height: 50px; box-sizing: border-box; border: none;
+        margin: 0 20px; cursor: pointer;
+    }
+
+    header{
+        padding-bottom: 25px;
+    }
+    header > div{
+        max-width: 1440px;
+    }
+    header > div span{
+        left: 2%;
+    }
+    header > div input{
+        display: none;
+    }
+    header > div h1{
+        max-width: 179px; margin: 0 auto 20px;
+    }
+    header > div ul li:nth-child(1){cursor: pointer;}
+    header > div ul li:nth-child(4){cursor: pointer;}
+    header > div ul li:nth-child(4).closePanel{background-image: url('../images/bul_close_white.svg');}
+    header > div ul li a{
+        height: 20px;
+    }
+    header > nav ul{
+        text-align: center;
+    }
+    header > nav ul li{
+        display: inline-block;
+    }
+    header > nav ul li:not(:first-child){
+        margin-left: 4%;
+    }
+    header > nav ul li a:hover{
+        color: #ff0055;
+    }
+    /* ? header */
+
+    footer > ul,
+    footer > div:first-of-type > div,
+    footer > div:last-of-type{
+        max-width: 1440px;
+    }
+    footer > div:first-of-type > div{
+        padding: 50px 0 60px;
+    }
+    footer > div:first-of-type > div > div{
+        float: left; box-sizing: border-box;
+    }
+    footer > div:first-of-type > div > div:first-of-type{
+        width: 33%; margin-left: 2%;
+    }
+    footer > div:first-of-type > div > div:last-of-type{
+        width: 33%; margin: 0 2% 0 30%;
+    }
+    footer > div:first-of-type > div form h4,
+    footer > div:first-of-type > div:last-of-type h3{
+        margin-bottom: 20px;
+    }
+    footer > div:first-of-type > div form p{
+        margin-bottom: 25px; max-width: 350px;
+    }
+    footer > div:first-of-type > div form input{
+        margin-bottom: 35px;
+    }
+    footer > div:first-of-type > div form input[type='submit']{
+        cursor: pointer;
+    }
+    footer > div:first-of-type > div:last-child address > span:last-of-type{
+        margin-left: 30px;
+    }
+    footer > div:first-of-type > div:last-child address div{
+        display: block; margin: 120px 0 0 auto; max-width: 280px;
+    }
+    footer > div:first-of-type > div:last-child address div > span{
+        margin-left: 15px;
+    }
+    footer > div:last-of-type{
+        padding: 40px 0 20px; max-width: 1440px;
+    }
+    footer > div:last-of-type > div{
+        float: left;
+    }
+    footer > div:last-of-type > div:not(:last-of-type){
+        width: 21%; box-sizing: border-box; margin-left: 2%;
+    }
+    footer > div:last-of-type > div:last-of-type{
+        width: 50%; box-sizing: border-box; margin: 0 2%;
+    }
+    footer > div:last-of-type > div h3{
+        margin-bottom: 40px;
+    }
+    footer > div:last-of-type > div ol li:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    footer > div:last-of-type > div:last-of-type p{
+        margin-bottom: 25px;
+    }
+    footer > div:last-of-type > div:last-of-type div h4{
+        margin-top: 20px;
+    }
+    footer > div:last-of-type > div:last-of-type div ul{
+        margin: 10px 0 70px;
+    }
+    /* ? Footer */
+}
+/* ? Desktop */
+
+@media screen and (min-width: 768px){
+    #searchPanel{
+        background-color: #ffffff; color: #cbcbcb; width: 100%;
+        position: fixed; z-index: 51; border-bottom: 1px solid #cbcbcb;
+    }
+    #searchPanel div{
+        margin: 0 auto; position: relative;
+    }
+    #searchPanel label{
+        display: none;
+    }
+    #searchPanel input[type='text']{
+        border: none; border-bottom: 3px solid #000000;
+        font-size: 25px; font-weight: 400; width: 96%; box-sizing: border-box;
+    }
+    #searchPanel input[type='text']:focus{
+        outline: none;
+    }
+    #searchPanel input[type='button']{
+        background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
+        padding: 0; width: 25px; height: 25px; position: absolute; text-indent: -9999px;
+        border: none; background-color: #ffffff;
+    }
+    #searchPanel input[type='submit']{
+        display: none;
+    }
+
+
+    header{
+        background-color: #000000; position: fixed; width: 100%; left: 0; top: 0;
+        font-size: 14px; font-weight: 600; color: #ffffff; z-index: 100;
     }
     header > ol{
         background-color: #656565; text-align: center; padding: 10px 0;
@@ -512,27 +724,20 @@ input:-webkit-autofill{
     header > ol li.active{
         display: inline-block;
     }
+    header a{
+        color: inherit; display: block;
+    }
     header > div{
-        position: relative; padding-top: 25px;
+        margin: 0 auto; position: relative; padding-top: 25px;
     }
     header > div > *:not(h1){
         position: absolute; top: 30px;
-    }
-    header > div span{
-        left: 2%; display: none;
-    }
-    header > div input{
-        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 35px; padding: 0;
-        background-position: center; border: none; text-indent: -9999px;
-    }
-    header > div h1{
-        max-width: 100px; margin: 0 auto;
     }
     header > div h1 a img{
         width: 100%;
     }
     header > div ul{
-        right: 2%; top: 35px;
+        right: 2%;
     }
     header > div ul li{
         display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
@@ -540,12 +745,9 @@ input:-webkit-autofill{
     }
     header > div ul li:not(:first-child){margin-left: 10px;}
     header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg');}
-    header > div ul li:nth-child(2){display: none;}
+    header > div ul li:nth-child(2){background-image: url('../images/ico_wishlist.svg');}
     header > div ul li:nth-child(3){background-image: url('../images/ico_cart.svg');}
-    header > div ul li:nth-child(4){display: none;}
-    header > nav{
-        display: none;
-    }
+    header > div ul li:nth-child(4){background-image: url('../images/ico_account.svg');}
     /* ? header */
 
     footer > div:first-of-type > div form input,
@@ -571,7 +773,7 @@ input:-webkit-autofill{
     footer > ul,
     footer > div:first-of-type > div,
     footer > div:last-of-type{
-        max-width: 1440px; margin: 0 auto; box-sizing: border-box;
+        margin: 0 auto; box-sizing: border-box;
     }
     footer li{
         list-style: none;
@@ -591,7 +793,7 @@ input:-webkit-autofill{
         font-size: 16px; font-weight: 300; color: #000; display: block; text-align: center;
     }
     footer > ul li a:before{
-        display: block; max-width: 150px; margin: 0 auto;
+        display: block; margin: 0 auto;
     }
     footer > ul li:nth-child(1) a:before{content: url('../images/img_footer_01.png');}
     footer > ul li:nth-child(2) a:before{content: url('../images/img_footer_02.png');}
@@ -600,30 +802,12 @@ input:-webkit-autofill{
     footer > div:first-of-type{
         background-color: #f0f0f0;
     }
-    footer > div:first-of-type > div{
-        padding: 30px 0 40px;
-    }
-    footer > div:first-of-type > div > div:first-of-type{
-        margin: 0 2% 65px;
-    }
-    footer > div:first-of-type > div > div:last-of-type{
-        margin: 0 2%;
-    }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333333;
-    }
-    footer > div:first-of-type > div form p{
-        margin-bottom: 20px;
-    }
-    footer > div:first-of-type > div form label{
-        display: none;
-    }
-    footer > div:first-of-type > div form input{
-        margin-bottom: 25px;
+        font-size: 20px; font-weight: 600; color: #333333;
     }
     footer > div:first-of-type > div form input[type='email']{
-        width: 300px; height: 40px; padding-left: 14px; box-sizing: border-box; border: 1px solid #cbcbcb;
+        width: 300px; height: 40px; padding-left: 15px; box-sizing: border-box; border: 1px solid #cbcbcb;
     }
     footer > div:first-of-type > div form input[type='submit']{
         width: 110px; height: 40px; box-sizing: border-box; color: #656565; border: 1px solid #656565;
@@ -643,48 +827,11 @@ input:-webkit-autofill{
     footer > div:first-of-type > div:last-child address{
         font-style: normal;
     }
-    footer > div:first-of-type > div:last-child address span{
-        display: inline-block; line-height: 24px;
-    }
-    footer > div:first-of-type > div:last-child address > span:last-of-type{
-        margin-left: 4%;
-    }
-    footer > div:first-of-type > div:last-child address div{
-        margin-left: 5%; line-height: 24px; min-width: 260px; float: right;
-    }
-    footer > div:first-of-type > div:last-child address div span{
+    footer > div:first-of-type > div:last-child address div > span{
         margin-left: 15px;
     }
-
-    footer > div:last-of-type{
-        padding: 0 2% 20px; max-width: 1440px;
-    }
-    footer > div:last-of-type > div:not(:last-of-type){
-        border-bottom: 1px solid #cbcbcb;
-    }
     footer > div:last-of-type > div h3{
-        font-size: 16px; font-weight: 700; padding: 35px 0;
-    }
-    footer > div:last-of-type > div:not(:last-of-type) h3{
-        background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 30px;
-    }
-    footer > div:last-of-type > div:not(:last-of-type).active h3{
-        background-image: url('../images/bul_arrow_up.png');
-    }
-    footer > div:last-of-type > div:not(:last-of-type) *:not(h3){
-        display: none;
-    }
-    footer > div:last-of-type > div:not(:last-of-type).active *:not(h3){
-        display: block;
-    }
-    footer > div:last-of-type > div ol li:not(:last-of-type){
-        margin-bottom: 20px;
-    }
-    footer > div:last-of-type > div ol li:last-of-type{
-        margin-bottom: 35px;
-    }
-    footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 20px;
+        font-size: 16px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type p{
         line-height: 20px;
@@ -697,13 +844,10 @@ input:-webkit-autofill{
         margin-top: 20px;
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 30px; font-size: 14px; font-weight: 700;
+        font-size: 14px; font-weight: 700;
     }
-    footer > div:last-of-type > div:last-of-type div:last-of-type{
+    footer > div:last-of-type > div:last-of-type div{
         max-width: 525px; margin-left: auto;
-    }
-    footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 20px;
     }
     footer > div:last-of-type > div:last-of-type div ul:after{
         clear: both; content: ''; display: block;
@@ -735,307 +879,5 @@ input:-webkit-autofill{
     footer > div:last-of-type > div:last-of-type span img:last-of-type{
         width: 22px; height: 35px; margin-left: 5px;
     }
-    /* ? Footer */
-}
-/* ? Tablet */
-
-@media screen and (min-width: 1280px){
-    #searchPanel{
-        background-color: #ffffff; color: #cbcbcb; width: 100%;
-        position: fixed; top: 200px; z-index: 51; border-bottom: 1px solid #cbcbcb;
-    }
-    #searchPanel div{
-        max-width: 1440px; margin: 0 auto; position: relative;
-    }
-    #searchPanel label{
-        display: none;
-    }
-    #searchPanel input[type='text']{
-        border: none; border-bottom: 3px solid #000000;
-        font-size: 30px; font-weight: 400; width: 96%;
-        margin: 40px 2%; padding: 0 15px; box-sizing: border-box;
-    }
-    #searchPanel input[type='text']:focus{
-        outline: none;
-    }
-    #searchPanel input[type='button']{
-        background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
-        padding: 0; width: 25px; height: 25px; position: absolute; right: 35px; top: 50px; text-indent: -9999px;
-        border: none; background-color: #ffffff; cursor: pointer;
-    }
-    #searchPanel input[type='submit']{
-        display: none;
-    }
-
-    #accountPanel{
-        z-index: 101; box-sizing: border-box; position: fixed; top: 100px; width: 100%;
-    }
-    #accountPanel div{
-        position: relative; max-width: 1440px; margin: 0 auto;
-    }
-    #accountPanel div form{
-        background-color: #ffffff; width: 200px; border-radius: 3px; padding: 10px 0; box-sizing: border-box;
-        position: absolute; right: 2%; background-position: 25px; border: 1px solid #cbcbcb;
-    }
-    #accountPanel div a{
-        color: #333333; margin: 0 20px; line-height: 50px; box-sizing: border-box; display: block;
-    }
-    #accountPanel div a:last-of-type{
-        border-bottom: 1px solid #cbcbcb;
-    }
-    #accountPanel div input{
-        background: url('../images/ico_logout.png') no-repeat left; color: #333333; display: block;
-        background-size: 20px; padding: 0 0 0 30px; line-height: 50px; box-sizing: border-box; border: none;
-        margin: 0 20px; cursor: pointer;
-    }
-
-    header > div{
-        max-width: 1440px; margin: 0 auto;
-    }
-    header{
-        background-color: #000000; padding-bottom: 25px; position: fixed; width: 100%; left: 0; top: 0;
-        font-size: 14px; font-weight: 600; color: #ffffff; z-index: 100;
-    }
-    header a{
-        color: inherit; display: block;
-    }
-    header > ol{
-        background-color: #656565; text-align: center; padding: 10px 0;
-    }
-    header > ol li{
-        display: none; padding-left: 40px; line-height: 22px;
-        background: url('../images/ico_delivery.png') no-repeat left center;
-    }
-    header > ol li.active{
-        display: inline-block;
-    }
-    header > div{
-        position: relative; padding-top: 25px;
-    }
-    header > div > *:not(h1){
-        position: absolute; top: 30px;
-    }
-    header > div span{
-        left: 2%;
-    }
-    header > div input{
-        display: none;
-    }
-    header > div h1{
-        max-width: 179px; margin: 0 auto 20px;
-    }
-    header > div h1 a img{
-        width: 100%;
-    }
-    header > div ul{
-        right: 2%;
-    }
-    header > div ul li{
-        display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat; background-size: 20px;
-    }
-    header > div ul li:not(:first-child){margin-left: 10px;}
-    header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg'); cursor: pointer;}
-    header > div ul li:nth-child(2){background-image: url('../images/ico_wishlist.svg');}
-    header > div ul li:nth-child(3){background-image: url('../images/ico_cart.svg');}
-    header > div ul li:nth-child(4){background-image: url('../images/ico_account.svg'); cursor: pointer;}
-    header > div ul li:nth-child(4).closePanel{background-image: url('../images/bul_close_white.svg');}
-    header > div ul li a{
-        height: 20px;
-    }
-    header > nav ul{
-        text-align: center;
-    }
-    header > nav ul li{
-        display: inline-block;
-    }
-    header > nav ul li:not(:first-child){
-        margin-left: 4%;
-    }
-    header > nav ul li a:hover{
-        color: #ff0055;
-    }
-    /* ? header */
-
-    footer > div:first-of-type > div form input,
-    footer > div:first-of-type > div form p,
-    footer > div:first-of-type > div:last-child address,
-    footer > div:last-of-type > div ol li,
-    footer > div:last-of-type > div p,
-    footer > div:last-of-type > div > a,
-    footer > div:last-of-type > div span{
-        font-size: 14px; font-weight: 300;
-    }
-    footer > div:first-of-type > div form p,
-    footer > div:first-of-type > div:last-child address span,
-    footer > div:first-of-type > div:last-child address div,
-    footer > div:first-of-type > div:last-child address a{
-        color: #555555;
-    }
-    footer > div:last-of-type > div ol li a,
-    footer > div:last-of-type > div,
-    footer > div:last-of-type > div > a{
-        color: #4f4f4f;
-    }
-    footer > ul,
-    footer > div:first-of-type > div,
-    footer > div:last-of-type{
-        max-width: 1440px; margin: 0 auto; box-sizing: border-box;
-    }
-    footer li{
-        list-style: none;
-    }
-    footer > ul:after,
-    footer > div:first-of-type > div:after,
-    footer > div:last-of-type:after{
-        clear: both; content: ''; display: block;
-    }
-    footer > ul{
-        padding: 155px 0;
-    }
-    footer > ul li{
-        width: 25%; float: left; box-sizing: border-box;
-    }
-    footer > ul li a{
-        font-size: 16px; font-weight: 300; color: #000; display: block; text-align: center;
-    }
-    footer > ul li a:before{
-        display: block; margin: 0 auto;
-    }
-    footer > ul li:nth-child(1) a:before{content: url('../images/img_footer_01.png');}
-    footer > ul li:nth-child(2) a:before{content: url('../images/img_footer_02.png');}
-    footer > ul li:nth-child(3) a:before{content: url('../images/img_footer_03.png');}
-    footer > ul li:nth-child(4) a:before{content: url('../images/img_footer_04.png');}
-    footer > div:first-of-type{
-        background-color: #f0f0f0;
-    }
-    footer > div:first-of-type > div{
-        padding: 50px 0 60px;
-    }
-    footer > div:first-of-type > div > div{
-        float: left; box-sizing: border-box;
-    }
-    footer > div:first-of-type > div > div:first-of-type{
-        width: 33%; margin-left: 2%;
-    }
-    footer > div:first-of-type > div > div:last-of-type{
-        width: 33%; margin: 0 2% 0 30%;
-    }
-    footer > div:first-of-type > div form h4,
-    footer > div:first-of-type > div:last-of-type h3{
-        font-size: 20px; font-weight: 600; margin-bottom: 18px; color: #333333;
-    }
-    footer > div:first-of-type > div form p{
-        margin-bottom: 26px; max-width: 350px;
-    }
-    footer > div:first-of-type > div form label{
-        display: none;
-    }
-    footer > div:first-of-type > div form input{
-        margin-bottom: 36px;
-    }
-    footer > div:first-of-type > div form input[type='email']{
-        width: 300px; height: 40px; padding-left: 15px; box-sizing: border-box; border: 1px solid #cbcbcb;
-    }
-    footer > div:first-of-type > div form input[type='submit']{
-        width: 110px; height: 40px; box-sizing: border-box; color: #656565; border: 1px solid #656565; cursor: pointer;
-    }
-    footer > div:first-of-type > div ul li{
-        display: inline-block; width: 30px; height: 30px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat; background-size: contain;
-    }
-    footer > div:first-of-type > div ul li:not(:first-child){margin-left: 20px;}
-    footer > div:first-of-type > div ul li:nth-child(1){background-image: url('../images/ico_sns_01.png'); background-size: 30px;}
-    footer > div:first-of-type > div ul li:nth-child(2){background-image: url('../images/ico_sns_02.png'); background-size: 30px;}
-    footer > div:first-of-type > div ul li:nth-child(3){background-image: url('../images/ico_sns_03.png'); background-size: 30px;}
-    footer > div:first-of-type > div ul li:nth-child(4){background-image: url('../images/ico_sns_04.png'); background-size: 30px;}
-    footer > div:first-of-type > div ul li a{
-        display: block; width: 100%; height: 100%;
-    }
-    footer > div:first-of-type > div:last-child address{
-        font-style: normal;
-    }
-    footer > div:first-of-type > div:last-child address > span:last-of-type{
-        margin-left: 30px;
-    }
-    footer > div:first-of-type > div:last-child address div{
-        display: block; margin: 120px 0 0 auto; max-width: 280px;
-    }
-    footer > div:first-of-type > div:last-child address div > span{
-        display: inline-block; margin-left: 15px;
-    }
-    footer > div:last-of-type{
-        padding: 40px 0 20px; max-width: 1440px;
-    }
-    footer > div:last-of-type > div{
-        float: left;
-    }
-    footer > div:last-of-type > div:not(:last-of-type){
-        width: 21%; box-sizing: border-box; margin-left: 2%;
-    }
-    footer > div:last-of-type > div:last-of-type{
-        width: 50%; box-sizing: border-box; margin: 0 2%;
-    }
-    footer > div:last-of-type > div h3{
-        font-size: 16px; font-weight: 700; margin-bottom: 40px;
-    }
-    footer > div:last-of-type > div ol li:not(:last-of-type){
-        margin-bottom: 20px;
-    }
-    footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 24px;
-    }
-    footer > div:last-of-type > div:last-of-type p{
-        line-height: 20px;
-    }
-    footer > div:last-of-type > div:last-of-type > a{
-        display: block; margin-left: auto; width: 100px; height: 35px; text-align: center;
-        line-height: 35px; color: #ffffff; background-color: #cbcbcb;
-    }
-    footer > div:last-of-type > div:last-of-type div{
-        margin-top: 20px;
-    }
-    footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 18px; font-size: 14px; font-weight: 700;
-    }
-    footer > div:last-of-type > div:last-of-type div:last-of-type{
-        max-width: 525px; margin-left: auto;
-    }
-    footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 70px;
-    }
-    footer > div:last-of-type > div:last-of-type div ul li{
-        float: left; width: 48px; height: 32px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat;
-    }
-    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 5px;}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(3){background-image: url('../images/ico_Mastercard.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(4){background-image: url('../images/ico_Maestro.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(5){background-image: url('../images/ico_Americanexpress.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(6){background-image: url('../images/ico_Jcb.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(7){background-image: url('../images/ico_Unionpay.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(8){background-image: url('../images/ico_Delta.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(9){background-image: url('../images/ico_Applepay.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){background-image: url('../images/ico_Klarna.png')}
-    footer > div:last-of-type > div:last-of-type div ul li img{
-        width: 48px; height: 32px;
-    }
-    footer > div:last-of-type > div:last-of-type span{
-        display: flex; max-width: 280px; margin-left: auto; align-items: center;
-    }
-    footer > div:last-of-type > div:last-of-type span img:first-of-type{
-        margin-left: 10px;
-    }
-    footer > div:last-of-type > div:last-of-type span img:last-of-type{
-        width: 22px; height: 35px; margin-left: 5px;
-    }
-    /* ? Footer */
-}
-/* ? Desktop */
-
-@media screen and (min-width: 768px){
-
 }
 /* ? Desktop + Tablet */
