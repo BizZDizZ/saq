@@ -2222,40 +2222,7 @@
         color: #333333;
     }
     
-    .indexContainer > div:after,
-    .indexContainer > div:last-of-type div:after,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3):after,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span em:after,
-    .pager:before,
-    .wineContainer > div:after,
-    .pairingContainer:after,
-    .loginContainer div ul:after,
-    .accountContainer:after,
-    .addressbookContainer div:after,
-    .wishContainer > div:after,
-    .wishContainer > div > ul:after,
-    .wishContainer > div > ul li a span:after,
-    .savecardContainer > div:after,
-    .cartlistContainer > div:after,
-    .myorderContainer > div:after,
-    .accountdetailContainer > div:after,
-    .accountdetailContainer > div > ul > li > div:after,
-    .cartlistContainer div ul li:after,
-    .paymentContainer div:nth-of-type(4):after,
-    .articleContainer ul:after,
-    .articleContainer > div figure:after,
-    .articleContainer.holiday > div:last-of-type:after,
-    .articleContainer.quebec > div:not(:first-of-type):after,
-    .aboutusContainer.accessInfo > div:nth-of-type(2):after,
-    .aboutusContainer.accessInfo:after,
-    .aboutusContainer.contact > div:nth-of-type(5):before,
-    .aboutusContainer.contact > div:nth-of-type(5):after,
-    .aboutusContainer.contact > div:nth-of-type(5) > div > div:nth-of-type(2):after,
-    .aboutusContainer.contact > div:nth-of-type(5) > div > div:nth-of-type(4):after,
-    .aboutusContainer.profile > div:nth-of-type(1):after,
-    .aboutusContainer.profile > img:after,
-    .aboutusContainer.profile > div:nth-of-type(2):before,
-    .aboutusContainer.profile:after{
+    .aboutusContainer.profile > div:nth-of-type(1):after{
         clear: both; content: ''; display: block;
     }
     .fillBtn{
@@ -2274,73 +2241,8 @@
         background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
         padding-left: 20px; position: absolute; left: 0; top: 180px;
     }
-    .passwordField,
-    .newpasswordField{
-        position: relative; height: 70px; display: block;
-    }
-    .passwordField > .vActiveBtn,
-    .newpasswordField > .newvActiveBtn{
-        position: absolute; left: 20px; top: 15px; padding: 0; margin: 0;
-        background: url('../images/bul_visiblity_off.png') no-repeat; background-size: 40px 40px;
-        width: 40px; height: 40px; border: none; text-indent: -9999px;
-    }
-    .passwordField.active > .vActiveBtn,
-    .newpasswordField.active > .newvActiveBtn{
-        background-image: url('../images/bul_visiblity.png');
-    }
-    .backtosign{
-        display: block; text-decoration: underline; text-align: center;
-    }
-    .centeral{
-        text-align: center;
-    }
     .bg{
         height: 200px;
-    }
-    #userEmail,
-    #firstName,
-    #lastName,
-    #birthDay,
-    #birthMonth,
-    #birthYear,
-    #phoneNum{
-        padding: 0 15px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
-    }
-    #userPW,
-    #newuserPW{
-        padding: 0 80px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
-    }
-    #birthDay,
-    #birthMonth,
-    #birthYear{
-        text-align: center;
-    }
-    #newAddressPopup{
-        display: none;
-    }
-    #editAddressPopup{
-        display: none;
-    }
-    #deleteAddressPopup{
-        display: none;
-    }
-    #deleteItemPopup{
-        display: none;
-    }
-    mark{
-        background-color: transparent;
-    }
-    mark,
-    em{
-        font-style: normal;
-    }
-    [class*='Container'] li{
-        list-style: none;
-    }
-    input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
     }
 
     .indexContainer{
@@ -2619,7 +2521,7 @@
     /* ? filter */
 
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3){
-        width: 96%; margin: 100px 2%; float: left;
+        width: 96%; margin: 100px 2% 0; float: left;
     }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) label{
         display: none;
@@ -2632,7 +2534,7 @@
         display: flex; flex-flow: row wrap;
     }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li{
-        width: 31.8%; margin-left: 2.3%; display: flex; flex-direction: column; margin-bottom: 50px; justify-content: center;
+        width: 31.8%; margin-left: 2.3%; flex-direction: column; margin-bottom: 50px; justify-content: center;
     }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:nth-of-type(3n+1){
         margin-left: 0;
@@ -2711,7 +2613,7 @@
         margin: 0 auto 50px;
     }
     .wineContainer div:first-of-type ul{
-        display: flex;
+        display: flex; justify-content: center;
     }
     .wineContainer div:first-of-type ul li{
         align-self: center;
@@ -3085,7 +2987,7 @@
     .accountBase{
         margin: 0 auto; padding-top: 180px; position: relative;
     }
-    .accountBase > *:not(.pager){
+    .accountBase > *:not(.pager, h2){
         margin: 0 2%;
     }
     .accountBase h2{
@@ -3405,6 +3307,9 @@
     .paymentContainer{
         margin: 0 auto; max-width: 500px; padding-top: 180px;
     }
+    .paymentContainer .backBtn{
+        left: 2%;
+    }
     .paymentContainer .numbStepper{
         width: 100%; counter-reset: step; margin: 0 auto;
     }
@@ -3609,8 +3514,8 @@
     .articleContainer > h2{
         text-align: center;
     }
-    .articleContainer ul{
-        margin-bottom: 110px; padding-top: 50px;
+    .articleContainer > ul{
+        padding-bottom: 110px; padding-top: 50px;
     }
     .articleContainer ul li{
         width: 32%; float: left; box-sizing: border-box;
@@ -3973,6 +3878,9 @@
     .aboutusContainer.profile img{
         width: 40%; float: right; margin-left: 4%; margin-bottom: 20px;
     }
+    .aboutusContainer.profile > div:nth-of-type(2){
+        margin-bottom: 0;
+    }
     .aboutusContainer.profile > div:nth-of-type(2) > div:nth-of-type(1){
         margin: 0; padding-right: 2%; float: left; width: 33.3%; border-right: 1px solid #cbcbcb; box-sizing: border-box;
     }
@@ -4064,32 +3972,8 @@
         font-size: 200px; font-weight: 700;
     }
     
-    .indexContainer > div:after,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3):after,
-    .wineContainer > div:after,
     .pairingContainer:after,
-    .loginContainer div ul:after,
-    .accountContainer:after,
-    .addressbookContainer div:after,
-    .wishContainer > div:after,
-    .savecardContainer > div:after,
-    .cartlistContainer > div:after,
-    .myorderContainer > div:after,
-    .accountdetailContainer > div:after,
-    .accountdetailContainer > div > ul > li > div:after,
-    .cartlistContainer div ul li:after,
-    .paymentContainer div:nth-of-type(4):after,
-    .articleContainer ul:after,
-    .articleContainer.holiday > div:last-of-type:after,
-    .articleContainer.quebec > div:not(:first-of-type):after,
-    .aboutusContainer.accessInfo > div:nth-of-type(2):after,
-    .aboutusContainer.accessInfo:after,
-    .aboutusContainer.contact > div:nth-of-type(5):before,
-    .aboutusContainer.contact > div:nth-of-type(5):after,
-    .aboutusContainer.contact > div:nth-of-type(5) > div > div:nth-of-type(2):after,
-    .aboutusContainer.contact > div:nth-of-type(5) > div > div:nth-of-type(4):after,
-    .aboutusContainer.profile > div:nth-of-type(2):before,
-    .aboutusContainer.profile:after{
+    .aboutusContainer.profile > div:nth-of-type(2):before{
         clear: both; content: ''; display: block;
     }
     .fillBtn{
@@ -4108,73 +3992,8 @@
         background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
         padding-left: 20px; position: absolute; left: 0; top: 290px; cursor: pointer;
     }
-    .passwordField,
-    .newpasswordField{
-        position: relative; height: 70px; display: block;
-    }
-    .passwordField > .vActiveBtn,
-    .newpasswordField > .newvActiveBtn{
-        position: absolute; left: 20px; top: 15px; padding: 0; margin: 0;
-        background: url('../images/bul_visiblity_off.png') no-repeat; background-size: 40px 40px;
-        width: 40px; height: 40px; border: none; text-indent: -9999px;
-    }
-    .passwordField.active > .vActiveBtn,
-    .newpasswordField.active > .newvActiveBtn{
-        background-image: url('../images/bul_visiblity.png');
-    }
-    .backtosign{
-        display: block; text-decoration: underline; text-align: center;
-    }
-    .centeral{
-        text-align: center;
-    }
     .bg{
         height: 300px;
-    }
-    #userEmail,
-    #firstName,
-    #lastName,
-    #birthDay,
-    #birthMonth,
-    #birthYear,
-    #phoneNum{
-        padding: 0 15px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
-    }
-    #userPW,
-    #newuserPW{
-        padding: 0 80px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
-    }
-    #birthDay,
-    #birthMonth,
-    #birthYear{
-        text-align: center;
-    }
-    #newAddressPopup{
-        display: none;
-    }
-    #editAddressPopup{
-        display: none;
-    }
-    #deleteAddressPopup{
-        display: none;
-    }
-    #deleteItemPopup{
-        display: none;
-    }
-    mark{
-        background-color: transparent;
-    }
-    mark,
-    em{
-        font-style: normal;
-    }
-    [class*='Container'] li{
-        list-style: none;
-    }
-    input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
     }
 
     .indexContainer{
@@ -5829,6 +5648,7 @@
     /* ? termsofsale */
 }
 /* ? Desktop */
+
 @media screen and (min-width: 768px){
     .indexContainer > div:first-of-type figure figcaption a,
     .indexContainer div:nth-of-type(3) div span,
@@ -6132,6 +5952,86 @@
     .pairingContainer > div mark span,
     .accountContainer h2{
         color: #ffffff;
+    }
+    
+    .indexContainer > div:nth-of-type(2):after,
+    .indexContainer > div:last-of-type div:after,
+    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:after,
+    .wineContainer > div:after,
+    .loginContainer div ul:after,
+    .accountContainer:after,
+    .wishContainer > div > ul li:after,
+    .cartlistContainer > div ul li:after,
+    .accountdetailContainer > div > ul > li > div:after,
+    .paymentContainer div:nth-of-type(4):after,
+    .articleContainer ul:after,
+    .articleContainer.quebec > div:not(:first-of-type):after,
+    .aboutusContainer.contact > div:nth-of-type(4):after,
+    .aboutusContainer.contact > div:nth-of-type(5):after{
+        clear: both; content: ''; display: block;
+    }
+
+    .passwordField,
+    .newpasswordField{
+        position: relative; height: 70px; display: block;
+    }
+    .passwordField > .vActiveBtn,
+    .newpasswordField > .newvActiveBtn{
+        position: absolute; left: 20px; top: 15px; padding: 0; margin: 0;
+        background: url('../images/bul_visiblity_off.png') no-repeat; background-size: 40px 40px;
+        width: 40px; height: 40px; border: none; text-indent: -9999px;
+    }
+    .passwordField.active > .vActiveBtn,
+    .newpasswordField.active > .newvActiveBtn{
+        background-image: url('../images/bul_visiblity.png');
+    }
+    .backtosign{
+        display: block; text-decoration: underline; text-align: center;
+    }
+    #userEmail,
+    #firstName,
+    #lastName,
+    #birthDay,
+    #birthMonth,
+    #birthYear,
+    #phoneNum{
+        padding: 0 15px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
+    }
+    #userPW,
+    #newuserPW{
+        padding: 0 80px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
+    }
+    #birthDay,
+    #birthMonth,
+    #birthYear{
+        text-align: center;
+    }
+    #newAddressPopup{
+        display: none;
+    }
+    #editAddressPopup{
+        display: none;
+    }
+    #deleteAddressPopup{
+        display: none;
+    }
+    #deleteItemPopup{
+        display: none;
+    }
+    mark{
+        background-color: transparent;
+    }
+    mark,
+    em{
+        font-style: normal;
+    }
+    [class*='Container'] li{
+        list-style: none;
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
     }
 }
 /* ? Deskktop + Tablet */
