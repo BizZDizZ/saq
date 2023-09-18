@@ -2235,8 +2235,8 @@
     .deleteBtn,
     .closePopup{
         background: url('../images/bul_close.png') no-repeat; text-indent: -9999px;
-        background-color: transparent; width: 18px; height: 18px; border: none;
-        background-size: 18px; padding: 0;
+        background-color: transparent; width: 25px; height: 25px; border: none;
+        background-size: 25px; padding: 0;
     }
     .backBtn{
         background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
@@ -2992,8 +2992,8 @@
     .deleteBtn,
     .closePopup{
         background: url('../images/bul_close.png') no-repeat; text-indent: -9999px;
-        background-color: transparent; width: 18px; height: 18px; border: none;
-        background-size: 18px; padding: 0; cursor: pointer;
+        background-color: transparent; width: 25px; height: 25px; border: none;
+        background-size: 25px; padding: 0; cursor: pointer;
     }
     .backBtn{
         background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
@@ -3979,6 +3979,7 @@
     .indexContainer > div:nth-of-type(2):after,
     .indexContainer > div:last-of-type div:after,
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:after,
+    .pager:before,
     .wineContainer > div:after,
     .loginContainer div ul:after,
     .accountContainer:after,
