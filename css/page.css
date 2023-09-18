@@ -3545,7 +3545,7 @@
     .articleContainer ul li{
         width: 23.5%; float: left; box-sizing: border-box;
     }
-    .articleContainer > div:first-of-type{
+    .articleContainer > div:first-of-type:not(.pager){
         margin-bottom: 100px;
     }
     .articleContainer > div figure img{
@@ -3979,7 +3979,6 @@
     .indexContainer > div:nth-of-type(2):after,
     .indexContainer > div:last-of-type div:after,
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:after,
-    .pager:before,
     .wineContainer > div:after,
     .loginContainer div ul:after,
     .accountContainer:after,
