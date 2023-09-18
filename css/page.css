@@ -2499,7 +2499,7 @@
         float: left; width: 60%; margin: 100px 0; box-sizing: border-box;
     }
     .suggestContainer ul li{
-        margin: 0 10% 50px 15%; width: 75%; background-color: #ffffff; padding-bottom: 20px;
+        margin: 0 10% 50px 15%; width: 75%; background-color: #ffffff;
     }
     .suggestContainer ul li:last-of-type{
         margin-bottom: 0;
@@ -2722,8 +2722,7 @@
     }
     .cartlistContainer div ul li div{
         float: left; width: 72%;
-    }
-    
+    }    
     .cartlistContainer div .summary{
         width: 100%;
     }
@@ -2731,7 +2730,7 @@
         width: 100%; margin-bottom: 20px;
     }
     .cartlistContainer div .summary ul li{
-        float: left; width: 50px; margin-left: 5%;
+        float: left; width: 70px; margin-left: 30px;
     }
     .cartlistContainer div .summary ul li:first-of-type{
         margin-left: 0;
@@ -2744,7 +2743,6 @@
     .paymentContainer .backBtn{
         left: 2%;
     }
-
     .paymentContainer form div:first-of-type .editAdd{
         border: none; background: transparent; background-image: url('../images/bul_edit.png');
         text-indent: -9999px; width: 18px; height: 18px; background-size: 18px;
@@ -3269,7 +3267,7 @@
         float: left; width: 71%; margin: 110px 2% 110px 0; box-sizing: border-box;
     }
     .suggestContainer ul li{
-        float: left; margin-left: 2%; width: 31.3%; background-color: #ffffff; padding-bottom: 20px;
+        float: left; margin-left: 2%; width: 31.3%; background-color: #ffffff;
     }
     .suggestContainer ul li:first-of-type{
         margin-left: 2.1%;
@@ -3502,8 +3500,7 @@
     }
     .cartlistContainer div ul li div{
         float: left; width: 81.5%;
-    }
-    
+    }    
     .cartlistContainer div .summary{
         float: left; width: 24%;
     }
@@ -3524,7 +3521,6 @@
     .paymentContainer > *{
         margin: 0 2%;
     }
-
     .paymentContainer form div:first-of-type .editAdd{
         border: none; background: transparent; background-image: url('../images/bul_edit.png');
         text-indent: -9999px; width: 18px; height: 18px; background-size: 18px; cursor: pointer;
@@ -3986,6 +3982,9 @@
     .wineContainer > div:after,
     .loginContainer div ul:after,
     .accountContainer:after,
+    .myorderContainer > div:after,
+    .savecardContainer > div:after,
+    .wishContainer > div:after,
     .wishContainer > div > ul li:after,
     .cartlistContainer > div ul li:after,
     .accountdetailContainer > div > ul > li > div:after,
@@ -4274,7 +4273,7 @@
         background-color: #f0f0f0;
     }
     .suggestContainer ul li a{
-        display: block;
+        display: block; padding-bottom: 20px;
     }
     .suggestContainer ul li a img{
         width: 100%;
@@ -4283,7 +4282,7 @@
         display: block; margin: 20px 30px 10px;
     }
     .suggestContainer ul li a span{
-        display: block; margin: 0 30px 20px; line-height: 24px;
+        display: block; margin: 0 30px; line-height: 24px;
     }
     /* ? suggest */
 
