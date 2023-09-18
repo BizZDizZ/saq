@@ -58,15 +58,7 @@ function panelControl(openBtn){
         $(currentPanel).addClass("active");
         $(this).addClass("closePanel");
     });
-    $(".closePanel").click(function(){
-        $(currentPanel).removeClass("active");
-        currentPanel = "#" + $(this).attr("data-panel");
-        $(currentPanel).removeClass("active");
-    });
-    $(".closePopup").click(function(){
-        $(currentPanel).removeClass("active");
-    });
-    $(".closeBtn").click(function(){
+    $("[class^='close']").click(function(){
         $(currentPanel).removeClass("active");
     });
 }
