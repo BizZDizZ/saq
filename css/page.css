@@ -4979,7 +4979,7 @@
         text-decoration: underline;
     }
     .aboutusContainer.accessInfo > div:last-of-type ul li{
-        list-style: disc; list-style-position: outside; margin-left: 20px;
+        list-style: disc; list-style-position: outside; margin-left: 30px;
     }
     /* ? accesstoInfo */
 
@@ -5075,7 +5075,7 @@
         margin-bottom: 40px; display: block;
     }
     .aboutusContainer.profile > div:first-of-type ul li{
-        list-style: disc; list-style-position: outside; margin-left: 20px; margin-bottom: 10px;
+        list-style: disc; list-style-position: outside; margin-left: 30px; margin-bottom: 10px;
     }
     .aboutusContainer.profile > div:nth-of-type(2) > div:nth-of-type(1){
         margin: 0; padding-right: 2%; float: left; width: 33.3%; border-right: 1px solid #cbcbcb; box-sizing: border-box;
