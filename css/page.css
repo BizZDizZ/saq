@@ -3635,10 +3635,10 @@
     /* ? FAQ */
 
     .aboutusContainer.history ol li h2{
-        line-height: 50px; margin-bottom: 120px; margin-left: 11%; flex: none; width: 100%;
+        line-height: 50px; margin-bottom: 120px; margin-left: 5%; flex: none; width: 100%;
     }
     .aboutusContainer.history ol li div{
-        margin-left: 22%; width: 43%; border-left: 1px solid #000000; box-sizing: border-box;
+        margin-left: 16%; width: 46%; border-left: 1px solid #000000; box-sizing: border-box;
         padding-left: 3%; align-self: stretch; position: relative;
     }
     .aboutusContainer.history ol li div:before{
@@ -3646,7 +3646,7 @@
         border: 1px solid #000000; background-color: #000000; transform: translate(-50%, -50%);
     }
     .aboutusContainer.history ol li img{
-        width: 32.5%; margin-left: 2.5%; object-fit: contain;
+        width: 35.5%; margin-left: 2.5%; object-fit: contain;
     }
     /* ? history */
 
@@ -4987,7 +4987,7 @@
         margin-top: 40px;
     }
     .aboutusContainer.policy ul li{
-        margin-bottom: 0px; list-style: disc; list-style-position: outside; margin-left: 40px;
+        margin-bottom: 0px; list-style: disc; list-style-position: outside; margin-left: 30px;
         line-height: 25px;
     }
     .aboutusContainer.policy em{
