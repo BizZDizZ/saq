@@ -124,32 +124,117 @@ input:-webkit-autofill{
     display: block;
 }
 
+#searchPanel{
+    background-color: #ffffff; color: #cbcbcb; width: 100%;
+    position: fixed; top: 55px; z-index: 51; border-bottom: 1px solid #cbcbcb;
+}
+#searchPanel div{
+    margin: 0 auto; position: relative;
+}
+#searchPanel label{
+    display: none;
+}
+#searchPanel input[type='text']:focus{
+    outline: none;
+}
+#searchPanel input[type='submit']{
+    display: none;
+}
+header a{
+    color: inherit; display: block;
+}
+header > div h1 a img{
+    width: 100%;
+}
+header > div ul li{
+    display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
+    background-position: center; background-repeat: no-repeat; background-size: 20px;
+}
+header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg');}
+
+footer > div:first-of-type > div form input,
+footer > div:first-of-type > div form p,
+footer > div:first-of-type > div:last-child address,
+footer > div:last-of-type > div ol li,
+footer > div:last-of-type > div p,
+footer > div:last-of-type > div > a,
+footer > div:last-of-type > div span{
+    font-size: 14px; font-weight: 300;
+}
+footer > div:first-of-type > div form p,
+footer > div:first-of-type > div:last-child address span,
+footer > div:first-of-type > div:last-child address div,
+footer > div:first-of-type > div:last-child address a{
+    color: #555555;
+}
+footer > div:last-of-type > div ol li a,
+footer > div:last-of-type > div,
+footer > div:last-of-type > div > a{
+    color: #4f4f4f;
+}
+footer > ul,
+footer > div:first-of-type > div,
+footer > div:last-of-type{
+    margin: 0 auto; box-sizing: border-box;
+}
+footer li{
+    list-style: none;
+}
+footer > ul:after,
+footer > div:first-of-type > div:after,
+footer > div:last-of-type:after{
+    clear: both; content: ''; display: block;
+}
+footer > ul li a{
+    font-size: 16px; font-weight: 300; color: #000; display: block; text-align: center;
+}
+footer > ul li a:before{
+    display: block; margin: 0 auto;
+}
+footer > ul li:nth-child(1) a:before{content: url('../images/img_footer_01.png');}
+footer > ul li:nth-child(2) a:before{content: url('../images/img_footer_02.png');}
+footer > ul li:nth-child(3) a:before{content: url('../images/img_footer_03.png');}
+footer > ul li:nth-child(4) a:before{content: url('../images/img_footer_04.png');}
+footer > div:first-of-type{
+    background-color: #f0f0f0;
+}
+footer > div:first-of-type > div ul li{
+    display: inline-block; width: 30px; height: 30px; text-indent: -9999px;
+    background-position: center; background-repeat: no-repeat; background-size: contain;
+}
+footer > div:first-of-type > div ul li:not(:first-child){margin-left: 20px;}
+footer > div:first-of-type > div ul li a{
+    display: block; width: 100%; height: 100%;
+}
+footer > div:last-of-type > div:last-of-type > a{
+    display: block; margin-left: auto; width: 100px; height: 35px; text-align: center;
+    line-height: 35px; color: #ffffff; background-color: #cbcbcb;
+}
+footer > div:last-of-type > div:last-of-type div{
+    margin-top: 20px;
+}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(3){background-image: url('../images/ico_Mastercard.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(4){background-image: url('../images/ico_Maestro.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(5){background-image: url('../images/ico_Americanexpress.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(6){background-image: url('../images/ico_Jcb.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(7){background-image: url('../images/ico_Unionpay.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(8){background-image: url('../images/ico_Delta.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(9){background-image: url('../images/ico_Applepay.png')}
+footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){background-image: url('../images/ico_Klarna.png')}
+/* ? Global */
+
 @media screen and (max-width: 767px){
-    #searchPanel{
-        background-color: #ffffff; color: #cbcbcb; width: 100%;
-        position: fixed; top: 55px; z-index: 51; border-bottom: 1px solid #cbcbcb;
-    }
-    #searchPanel div{
-        margin: 0 auto; position: relative;
-    }
-    #searchPanel label{
-        display: none;
-    }
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid #000000;
         font-size: 14px; font-weight: 200; width: 96%;
         margin: 20px 2%; padding: 0 5px; box-sizing: border-box;
     }
-    #searchPanel input[type='text']:focus{
-        outline: none;
-    }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
         padding: 0; width: 20px; height: 20px; position: absolute; right: 15px; top: 18px; text-indent: -9999px;
         border: none; background-color: #ffffff;
-    }
-    #searchPanel input[type='submit']{
-        display: none;
     }
 
     #menuPanel{
@@ -185,42 +270,28 @@ input:-webkit-autofill{
         background-color: #000000; padding-bottom: 10px; position: fixed; width: 100%; left: 0; top: 0;
         font-size: 14px; font-weight: 600; color: #ffffff; z-index: 100;
     }
-    header > div{
-        margin: 0 auto;
-    }
-    header a{
-        color: inherit; display: block;
-    }
     header > ol{
         display: none;
     }
     header > div{
-        position: relative; padding-top: 15px;
+        margin: 0 auto; position: relative; padding-top: 15px;
     }
     header > div > *:not(h1){
-        position: absolute; top: 30px;
+        position: absolute; top: 20px;
     }
     header > div span{
         display: none;
     }
     header > div input{
-        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 20px; padding: 0;
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; padding: 0;
         background-position: center; border: none; text-indent: -9999px;
     }
     header > div h1{
         max-width: 70px; margin: 0 auto;
     }
-    header > div h1 a img{
-        width: 100%;
-    }
     header > div ul{
         right: 2%; top: 20px;
     }
-    header > div ul li{
-        display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat; background-size: 20px;
-    }
-    header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg');}
     header > div ul li:nth-child(2){display: none;}
     header > div ul li:nth-child(3){display: none;}
     header > div ul li:nth-child(4){display: none;}
@@ -229,39 +300,6 @@ input:-webkit-autofill{
     }
     /* ? header */
     
-    footer > div:first-of-type > div form input,
-    footer > div:first-of-type > div form p,
-    footer > div:first-of-type > div:last-child address,
-    footer > div:last-of-type > div ol li,
-    footer > div:last-of-type > div p,
-    footer > div:last-of-type > div > a,
-    footer > div:last-of-type > div span{
-        font-size: 14px; font-weight: 300;
-    }
-    footer > div:first-of-type > div form p,
-    footer > div:first-of-type > div:last-child address span,
-    footer > div:first-of-type > div:last-child address div,
-    footer > div:first-of-type > div:last-child address a{
-        color: #555555;
-    }
-    footer > div:last-of-type > div ol li a,
-    footer > div:last-of-type > div,
-    footer > div:last-of-type > div > a{
-        color: #4f4f4f;
-    }
-    footer > ul,
-    footer > div:first-of-type > div,
-    footer > div:last-of-type{
-        margin: 0 auto; box-sizing: border-box;
-    }
-    footer li{
-        list-style: none;
-    }
-    footer > ul:after,
-    footer > div:first-of-type > div:after,
-    footer > div:last-of-type:after{
-        clear: both; content: ''; display: block;
-    }
     footer > ul{
         padding: 100px 0; box-sizing: border-box; overflow: scroll; white-space: nowrap;
         scrollbar-width: none; -ms-overflow-style: none;
@@ -271,19 +309,6 @@ input:-webkit-autofill{
     }
     footer > ul li{
         width: 100%; display: inline-block;
-    }
-    footer > ul li a{
-        font-size: 16px; font-weight: 300; color: #000; display: block; text-align: center;
-    }
-    footer > ul li a:before{
-        display: block; margin: 0 auto;
-    }
-    footer > ul li:nth-child(1) a:before{content: url('../images/img_footer_01.png');}
-    footer > ul li:nth-child(2) a:before{content: url('../images/img_footer_02.png');}
-    footer > ul li:nth-child(3) a:before{content: url('../images/img_footer_03.png');}
-    footer > ul li:nth-child(4) a:before{content: url('../images/img_footer_04.png');}
-    footer > div:first-of-type{
-        background-color: #f0f0f0;
     }
     footer > div:first-of-type > div{
         padding: 30px 0;
@@ -313,18 +338,10 @@ input:-webkit-autofill{
     footer > div:first-of-type > div form input[type='submit']{
         width: 110px; height: 40px; box-sizing: border-box; color: #656565; border: 1px solid #656565; margin-left: auto; display: block;
     }
-    footer > div:first-of-type > div ul li{
-        display: inline-block; width: 30px; height: 30px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat; background-size: contain;
-    }
-    footer > div:first-of-type > div ul li:not(:first-child){margin-left: 20px;}
     footer > div:first-of-type > div ul li:nth-child(1){background-image: url('../images/ico_sns_01.png'); background-size: 30px;}
     footer > div:first-of-type > div ul li:nth-child(2){background-image: url('../images/ico_sns_02.png'); background-size: 30px;}
     footer > div:first-of-type > div ul li:nth-child(3){background-image: url('../images/ico_sns_03.png'); background-size: 30px;}
     footer > div:first-of-type > div ul li:nth-child(4){background-image: url('../images/ico_sns_04.png'); background-size: 30px;}
-    footer > div:first-of-type > div ul li a{
-        display: block; width: 100%; height: 100%;
-    }
     footer > div:first-of-type > div:last-child address{
         font-style: normal;
     }
@@ -338,7 +355,7 @@ input:-webkit-autofill{
         display: inline-block; margin-left: 15px; line-height: 24px;
     }
     footer > div:last-of-type{
-        padding: 0 2% 20px; max-width: 1440px;
+        padding: 0 2% 20px;
     }
     footer > div:last-of-type > div:not(:last-of-type){
         border-bottom: 1px solid #cbcbcb;
@@ -365,17 +382,7 @@ input:-webkit-autofill{
         margin-bottom: 35px;
     }
     footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 20px;
-    }
-    footer > div:last-of-type > div:last-of-type p{
-        line-height: 20px;
-    }
-    footer > div:last-of-type > div:last-of-type > a{
-        display: block; margin-left: auto; width: 100px; height: 35px; text-align: center;
-        line-height: 35px; color: #ffffff; background-color: #cbcbcb;
-    }
-    footer > div:last-of-type > div:last-of-type div{
-        margin-top: 20px;
+        margin-bottom: 20px; line-height: 20px;
     }
     footer > div:last-of-type > div:last-of-type div h4{
         margin-top: 25px; font-size: 14px; font-weight: 700;
@@ -384,21 +391,11 @@ input:-webkit-autofill{
         margin: 10px 0 20px; display: flex; flex-wrap: wrap;
     }
     footer > div:last-of-type > div:last-of-type div ul li{
-        width: 42px; height: 30px; text-indent: -9999px; margin-right: 10px;
+        width: 45px; height: 30px; text-indent: -9999px; margin-right: 10px;
         background-position: center; background-repeat: no-repeat; margin-bottom: 10px;
     }
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(3){background-image: url('../images/ico_Mastercard.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(4){background-image: url('../images/ico_Maestro.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(5){background-image: url('../images/ico_Americanexpress.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(6){background-image: url('../images/ico_Jcb.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(7){background-image: url('../images/ico_Unionpay.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(8){background-image: url('../images/ico_Delta.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(9){background-image: url('../images/ico_Applepay.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){background-image: url('../images/ico_Klarna.png')}
     footer > div:last-of-type > div:last-of-type div ul li img{
-        width: 44px; height: 30px;
+        width: 45px; height: 30px;
     }
     footer > div:last-of-type > div:last-of-type span{
         display: flex; align-items: center; justify-content: flex-end;
@@ -683,30 +680,14 @@ input:-webkit-autofill{
 /* ? Desktop */
 
 @media screen and (min-width: 768px){
-    #searchPanel{
-        background-color: #ffffff; color: #cbcbcb; width: 100%;
-        position: fixed; z-index: 51; border-bottom: 1px solid #cbcbcb;
-    }
-    #searchPanel div{
-        margin: 0 auto; position: relative;
-    }
-    #searchPanel label{
-        display: none;
-    }
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid #000000;
         font-size: 25px; font-weight: 400; width: 96%; box-sizing: border-box;
-    }
-    #searchPanel input[type='text']:focus{
-        outline: none;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
         padding: 0; width: 25px; height: 25px; position: absolute; text-indent: -9999px;
         border: none; background-color: #ffffff;
-    }
-    #searchPanel input[type='submit']{
-        display: none;
     }
 
 
@@ -724,83 +705,26 @@ input:-webkit-autofill{
     header > ol li.active{
         display: inline-block;
     }
-    header a{
-        color: inherit; display: block;
-    }
     header > div{
         margin: 0 auto; position: relative; padding-top: 25px;
     }
     header > div > *:not(h1){
-        position: absolute; top: 30px;
-    }
-    header > div h1 a img{
-        width: 100%;
+        position: absolute; top: 35px;
     }
     header > div ul{
         right: 2%;
     }
-    header > div ul li{
-        display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat; background-size: 20px;
-    }
     header > div ul li:not(:first-child){margin-left: 10px;}
-    header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg');}
     header > div ul li:nth-child(2){background-image: url('../images/ico_wishlist.svg');}
     header > div ul li:nth-child(3){background-image: url('../images/ico_cart.svg');}
     header > div ul li:nth-child(4){background-image: url('../images/ico_account.svg');}
     /* ? header */
 
-    footer > div:first-of-type > div form input,
-    footer > div:first-of-type > div form p,
-    footer > div:first-of-type > div:last-child address,
-    footer > div:last-of-type > div ol li,
-    footer > div:last-of-type > div p,
-    footer > div:last-of-type > div > a,
-    footer > div:last-of-type > div span{
-        font-size: 14px; font-weight: 300;
-    }
-    footer > div:first-of-type > div form p,
-    footer > div:first-of-type > div:last-child address span,
-    footer > div:first-of-type > div:last-child address div,
-    footer > div:first-of-type > div:last-child address a{
-        color: #555555;
-    }
-    footer > div:last-of-type > div ol li a,
-    footer > div:last-of-type > div,
-    footer > div:last-of-type > div > a{
-        color: #4f4f4f;
-    }
-    footer > ul,
-    footer > div:first-of-type > div,
-    footer > div:last-of-type{
-        margin: 0 auto; box-sizing: border-box;
-    }
-    footer li{
-        list-style: none;
-    }
-    footer > ul:after,
-    footer > div:first-of-type > div:after,
-    footer > div:last-of-type:after{
-        clear: both; content: ''; display: block;
-    }
     footer > ul{
         padding: 155px 0;
     }
     footer > ul li{
         width: 25%; float: left; box-sizing: border-box;
-    }
-    footer > ul li a{
-        font-size: 16px; font-weight: 300; color: #000; display: block; text-align: center;
-    }
-    footer > ul li a:before{
-        display: block; margin: 0 auto;
-    }
-    footer > ul li:nth-child(1) a:before{content: url('../images/img_footer_01.png');}
-    footer > ul li:nth-child(2) a:before{content: url('../images/img_footer_02.png');}
-    footer > ul li:nth-child(3) a:before{content: url('../images/img_footer_03.png');}
-    footer > ul li:nth-child(4) a:before{content: url('../images/img_footer_04.png');}
-    footer > div:first-of-type{
-        background-color: #f0f0f0;
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
@@ -812,18 +736,10 @@ input:-webkit-autofill{
     footer > div:first-of-type > div form input[type='submit']{
         width: 110px; height: 40px; box-sizing: border-box; color: #656565; border: 1px solid #656565;
     }
-    footer > div:first-of-type > div ul li{
-        display: inline-block; width: 30px; height: 30px; text-indent: -9999px;
-        background-position: center; background-repeat: no-repeat; background-size: contain;
-    }
-    footer > div:first-of-type > div ul li:not(:first-child){margin-left: 20px;}
     footer > div:first-of-type > div ul li:nth-child(1){background-image: url('../images/ico_sns_01.png'); background-size: 30px;}
     footer > div:first-of-type > div ul li:nth-child(2){background-image: url('../images/ico_sns_02.png'); background-size: 30px;}
     footer > div:first-of-type > div ul li:nth-child(3){background-image: url('../images/ico_sns_03.png'); background-size: 30px;}
     footer > div:first-of-type > div ul li:nth-child(4){background-image: url('../images/ico_sns_04.png'); background-size: 30px;}
-    footer > div:first-of-type > div ul li a{
-        display: block; width: 100%; height: 100%;
-    }
     footer > div:first-of-type > div:last-child address{
         font-style: normal;
     }
@@ -835,13 +751,6 @@ input:-webkit-autofill{
     }
     footer > div:last-of-type > div:last-of-type p{
         line-height: 20px;
-    }
-    footer > div:last-of-type > div:last-of-type > a{
-        display: block; margin-left: auto; width: 100px; height: 35px; text-align: center;
-        line-height: 35px; color: #ffffff; background-color: #cbcbcb;
-    }
-    footer > div:last-of-type > div:last-of-type div{
-        margin-top: 20px;
     }
     footer > div:last-of-type > div:last-of-type div h4{
         font-size: 14px; font-weight: 700;
@@ -857,16 +766,6 @@ input:-webkit-autofill{
         background-position: center; background-repeat: no-repeat;
     }
     footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 5px;}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(3){background-image: url('../images/ico_Mastercard.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(4){background-image: url('../images/ico_Maestro.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(5){background-image: url('../images/ico_Americanexpress.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(6){background-image: url('../images/ico_Jcb.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(7){background-image: url('../images/ico_Unionpay.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(8){background-image: url('../images/ico_Delta.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(9){background-image: url('../images/ico_Applepay.png')}
-    footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){background-image: url('../images/ico_Klarna.png')}
     footer > div:last-of-type > div:last-of-type div ul li img{
         width: 48px; height: 32px;
     }
