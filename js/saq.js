@@ -33,7 +33,7 @@ function permissionCheck(){
 }
 function backBtn(){
     $(".backBtn").click(function(){
-       history.back(); 
+        history.back(); 
     });
 }
 function sliders(target,indicator,conVal,maxVal,minVal,slideW,slideM){
