@@ -181,16 +181,6 @@
         background: url('../images/bul_visiblity_off.png') no-repeat; background-size: 20px;
         width: 20px; height: 20px; border: none; text-indent: -9999px;
     }
-    .passwordField.active > .vActiveBtn,
-    .newpasswordField.active > .newvActiveBtn{
-        background-image: url('../images/bul_visiblity.png');
-    }
-    .backtosign{
-        display: block; text-decoration: underline; text-align: center;
-    }
-    .centeral{
-        text-align: center;
-    }
     .bg{
         height: 100px;
     }
@@ -205,39 +195,7 @@
     }
     #userPW,
     #newuserPW{
-        padding-left: 50px; width: 100%; height: 50px; border-radius: 3px; box-sizing: border-box;
-    }
-    #birthDay,
-    #birthMonth,
-    #birthYear{
-        text-align: center;
-    }
-    #newAddressPopup{
-        display: none;
-    }
-    #editAddressPopup{
-        display: none;
-    }
-    #deleteAddressPopup{
-        display: none;
-    }
-    #deleteItemPopup{
-        display: none;
-    }
-    mark{
-        background-color: transparent;
-    }
-    mark,
-    em{
-        font-style: normal;
-    }
-    [class*='Container'] li{
-        list-style: none;
-    }
-    input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+        padding: 0 50px; width: 100%; height: 50px; border-radius: 3px; box-sizing: border-box;
     }
 
     .indexContainer{
@@ -255,19 +213,6 @@
     .indexContainer > div:nth-of-type(2) figure{
         width: 96%; box-sizing: border-box; margin-bottom: 30px;
     }
-    .indexContainer > div:nth-of-type(2) figure img{
-        width: 100%; margin-bottom: 20px;
-    }
-    .indexContainer > div:nth-of-type(2) figure:not(:last-of-type){
-        margin-left: 2%; box-sizing: border-box;
-    }
-    .indexContainer > div:nth-of-type(2) figure:last-of-type{
-        margin: 0 2%; box-sizing: border-box;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption p,
-    .indexContainer > div:nth-of-type(6) figure figcaption p{
-        margin: 15px 0 30px;
-    }
     .indexContainer > div:nth-of-type(2) figure figcaption a,
     .indexContainer > div:nth-of-type(6) figure figcaption a{
         width: fit-content; margin-left: auto; display: block;
@@ -280,16 +225,9 @@
     .indexContainer > div:nth-of-type(5) > div:first-of-type{
         display: block; margin-bottom: 50px;
     }
-    .indexContainer > div:nth-of-type(3) div span{
-        margin-bottom: 10px; display: block;
-    }
     .indexContainer > div:nth-of-type(3) div h2,
     .indexContainer > div:nth-of-type(5) div h2{
         margin-bottom: 20px;
-    }
-    .indexContainer > div:nth-of-type(3) div p,
-    .indexContainer > div:nth-of-type(5) div p{
-        margin-bottom: 30px; line-height: 20px;
     }
     .indexContainer > div:nth-of-type(3) > div:first-of-type a,
     .indexContainer > div:nth-of-type(5) > div:first-of-type a{
@@ -317,9 +255,6 @@
     .indexContainer > div:nth-of-type(4) div h2{
         margin-bottom: 15px;
     }
-    .indexContainer > div:nth-of-type(4) div p{
-        margin-bottom: 20px; line-height: 20px;
-    }
     .indexContainer > div:nth-of-type(4) div a{
         display: block; width: fit-content; margin-left: auto;
     }
@@ -342,23 +277,7 @@
         margin-bottom: 30px; display: flex; flex-flow: row nowrap; height: 167px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect li{
-        flex: 1; transition: flex 0.75s ease-in-out; text-indent: -9999px;
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li a{
-        display: block; background-size: cover; background-position: center;
-        background-repeat: no-repeat; height: 100%;
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(1) a{
-        background-image: url('../images/img_cardimage_01.png');
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(2) a{
-        background-image: url('../images/img_cardimage_02.png');
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(3) a{
-        background-image: url('../images/img_cardimage_03.png');
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(4) a{
-        background-image: url('../images/img_cardimage_04.png');
+        flex: 1; text-indent: -9999px;
     }
     .indexContainer > div:last-of-type div{
         margin: 0 2%;
@@ -388,21 +307,6 @@
     }
     .productContainer .bg div h2{
         position: absolute; left: 2%; bottom: -10px;
-    }
-    .productContainer .bg.sale{background-image: url('../images/ban_02.png');}
-    .productContainer .bg.white{background-image: url('../images/ban_03.png');}
-    .productContainer .bg.red{background-image: url('../images/ban_04.png');}
-    .productContainer .bg.rose{background-image: url('../images/ban_05.png');}
-    .productContainer .bg.sparklingrose{background-image: url('../images/ban_06.png');}
-    .productContainer .bg.sparkling{background-image: url('../images/ban_07.png');}
-    .productContainer .bg.sparklingred{background-image: url('../images/ban_08.png');}
-    .productContainer .bg.dessert{background-image: url('../images/ban_07.png');}
-    .productContainer .bg.pairing{background-image: url('../images/ban_09.png');}
-    .productContainer .bg.productContainer li{
-        list-style: none;
-    }
-    .productContainer input{
-        margin: 0;
     }
     .productContainer #filterPopup > div > ul > li{
         border-top: 2px; border-style: solid; border-color: #cbcbcb;
@@ -542,30 +446,6 @@
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:last-of-type{
         margin-bottom: 65px;
     }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a{
-        display: block;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a img{
-        width: 100%; margin-bottom: 20px;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong{
-        display: block; margin-bottom: 20px; line-height: 20px;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span{
-        display: block; text-align: right;
-    }
-    .productContainer > div.pairing+div > div:nth-of-type(3) ul li a span{
-        text-align: left;
-    }
-    .productContainer.pairing > div:nth-of-type(2) > div:nth-of-type(3) ul li a span{
-        text-align: left; line-height: 16px;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span em{
-        float: left;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark{
-        margin-left: 10px;
-    }
     /* ? product */
 
     .pager{
@@ -580,14 +460,6 @@
         border-top: 1px; border-color: #cbcbcb; border-style: solid; opacity: 50%; position: relative;
         padding-top: 15px;
     }
-    .pager > div > div,
-    .pager > div > div > a{
-        display: inline-block; line-height: 16px;
-    }
-    .pager > div > div:first-of-type a:first-of-type{
-        background: url('../images/bul_firstpage.svg') no-repeat; width: 16px; height: 16px; text-indent: -9999px;
-        position: absolute; left: 7%; top: 15px;
-    }
     .pager > div > div:first-of-type a:last-of-type{
         background: url('../images/bul_previouspage.svg') no-repeat left; width: 16px; height: 16px; padding-left: 30px;
         position: absolute; left: 22%; top: 15px; text-indent: -9999px;
@@ -595,13 +467,6 @@
     .pager > div > div:last-of-type a:first-of-type{
         background: url('../images/bul_nextpage.svg') no-repeat right; width: 16px; height: 16px; padding-right: 50px;
         position: absolute; right: 22%; top: 15px; text-indent: -9999px;
-    }
-    .pager > div > div:last-of-type a:last-of-type{
-        background: url('../images/bul_lastpage.svg') no-repeat; width: 16px; height: 16px; text-indent: -9999px;
-        position: absolute; right: 7%; top: 15px;
-    }
-    .pager > div > div > a.deactive{
-        opacity: 40%;
     }
     /* ? pager */
 
@@ -627,12 +492,6 @@
     .wineContainer div:first-of-type ul{
         display: flex;
     }
-    .wineContainer div:first-of-type ul li{
-        align-self: center;
-    }
-    .wineContainer div:first-of-type ul li img{
-        width: 100%;
-    }
     .wineContainer > div:nth-of-type(2) b{
         display: block; margin-bottom: 30px;
     }
@@ -648,37 +507,19 @@
     .wineContainer > div:nth-of-type(2) a{
         height: 50px; display: block; text-align: center; line-height: 50px;
     }
-    .wineContainer > div:nth-of-type(2) a:first-of-type{
-        background-color: #7e002b; margin-bottom: 25px;
-    }
     .wineContainer > div:nth-of-type(2) a:last-of-type{
         background-color: #656565; margin-bottom: 30px;
-    }
-    .wineContainer > div:nth-of-type(2) table{
-        width: 100%;
     }
     .wineContainer > div:nth-of-type(2) table caption{
         text-align: left; margin-bottom: 40px;
         background: url('../images/bul_arrow_down.png') no-repeat right;
         background-size: 36px 36px; line-height: 20px;
     }
-    .wineContainer > div:nth-of-type(2) table tbody{
-        display: none;
-    }
-    .wineContainer > div:nth-of-type(2) table tbody tr{
-        display: block; margin-bottom: 30px;
-    }
-    .wineContainer > div:nth-of-type(2) table tbody tr:last-of-type{
-        margin: 0;
-    }
     .wineContainer > div:nth-of-type(2) table tbody td{
         width: 100px;
     }
     .wineContainer > div:nth-of-type(2) table tbody th{
         padding-left: 30px; text-align: left;
-    }
-    .wineContainer > div:nth-of-type(2) table caption.active{
-        background-image: url('../images/bul_arrow_up.png');
     }
     .wineContainer > div:nth-of-type(2) table caption.active+tbody{
         display: block;
@@ -692,26 +533,8 @@
     .wineContainer > div:last-of-type .bx-controls-direction a{
         margin-top: -50px;
     }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a img{
-        margin-bottom: 20px;
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a strong{
-        display: block; margin-bottom: 20px; line-height: 20px;
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span{
-        display: block; text-align: right;
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span em{
-        float: left;
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark{
-        margin-left: 10px;
-    }
     /* ? wine detail */
 
-    .suggestContainer{
-        background-color: #f0f0f0;
-    }
     .suggestContainer h3{
         display: block; background-color: #ffffff; box-sizing: border-box;
         width: 100%; padding: 0 2% 30px; line-height: 40px;
@@ -728,15 +551,6 @@
     .suggestContainer ul li a{
         display: block;
     }
-    .suggestContainer ul li a img{
-        width: 100%;
-    }
-    .suggestContainer ul li a strong{
-        display: block; margin: 20px 30px 10px;
-    }
-    .suggestContainer ul li a span{
-        display: block; margin: 0 30px; line-height: 24px;
-    }
     /* ? suggest */
 
     .pairingContainer{
@@ -750,9 +564,6 @@
     .pairingContainer > div mark{
         display: block; margin: 0 10px 25px;
     }
-    .pairingContainer > div mark span{
-        margin-left: 20px;
-    }
     .pairingContainer > div h2{
         margin: 0 10px 25px;
     }
@@ -762,9 +573,6 @@
     .pairingContainer > div div h3{
         line-height: 50px; width: 225px; margin: 0 0 35px -30px; padding-left: 40px;
         background-color: #ff0055;
-    }
-    .pairingContainer > div div ol{
-        margin-left: 25px;
     }
     .pairingContainer > div div ol li{
         list-style: decimal; list-style-position: outside;
@@ -783,26 +591,13 @@
     .pairingContainer aside ul:first-of-type{
         margin-bottom: 40px;
     }
-    .pairingContainer aside ul:first-of-type li{
-        padding-left: 45px; line-height: 25px;
-    }
     .pairingContainer aside ul:first-of-type li:nth-of-type(1){background: url('../images/bul_preparation.svg') no-repeat left; margin-bottom: 20px;}
     .pairingContainer aside ul:first-of-type li:nth-of-type(2){background: url('../images/bul_cookingtime.svg') no-repeat left; margin-bottom: 20px;}
-    .pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.svg') no-repeat left; margin-bottom: 0;}
     .pairingContainer aside h3{
         margin-bottom: 30px;
     }
-    .pairingContainer aside ul:last-of-type{
-        box-sizing: border-box;
-    }
     .pairingContainer aside ul:last-of-type li{
         margin-bottom: 20px; line-height: 25px;
-    }
-    .pairingContainer aside ul:last-of-type li:last-of-type{
-        margin: 0;
-    }
-    .pairingContainer aside ul:last-of-type li input{
-        display: none;
     }
     .pairingContainer aside ul:last-of-type li input + label{
         display: inline-block; background: url('../images/bul_uncheck.png') no-repeat left; background-size: 20px;
@@ -3559,13 +3354,6 @@
         background: url('../images/bul_visiblity_off.png') no-repeat; background-size: 40px 40px;
         width: 40px; height: 40px; border: none; text-indent: -9999px;
     }
-    .passwordField.active > .vActiveBtn,
-    .newpasswordField.active > .newvActiveBtn{
-        background-image: url('../images/bul_visiblity.png');
-    }
-    .backtosign{
-        display: block; text-decoration: underline; text-align: center;
-    }
     #userEmail,
     #firstName,
     #lastName,
@@ -3579,71 +3367,16 @@
     #newuserPW{
         padding: 0 80px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
     }
-    #birthDay,
-    #birthMonth,
-    #birthYear{
-        text-align: center;
-    }
-    #newAddressPopup{
-        display: none;
-    }
-    #editAddressPopup{
-        display: none;
-    }
-    #deleteAddressPopup{
-        display: none;
-    }
-    #deleteItemPopup{
-        display: none;
-    }
-    mark{
-        background-color: transparent;
-    }
-    mark,
-    em{
-        font-style: normal;
-    }
-    [class*='Container'] li{
-        list-style: none;
-    }
-    input[type="number"]::-webkit-outer-spin-button,
-    input[type="number"]::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
 
     .indexContainer > div:nth-of-type(2) figure{
         width: 47%; float: left;
-    }
-    .indexContainer > div:nth-of-type(2) figure img{
-        width: 100%; margin-bottom: 20px;
-    }
-    .indexContainer > div:nth-of-type(2) figure:not(:last-of-type){
-        margin-left: 2%; box-sizing: border-box;
-    }
-    .indexContainer > div:nth-of-type(2) figure:last-of-type{
-        margin: 0 2%; box-sizing: border-box;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption p,    
-    .indexContainer > div:nth-of-type(6) figure figcaption p{
-        margin: 15px 0 30px;
-    }
-    .indexContainer > div:nth-of-type(3) div span{
-        margin-bottom: 10px; display: block;
     }
     .indexContainer > div:nth-of-type(3) div h2,
     .indexContainer > div:nth-of-type(5) div h2{
         margin-bottom: 30px;
     }
-    .indexContainer > div:nth-of-type(3) div p,
-    .indexContainer > div:nth-of-type(5) div p{
-        margin-bottom: 30px; line-height: 20px;
-    }
     .indexContainer > div:nth-of-type(4) div h2{
         margin-bottom: 20px;
-    }
-    .indexContainer > div:nth-of-type(4) div p{
-        margin-bottom: 20px; line-height: 20px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect{
         margin-bottom: 60px; display: flex; flex-flow: row nowrap; height: 595px;
@@ -3651,42 +3384,11 @@
     .indexContainer > div:last-of-type ol.hoverEffect li{
         flex: 1; transition: flex 0.75s ease-in-out; text-indent: -9999px;
     }
-    .indexContainer > div:last-of-type ol.hoverEffect li a{
-        display: block; background-size: cover; background-position: center;
-        background-repeat: no-repeat; height: 100%;
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(1) a{
-        background-image: url('../images/img_cardimage_01.png');
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(2) a{
-        background-image: url('../images/img_cardimage_02.png');
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(3) a{
-        background-image: url('../images/img_cardimage_03.png');
-    }
-    .indexContainer > div:last-of-type ol.hoverEffect li:nth-child(4) a{
-        background-image: url('../images/img_cardimage_04.png');
-    }
     .indexContainer > div:last-of-type div span a{
         display: block; margin-top: 20px;
     }
     /* ? indexContainer */
     
-    .productContainer .bg.sale{background-image: url('../images/ban_02.png');}
-    .productContainer .bg.white{background-image: url('../images/ban_03.png');}
-    .productContainer .bg.red{background-image: url('../images/ban_04.png');}
-    .productContainer .bg.rose{background-image: url('../images/ban_05.png');}
-    .productContainer .bg.sparklingrose{background-image: url('../images/ban_06.png');}
-    .productContainer .bg.sparkling{background-image: url('../images/ban_07.png');}
-    .productContainer .bg.sparklingred{background-image: url('../images/ban_08.png');}
-    .productContainer .bg.dessert{background-image: url('../images/ban_07.png');}
-    .productContainer .bg.pairing{background-image: url('../images/ban_09.png');}
-    .productContainer .bg.productContainer li{
-        list-style: none;
-    }
-    .productContainer input{
-        margin: 0;
-    }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu{
         margin: 0 0 20px auto; width: 200px; height: 30px; display: block;
         padding-left: 10px; outline: none; border: 1px solid #cbcbcb; border-radius: 3px;
@@ -3696,30 +3398,6 @@
     }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:nth-of-type(3n+1){
         margin-left: 0;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a{
-        display: block;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a img{
-        width: 100%; margin-bottom: 20px;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong{
-        display: block; margin-bottom: 20px; line-height: 20px;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span{
-        display: block; text-align: right;
-    }
-    .productContainer > div.pairing+div > div:nth-of-type(3) ul li a span{
-        text-align: left;
-    }
-    .productContainer.pairing > div:nth-of-type(2) > div:nth-of-type(3) ul li a span{
-        text-align: left; line-height: 16px;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span em{
-        float: left;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark{
-        margin-left: 10px;
     }
     /* ? product */
     
@@ -3735,14 +3413,6 @@
         border-top: 1px; border-color: #cbcbcb; border-style: solid; opacity: 50%; position: relative;
         padding-top: 15px; margin: 0 2%;
     }
-    .pager > div > div,
-    .pager > div > div > a{
-        display: inline-block; line-height: 16px;
-    }
-    .pager > div > div:first-of-type a:first-of-type{
-        background: url('../images/bul_firstpage.svg') no-repeat; width: 16px; height: 16px; text-indent: -9999px;
-        position: absolute; left: 7%; top: 15px;
-    }
     .pager > div > div:first-of-type a:last-of-type{
         background: url('../images/bul_previouspage.svg') no-repeat left; width: 16px; height: 16px; padding-left: 30px;
         position: absolute; left: 15%; top: 15px;
@@ -3751,21 +3421,8 @@
         background: url('../images/bul_nextpage.svg') no-repeat right; width: 16px; height: 16px; padding-right: 50px;
         position: absolute; right: 15%; top: 15px;
     }
-    .pager > div > div:last-of-type a:last-of-type{
-        background: url('../images/bul_lastpage.svg') no-repeat; width: 16px; height: 16px; text-indent: -9999px;
-        position: absolute; right: 7%; top: 15px;
-    }
-    .pager > div > div > a.deactive{
-        opacity: 40%;
-    }
     /* ? pager */
 
-    .wineContainer div:first-of-type ul li{
-        align-self: center;
-    }
-    .wineContainer div:first-of-type ul li img{
-        width: 100%;
-    }
     .wineContainer > div:nth-of-type(2) b{
         display: block; margin-bottom: 35px;
     }
@@ -3781,96 +3438,32 @@
     .wineContainer > div:nth-of-type(2) a{
         width: 100%; height: 70px; display: block; text-align: center; line-height: 70px;
     }
-    .wineContainer > div:nth-of-type(2) a:first-of-type{
-        background-color: #7e002b; margin-bottom: 25px;
-    }
     .wineContainer > div:nth-of-type(2) a:last-of-type{
         background-color: #656565; margin-bottom: 80px;
-    }
-    .wineContainer > div:nth-of-type(2) table{
-        width: 100%;
-    }
-    .wineContainer > div:nth-of-type(2) table tbody{
-        display: none;
-    }
-    .wineContainer > div:nth-of-type(2) table tbody tr{
-        display: block; margin-bottom: 30px;
-    }
-    .wineContainer > div:nth-of-type(2) table tbody tr:last-of-type{
-        margin: 0;
     }
     .wineContainer > div:nth-of-type(2) table tbody td{
         width: 250px;
     }
-    .wineContainer > div:nth-of-type(2) table caption.active{
-        background-image: url('../images/bul_arrow_up.png');
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a img{
-        margin-bottom: 20px;
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a strong{
-        display: block; margin-bottom: 20px; line-height: 20px;
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span{
-        display: block; text-align: right;
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span em{
-        float: left;
-    }
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark{
-        margin-left: 10px;
-    }
     /* ? wine detail */
 
-    .suggestContainer{
-        background-color: #f0f0f0;
-    }
     .suggestContainer ul li a{
         display: block; padding-bottom: 20px;
-    }
-    .suggestContainer ul li a img{
-        width: 100%;
-    }
-    .suggestContainer ul li a strong{
-        display: block; margin: 20px 30px 10px;
-    }
-    .suggestContainer ul li a span{
-        display: block; margin: 0 30px; line-height: 24px;
     }
     /* ? suggest */
 
     .pairingContainer > div mark{
         display: block;
     }
-    .pairingContainer > div mark span{
-        margin-left: 20px;
-    }
     .pairingContainer > div div{
         margin-top: 265px;
     }
-    .pairingContainer > div div ol{
-        margin-left: 25px;
-    }
-    .pairingContainer aside ul:first-of-type li{
-        padding-left: 45px; line-height: 25px;
-    }
     .pairingContainer aside ul:first-of-type li:nth-of-type(1){background: url('../images/bul_preparation.svg') no-repeat left; margin-bottom: 35px;}
     .pairingContainer aside ul:first-of-type li:nth-of-type(2){background: url('../images/bul_cookingtime.svg') no-repeat left; margin-bottom: 35px;}
-    .pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.svg') no-repeat left; margin-bottom: 0;}
     .pairingContainer aside h3{
         margin-bottom: 40px;
     }
-    .pairingContainer aside ul:last-of-type{
-        box-sizing: border-box;
-    }
     .pairingContainer aside ul:last-of-type li{
         margin-bottom: 40px; line-height: 25px;
-    }
-    .pairingContainer aside ul:last-of-type li:last-of-type{
-        margin: 0;
-    }
-    .pairingContainer aside ul:last-of-type li input{
-        display: none;
     }
     .pairingContainer aside ul:last-of-type li input + label{
         display: inline-block; background: url('../images/bul_uncheck.png') no-repeat left;
@@ -4878,4 +4471,216 @@
 .lineBtn{
     border: 1px solid #111111; background-color: transparent; border-radius: 3px; cursor: pointer;
 }
+.passwordField.active > .vActiveBtn,
+.newpasswordField.active > .newvActiveBtn{
+    background-image: url('../images/bul_visiblity.png');
+}
+#birthDay,
+#birthMonth,
+#birthYear{
+    text-align: center;
+}
+#newAddressPopup{
+    display: none;
+}
+#editAddressPopup{
+    display: none;
+}
+#deleteAddressPopup{
+    display: none;
+}
+#deleteItemPopup{
+    display: none;
+}
+mark{
+    background-color: transparent;
+}
+mark,
+em{
+    font-style: normal;
+}
+[class*='Container'] li{
+    list-style: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.indexContainer > div:nth-of-type(2) figure img{
+    width: 100%; margin-bottom: 20px;
+}
+.indexContainer > div:nth-of-type(2) figure:not(:last-of-type){
+    margin-left: 2%; box-sizing: border-box;
+}
+.indexContainer > div:nth-of-type(2) figure:last-of-type{
+    margin: 0 2%; box-sizing: border-box;
+}
+.indexContainer > div:nth-of-type(2) figure figcaption p,
+.indexContainer > div:nth-of-type(6) figure figcaption p{
+    margin: 15px 0 30px;
+}
+.indexContainer > div:nth-of-type(3) div span{
+    margin-bottom: 10px; display: block;
+}
+.indexContainer > div:nth-of-type(3) div p,
+.indexContainer > div:nth-of-type(5) div p{
+    margin-bottom: 30px; line-height: 20px;
+}
+.indexContainer > div:nth-of-type(4) div p{
+    margin-bottom: 20px; line-height: 20px;
+}
+.indexContainer > div:last-of-type ol.hoverEffect li a{
+    display: block; background-size: cover; background-position: center;
+    background-repeat: no-repeat; height: 100%;
+}
+.indexContainer > div:last-of-type ol.hoverEffect li:nth-child(1) a{
+    background-image: url('../images/img_cardimage_01.png');
+}
+.indexContainer > div:last-of-type ol.hoverEffect li:nth-child(2) a{
+    background-image: url('../images/img_cardimage_02.png');
+}
+.indexContainer > div:last-of-type ol.hoverEffect li:nth-child(3) a{
+    background-image: url('../images/img_cardimage_03.png');
+}
+.indexContainer > div:last-of-type ol.hoverEffect li:nth-child(4) a{
+    background-image: url('../images/img_cardimage_04.png');
+}
+/* ? indexContainer */
+
+.productContainer .bg.sale{background-image: url('../images/ban_02.png');}
+.productContainer .bg.white{background-image: url('../images/ban_03.png');}
+.productContainer .bg.red{background-image: url('../images/ban_04.png');}
+.productContainer .bg.rose{background-image: url('../images/ban_05.png');}
+.productContainer .bg.sparklingrose{background-image: url('../images/ban_06.png');}
+.productContainer .bg.sparkling{background-image: url('../images/ban_07.png');}
+.productContainer .bg.sparklingred{background-image: url('../images/ban_08.png');}
+.productContainer .bg.dessert{background-image: url('../images/ban_07.png');}
+.productContainer .bg.pairing{background-image: url('../images/ban_09.png');}
+.productContainer .bg.productContainer li{
+    list-style: none;
+}
+.productContainer input{
+    margin: 0;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a{
+    display: block;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a img{
+    width: 100%; margin-bottom: 20px;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong{
+    display: block; margin-bottom: 20px; line-height: 20px;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span{
+    display: block; text-align: right;
+}
+.productContainer > div.pairing+div > div:nth-of-type(3) ul li a span{
+    text-align: left;
+}
+.productContainer.pairing > div:nth-of-type(2) > div:nth-of-type(3) ul li a span{
+    text-align: left; line-height: 16px;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span em{
+    float: left;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark{
+    margin-left: 10px;
+}
+/* ? product */
+
+.pager > div > div,
+.pager > div > div > a{
+    display: inline-block; line-height: 16px;
+}
+.pager > div > div:first-of-type a:first-of-type{
+    background: url('../images/bul_firstpage.svg') no-repeat; width: 16px; height: 16px; text-indent: -9999px;
+    position: absolute; left: 7%; top: 15px;
+}
+.pager > div > div:last-of-type a:last-of-type{
+    background: url('../images/bul_lastpage.svg') no-repeat; width: 16px; height: 16px; text-indent: -9999px;
+    position: absolute; right: 7%; top: 15px;
+}
+.pager > div > div > a.deactive{
+    opacity: 40%;
+}
+/* ? pager */
+
+.wineContainer div:first-of-type ul li{
+    align-self: center;
+}
+.wineContainer div:first-of-type ul li img{
+    width: 100%;
+}
+.wineContainer > div:nth-of-type(2) a:first-of-type{
+    background-color: #7e002b; margin-bottom: 25px;
+}
+.wineContainer > div:nth-of-type(2) table{
+    width: 100%;
+}
+.wineContainer > div:nth-of-type(2) table tbody{
+    display: none;
+}
+.wineContainer > div:nth-of-type(2) table tbody tr{
+    display: block; margin-bottom: 30px;
+}
+.wineContainer > div:nth-of-type(2) table tbody tr:last-of-type{
+    margin: 0;
+}
+.wineContainer > div:nth-of-type(2) table caption.active{
+    background-image: url('../images/bul_arrow_up.png');
+}
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a img{
+    margin-bottom: 20px;
+}
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a strong{
+    display: block; margin-bottom: 20px; line-height: 20px;
+}
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a span{
+    display: block; text-align: right;
+}
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a span em{
+    float: left;
+}
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark{
+    margin-left: 10px;
+}
+/* ? wine detail */
+
+.suggestContainer{
+    background-color: #f0f0f0;
+}
+.suggestContainer ul li a img{
+    width: 100%;
+}
+.suggestContainer ul li a strong{
+    display: block; margin: 20px 30px 10px;
+}
+.suggestContainer ul li a span{
+    display: block; margin: 0 30px; line-height: 24px;
+}
+/* ? suggest */
+
+.pairingContainer > div mark span{
+    margin-left: 20px;
+}
+.pairingContainer > div div ol{
+    margin-left: 25px;
+}
+.pairingContainer aside ul:first-of-type li{
+    padding-left: 45px; line-height: 25px;
+}
+.pairingContainer aside ul:first-of-type li:nth-of-type(3){background: url('../images/bul_servings.svg') no-repeat left; margin-bottom: 0;}
+.pairingContainer aside ul:last-of-type{
+    box-sizing: border-box;
+}
+.pairingContainer aside ul:last-of-type li:last-of-type{
+    margin: 0;
+}
+.pairingContainer aside ul:last-of-type li input{
+    display: none;
+}
+/* ? pairing detail */
+
 /* ? Global */
