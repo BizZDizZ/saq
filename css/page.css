@@ -5,65 +5,34 @@
     .loginContainer div form p a{
         font-size: 14px; font-weight: 200;
     }
-    .indexContainer > div:nth-of-type(2) figure figcaption a,
-    .indexContainer div:nth-of-type(3) div span,
-    .indexContainer div:nth-of-type(3) div a,
-    .indexContainer div:nth-of-type(4) div a,
-    .indexContainer > div:nth-of-type(6) figure figcaption a,
     .wineContainer > div:nth-of-type(2) table tbody td,
     .loginContainer div form a,
-    .productContainer .filter > div > span,
-    .productContainer .filter > div > ul li ul,
-    .productContainer .filter > div > ul li .cp span,
-    .productContainer .filter > div > ul li .cp input,
-    .productContainer .filter > div ul li *:not(strong),
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu,
-    .pager,
-    .suggestContainer ul li a span,
-    .accountContainer ul li a span,
-    .accountBase h2,
-    #newAddressPopup input,
-    #editAddressPopup input,
-    .cartlistContainer h2,
     .cartlistContainer div aside form ol li,
     .cartlistContainer div aside form .fillBtn,
-    .paymentContainer ol li,
     .paymentContainer > form > div > label,
     .paymentContainer > form > div > address,
     .paymentContainer > form > .fillBtn,
     .paymentContainer div div address,
     .paymentContainer div:nth-of-type(4) .fillBtn,
-    .aboutusContainer.contact div p,
-    .aboutusContainer.contact div:nth-of-type(5) label,
     .aboutusContainer.contact select,
     .aboutusContainer.contact input{
         font-size: 14px; font-weight: 300;
     }
-    .indexContainer > div .carouselSlider li strong,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span,
-    .productContainer .pager > div,
-    .pairingContainer > div mark span,
     .pairingContainer aside ul,
-    .accountBase > div > .accountMenu ul li a,
     .empty a,
     .addressbookContainer div div input,
     .wishContainer div div a,
-    .wishContainer > div > ul li a span,
     .cartlistContainer div ul li div a,
     .cartlistContainer div ul li div input,
     .cartlistContainer div aside form ol li span,
     .paymentContainer div:nth-of-type(4) > div input,
     .paymentContainer div:nth-of-type(4) > div label,
     .paymentContainer div:nth-of-type(4) p,
-    #newAddressPopup label,
-    #editAddressPopup label,
-    .accountdetailContainer input,
     .accountdetailContainer > div ul li label,
     .accountdetailContainer > div ul li p,
     .articleContainer > div figure figcaption p,
     .articleContainer > div figure figcaption span,
     .articleContainer.cocktail div:nth-of-type(2) div p,
-    .articleContainer.quebec div div a span,
     .articleContainer.quebec > div:not(:first-of-type) p,
     .aboutusContainer p,
     .aboutusContainer.accessInfo div ul li,
@@ -76,14 +45,7 @@
     .empty p{
         font-size: 14px; font-weight: 500;
     }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong,
-    .wineContainer div:nth-of-type(2) b small,
     .pairingContainer > div div ol,
-    #deleteAddressPopup input,
-    .wishContainer > div > ul li a strong,
-    .lineBtn,
-    .fillBtn,
-    .articleContainer.quebec div div a strong,
     #menuPanel,
     #menuPanel span,
     .productContainer .filter > div > input{
@@ -97,21 +59,13 @@
     .loginContainer > p{
         font-size: 16px; font-weight: 300;
     }
-    #accountPanel,
-    #accountPanel input,
-    .backBtn,
     .loginContainer div label,
     .loginContainer > a,
     .loginContainer div input[type='submit'],
     .loginContainer div b,
     .loginContainer div > a,
-    .addressbookContainer > div > ul li,
-    .addressbookContainer > div > ul li input,
-    .articleContainer ul li p,
     .articleContainer > p,
-    .articleContainer.holiday > div:last-of-type p,
-    .articleContainer.quebec > div:nth-of-type(2) p,
-    .aboutusContainer.FAQ div .accomponent li p{
+    .articleContainer.holiday > div:last-of-type p{
         font-size: 16px; font-weight: 400;
     }
     .indexContainer > div:nth-of-type(3) div p,
@@ -130,29 +84,19 @@
         font-size: 16px; font-weight: 500;
     }
     .cartlistContainer div ul li div a strong,
-    .wineContainer div:nth-of-type(2) b,
-    .pairingContainer > div mark,
-    .articleContainer > div figure figcaption b,
     .articleContainer > div figure figcaption span b{
         font-size: 16px; font-weight: 600;
     }
     .paymentContainer form h3,
     .paymentContainer > div > div > h3,
-    .suggestContainer ul li a strong,
-    .articleContainer ul li a,
     .articleContainer.cocktail div:nth-of-type(2) div strong,
     .aboutusContainer.contact h3,
     .aboutusContainer.FAQ strong{
         font-size: 16px; font-weight: 700;
     }
-    .wishContainer > div > ul li .fillBtn{
-        font-size: 18px; font-weight: 400;
-    }
     .indexContainer > div:last-of-type div span{
         font-size: 18px; font-weight: 500;
     }
-    #payEndPopup h4,
-    #contactEndPopup h3,
     .aboutusContainer.FAQ h4{
         font-size: 18px; font-weight: 700;
     }
@@ -195,11 +139,7 @@
     .articleContainer h2{
         font-size: 24px; font-weight: 700;
     }
-    .indexContainer > div:last-of-type div strong,
-    .accountContainer ul li a b,
-    .addressbookContainer div h3,
-    .accountBase h3,
-    .cartlistContainer h3{
+    .indexContainer > div:last-of-type div strong{
         font-size: 26px; font-weight: 600;
     }
     .indexContainer > div:nth-of-type(3) div h2,
@@ -220,179 +160,7 @@
     .aboutusContainer.history h2{
         font-size: 70px; font-weight: 700;
     }
-    .indexContainer > div:nth-of-type(2) figure figcaption a,
-    .indexContainer > div:nth-of-type(4) div a,
-    .indexContainer > div:nth-of-type(6) figure figcaption a,
-    .indexContainer > div:last-of-type div span a{
-        text-decoration: underline;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption a,
-    .indexContainer > div .carouselSlider li strong,
-    .indexContainer > div:nth-of-type(4) div a,
-    .indexContainer > div:nth-of-type(6) figure figcaption a,
-    .indexContainer > div:last-of-type div span a,
-    .pager > div div,
-    .pager > div div a{
-        color: #000000;
-    }
-    .loginContainer div > a,
-    .accountContainer ul li a,
-    .wishContainer h2,
-    .wishContainer > div h3,
-    .savecardContainer h2,
-    .savecardContainer > div h3,
-    .cartlistContainer h2,
-    .cartlistContainer > div h3{
-        color: #111111;
-    }
-    #menuPanel span,
-    #menuPanel a,
-    .indexContainer > div:nth-of-type(2) figure figcaption strong,
-    .indexContainer > div:nth-of-type(3) div h2,
-    .indexContainer > div:nth-of-type(5) div h2,
-    .indexContainer > div:nth-of-type(6) figure figcaption strong,
-    .indexContainer > div:last-of-type div strong,
-    .productContainer > .filter strong,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span,
-    .wineContainer > div b,
-    .wineContainer div table tbody td,
-    .wineContainer div table tbody th,
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a strong,
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span,
-    .suggestContainer ul li a,
-    .pairingContainer aside,
-    .loginContainer,
-    .loginContainer > a,
-    .loginContainer div form a,
-    .accountMenu ul li a,
-    .wishContainer > div > ul li a strong,
-    .wishContainer > div > ul li a span,
-    .empty h4,
-    .empty p,
-    .cartlistContainer div ul li div a strong,
-    .cartlistContainer div ul li div a span,
-    #payEndPopup h4,
-    .articleContainer,
-    .articleContainer ul li a,
-    .articleContainer > div figure figcaption,
-    .articleContainer.quebec div div a strong,
-    .articleContainer.quebec div div a:last-of-type span,
-    .aboutusContainer,
-    .aboutusContainer a,
-    #contactSubject,
-    .aboutusContainer.contact #firstName,
-    .aboutusContainer.contact #lastName,
-    .aboutusContainer.contact #userEmail,
-    .aboutusContainer.contact #phoneNum,
-    .aboutusContainer.contact div:nth-of-type(5) > div > #contactDetail{
-        color: #333333;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption p,
-    .indexContainer > div:nth-of-type(3) div p,
-    .indexContainer > div:nth-of-type(4) div p,
-    .indexContainer > div:nth-of-type(5) div p,
-    .indexContainer > div:nth-of-type(6) figure figcaption p,
-    .indexContainer > div:last-of-type div span{
-        color: #555555;
-    }
-    .productContainer > .filter > div > span,
-    .productContainer > .filter > div > ul li ul,
-    .productContainer > .filter > div > ul li .cp span,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span em,
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span em,
-    .wishContainer > div > ul li a span em,
-    .cartlistContainer div ul li div a small,
-    .cartlistContainer div ul li div input,
-    .cartlistContainer div ul li div > a,
-    .paymentContainer div:nth-of-type(4) p,
-    .articleContainer.quebec div div a:first-of-type span,
-    .articleContainer.quebec div div a:last-of-type span em{
-        color: #656565;
-    }
-    .aboutusContainer.history ol li h2,
-    .aboutusContainer.profile > div:nth-of-type(2){
-        color: #7e002b;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark,
-    .wineContainer > div:nth-of-type(2) mark,
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark,
-    .wishContainer > div > ul li a span mark,
-    .cartlistContainer div ul li div a mark{
-        color: #cb0044;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span del,
-    .wineContainer > div:nth-of-type(2) b small,
-    .wineContainer > div:nth-of-type(2) del,
-    .addressbookContainer div div input,
-    .wishContainer div div a,
-    .wishContainer > div > ul li a span del,
-    .empty a,
-    .empty input,
-    .cartlistContainer div ul li div a del,
-    .articleContainer > div figure figcaption b small{
-        color: #cbcbcb;
-    }
-    .pairingContainer > div mark{
-        color: #f0e1aa;
-    }
-    .loginContainer div form input[type='submit'],
-    #newAddressPopup .closeBtn,
-    #editAddressPopup .closeBtn,
-    #contactEndPopup .closeBtn,
-    .fillBtn{
-        color: #f0f0f0;
-    }
-    .productContainer h2,
-    .wineContainer > div:nth-of-type(2) a,
-    .pairingContainer > div:not(mark),
-    .pairingContainer > div mark span,
-    .accountContainer h2{
-        color: #ffffff;
-    }    
-    .indexContainer > div:after,
-    .indexContainer > div:last-of-type div:after,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3):after,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span em:after,
-    .pager:before,
-    .wineContainer > div:after,
-    .pairingContainer:after,
-    .loginContainer div ul:after,
-    .accountContainer:after,
-    .addressbookContainer div:after,
-    .wishContainer > div:after,
-    .wishContainer > div > ul:after,
-    .wishContainer > div > ul li a span:after,
-    .savecardContainer > div:after,
-    .cartlistContainer > div:after,
-    .myorderContainer > div:after,
-    .accountdetailContainer > div:after,
-    .accountdetailContainer > div > ul > li > div:after,
-    .cartlistContainer div ul li:after,
-    .paymentContainer div:nth-of-type(4):after,
-    .articleContainer ul:after,
-    .articleContainer > div figure:after,
-    .articleContainer.holiday > div:last-of-type:after,
-    .articleContainer.quebec > div:not(:first-of-type):after,
-    .aboutusContainer.accessInfo > div:nth-of-type(2):after,
-    .aboutusContainer.accessInfo:after,
-    .aboutusContainer.contact > div:nth-of-type(5):before,
-    .aboutusContainer.contact > div:nth-of-type(5):after,
-    .aboutusContainer.contact > div:nth-of-type(5) > div > div:nth-of-type(2):after,
-    .aboutusContainer.contact > div:nth-of-type(5) > div > div:nth-of-type(4):after,
-    .aboutusContainer.profile > div:nth-of-type(1):after,
-    .aboutusContainer.profile > img:after,
-    .aboutusContainer.profile > div:nth-of-type(2):before,
-    .aboutusContainer.profile:after{
-        clear: both; content: ''; display: block;
-    }
-    .fillBtn{
-        border: none; background-color: #7e002b; border-radius: 3px; padding: 0;
-    }
-    .lineBtn{
-        border: 1px solid #111111; background-color: transparent; border-radius: 3px;
-    }
+
     .deleteBtn,
     .closePopup{
         background: url('../images/bul_close.png') no-repeat; text-indent: -9999px;
@@ -565,7 +333,7 @@
         width: 100%; margin-bottom: 20px;
     }
     .indexContainer > div:last-of-type{
-        max-width: 1440px; margin: 0 auto; position: relative;
+        margin: 0 auto; position: relative;
     }
     .indexContainer > div:last-of-type h3 img{
         width: 40px; position: absolute; left: 20px; top: -20px; z-index: 10;
@@ -1319,7 +1087,7 @@
         width: 100%; margin-bottom: 20px;
     }
     .wishContainer > div > ul li a strong{
-        display: block; margin-bottom: 20px; min-height: 28px;
+        display: block; margin-bottom: 20px;
     }
     .wishContainer > div > ul li a span{
         display: block; text-align: right; margin-bottom: 15px;
@@ -1559,6 +1327,9 @@
 
     .paymentContainer{
         margin: 0 2%; padding-top: 115px;
+    }
+    .paymentContainer .backBtn{
+        left: 2%;
     }
     .paymentContainer .numbStepper{
         width: 100%; counter-reset: step; margin: 0 auto;
@@ -2225,12 +1996,6 @@
     .wishContainer > div:nth-of-type(2):after,
     .aboutusContainer.profile > div:nth-of-type(1):after{
         clear: both; content: ''; display: block;
-    }
-    .fillBtn{
-        border: none; background-color: #7e002b; border-radius: 3px; padding: 0;
-    }
-    .lineBtn{
-        border: 1px solid #111111; background-color: transparent; border-radius: 3px;
     }
     .deleteBtn,
     .closePopup{
@@ -2983,12 +2748,6 @@
     .aboutusContainer.profile > div:nth-of-type(2):before{
         clear: both; content: ''; display: block;
     }
-    .fillBtn{
-        border: none; background-color: #7e002b; border-radius: 3px; padding: 0; cursor: pointer;
-    }
-    .lineBtn{
-        border: 1px solid #111111; background-color: transparent; border-radius: 3px; cursor: pointer;
-    }
     .deleteBtn,
     .closePopup{
         background: url('../images/bul_close.png') no-repeat; text-indent: -9999px;
@@ -3669,76 +3428,13 @@
 /* ? Desktop */
 
 @media screen and (min-width: 768px){
-    .indexContainer > div:first-of-type figure figcaption a,
-    .indexContainer div:nth-of-type(3) div span,
-    .indexContainer div:nth-of-type(3) div a,
-    .indexContainer div:nth-of-type(4) div a,
-    .indexContainer > div:nth-of-type(6) figure figcaption a,
-    .indexContainer > div:last-of-type div span a,
-    .productContainer .filter > div > span,
-    .productContainer .filter > div > ul li ul,
-    .productContainer .filter > div > ul li .cp span,
-    .productContainer .filter > div > ul li .cp input,
-    .productContainer .filter > div ul li *:not(strong),
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu,
-    .pager,
-    .suggestContainer ul li a span,
-    .accountContainer ul li a span,
-    .accountBase h2,
-    #newAddressPopup input,
-    #editAddressPopup input,
-    .cartlistContainer h2,
-    .paymentContainer ol li,
-    .aboutusContainer.contact div p,
-    .aboutusContainer.contact div:nth-of-type(5) label{
-        font-size: 14px; font-weight: 300;
-    }
-    .indexContainer > div .carouselSlider li strong,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span,
-    .productContainer .pager > div,
-    .pairingContainer > div mark span,
-    .accountBase > div > .accountMenu ul li a,
-    .wishContainer > div > ul li a span,
-    #newAddressPopup label,
-    #editAddressPopup label,
-    .accountdetailContainer input,
-    .articleContainer.quebec div div a span{
-        font-size: 14px; font-weight: 400;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong,
-    .wineContainer div:nth-of-type(2) b small,
-    #deleteAddressPopup input,
-    .wishContainer > div > ul li a strong,
-    .lineBtn,
-    .fillBtn,
-    .articleContainer.quebec div div a strong{
-        font-size: 14px; font-weight: 600;
-    }
-    #accountPanel,
-    #accountPanel input,
-    .backBtn,
-    .addressbookContainer > div > ul li,
-    .addressbookContainer > div > ul li input,
-    .articleContainer ul li p,
     .articleContainer > div figure figcaption span,
-    .articleContainer.quebec > div:nth-of-type(2) p,
     .aboutusContainer p,
-    .aboutusContainer.FAQ div .accomponent li p,
     .aboutusContainer.history ol li div p{
         font-size: 16px; font-weight: 400;
     }
-    .wineContainer div:nth-of-type(2) b,
-    .pairingContainer > div mark,
-    .articleContainer > div figure figcaption b{
-        font-size: 16px; font-weight: 600;
-    }
-    .suggestContainer ul li a strong,
-    .articleContainer ul li a{
-        font-size: 16px; font-weight: 700;
-    }
     .addressbookContainer div div input,
     .wishContainer div div a,
-    .wishContainer > div > ul li .fillBtn,
     .empty a{
         font-size: 18px; font-weight: 400;
     }
@@ -3753,10 +3449,6 @@
     .loginContainer input[type='text'],
     .empty p{
         font-size: 18px; font-weight: 500;
-    }
-    #payEndPopup h4,
-    #contactEndPopup h3{
-        font-size: 18px; font-weight: 700;
     }
     .loginContainer > p,
     .loginContainer div form p,
@@ -3814,10 +3506,6 @@
     }
     .indexContainer > div:nth-of-type(2) figure figcaption strong,
     .indexContainer > div:nth-of-type(6) figure figcaption strong,
-    .accountContainer ul li a b,
-    .addressbookContainer div h3,
-    .accountBase h3,
-    .cartlistContainer h3,
     .paymentContainer h2{
         font-size: 26px; font-weight: 600;
     }
@@ -3844,150 +3532,15 @@
         font-size: 50px; font-weight: 600;
     }
     
-    .indexContainer > div:nth-of-type(2) figure figcaption a,
-    .indexContainer > div:nth-of-type(4) div a,
-    .indexContainer > div:nth-of-type(6) figure figcaption a,
-    .indexContainer > div:last-of-type div span a{
-        text-decoration: underline;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption a,
-    .indexContainer > div .carouselSlider li strong,
-    .indexContainer > div:nth-of-type(4) div a,
-    .indexContainer > div:nth-of-type(6) figure figcaption a,
-    .indexContainer > div:last-of-type div span a,
-    .pager > div div,
-    .pager > div div a{
-        color: #000000;
-    }
-    .loginContainer div > a,
-    .accountContainer ul li a,
-    .wishContainer h2,
-    .wishContainer > div h3,
-    .savecardContainer h2,
-    .savecardContainer > div h3,
-    .cartlistContainer h2,
-    .cartlistContainer > div h3{
-        color: #111111;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption strong,
-    .indexContainer > div:nth-of-type(3) div h2,
-    .indexContainer > div:nth-of-type(5) div h2,
-    .indexContainer > div:nth-of-type(6) figure figcaption strong,
-    .indexContainer > div:last-of-type div strong,
-    .productContainer > .filter strong,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span,
-    .wineContainer > div b,
-    .wineContainer div table tbody td,
-    .wineContainer div table tbody th,
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a strong,
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span,
-    .suggestContainer ul li a,
-    .pairingContainer aside,
-    .loginContainer,
-    .loginContainer > a,
-    .loginContainer div form a,
-    .accountMenu ul li a,
-    .wishContainer > div > ul li a strong,
-    .wishContainer > div > ul li a span,
-    .empty h4,
-    .empty p,
-    .cartlistContainer div ul li div a strong,
-    .cartlistContainer div ul li div a span,
-    #payEndPopup h4,
-    .articleContainer,
-    .articleContainer ul li a,
-    .articleContainer > div figure figcaption,
-    .articleContainer.quebec div div a strong,
-    .articleContainer.quebec div div a:last-of-type span,
-    .aboutusContainer,
-    .aboutusContainer a,
-    #contactSubject,
-    .aboutusContainer.contact #firstName,
-    .aboutusContainer.contact #lastName,
-    .aboutusContainer.contact #userEmail,
-    .aboutusContainer.contact #phoneNum,
-    .aboutusContainer.contact div:nth-of-type(5) > div > #contactDetail{
-        color: #333333;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption p,
-    .indexContainer > div:nth-of-type(3) div p,
-    .indexContainer > div:nth-of-type(4) div p,
-    .indexContainer > div:nth-of-type(5) div p,
-    .indexContainer > div:nth-of-type(6) figure figcaption p,
-    .indexContainer > div:last-of-type div span{
-        color: #555555;
-    }
-    .productContainer > .filter > div > span,
-    .productContainer > .filter > div > ul li ul,
-    .productContainer > .filter > div > ul li .cp span,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span em,
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span em,
-    .wishContainer > div > ul li a span em,
-    .cartlistContainer div ul li div a small,
-    .cartlistContainer div ul li div input,
-    .cartlistContainer div ul li div > a,
-    .paymentContainer div:nth-of-type(4) p,
-    .articleContainer.quebec div div a:first-of-type span,
-    .articleContainer.quebec div div a:last-of-type span em{
-        color: #656565;
-    }
-    .aboutusContainer.history ol li h2,
-    .aboutusContainer.profile > div:nth-of-type(2),
-    .aboutusContainer.profile > div:nth-of-type(3),
-    .aboutusContainer.profile > div:nth-of-type(4){
-        color: #7e002b;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark,
-    .wineContainer > div:nth-of-type(2) mark,
-    .wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark,
-    .wishContainer > div > ul li a span mark,
-    .cartlistContainer div ul li div a mark{
-        color: #cb0044;
-    }
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span del,
-    .wineContainer > div:nth-of-type(2) b small,
-    .wineContainer > div:nth-of-type(2) del,
-    .addressbookContainer div div input,
-    .wishContainer div div a,
-    .wishContainer > div > ul li a span del,
-    .empty a,
-    .empty input,
-    .cartlistContainer div ul li div a del,
-    .articleContainer > div figure figcaption b small{
-        color: #cbcbcb;
-    }
-    .pairingContainer > div mark{
-        color: #f0e1aa;
-    }
-    .loginContainer div form input[type='submit'],
-    #newAddressPopup .closeBtn,
-    #editAddressPopup .closeBtn,
-    #contactEndPopup .closeBtn,
-    .fillBtn{
-        color: #f0f0f0;
-    }
-    .productContainer h2,
-    .wineContainer > div:nth-of-type(2) a,
-    .pairingContainer > div:not(mark),
-    .pairingContainer > div mark span,
-    .accountContainer h2{
-        color: #ffffff;
-    }
-    
     .indexContainer > div:nth-of-type(2):after,
     .indexContainer > div:last-of-type div:after,
-    .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:after,
     .wineContainer > div:after,
-    .loginContainer div ul:after,
     .accountContainer:after,
     .myorderContainer > div:after,
     .savecardContainer > div:after,
     .wishContainer > div:after,
     .wishContainer > div > ul li:after,
     .cartlistContainer > div ul li:after,
-    .accountdetailContainer > div > ul > li > div:after,
     .paymentContainer div:nth-of-type(4):after,
     .articleContainer ul:after,
     .articleContainer.quebec > div:not(:first-of-type):after,
@@ -5105,4 +4658,224 @@
 }
 /* ? Deskktop + Tablet */
 
+.indexContainer > div:first-of-type figure figcaption a,
+.indexContainer div:nth-of-type(2) figure a,
+.indexContainer div:nth-of-type(3) div span,
+.indexContainer div:nth-of-type(3) div a,
+.indexContainer div:nth-of-type(4) div a,
+.indexContainer > div:nth-of-type(6) figure figcaption a,
+.productContainer .filter > div > span,
+.productContainer .filter > div > ul li ul,
+.productContainer .filter > div > ul li .cp span,
+.productContainer .filter > div > ul li .cp input,
+.productContainer .filter > div ul li *:not(strong),
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu,
+.pager,
+.suggestContainer ul li a span,
+.accountContainer ul li a span,
+.accountBase h2,
+#newAddressPopup input,
+#editAddressPopup input,
+.cartlistContainer h2,
+.paymentContainer ol li,
+.aboutusContainer.contact div p,
+.aboutusContainer.contact div:nth-of-type(5) label{
+    font-size: 14px; font-weight: 300;
+}
+.indexContainer > div .carouselSlider li strong,
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span,
+.productContainer .pager > div,
+.pairingContainer > div mark span,
+.accountBase > div > .accountMenu ul li a,
+.wishContainer > div > ul li a span,
+#newAddressPopup label,
+#editAddressPopup label,
+.accountdetailContainer input,
+.articleContainer.quebec div div a span{
+    font-size: 14px; font-weight: 400;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong,
+.wineContainer div:nth-of-type(2) b small,
+#deleteAddressPopup input,
+.wishContainer > div > ul li a strong,
+.lineBtn,
+.fillBtn,
+.articleContainer.quebec div div a strong{
+    font-size: 14px; font-weight: 600;
+}
+#accountPanel,
+#accountPanel input,
+.backBtn,
+.addressbookContainer > div > ul li,
+.addressbookContainer > div > ul li input,
+.articleContainer ul li p,
+.articleContainer.quebec > div:nth-of-type(2) p,
+.aboutusContainer.FAQ div .accomponent li p{
+    font-size: 16px; font-weight: 400;
+}
+.wineContainer div:nth-of-type(2) b,
+.pairingContainer > div mark,
+.articleContainer > div figure figcaption b{
+    font-size: 16px; font-weight: 600;
+}
+.suggestContainer ul li a strong,
+.articleContainer ul li a{
+    font-size: 16px; font-weight: 700;
+}
+.wishContainer > div > ul li .fillBtn{
+    font-size: 18px; font-weight: 400;
+}
+#payEndPopup h4,
+#contactEndPopup h3{
+    font-size: 18px; font-weight: 700;
+}
+.accountContainer ul li a b,
+.addressbookContainer div h3,
+.accountBase h3,
+.cartlistContainer h3{
+    font-size: 26px; font-weight: 600;
+}
+.indexContainer > div:nth-of-type(2) figure figcaption a,
+.indexContainer > div:nth-of-type(4) div a,
+.indexContainer > div:nth-of-type(6) figure figcaption a,
+.indexContainer > div:last-of-type div span a{
+    text-decoration: underline;
+}
+.indexContainer > div:nth-of-type(2) figure figcaption a,
+.indexContainer > div .carouselSlider li strong,
+.indexContainer > div:nth-of-type(4) div a,
+.indexContainer > div:nth-of-type(6) figure figcaption a,
+.indexContainer > div:last-of-type div span a,
+.pager > div div,
+.pager > div div a{
+    color: #000000;
+}
+.loginContainer div > a,
+.accountContainer ul li a,
+.wishContainer h2,
+.wishContainer > div h3,
+.savecardContainer h2,
+.savecardContainer > div h3,
+.cartlistContainer h2,
+.cartlistContainer > div h3{
+    color: #111111;
+}
+#menuPanel span,
+#menuPanel a,
+.indexContainer > div:nth-of-type(2) figure figcaption strong,
+.indexContainer > div:nth-of-type(3) div h2,
+.indexContainer > div:nth-of-type(5) div h2,
+.indexContainer > div:nth-of-type(6) figure figcaption strong,
+.indexContainer > div:last-of-type div strong,
+.productContainer > .filter strong,
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong,
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span,
+.wineContainer > div b,
+.wineContainer div table tbody td,
+.wineContainer div table tbody th,
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a strong,
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a span,
+.suggestContainer ul li a,
+.pairingContainer aside,
+.loginContainer,
+.loginContainer > a,
+.loginContainer div form a,
+.accountMenu ul li a,
+.wishContainer > div > ul li a strong,
+.wishContainer > div > ul li a span,
+.empty h4,
+.empty p,
+.cartlistContainer div ul li div a strong,
+.cartlistContainer div ul li div a span,
+#payEndPopup h4,
+.articleContainer,
+.articleContainer ul li a,
+.articleContainer > div figure figcaption,
+.articleContainer.quebec div div a strong,
+.articleContainer.quebec div div a:last-of-type span,
+.aboutusContainer,
+.aboutusContainer a,
+#contactSubject,
+.aboutusContainer.contact #firstName,
+.aboutusContainer.contact #lastName,
+.aboutusContainer.contact #userEmail,
+.aboutusContainer.contact #phoneNum,
+.aboutusContainer.contact div:nth-of-type(5) > div > #contactDetail{
+    color: #333333;
+}
+.indexContainer > div:nth-of-type(2) figure figcaption p,
+.indexContainer > div:nth-of-type(3) div p,
+.indexContainer > div:nth-of-type(4) div p,
+.indexContainer > div:nth-of-type(5) div p,
+.indexContainer > div:nth-of-type(6) figure figcaption p,
+.indexContainer > div:last-of-type div span{
+    color: #555555;
+}
+.productContainer > .filter > div > span,
+.productContainer > .filter > div > ul li ul,
+.productContainer > .filter > div > ul li .cp span,
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu,
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span em,
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a span em,
+.wishContainer > div > ul li a span em,
+.cartlistContainer div ul li div a small,
+.cartlistContainer div ul li div input,
+.cartlistContainer div ul li div > a,
+.paymentContainer div:nth-of-type(4) p,
+.articleContainer.quebec div div a:first-of-type span,
+.articleContainer.quebec div div a:last-of-type span em{
+    color: #656565;
+}
+.aboutusContainer.history ol li h2,
+.aboutusContainer.profile > div:nth-of-type(2){
+    color: #7e002b;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark,
+.wineContainer > div:nth-of-type(2) mark,
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark,
+.wishContainer > div > ul li a span mark,
+.cartlistContainer div ul li div a mark{
+    color: #cb0044;
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span del,
+.wineContainer > div:nth-of-type(2) b small,
+.wineContainer > div:nth-of-type(2) del,
+.addressbookContainer div div input,
+.wishContainer div div a,
+.wishContainer > div > ul li a span del,
+.empty a,
+.empty input,
+.cartlistContainer div ul li div a del,
+.articleContainer > div figure figcaption b small{
+    color: #cbcbcb;
+}
+.pairingContainer > div mark{
+    color: #f0e1aa;
+}
+.loginContainer div form input[type='submit'],
+#newAddressPopup .closeBtn,
+#editAddressPopup .closeBtn,
+#contactEndPopup .closeBtn,
+.fillBtn{
+    color: #f0f0f0;
+}
+.productContainer h2,
+.wineContainer > div:nth-of-type(2) a,
+.pairingContainer > div:not(mark),
+.pairingContainer > div mark span,
+.accountContainer h2{
+    color: #ffffff;
+}
+
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:after,
+.loginContainer div ul:after,
+.accountdetailContainer > div > ul > li > div:after{
+    clear: both; content: ''; display: block;
+}
+.fillBtn{
+    border: none; background-color: #7e002b; border-radius: 3px; padding: 0; cursor: pointer;
+}
+.lineBtn{
+    border: 1px solid #111111; background-color: transparent; border-radius: 3px; cursor: pointer;
+}
 /* ? Global */
