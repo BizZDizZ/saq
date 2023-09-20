@@ -1,0 +1,30 @@
+:root{
+    --gs1: #fff;
+    --gs2: #f0f0f0;
+    --gs7: #656565;
+
+
+    --sp10: 10px;
+    --sp20: 20px;
+}
+
+[class^='nun']{
+    font-family: 누니또;
+}
+[class^='cor']{
+    font-family: 코모런트;
+}
+[class*='7']{
+    font-weight: 700;
+}
+[class$='24']{
+    font-size: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+
+}
+@media screen and (min-width: 1280px){    
+    [class$='24']{
+        font-size: 24px;
+    }
+}

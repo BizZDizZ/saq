@@ -4,6 +4,7 @@ $(document).ready(function(){
     sliders(".carouselSlider", false, true, 4, 1, 270, 60);
     panelControl("header > div ul li:first-of-type");
     panelControl("header > div ul li:last-of-type");
+    panelcloseControl("header > div ul li:last-of-type");
     panelControl("header > div input");
     panelControl(".newAdd");
     panelControl(".editAdd");
@@ -56,10 +57,14 @@ function panelControl(openBtn){
             currentPanel = "#" + $(this).attr("data-popup");
         }
         $(currentPanel).addClass("active");
-        $(this).addClass("closePanel");
     });
     $("[class^='close']").click(function(){
         $(currentPanel).removeClass("active");
+    });
+}
+function panelcloseControl(target){
+    $(target).click(function(){
+        $(this).addClass("closePanel");
     });
 }
 function foldControl(target){
