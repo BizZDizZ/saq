@@ -75,6 +75,7 @@
 .cartlistContainer h3{
     font-size: 26px; font-weight: 600;
 }
+
 .indexContainer > div:nth-of-type(2) figure figcaption a,
 .indexContainer > div:nth-of-type(4) div a,
 .indexContainer > div:nth-of-type(6) figure figcaption a,
@@ -2992,12 +2993,10 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .indexContainer > div:nth-of-type(3) div h2,
     .indexContainer > div:nth-of-type(5) div h2,
-    .indexContainer > div:last-of-type div strong{
-        font-size: 50px; font-weight: 600;
-    }
+    .indexContainer > div:last-of-type div strong,
     .pairingContainer > div h2,
     .aboutusContainer.history small{
-        font-size: 56px; font-weight: 700;
+        font-size: 50px; font-weight: 600;
     }
     .productContainer h2,
     .accountContainer h2{
