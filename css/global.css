@@ -98,7 +98,7 @@ a{
 }
 .crrLanguage{
     background: url('../images/ico_language.svg') no-repeat left top; line-height: 24px;
-    box-sizing: border-box; color: #ffffff; font-size: 14px; font-weight: 400; padding-left: 35px;
+    box-sizing: border-box; color: var(--gs1); font-size: 14px; font-weight: 400; padding-left: 35px;
 }
 .bx-wrapper{
     box-shadow: none;
@@ -114,7 +114,7 @@ footer:before{
     display: block; content: ''; clear: both;
 }
 input:-webkit-autofill{
-    -webkit-box-shadow: 0 0 0 1000px #ffffff inset;
+    -webkit-box-shadow: 0 0 0 1000px var(--gs1) inset;
 }
 
 [id$='Panel']{
@@ -125,7 +125,7 @@ input:-webkit-autofill{
 }
 
 #searchPanel{
-    background-color: #ffffff; color: #cbcbcb; width: 100%;
+    background-color: var(--gs1); color: var(--gs3); width: 100%;
     position: fixed; top: 55px; z-index: 51; border-bottom: 1px solid #cbcbcb;
 }
 #searchPanel div{
@@ -165,12 +165,12 @@ footer > div:first-of-type > div form p,
 footer > div:first-of-type > div:last-child address span,
 footer > div:first-of-type > div:last-child address div,
 footer > div:first-of-type > div:last-child address a{
-    color: #555555;
+    color: var(--gs6);
 }
 footer > div:last-of-type > div ol li a,
 footer > div:last-of-type > div,
 footer > div:last-of-type > div > a{
-    color: #4f4f4f;
+    color: var(--gs7);
 }
 footer > ul,
 footer > div:first-of-type > div,
@@ -186,7 +186,7 @@ footer > div:last-of-type:after{
     clear: both; content: ''; display: block;
 }
 footer > ul li a{
-    font-size: 16px; font-weight: 300; color: #000; display: block; text-align: center;
+    font-size: 16px; font-weight: 300; color: var(--gs10); display: block; text-align: center;
 }
 footer > ul li a:before{
     display: block; margin: 0 auto;
@@ -196,7 +196,7 @@ footer > ul li:nth-child(2) a:before{content: url('../images/img_footer_02.png')
 footer > ul li:nth-child(3) a:before{content: url('../images/img_footer_03.png');}
 footer > ul li:nth-child(4) a:before{content: url('../images/img_footer_04.png');}
 footer > div:first-of-type{
-    background-color: #f0f0f0;
+    background-color: var(--gs2);
 }
 footer > div:first-of-type > div ul li{
     display: inline-block; width: 30px; height: 30px; text-indent: -9999px;
@@ -208,7 +208,7 @@ footer > div:first-of-type > div ul li a{
 }
 footer > div:last-of-type > div:last-of-type > a{
     display: block; margin-left: auto; width: 100px; height: 35px; text-align: center;
-    line-height: 35px; color: #ffffff; background-color: #cbcbcb;
+    line-height: 35px; color: var(--gs1); background-color: #cbcbcb;
 }
 footer > div:last-of-type > div:last-of-type div{
     margin-top: 20px;
