@@ -8,8 +8,9 @@
     --gs8: #333;
     --gs9: #111;
     --gs10: #000;
+    --cs3: #CB0044;
     --cs4: #7e002b;
-    --gs2: #f0e1aa;
+    --gps2: #f0e1aa;
 
     --sp10: 10px;
     --sp20: 20px;
@@ -26,7 +27,9 @@
 [class*='7_']{font-weight: 700;}
 [class*='8_']{font-weight: 800;}
 
+@media screen and (max-width: 767px){
 
+}
 @media screen and (min-width: 768px) and (max-width: 1279px){
 
 }
