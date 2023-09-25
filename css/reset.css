@@ -53,14 +53,14 @@ a {
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
-    color:#000;
+    color:var(--gs10);
     text-decoration:none;
 }
 
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:var(--gs10); 
     font-style:italic;
     font-weight:bold;
 }

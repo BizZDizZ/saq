@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 .filter > div > ul > li{
-    border-top: 2px; border-style: solid; border-color: #cbcbcb;
+    border-top: 2px; border-style: solid; border-color: var(--gs3);
 }
 .filter > div > ul > li:last-of-type{
     border-width: 2px 0 2px 0;
@@ -70,7 +70,7 @@
 .filter .range-slider{
     height: 5px;
     position: relative;
-    background-color: #f0f0f0;
+    background-color: var(--gs2);
     border-radius: 2px;
     margin-bottom: 40px;
 }
@@ -80,7 +80,7 @@
     right: 0%;
     position: absolute;
     border-radius: 3px;
-    background-color: #7e002b;
+    background-color: var(--cs4);
 }
 .filter .range-input{
     position: relative;
@@ -100,8 +100,8 @@
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    border: 3px solid #7e002b;
-    background-color: #fff;
+    border: 3px solid var(--cs4);
+    background-color: var(--gs1);
     pointer-events: auto;
     -webkit-appearance: none;
 }
@@ -109,8 +109,8 @@
     height: 15px;
     width: 15px;
     border-radius: 50%;
-    border: 3px solid #7e002b;
-    background-color: #fff;
+    border: 3px solid var(--cs4);
+    background-color: var(--gs1);
     pointer-events: auto;
     -moz-appearance: none;
 }

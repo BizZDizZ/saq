@@ -31,8 +31,8 @@ ul.bxslider {
   -moz-box-shadow: 0 0 5px #ccc;
   -webkit-box-shadow: 0 0 5px #ccc;
   box-shadow: 0 0 5px #ccc;
-  border: 5px solid #fff;
-  background: #fff;
+  border: 5px solid var(--gs1);
+  background: var(--gs1);
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
@@ -43,7 +43,7 @@ ul.bxslider {
 /* LOADER */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url('../images/bx_loader.gif') center center no-repeat #ffffff;
+  background: url('../images/bx_loader.gif') center center no-repeat var(--gs1);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -75,7 +75,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-  background: #000;
+  background: var(--gs10);
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
@@ -169,7 +169,7 @@ ul.bxslider {
   width: 100%;
 }
 .bx-wrapper .bx-caption span {
-  color: #fff;
+  color: var(--gs1);
   font-family: Arial;
   display: block;
   font-size: .85em;
