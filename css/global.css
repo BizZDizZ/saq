@@ -131,9 +131,6 @@ input:-webkit-autofill{
 #searchPanel div{
     margin: 0 auto; position: relative;
 }
-#searchPanel label{
-    display: none;
-}
 #searchPanel input[type='text']:focus{
     outline: none;
 }
