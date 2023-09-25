@@ -57,14 +57,20 @@ function panelControl(openBtn){
             currentPanel = "#" + $(this).attr("data-popup");
         }
         $(currentPanel).addClass("active");
+
     });
     $("[class^='close']").click(function(){
         $(currentPanel).removeClass("active");
     });
 }
 function panelcloseControl(target){
+    var currentPanel = null;
     $(target).click(function(){
-        $(this).addClass("closePanel");
+        $(this).toggleClass("closePanel");
+        if($(this).attr("class") != "closePanel"){
+            currentPanel = "#" + $(this).attr("data-panel");
+            $(currentPanel).toggleClass("active");
+        }
     });
 }
 function foldControl(target){
