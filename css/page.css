@@ -1,84 +1,66 @@
-.indexContainer div:nth-of-type(2) figure a,
-.indexContainer div:nth-of-type(3) div span,
-.indexContainer div:nth-of-type(3) div a,
-.indexContainer div:nth-of-type(4) div a,
-.indexContainer > div:nth-of-type(6) figure figcaption a,
-.productContainer .filter > div > span,
-.productContainer .filter > div > ul li ul,
-.productContainer .filter > div > ul li .cp span,
-.productContainer .filter > div > ul li .cp input,
-.productContainer .filter > div ul li *:not(strong),
-.productContainer > div:nth-of-type(2) > div:nth-of-type(3) .sortmenu,
-.pager,
-.productContainer .pager > div,
-.suggestContainer ul li a span,
-.accountContainer ul li a span,
-.accountBase h2,
-#newAddressPopup input,
-#editAddressPopup input,
-.cartlistContainer h2,
-.paymentContainer ol li,
-.aboutusContainer.contact div p,
-.aboutusContainer.contact div:nth-of-type(5) label{
-    font-size: 14px; font-weight: 300;
-}
-.indexContainer > div .carouselSlider li strong,
-.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span,
-.pairingContainer > div mark span,
-.accountBase > div > .accountMenu ul li a,
-.wishContainer > div > ul li a span,    
-#newAddressPopup label,
-#editAddressPopup label,
-.accountdetailContainer input,
-.articleContainer.quebec div div a span{
-    font-size: 14px; font-weight: 400;
-}
-.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a strong,
 .wineContainer div:nth-of-type(2) b small,
 #deleteAddressPopup input,
-.wishContainer > div > ul li a strong,
+.suggestContainer ul li a span,
+.pairingContainer > div mark span,
+.accountBase > div > .accountMenu ul li a,
+.wishContainer > div > ul li a span,
+#newAddressPopup label,
+#editAddressPopup label,
+.accountContainer ul li a span,
+.accountdetailContainer input,
+.articleContainer.quebec div div a span
+.pager,
+#newAddressPopup input,
+#editAddressPopup input,
+.paymentContainer ol li,
+.aboutusContainer.contact div p,
+.aboutusContainer.contact div:nth-of-type(5) label,
 .lineBtn,
-.fillBtn,
+.fillBtn{
+    font-size: 14px; font-weight: 400;
+}
+.wishContainer > div > ul li a strong,
+.cartlistContainer h2,
+.accountBase h2,
 .articleContainer.quebec div div a strong{
-    font-size: 14px; font-weight: 600;
+    font-size: 14px; font-weight: 700;
 }
 #accountPanel,
 #accountPanel input,
+.wineContainer div:nth-of-type(2) b,
+.pairingContainer > div mark,
 .backBtn,
 .addressbookContainer > div > ul li,
 .addressbookContainer > div > ul li input,
+.articleContainer > div figure figcaption b,
 .articleContainer ul li p,
+.articleContainer ul li a,
 .articleContainer.quebec > div:nth-of-type(2) p,
 .aboutusContainer.FAQ div .accomponent li p{
     font-size: 16px; font-weight: 400;
 }
-.wineContainer div:nth-of-type(2) b,
-.pairingContainer > div mark,
-.articleContainer > div figure figcaption b{
-    font-size: 16px; font-weight: 600;
-}
-.suggestContainer ul li a strong,
-.articleContainer ul li a{
+.suggestContainer ul li a strong{
     font-size: 16px; font-weight: 700;
 }
 .wishContainer > div > ul li .fillBtn{
-    font-size: 18px; font-weight: 400;
+    font-size: 20px; font-weight: 400;
 }
 #payEndPopup h4,
 #contactEndPopup h3{
-    font-size: 18px; font-weight: 700;
+    font-size: 20px; font-weight: 700;
 }
 .accountContainer ul li a b,
 .addressbookContainer div h3,
 .accountBase h3,
 .cartlistContainer h3{
-    font-size: 26px; font-weight: 600;
+    font-size: 30px; font-weight: 600;
 }
 
 .indexContainer > div:nth-of-type(2) figure figcaption a,
 .indexContainer > div:nth-of-type(4) div a,
 .indexContainer > div:nth-of-type(6) figure figcaption a,
-.indexContainer > div:last-of-type div span a{
+.indexContainer > div:last-of-type div span a,
+.loginContainer .backtosign{
     text-decoration: underline;
 }
 .indexContainer > div:nth-of-type(2) figure figcaption a,
@@ -273,7 +255,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .indexContainer > div:nth-of-type(3) div p,
 .indexContainer > div:nth-of-type(5) div p{
-    margin-bottom: 30px; line-height: 20px;
+    margin-bottom: 30px;
 }
 .indexContainer > div:nth-of-type(4) div p{
     margin-bottom: 20px; line-height: 20px;
@@ -430,6 +412,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? pairing detail */
 
+.loginContainer.centeral{
+    text-align: center;
+}
+.loginContainer .backtosign{
+    display: block; width: fit-content; margin: 0 auto;
+}
 .loginContainer div form input{
     margin-bottom: 30px;
 }
@@ -806,14 +794,20 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Global */
 
 @media screen and (max-width: 767px){
-    .indexContainer > div:last-of-type div span a,
+    .wineContainer > div:nth-of-type(2) table tbody td,
+    .pairingContainer aside ul,
+    .pairingContainer > div div ol,
     .loginContainer > p,
     .loginContainer div form p,
-    .loginContainer div form p a{
-        font-size: 14px; font-weight: 200;
-    }
-    .wineContainer > div:nth-of-type(2) table tbody td,
+    .loginContainer div form p a,
     .loginContainer div form a,
+    .empty a,
+    .empty p,
+    .addressbookContainer div div input,
+    .wishContainer div div a,
+    .cartlistContainer div ul li div a,
+    .cartlistContainer div ul li div input,
+    .cartlistContainer div aside form ol li span,
     .cartlistContainer div aside form ol li,
     .cartlistContainer div aside form .fillBtn,
     .paymentContainer > form > div > label,
@@ -821,17 +815,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .paymentContainer > form > .fillBtn,
     .paymentContainer div div address,
     .paymentContainer div:nth-of-type(4) .fillBtn,
-    .aboutusContainer.contact select,
-    .aboutusContainer.contact input{
-        font-size: 14px; font-weight: 300;
-    }
-    .pairingContainer aside ul,
-    .empty a,
-    .addressbookContainer div div input,
-    .wishContainer div div a,
-    .cartlistContainer div ul li div a,
-    .cartlistContainer div ul li div input,
-    .cartlistContainer div aside form ol li span,
     .paymentContainer div:nth-of-type(4) > div input,
     .paymentContainer div:nth-of-type(4) > div label,
     .paymentContainer div:nth-of-type(4) p,
@@ -845,17 +828,14 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.accessInfo div ul li,
     .aboutusContainer.history ol li div p,
     .aboutusContainer.policy ul li,
+    .aboutusContainer.contact select,
+    .aboutusContainer.contact input,
     .aboutusContainer.profile > div:first-of-type ul li{
         font-size: 14px; font-weight: 400;
     }
-    .indexContainer > div:nth-of-type(2) figure figcaption p,
-    .empty p{
-        font-size: 14px; font-weight: 500;
-    }
-    .pairingContainer > div div ol,
+    #searchPanel input,
     #menuPanel,
-    #menuPanel span,
-    .productContainer .filter > div > input{
+    #menuPanel span{
         font-size: 14px; font-weight: 600;
     }
     .wineContainer > div:nth-of-type(2) table tbody th,
@@ -863,22 +843,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.contact .fillBtn{
         font-size: 14px; font-weight: 700;
     }
-    .loginContainer > p{
-        font-size: 16px; font-weight: 300;
-    }
-    .loginContainer div label,
-    .loginContainer > a,
-    .loginContainer div input[type='submit'],
-    .loginContainer div b,
-    .loginContainer div > a,
-    .articleContainer > p,
-    .articleContainer.holiday > div:last-of-type p{
-        font-size: 16px; font-weight: 400;
-    }
-    .indexContainer > div:nth-of-type(3) div p,
-    .indexContainer > div:nth-of-type(4) div p,
-    .indexContainer > div:nth-of-type(5) div p,
-    .indexContainer > div:nth-of-type(6) figure figcaption p,
     .loginContainer #userEmail,
     .loginContainer #userPW
     .loginContainer #firstName,
@@ -887,22 +851,25 @@ input[type="number"]::-webkit-inner-spin-button {
     .loginContainer #birthMonth,
     .loginContainer #birthYear,
     .loginContainer input[type='text'],
-    .empty h4{
-        font-size: 16px; font-weight: 500;
+    .loginContainer > p,
+    .loginContainer div label,
+    .loginContainer > a,
+    .loginContainer div input[type='submit'],
+    .loginContainer div b,
+    .loginContainer div > a,
+    .articleContainer > p,
+    .articleContainer > div figure figcaption span b,
+    .articleContainer.holiday > div:last-of-type p{
+        font-size: 16px; font-weight: 400;
     }
-    .cartlistContainer div ul li div a strong,
-    .articleContainer > div figure figcaption span b{
-        font-size: 16px; font-weight: 600;
-    }
+    .empty h4,
     .paymentContainer form h3,
     .paymentContainer > div > div > h3,
+    .cartlistContainer div ul li div a strong,
     .articleContainer.cocktail div:nth-of-type(2) div strong,
     .aboutusContainer.contact h3,
     .aboutusContainer.FAQ strong{
-        font-size: 16px; font-weight: 700;
-    }
-    .indexContainer > div:last-of-type div span{
-        font-size: 18px; font-weight: 500;
+        font-size: 16px; font-weight: 600;
     }
     .aboutusContainer.FAQ h4{
         font-size: 18px; font-weight: 700;
@@ -912,12 +879,6 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .accountdetailContainer h4{
         font-size: 20px; font-weight: 500;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption strong,
-    .indexContainer > div:nth-of-type(6) figure figcaption strong,
-    .paymentContainer h2,
-    .articleContainer > div:nth-of-type(2) > b{
-        font-size: 20px; font-weight: 600;
     }
     .articleContainer ul li h3,
     .aboutusContainer.FAQ h3,
@@ -938,29 +899,23 @@ input[type="number"]::-webkit-inner-spin-button {
     .wineContainer > div:nth-of-type(2) mark{
         font-size: 24px; font-weight: 300;
     }
-    .aboutusContainer h2{
-        font-size: 24px; font-weight: 600;
-    }
     .pairingContainer aside h3,
     .pairingContainer > div div h3,
-    .articleContainer h2{
-        font-size: 24px; font-weight: 700;
+    .articleContainer h2,
+    .aboutusContainer h2{
+        font-size: 24px; font-weight: 800;
     }
     .indexContainer > div:last-of-type div strong{
         font-size: 26px; font-weight: 600;
     }
-    .indexContainer > div:nth-of-type(3) div h2,
-    .indexContainer > div:nth-of-type(4) div h2,
-    .indexContainer > div:nth-of-type(5) div h2,
+    .paymentContainer h2,
+    .articleContainer > div:nth-of-type(2) > b
     .wineContainer > div:nth-of-type(2) h2,
     .pairingContainer > div h2,
-    .loginContainer h2{
+    .loginContainer h2,
+    .aboutusContainer.history small{
         font-size: 30px; font-weight: 600;
     }
-    .aboutusContainer.history small{
-        font-size: 30px; font-weight: 700;
-    }
-    .productContainer h2,
     .accountContainer h2{
         font-size: 50px; font-weight: 300;
     }
@@ -2181,22 +2136,12 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Mobile */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
-    .indexContainer > div:nth-of-type(2) figure figcaption p,
-    .indexContainer > div:nth-of-type(6) figure figcaption p{
-        font-size: 14px; font-weight: 500;
-    }
     #menuPanel,
-    #menuPanel span,
-    .productContainer .filter > div > input{
+    #menuPanel span{
         font-size: 14px; font-weight: 600;
     }
     .articleContainer > div figure figcaption p{
         font-size: 16px; font-weight: 400;
-    }
-    .indexContainer > div:nth-of-type(3) div p,
-    .indexContainer > div:nth-of-type(5) div p,
-    .indexContainer > div:last-of-type div span{
-        font-size: 18px; font-weight: 500;
     }
     .loginContainer > p{
         font-size: 20px; font-weight: 300;
@@ -2232,20 +2177,11 @@ input[type="number"]::-webkit-inner-spin-button {
     .articleContainer h2{
         font-size: 34px; font-weight: 700;
     }
-    .indexContainer > div:nth-of-type(3) div h2,
-    .indexContainer > div:nth-of-type(4) div h2,
-    .indexContainer > div:nth-of-type(5) div h2,
-    .indexContainer > div:last-of-type div strong{
-        font-size: 40px; font-weight: 600;
-    }
     .wineContainer > div:nth-of-type(2) h2,
-    .pairingContainer > div h2{
-        font-size: 48px; font-weight: 600;
-    }
+    .pairingContainer > div h2,
     .aboutusContainer.history small{
-        font-size: 50px; font-weight: 700;
+        font-size: 50px; font-weight: 600;
     }
-    .productContainer h2,
     .accountContainer h2{
         font-size: 100px; font-weight: 300;
     }
@@ -2363,7 +2299,7 @@ input[type="number"]::-webkit-inner-spin-button {
         border-width: 2px 0 2px 0;
     }
     .productContainer #filterPopup > div > ul > li > strong{
-        font-size: 14px; font-weight: 700; line-height: 60px; width: 100%; display: inline-block;
+        line-height: 60px; width: 100%; display: inline-block;
         background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 24px 24px;
     }
     .productContainer #filterPopup > div > ul > li > strong+ul,
@@ -2621,7 +2557,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 25px 0; display: block;
     }
     #filterPopup.active .closePopup{
-        position: absolute; right: 7%; top: 25px; padding: 0; width: 18px;
+        position: absolute; right: 7%; top: 25px; padding: 0; width: 25px;
     }
     /* ? Popup */
 
@@ -2945,59 +2881,34 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Tablet */
 
 @media screen and (min-width: 1280px){
-    .indexContainer > div:nth-of-type(2) figure figcaption p,
-    .indexContainer > div:nth-of-type(6) figure figcaption p{
-        font-size: 18px; font-weight: 500;
-    }
+    .pairingContainer > div div ol,
+    .articleContainer > div figure figcaption p,
     .articleContainer > div figure figcaption span b{
-        font-size: 18px; font-weight: 600;
-    }
-    .articleContainer > div figure figcaption p{
         font-size: 20px; font-weight: 400;
     }
-    .pairingContainer > div div ol{
-        font-size: 22px; font-weight: 600;
-    }
-    .loginContainer > p{
-        font-size: 24px; font-weight: 300;
-    }
     .pairingContainer aside ul,
+    .loginContainer > p,
     .articleContainer > p,
     .articleContainer.cocktail div:nth-of-type(2) div p,
     .articleContainer.holiday > div:last-of-type p{
-        font-size: 24px; font-weight: 400;
-    }
-    .indexContainer > div:last-of-type div span{
-        font-size: 24px; font-weight: 500;
+        font-size: 24px; font-weight: 300;
     }
     .articleContainer ul li h3{
-        font-size: 24px; font-weight: 700;
+        font-size: 24px; font-weight: 800;
     }
+    .articleContainer > div:nth-of-type(2) > b,
+    .articleContainer.holiday > div:last-of-type strong,
+    .aboutusContainer.FAQ h3,
     .aboutusContainer.FAQ h4{
-        font-size: 26px; font-weight: 700;
-    }
-    .aboutusContainer.FAQ h3{
-        font-size: 34px; font-weight: 700;
-    }
-    .articleContainer.holiday > div:last-of-type strong{
-        font-size: 34px; font-weight: 800;
-    }
-    .articleContainer > div:nth-of-type(2) > b{
-        font-size: 36px; font-weight: 600;
+        font-size: 30px; font-weight: 600;
     }
     .wineContainer > div:nth-of-type(2) h2,
-    .articleContainer h2,
-    .aboutusContainer h2{
-        font-size: 48px; font-weight: 600;
-    }
-    .indexContainer > div:nth-of-type(3) div h2,
-    .indexContainer > div:nth-of-type(5) div h2,
-    .indexContainer > div:last-of-type div strong,
     .pairingContainer > div h2,
+    .articleContainer h2,
+    .aboutusContainer h2,
     .aboutusContainer.history small{
         font-size: 50px; font-weight: 600;
     }
-    .productContainer h2,
     .accountContainer h2{
         font-size: 150px; font-weight: 300;
     }
@@ -3131,7 +3042,7 @@ input[type="number"]::-webkit-inner-spin-button {
         border-width: 2px 0 2px 0;
     }
     .productContainer .filter > div > ul > li > strong{
-        font-size: 14px; font-weight: 700; line-height: 60px; width: 100%; display: inline-block;
+        line-height: 60px; width: 100%; display: inline-block;
         background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 24px 24px;
         cursor: pointer;
     }
@@ -3698,38 +3609,30 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .addressbookContainer div div input,
     .wishContainer div div a,
-    .empty a{
-        font-size: 18px; font-weight: 400;
-    }
+    .empty a,
     .indexContainer div:nth-of-type(4) div p,
     .loginContainer #userEmail,
-    .loginContainer #userPW
+    .loginContainer #userPW,
     .loginContainer #firstName,
     .loginContainer #lastName,
     .loginContainer #birthDay,
     .loginContainer #birthMonth,
     .loginContainer #birthYear,
     .loginContainer input[type='text'],
-    .empty p{
-        font-size: 18px; font-weight: 500;
-    }
     .loginContainer > p,
     .loginContainer div form p,
-    .loginContainer div form p a{
-        font-size: 20px; font-weight: 200;
-    }
+    .loginContainer div form p a,
+    .empty p,
+    .cartlistContainer div ul li div a,
+    .cartlistContainer div ul li div input,
+    .cartlistContainer div aside form ol li span,
     .cartlistContainer div aside form ol li b,
     .cartlistContainer div aside form .fillBtn,
     .paymentContainer > form > div > label,
     .paymentContainer > form > div > address,
     .paymentContainer > form > .fillBtn,
     .paymentContainer div div address,
-    .paymentContainer div:nth-of-type(4) .fillBtn{
-        font-size: 20px; font-weight: 300;
-    }
-    .cartlistContainer div ul li div a,
-    .cartlistContainer div ul li div input,
-    .cartlistContainer div aside form ol li span,
+    .paymentContainer div:nth-of-type(4) .fillBtn,
     .paymentContainer div:nth-of-type(4) > div input,
     .paymentContainer div:nth-of-type(4) > div label,
     .paymentContainer div:nth-of-type(4) p{
@@ -3740,53 +3643,45 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.profile > div strong{
         font-size: 20px; font-weight: 700;
     }
-    .cartlistContainer div ul li div a strong,
-    .cartlistContainer div aside h4{
-        font-size: 22px; font-weight: 600;
-    }
     .wineContainer > div:nth-of-type(2) table tbody td,
-    .loginContainer div form a{
-        font-size: 24px; font-weight: 300;
-    }
     .wineContainer > div:nth-of-type(2) a,
+    .loginContainer div form a,
     .loginContainer > a,
     .loginContainer div label,
     .loginContainer div input[type='submit'],
     .loginContainer div b,
-    .loginContainer div > a{
-        font-size: 24px; font-weight: 400;
+    .loginContainer div > a,
+    .loginContainer div div #subcheck+label{
+        font-size: 24px; font-weight: 300;
+    }
+    .wineContainer > div:nth-of-type(2) table tbody th{
+        font-size: 24px; font-weight: 700;
     }
     .empty h4,
-    .accountdetailContainer h4{
-        font-size: 24px; font-weight: 500;
-    }
-    .wineContainer > div:nth-of-type(2) table tbody th,
-    .loginContainer div div #subcheck+label,
+    .accountdetailContainer h4,
+    .cartlistContainer div ul li div a strong,
+    .cartlistContainer div aside h4,
     .articleContainer.cocktail div:nth-of-type(2) div strong,
     .aboutusContainer.contact h3,
     .aboutusContainer.history ol li div strong{
-        font-size: 24px; font-weight: 700;
-    }
-    .indexContainer > div:nth-of-type(2) figure figcaption strong,
-    .indexContainer > div:nth-of-type(6) figure figcaption strong,
-    .paymentContainer h2{
-        font-size: 26px; font-weight: 600;
-    }
-    .pairingContainer > div div h3,
-    .pairingContainer aside h3{
-        font-size: 34px; font-weight: 700;
-    }
-    .wineContainer > div:nth-of-type(2) table caption,
-    .wineContainer > div:last-of-type h3,
-    .suggestContainer h3,
-    .articleContainer.cocktail div:nth-of-type(2) div h3,
-    .articleContainer.quebec > div:not(:first-of-type) h3{
-        font-size: 34px; font-weight: 800;
+        font-size: 24px; font-weight: 800;
     }
     .wineContainer > div:nth-of-type(2) span,
     .wineContainer > div:nth-of-type(2) del,
     .wineContainer > div:nth-of-type(2) mark{
-        font-size: 36px; font-weight: 300;
+        font-size: 30px; font-weight: 300;
+    }
+    .indexContainer > div:nth-of-type(2) figure figcaption strong,
+    .indexContainer > div:nth-of-type(6) figure figcaption strong,
+    .wineContainer > div:nth-of-type(2) table caption,
+    .wineContainer > div:last-of-type h3,
+    .suggestContainer h3,
+    .pairingContainer > div div h3,
+    .pairingContainer aside h3,
+    .paymentContainer h2,
+    .articleContainer.cocktail div:nth-of-type(2) div h3,
+    .articleContainer.quebec > div:not(:first-of-type) h3{
+        font-size: 30px; font-weight: 600;
     }
     .indexContainer > div:nth-of-type(4) div h2{
         font-size: 40px; font-weight: 600;
@@ -3910,7 +3805,7 @@ input[type="number"]::-webkit-inner-spin-button {
         background-color: var(--gs4); margin-bottom: 80px;
     }
     .wineContainer > div:nth-of-type(2) table tbody td{
-        width: 250px;
+        min-width: 250px;
     }
     /* ? wine detail */
 

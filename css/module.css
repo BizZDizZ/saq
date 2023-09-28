@@ -31,24 +31,30 @@
 [class*='8_']{font-weight: 800;}
 
 @media screen and (max-width: 767px){
-
+    [class$='_14']{font-size: 14px;}
+    [class$='_16']{font-size: 16px;}
+    [class$='_150']{font-size: 100px;}
+    [class='cor4_20']{font-size: 16px;}
+    [class='cor6_30']{font-size: 26px;}
+    [class='cor6_50']{font-size: 30px;}
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
-
+    [class$='_14']{font-size: 14px;}
+    [class$='_16']{font-size: 16px;}
+    [class$='_150']{font-size: 100px;}
+    [class='cor4_20']{font-size: 18px;}
+    [class='cor6_30']{font-size: 26px;}
+    [class='cor6_50']{font-size: 50px;}
 }
-@media screen and (min-width: 1280px){    
-    [class$='14']{font-size: 14px;}
-    [class$='16']{font-size: 16px;}
-    [class$='18']{font-size: 18px;}
-    [class$='20']{font-size: 20px;}
-    [class$='22']{font-size: 22px;}
-    [class$='24']{font-size: 24px;}
-    [class$='26']{font-size: 26px;}
-    [class$='34']{font-size: 34px;}
-    [class$='36']{font-size: 36px;}
-    [class$='40']{font-size: 40px;}
-    [class$='48']{font-size: 48px;}
-    [class$='50']{font-size: 50px;}
-    [class$='150']{font-size: 150px;}
-    [class$='200']{font-size: 200px;}
+@media screen and (min-width: 1280px){
+    [class$='_14']{font-size: 14px;}
+    [class$='_16']{font-size: 16px;}
+    [class$='_20']{font-size: 20px;}
+    [class$='_24']{font-size: 24px;}
+    [class$='_30']{font-size: 34px;}
+    [class$='_35']{font-size: 35px;}
+    [class$='_40']{font-size: 40px;}
+    [class$='_50']{font-size: 50px;}
+    [class$='_150']{font-size: 150px;}
+    [class$='_200']{font-size: 200px;}
 }

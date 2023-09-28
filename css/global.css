@@ -182,7 +182,7 @@ footer > div:last-of-type:after{
     clear: both; content: ''; display: block;
 }
 footer > ul li a{
-    font-size: 16px; font-weight: 300; color: var(--gs10); display: block; text-align: center;
+    font-size: 16px; font-weight: 700; color: var(--gs10); display: block; text-align: center;
 }
 footer > ul li a:before{
     display: block; margin: 0 auto;
@@ -224,8 +224,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 @media screen and (max-width: 767px){
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid var(--gs10);
-        font-size: 14px; font-weight: 200; width: 96%;
-        margin: 20px 2%; padding: 0 5px; box-sizing: border-box;
+        width: 96%; margin: 20px 2%; padding: 0 5px; box-sizing: border-box;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
@@ -381,7 +380,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         margin-bottom: 20px; line-height: 20px;
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 25px; font-size: 14px; font-weight: 700;
+        margin-top: 25px; font-size: 16px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type div ul{
         margin: 10px 0 20px; display: flex; flex-wrap: wrap;
@@ -422,11 +421,11 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         border-radius: 3px; padding: 50px 24px; width: 300px; top: 42px;
     }
     #menuPanel .closePanel{
-        background: url('../images/bul_close.png') no-repeat; background-size: 20px; width: 20px; border: none;
-        text-indent: -9999px; width: 20px; height: 20px; position: absolute; right: 40px;
+        background: url('../images/bul_close.png') no-repeat; background-size: 30px; width: 20px; border: none;
+        text-indent: -9999px; width: 30px; height: 30px; position: absolute; right: 40px;
     }
     #menuPanel span{
-        line-height: 24px; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid var(--gs3); display: block;
+        line-height: 30px; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid var(--gs3); display: block;
         width: 250px;
     }
     #menuPanel ul{
@@ -678,7 +677,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 @media screen and (min-width: 768px){
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid var(--gs10);
-        font-size: 24px; font-weight: 400; width: 96%; box-sizing: border-box;
+        font-size: 24px; font-weight: 600; width: 96%; box-sizing: border-box;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
@@ -741,14 +740,12 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     footer > div:first-of-type > div:last-child address div > span{
         margin-left: 15px;
     }
-    footer > div:last-of-type > div h3{
+    footer > div:last-of-type > div h3,
+    footer > div:last-of-type > div:last-of-type div h4{
         font-size: 16px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type p{
         line-height: 20px;
-    }
-    footer > div:last-of-type > div:last-of-type div h4{
-        font-size: 14px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type div{
         max-width: 525px; margin-left: auto;
