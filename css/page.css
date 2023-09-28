@@ -2447,7 +2447,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: block;
     }
     .wineContainer > div:last-of-type h3{
-        margin: 200px 0 75px 1%;
+        margin: 200px 0 75px;
     }
     .wineContainer .bx-wrapper:last-of-type{
         width: 100%; margin-bottom: 60px;
