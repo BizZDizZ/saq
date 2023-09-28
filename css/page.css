@@ -1,7 +1,4 @@
-.wineContainer div:nth-of-type(2) b small,
 #deleteAddressPopup input,
-.suggestContainer ul li a span,
-.pairingContainer > div mark span,
 .accountBase > div > .accountMenu ul li a,
 .wishContainer > div > ul li a span,
 #newAddressPopup label,
@@ -27,8 +24,6 @@
 }
 #accountPanel,
 #accountPanel input,
-.wineContainer div:nth-of-type(2) b,
-.pairingContainer > div mark,
 .backBtn,
 .addressbookContainer > div > ul li,
 .addressbookContainer > div > ul li input,
@@ -794,9 +789,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Global */
 
 @media screen and (max-width: 767px){
-    .wineContainer > div:nth-of-type(2) table tbody td,
-    .pairingContainer aside ul,
-    .pairingContainer > div div ol,
     .loginContainer > p,
     .loginContainer div form p,
     .loginContainer div form p a,
@@ -838,7 +830,6 @@ input[type="number"]::-webkit-inner-spin-button {
     #menuPanel span{
         font-size: 14px; font-weight: 600;
     }
-    .wineContainer > div:nth-of-type(2) table tbody th,
     .loginContainer div div #subcheck+label,
     .aboutusContainer.contact .fillBtn{
         font-size: 14px; font-weight: 700;
@@ -874,9 +865,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.FAQ h4{
         font-size: 18px; font-weight: 700;
     }
-    .wineContainer > div:nth-of-type(2) a{
-        font-size: 20px; font-weight: 400;
-    }
     .accountdetailContainer h4{
         font-size: 20px; font-weight: 500;
     }
@@ -886,21 +874,12 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.history ol li div strong{
         font-size: 20px; font-weight: 700;
     }
-    .wineContainer > div:nth-of-type(2) table caption,
-    .wineContainer > div:last-of-type h3,
     .suggestContainer h3,
     .articleContainer.cocktail div:nth-of-type(2) div h3,
     .articleContainer.holiday > div:last-of-type strong,
     .articleContainer.quebec > div:not(:first-of-type) h3{
         font-size: 20px; font-weight: 800;
     }
-    .wineContainer > div:nth-of-type(2) span,
-    .wineContainer > div:nth-of-type(2) del,
-    .wineContainer > div:nth-of-type(2) mark{
-        font-size: 24px; font-weight: 300;
-    }
-    .pairingContainer aside h3,
-    .pairingContainer > div div h3,
     .articleContainer h2,
     .aboutusContainer h2{
         font-size: 24px; font-weight: 800;
@@ -911,7 +890,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .paymentContainer h2,
     .articleContainer > div:nth-of-type(2) > b
     .wineContainer > div:nth-of-type(2) h2,
-    .pairingContainer > div h2,
     .loginContainer h2,
     .aboutusContainer.history small{
         font-size: 30px; font-weight: 600;
@@ -1317,7 +1295,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .pairingContainer{
         margin: 85px 2% 0; padding: 30px 0 30px;
-        background: linear-gradient(to bottom, var(--gs5), var(--gs4));
+        background: linear-gradient(to bottom, var(--cs5), var(--cs4));
         border-radius: 15px;
     }
     .pairingContainer > div{
@@ -2146,13 +2124,11 @@ input[type="number"]::-webkit-inner-spin-button {
     .loginContainer > p{
         font-size: 20px; font-weight: 300;
     }
-    .pairingContainer aside ul,
     .articleContainer > p,
     .articleContainer.cocktail div:nth-of-type(2) div p,
     .articleContainer.holiday > div:last-of-type p{
         font-size: 20px; font-weight: 400;
     }
-    .pairingContainer > div div ol,
     .articleContainer > div figure figcaption span b{
         font-size: 20px; font-weight: 600;
     }
@@ -2177,8 +2153,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .articleContainer h2{
         font-size: 34px; font-weight: 700;
     }
-    .wineContainer > div:nth-of-type(2) h2,
-    .pairingContainer > div h2,
     .aboutusContainer.history small{
         font-size: 50px; font-weight: 600;
     }
@@ -2881,12 +2855,10 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Tablet */
 
 @media screen and (min-width: 1280px){
-    .pairingContainer > div div ol,
     .articleContainer > div figure figcaption p,
     .articleContainer > div figure figcaption span b{
         font-size: 20px; font-weight: 400;
     }
-    .pairingContainer aside ul,
     .loginContainer > p,
     .articleContainer > p,
     .articleContainer.cocktail div:nth-of-type(2) div p,
@@ -2902,8 +2874,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.FAQ h4{
         font-size: 30px; font-weight: 600;
     }
-    .wineContainer > div:nth-of-type(2) h2,
-    .pairingContainer > div h2,
     .articleContainer h2,
     .aboutusContainer h2,
     .aboutusContainer.history small{
@@ -3209,7 +3179,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
     .pairingContainer{
         margin: 250px auto 0; max-width: 1382px; padding: 45px 0;
-        background: linear-gradient(to bottom, var(--gs5), var(--gs4));
+        background: linear-gradient(to bottom, var(--cs5), var(--cs4));
         border-radius: 35px; display: flex;
     }
     .pairingContainer > *{
@@ -3643,8 +3613,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.profile > div strong{
         font-size: 20px; font-weight: 700;
     }
-    .wineContainer > div:nth-of-type(2) table tbody td,
-    .wineContainer > div:nth-of-type(2) a,
     .loginContainer div form a,
     .loginContainer > a,
     .loginContainer div label,
@@ -3653,9 +3621,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .loginContainer div > a,
     .loginContainer div div #subcheck+label{
         font-size: 24px; font-weight: 300;
-    }
-    .wineContainer > div:nth-of-type(2) table tbody th{
-        font-size: 24px; font-weight: 700;
     }
     .empty h4,
     .accountdetailContainer h4,
@@ -3666,18 +3631,9 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.history ol li div strong{
         font-size: 24px; font-weight: 800;
     }
-    .wineContainer > div:nth-of-type(2) span,
-    .wineContainer > div:nth-of-type(2) del,
-    .wineContainer > div:nth-of-type(2) mark{
-        font-size: 30px; font-weight: 300;
-    }
     .indexContainer > div:nth-of-type(2) figure figcaption strong,
     .indexContainer > div:nth-of-type(6) figure figcaption strong,
-    .wineContainer > div:nth-of-type(2) table caption,
-    .wineContainer > div:last-of-type h3,
     .suggestContainer h3,
-    .pairingContainer > div div h3,
-    .pairingContainer aside h3,
     .paymentContainer h2,
     .articleContainer.cocktail div:nth-of-type(2) div h3,
     .articleContainer.quebec > div:not(:first-of-type) h3{

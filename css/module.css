@@ -33,6 +33,7 @@
 @media screen and (max-width: 767px){
     [class$='_14']{font-size: 14px;}
     [class$='_16']{font-size: 16px;}
+    [class$='_20']{font-size: 18px;}
     [class$='_24']{font-size: 20px;}
     [class$='_50']{font-size: 30px;}
     [class$='_150']{font-size: 40px;}
@@ -46,6 +47,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px){
     [class$='_14']{font-size: 14px;}
     [class$='_16']{font-size: 16px;}
+    [class$='_20']{font-size: 18px;}
     [class$='_24']{font-size: 24px;}
     [class$='_50']{font-size: 50px;}
     [class$='_150']{font-size: 100px;}
