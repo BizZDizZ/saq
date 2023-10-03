@@ -5,7 +5,6 @@
 #editAddressPopup label,
 .accountContainer ul li a span,
 .accountdetailContainer input,
-.articleContainer.quebec div div a span
 .pager,
 #newAddressPopup input,
 #editAddressPopup input,
@@ -16,8 +15,7 @@
 }
 .wishContainer > div > ul li a strong,
 .cartlistContainer h2,
-.accountBase h2,
-.articleContainer.quebec div div a strong{
+.accountBase h2{
     font-size: 14px; font-weight: 700;
 }
 #accountPanel,
@@ -25,10 +23,6 @@
 .backBtn,
 .addressbookContainer > div > ul li,
 .addressbookContainer > div > ul li input,
-.articleContainer > div figure figcaption b,
-.articleContainer ul li p,
-.articleContainer ul li a,
-.articleContainer.quebec > div:nth-of-type(2) p,
 .aboutusContainer.FAQ div .accomponent li p{
     font-size: 16px; font-weight: 400;
 }
@@ -806,10 +800,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .paymentContainer div:nth-of-type(4) p,
     .accountdetailContainer > div ul li label,
     .accountdetailContainer > div ul li p,
-    .articleContainer > div figure figcaption p,
-    .articleContainer > div figure figcaption span,
-    .articleContainer.cocktail div:nth-of-type(2) div p,
-    .articleContainer.quebec > div:not(:first-of-type) p,
     .aboutusContainer p,
     .aboutusContainer.accessInfo div ul li,
     .aboutusContainer.history ol li div p,
@@ -827,16 +817,10 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.contact .fillBtn{
         font-size: 14px; font-weight: 700;
     }
-    .articleContainer > p,
-    .articleContainer > div figure figcaption span b,
-    .articleContainer.holiday > div:last-of-type p{
-        font-size: 16px; font-weight: 400;
-    }
     .empty h4,
     .paymentContainer form h3,
     .paymentContainer > div > div > h3,
     .cartlistContainer div ul li div a strong,
-    .articleContainer.cocktail div:nth-of-type(2) div strong,
     .aboutusContainer.contact h3,
     .aboutusContainer.FAQ strong{
         font-size: 16px; font-weight: 600;
@@ -847,24 +831,15 @@ input[type="number"]::-webkit-inner-spin-button {
     .accountdetailContainer h4{
         font-size: 20px; font-weight: 500;
     }
-    .articleContainer ul li h3,
     .aboutusContainer.FAQ h3,
     .aboutusContainer.profile > div strong,
     .aboutusContainer.history ol li div strong{
         font-size: 20px; font-weight: 700;
     }
-    .suggestContainer h3,
-    .articleContainer.cocktail div:nth-of-type(2) div h3,
-    .articleContainer.holiday > div:last-of-type strong,
-    .articleContainer.quebec > div:not(:first-of-type) h3{
-        font-size: 20px; font-weight: 800;
-    }
-    .articleContainer h2,
     .aboutusContainer h2{
         font-size: 24px; font-weight: 800;
     }
     .paymentContainer h2,
-    .articleContainer > div:nth-of-type(2) > b
     .wineContainer > div:nth-of-type(2) h2,
     .aboutusContainer.history small{
         font-size: 30px; font-weight: 600;
@@ -2093,20 +2068,6 @@ input[type="number"]::-webkit-inner-spin-button {
     #menuPanel span{
         font-size: 14px; font-weight: 600;
     }
-    .articleContainer > div figure figcaption p{
-        font-size: 16px; font-weight: 400;
-    }
-    .articleContainer > p,
-    .articleContainer.cocktail div:nth-of-type(2) div p,
-    .articleContainer.holiday > div:last-of-type p{
-        font-size: 20px; font-weight: 400;
-    }
-    .articleContainer > div figure figcaption span b{
-        font-size: 20px; font-weight: 600;
-    }
-    .articleContainer ul li h3{
-        font-size: 20px; font-weight: 700;
-    }
     .aboutusContainer.FAQ h4{
         font-size: 22px; font-weight: 700;
     }
@@ -2116,14 +2077,8 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.FAQ h3{
         font-size: 26px; font-weight: 700;
     }
-    .articleContainer.holiday > div:last-of-type strong{
-        font-size: 26px; font-weight: 800;
-    }
     .aboutusContainer h2{
         font-size: 34px; font-weight: 600;
-    }
-    .articleContainer h2{
-        font-size: 34px; font-weight: 700;
     }
     .aboutusContainer.history small{
         font-size: 50px; font-weight: 600;
@@ -2827,25 +2782,10 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Tablet */
 
 @media screen and (min-width: 1280px){
-    .articleContainer > div figure figcaption p,
-    .articleContainer > div figure figcaption span b{
-        font-size: 20px; font-weight: 400;
-    }
-    .articleContainer > p,
-    .articleContainer.cocktail div:nth-of-type(2) div p,
-    .articleContainer.holiday > div:last-of-type p{
-        font-size: 24px; font-weight: 300;
-    }
-    .articleContainer ul li h3{
-        font-size: 24px; font-weight: 800;
-    }
-    .articleContainer > div:nth-of-type(2) > b,
-    .articleContainer.holiday > div:last-of-type strong,
     .aboutusContainer.FAQ h3,
     .aboutusContainer.FAQ h4{
         font-size: 30px; font-weight: 600;
     }
-    .articleContainer h2,
     .aboutusContainer h2,
     .aboutusContainer.history small{
         font-size: 50px; font-weight: 600;
@@ -3429,6 +3369,9 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 46%; margin-left: 2%;
     }
 
+    .articleContainer.holiday > *{
+        width: 96%;
+    }
     .articleContainer.holiday > p{
         margin-bottom: 100px; line-height: 30px;
     }
@@ -3436,6 +3379,9 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 36%; float: right; margin: 0 0 40px 3%;
     }
 
+    .articleContainer.quebec > *{
+        width: 96%;
+    }
     .articleContainer.quebec > p{
         margin-bottom: 50px; line-height: 30px;
     }
@@ -3543,7 +3489,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Desktop */
 
 @media screen and (min-width: 768px){
-    .articleContainer > div figure figcaption span,
     .aboutusContainer p,
     .aboutusContainer.history ol li div p{
         font-size: 16px; font-weight: 400;
@@ -3576,15 +3521,11 @@ input[type="number"]::-webkit-inner-spin-button {
     .accountdetailContainer h4,
     .cartlistContainer div ul li div a strong,
     .cartlistContainer div aside h4,
-    .articleContainer.cocktail div:nth-of-type(2) div strong,
     .aboutusContainer.contact h3,
     .aboutusContainer.history ol li div strong{
         font-size: 24px; font-weight: 800;
     }
-    .suggestContainer h3,
-    .paymentContainer h2,
-    .articleContainer.cocktail div:nth-of-type(2) div h3,
-    .articleContainer.quebec > div:not(:first-of-type) h3{
+    .paymentContainer h2{
         font-size: 30px; font-weight: 600;
     }
     
