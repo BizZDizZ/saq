@@ -2432,7 +2432,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .accountContainer ul li{
         width: 49%; float: left; border: 1px solid var(--gs3); border-radius: 3px;
-        margin-bottom: 60px; padding: 40px 3% 35px; box-sizing: border-box; min-height: 205px;
+        margin-bottom: 60px; padding: 40px 3% 35px; box-sizing: border-box; min-height: 210px;
     }
     .accountContainer ul li:nth-of-type(2n){
         margin-left: 2%;
