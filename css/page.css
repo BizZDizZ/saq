@@ -90,17 +90,6 @@
 .articleContainer.quebec div div a:last-of-type span em{
     color: var(--gs4);
 }
-.aboutusContainer.history ol li h2,
-.aboutusContainer.profile > div:nth-of-type(2){
-    color: var(--cs4);
-}
-.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark,
-.wineContainer > div:nth-of-type(2) mark,
-.wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark,
-.wishContainer > div > ul li a span mark,
-.cartlistContainer div ul li div a mark{
-    color: var(--cs3);
-}
 .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span del,
 .wineContainer > div:nth-of-type(2) b small,
 .wineContainer > div:nth-of-type(2) del,
@@ -112,9 +101,6 @@
 .cartlistContainer div ul li div a del,
 .articleContainer > div figure figcaption b small{
     color: var(--gs3);
-}
-.pairingContainer > div mark{
-    color: var(--gps2);
 }
 .loginContainer div form input[type='submit'],
 #newAddressPopup .closeBtn,
@@ -129,6 +115,20 @@
 .pairingContainer > div mark span,
 .accountContainer h2{
     color: var(--gs1);
+}
+.aboutusContainer.history ol li h2,
+.aboutusContainer.profile > div:nth-of-type(2){
+    color: var(--cs4);
+}
+.productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span mark,
+.wineContainer > div:nth-of-type(2) mark,
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark,
+.wishContainer > div > ul li a span mark,
+.cartlistContainer div ul li div a mark{
+    color: var(--cs3);
+}
+.pairingContainer > div mark{
+    color: var(--gps2);
 }
 
 .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li:after,
