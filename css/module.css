@@ -19,8 +19,8 @@
     --sp20: 20px;
 }
 
-[class^='nun']{font-family: 'Nunito Sans';}
-[class^='cor']{font-family: 'Cormorant';}
+[class*='nun']{font-family: 'Nunito Sans';}
+[class*='cor']{font-family: 'Cormorant';}
 
 [class*='2_']{font-weight: 200;}
 [class*='3_']{font-weight: 300;}

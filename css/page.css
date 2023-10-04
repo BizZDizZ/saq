@@ -1,46 +1,14 @@
-#deleteAddressPopup input,
-.accountBase > div > .accountMenu ul li a,
-.wishContainer > div > ul li a span,
-#newAddressPopup label,
-#editAddressPopup label,
-.accountContainer ul li a span,
-.accountdetailContainer input,
-.pager,
-#newAddressPopup input,
-#editAddressPopup input,
-.paymentContainer ol li,
 .aboutusContainer.contact div p,
 .aboutusContainer.contact div:nth-of-type(5) label{
     font-size: 14px; font-weight: 400;
 }
-.wishContainer > div > ul li a strong,
-.cartlistContainer h2,
-.accountBase h2{
-    font-size: 14px; font-weight: 700;
-}
 #accountPanel,
 #accountPanel input,
-.backBtn,
-.addressbookContainer > div > ul li,
-.addressbookContainer > div > ul li input,
 .aboutusContainer.FAQ div .accomponent li p{
     font-size: 16px; font-weight: 400;
 }
-.suggestContainer ul li a strong{
-    font-size: 16px; font-weight: 700;
-}
-.wishContainer > div > ul li .fillBtn{
-    font-size: 20px; font-weight: 400;
-}
-#payEndPopup h4,
 #contactEndPopup h3{
     font-size: 20px; font-weight: 700;
-}
-.accountContainer ul li a b,
-.addressbookContainer div h3,
-.accountBase h3,
-.cartlistContainer h3{
-    font-size: 30px; font-weight: 600;
 }
 
 .indexContainer > div:nth-of-type(2) figure figcaption a,
@@ -781,25 +749,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Global */
 
 @media screen and (max-width: 767px){
-    .empty a,
-    .empty p,
-    .addressbookContainer div div input,
-    .wishContainer div div a,
-    .cartlistContainer div ul li div a,
-    .cartlistContainer div ul li div input,
-    .cartlistContainer div aside form ol li span,
-    .cartlistContainer div aside form ol li,
-    .cartlistContainer div aside form .fillBtn,
-    .paymentContainer > form > div > label,
-    .paymentContainer > form > div > address,
-    .paymentContainer > form > .fillBtn,
-    .paymentContainer div div address,
-    .paymentContainer div:nth-of-type(4) .fillBtn,
-    .paymentContainer div:nth-of-type(4) > div input,
-    .paymentContainer div:nth-of-type(4) > div label,
-    .paymentContainer div:nth-of-type(4) p,
-    .accountdetailContainer > div ul li label,
-    .accountdetailContainer > div ul li p,
     .aboutusContainer p,
     .aboutusContainer.accessInfo div ul li,
     .aboutusContainer.history ol li div p,
@@ -817,19 +766,12 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.contact .fillBtn{
         font-size: 14px; font-weight: 700;
     }
-    .empty h4,
-    .paymentContainer form h3,
-    .paymentContainer > div > div > h3,
-    .cartlistContainer div ul li div a strong,
     .aboutusContainer.contact h3,
     .aboutusContainer.FAQ strong{
         font-size: 16px; font-weight: 600;
     }
     .aboutusContainer.FAQ h4{
         font-size: 18px; font-weight: 700;
-    }
-    .accountdetailContainer h4{
-        font-size: 20px; font-weight: 500;
     }
     .aboutusContainer.FAQ h3,
     .aboutusContainer.profile > div strong,
@@ -839,13 +781,8 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer h2{
         font-size: 24px; font-weight: 800;
     }
-    .paymentContainer h2,
-    .wineContainer > div:nth-of-type(2) h2,
     .aboutusContainer.history small{
         font-size: 30px; font-weight: 600;
-    }
-    .accountContainer h2{
-        font-size: 50px; font-weight: 300;
     }
     .aboutusContainer.history h2{
         font-size: 70px; font-weight: 700;
@@ -2071,9 +2008,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.FAQ h4{
         font-size: 22px; font-weight: 700;
     }
-    .articleContainer > div:nth-of-type(2) > b{
-        font-size: 26px; font-weight: 600;
-    }
     .aboutusContainer.FAQ h3{
         font-size: 26px; font-weight: 700;
     }
@@ -2082,9 +2016,6 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .aboutusContainer.history small{
         font-size: 50px; font-weight: 600;
-    }
-    .accountContainer h2{
-        font-size: 100px; font-weight: 300;
     }
     .aboutusContainer.history h2{
         font-size: 150px; font-weight: 700;
@@ -2655,7 +2586,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: 50px; line-height: 25px;
     }
     .articleContainer.quebec > div:not(:first-of-type){
-        margin: 0 auto; box-sizing: border-box;
+        margin: 0 auto; box-sizing: border-box; width: 96%;
     }
     /* ? inspiration */
 
@@ -2789,9 +2720,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer h2,
     .aboutusContainer.history small{
         font-size: 50px; font-weight: 600;
-    }
-    .accountContainer h2{
-        font-size: 150px; font-weight: 300;
     }
     .aboutusContainer.history h2{
         font-size: 200px; font-weight: 700;
@@ -3493,40 +3421,13 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.history ol li div p{
         font-size: 16px; font-weight: 400;
     }
-    .addressbookContainer div div input,
-    .wishContainer div div a,
-    .empty a,
-    .empty p,
-    .cartlistContainer div ul li div a,
-    .cartlistContainer div ul li div input,
-    .cartlistContainer div aside form ol li span,
-    .cartlistContainer div aside form ol li b,
-    .cartlistContainer div aside form .fillBtn,
-    .paymentContainer > form > div > label,
-    .paymentContainer > form > div > address,
-    .paymentContainer > form > .fillBtn,
-    .paymentContainer div div address,
-    .paymentContainer div:nth-of-type(4) .fillBtn,
-    .paymentContainer div:nth-of-type(4) > div input,
-    .paymentContainer div:nth-of-type(4) > div label,
-    .paymentContainer div:nth-of-type(4) p{
-        font-size: 20px; font-weight: 400;
-    }
-    .paymentContainer > div > div > h3,
     .aboutusContainer.FAQ strong,
     .aboutusContainer.profile > div strong{
         font-size: 20px; font-weight: 700;
     }
-    .empty h4,
-    .accountdetailContainer h4,
-    .cartlistContainer div ul li div a strong,
-    .cartlistContainer div aside h4,
     .aboutusContainer.contact h3,
     .aboutusContainer.history ol li div strong{
         font-size: 24px; font-weight: 800;
-    }
-    .paymentContainer h2{
-        font-size: 30px; font-weight: 600;
     }
     
     .indexContainer > div:nth-of-type(2):after,
@@ -3567,7 +3468,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     #userPW,
     #newuserPW{
-        padding: 0 80px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
+        padding: 0 40px; width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
     }
 
     .indexContainer > div:nth-of-type(2) figure{
@@ -3730,7 +3631,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     #newAddressPopup.active .closePopup,
     #editAddressPopup.active .closePopup{
-        position: absolute; right: 7%; top: 25px; padding: 0; width: 18px;
+        position: absolute; right: 7%; top: 25px; padding: 0; width: 25px;
     }
     #payEndPopup a,
     #contactEndPopup a{
@@ -3773,8 +3674,9 @@ input[type="number"]::-webkit-inner-spin-button {
     .accountdetailContainer li.active #birthYear{
         height: 40px; border: 1px solid var(--gs3); box-sizing: border-box; padding: 0 15px;
     }
-    .accountdetailContainer > div > ul > li > div:last-of-type{
-        margin-bottom: 30px;
+    .accountdetailContainer > div > ul > li > div:last-of-type,
+    .accountdetailContainer > div > ul > li:last-of-type span:first-of-type{
+        margin-bottom: 30px; display: block;
     }
     .accountdetailContainer > div > ul > li:last-of-type.active .passwordField,
     .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField{
@@ -3782,7 +3684,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .accountdetailContainer > div > ul > li:last-of-type.active .passwordField .vActiveBtn,
     .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField .newvActiveBtn{
-        width: 25px; height: 25px; background-size: 25px; top: 45px;
+        width: 25px; height: 25px; background-size: 25px; top: 42px; left: 10px;
     }
     .accountdetailContainer > div > ul > li:last-of-type.active p{
         display: block; margin-bottom: 20px; max-width: 30%;
@@ -3798,9 +3700,9 @@ input[type="number"]::-webkit-inner-spin-button {
     .cartlistContainer div > ul > li > div > a:first-of-type{
         display: block; margin: 0 5.5% 80px; width: 89%;
     }
-    .cartlistContainer div ul li div input{
+    .cartlistContainer div ul li div .deleteBtn{
         background: none; text-indent: 0; width: fit-content; display: block; float: left;
-        margin-left: 5.5%; line-height: 20px;
+        margin-left: 5.5%; line-height: 20px; height: fit-content;
     }
     .cartlistContainer div > ul > li > div > a:last-of-type{
         display: block; float: left; width: fit-content; margin-left: 3.5%;
@@ -3842,6 +3744,16 @@ input[type="number"]::-webkit-inner-spin-button {
         content: counter(step);
         counter-increment: step;
     }
+    .paymentContainer .numbStepper li:after{
+        width: 100%;
+        height: 2px;
+        content: '';
+        position: absolute;
+        background-color: var(--gs3);
+        top: 30px;
+        left: -50%;
+        z-index: 0;
+    }
     .paymentContainer > h2{
         padding-bottom: 20px; border-bottom: 1px solid var(--gs3); margin-bottom: 40px;
     }
@@ -3849,12 +3761,12 @@ input[type="number"]::-webkit-inner-spin-button {
         padding-bottom: 40px; border-bottom: 1px solid var(--gs2); display: block;
     }
     .paymentContainer form div:first-of-type label{
-        display: inline-block; padding: 40px 10%; width: 100%; box-sizing: border-box;
+        display: inline-block; padding: 40px 50px; width: 100%; box-sizing: border-box;
         background: url('../images/bul_radio_unchecked.png') no-repeat left; background-size: 25px;
         border-bottom: 1px solid var(--gs3);
     }
     .paymentContainer form div:last-of-type label{
-        display: inline-block; padding: 40px 10%; width: 100%; box-sizing: border-box;
+        display: inline-block; padding: 40px 50px; width: 100%; box-sizing: border-box;
         background: url('../images/bul_radio_unchecked.png') no-repeat left; background-size: 25px;
         border-bottom: 1px solid var(--gs3); margin-bottom: 50px;
     }
