@@ -181,11 +181,11 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 @media screen and (max-width: 767px){
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid var(--gs10);
-        width: 96%; margin: 20px 2%; padding: 0 5px; box-sizing: border-box;
+        width: 96%; margin: 30px 2%; padding: 0 5px; box-sizing: border-box;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
-        padding: 0; width: 20px; height: 20px; position: absolute; right: 15px; top: 18px; text-indent: -9999px;
+        padding: 0; width: 20px; height: 20px; position: absolute; right: 15px; top: 25px; text-indent: -9999px;
         border: none; background-color: var(--gs1);
     }
 
@@ -367,7 +367,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         top: 130px;
     }
     #searchPanel input[type='text']{
-        margin: 30px 2%; padding: 0 10px;
+        margin: 40px 2%; padding: 0 10px;
     }
     #searchPanel input[type='button']{
         right: 25px; top: 35px;
@@ -498,7 +498,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         max-width: 1440px;
     }
     #searchPanel input[type='text']{
-        margin: 40px 2%; padding: 0 15px;
+        margin: 50px 2%; padding: 0 15px;
     }
     #searchPanel input[type='button']{
         right: 35px; top: 45px; cursor: pointer;

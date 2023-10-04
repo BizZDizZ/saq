@@ -1,16 +1,3 @@
-.aboutusContainer.contact div p,
-.aboutusContainer.contact div:nth-of-type(5) label{
-    font-size: 14px; font-weight: 400;
-}
-#accountPanel,
-#accountPanel input,
-.aboutusContainer.FAQ div .accomponent li p{
-    font-size: 16px; font-weight: 400;
-}
-#contactEndPopup h3{
-    font-size: 20px; font-weight: 700;
-}
-
 .indexContainer > div:nth-of-type(2) figure figcaption a,
 .indexContainer > div:nth-of-type(4) div a,
 .indexContainer > div:nth-of-type(6) figure figcaption a,
@@ -749,45 +736,6 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? Global */
 
 @media screen and (max-width: 767px){
-    .aboutusContainer p,
-    .aboutusContainer.accessInfo div ul li,
-    .aboutusContainer.history ol li div p,
-    .aboutusContainer.policy ul li,
-    .aboutusContainer.contact select,
-    .aboutusContainer.contact input,
-    .aboutusContainer.profile > div:first-of-type ul li{
-        font-size: 14px; font-weight: 400;
-    }
-    #searchPanel input,
-    #menuPanel,
-    #menuPanel span{
-        font-size: 14px; font-weight: 600;
-    }
-    .aboutusContainer.contact .fillBtn{
-        font-size: 14px; font-weight: 700;
-    }
-    .aboutusContainer.contact h3,
-    .aboutusContainer.FAQ strong{
-        font-size: 16px; font-weight: 600;
-    }
-    .aboutusContainer.FAQ h4{
-        font-size: 18px; font-weight: 700;
-    }
-    .aboutusContainer.FAQ h3,
-    .aboutusContainer.profile > div strong,
-    .aboutusContainer.history ol li div strong{
-        font-size: 20px; font-weight: 700;
-    }
-    .aboutusContainer h2{
-        font-size: 24px; font-weight: 800;
-    }
-    .aboutusContainer.history small{
-        font-size: 30px; font-weight: 600;
-    }
-    .aboutusContainer.history h2{
-        font-size: 70px; font-weight: 700;
-    }
-
     .deleteBtn,
     .closePopup{
         background: url('../images/bul_close.png') no-repeat; text-indent: -9999px;
@@ -942,7 +890,7 @@ input[type="number"]::-webkit-inner-spin-button {
         border-width: 2px 0 2px 0;
     }
     .productContainer #filterPopup > div > ul > li > strong{
-        font-size: 14px; font-weight: 700; line-height: 60px; width: 100%; display: inline-block;
+        line-height: 60px; width: 100%; display: inline-block;
         background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 24px 24px;
     }
     .productContainer #filterPopup > div > ul > li > strong+ul,
@@ -1927,13 +1875,13 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 0 2%;
     }
     .aboutusContainer.history ol li{
-        margin-bottom: 30px;
+        margin-bottom: 70px;
     }
     .aboutusContainer.history ol li:last-of-type{
         margin-bottom: 0;
     }
     .aboutusContainer.history ol li h2{
-        line-height: 30px; margin-bottom: 70px; flex: none; width: 100%;
+        line-height: 30px; margin-bottom: 120px; flex: none; width: 100%;
     }
     .aboutusContainer.history ol li div{
         margin: 0 3% 20px; width: 94%; border-left: 1px solid var(--gs10); box-sizing: border-box;
@@ -2000,27 +1948,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? Mobile */
 
-@media screen and (min-width: 768px) and (max-width: 1279px){
-    #menuPanel,
-    #menuPanel span{
-        font-size: 14px; font-weight: 600;
-    }
-    .aboutusContainer.FAQ h4{
-        font-size: 22px; font-weight: 700;
-    }
-    .aboutusContainer.FAQ h3{
-        font-size: 26px; font-weight: 700;
-    }
-    .aboutusContainer h2{
-        font-size: 34px; font-weight: 600;
-    }
-    .aboutusContainer.history small{
-        font-size: 50px; font-weight: 600;
-    }
-    .aboutusContainer.history h2{
-        font-size: 150px; font-weight: 700;
-    }
-    
+@media screen and (min-width: 768px) and (max-width: 1279px){    
     #menuPanel span,
     #menuPanel a{
         color: var(--gs8);
@@ -2712,19 +2640,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? Tablet */
 
-@media screen and (min-width: 1280px){
-    .aboutusContainer.FAQ h3,
-    .aboutusContainer.FAQ h4{
-        font-size: 30px; font-weight: 600;
-    }
-    .aboutusContainer h2,
-    .aboutusContainer.history small{
-        font-size: 50px; font-weight: 600;
-    }
-    .aboutusContainer.history h2{
-        font-size: 200px; font-weight: 700;
-    }
-    
+@media screen and (min-width: 1280px){    
     .indexContainer > div:nth-of-type(4):after,
     .indexContainer > div:nth-of-type(6):after,
     .pairingContainer:after,
@@ -3416,20 +3332,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? Desktop */
 
-@media screen and (min-width: 768px){
-    .aboutusContainer p,
-    .aboutusContainer.history ol li div p{
-        font-size: 16px; font-weight: 400;
-    }
-    .aboutusContainer.FAQ strong,
-    .aboutusContainer.profile > div strong{
-        font-size: 20px; font-weight: 700;
-    }
-    .aboutusContainer.contact h3,
-    .aboutusContainer.history ol li div strong{
-        font-size: 24px; font-weight: 800;
-    }
-    
+@media screen and (min-width: 768px){    
     .indexContainer > div:nth-of-type(2):after,
     .indexContainer > div:last-of-type div:after,
     .wineContainer > div:after,
