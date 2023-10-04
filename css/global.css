@@ -1,51 +1,3 @@
-.accountContainer,
-#newAddressPopup,
-#newAddressPopup input,
-#newAddressPopup select,
-#editAddressPopup,
-#editAddressPopup input,
-#editAddressPopup select,
-#deleteAddressPopup input,
-#contactEndPopup,
-#contactEndPopup .closeBtn,
-.addressbookContainer,
-.wishContainer,
-.wishContainer > div > ul li .fillBtn,
-.savecardContainer,
-.cartlistContainer,
-.cartlistContainer div aside form .fillBtn,
-.myorderContainer,
-.accountdetailContainer,
-.accountdetailContainer input,
-.paymentContainer,
-.paymentContainer input,
-.fillBtn,
-.lineBtn,
-.aboutusContainer,
-.aboutusContainer.contact #contactsubject,
-.aboutusContainer.contact input,
-.aboutusContainer.contact textarea,
-.aboutusContainer.contact select{
-    font-family: 'Nunito Sans';
-}
-.accountContainer ul a b,
-.accountBase div h3,
-.addressbookContainer div div h4,
-.addressbookContainer div div p,
-.wishContainer div div h4,
-.wishContainer div div p,
-.savecardContainer div div h4,
-.savecardContainer div div p,
-.cartlistContainer div div h4,
-.cartlistContainer div div p,
-.myorderContainer div div h4,
-.myorderContainer div div p,
-.accountdetailContainer h4,
-.cartlistContainer > div h3,
-.paymentContainer h2,
-.aboutusContainer.history h2{
-    font-family: 'Cormorant';
-}
 a{
     text-decoration: none;
 }
@@ -54,7 +6,7 @@ a{
 }
 .crrLanguage{
     background: url('../images/ico_language.svg') no-repeat left top; line-height: 24px;
-    box-sizing: border-box; color: var(--gs1); font-size: 14px; font-weight: 400; padding-left: 35px;
+    box-sizing: border-box; color: var(--gs1); padding-left: 35px;
 }
 .bx-wrapper{
     box-shadow: none;
@@ -105,15 +57,6 @@ header > div ul li{
 }
 header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg');}
 
-footer > div:first-of-type > div form input,
-footer > div:first-of-type > div form p,
-footer > div:first-of-type > div:last-child address,
-footer > div:last-of-type > div ol li,
-footer > div:last-of-type > div p,
-footer > div:last-of-type > div > a,
-footer > div:last-of-type > div span{
-    font-size: 14px; font-weight: 300;
-}
 footer > div:first-of-type > div form p,
 footer > div:first-of-type > div:last-child address span,
 footer > div:first-of-type > div:last-child address div,
@@ -139,7 +82,7 @@ footer > div:last-of-type:after{
     clear: both; content: ''; display: block;
 }
 footer > ul li a{
-    font-size: 16px; font-weight: 700; color: var(--gs10); display: block; text-align: center;
+    color: var(--gs10); display: block; text-align: center;
 }
 footer > ul li a:before{
     display: block; margin: 0 auto;
@@ -220,7 +163,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 
     header{
         background-color: var(--gs10); padding-bottom: 10px; position: fixed; width: 100%; left: 0; top: 0;
-        font-size: 14px; font-weight: 600; color: var(--gs1); z-index: 100;
+        color: var(--gs1); z-index: 100;
     }
     header > ol{
         display: none;
@@ -273,7 +216,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        font-size: 20px; font-weight: 600; margin-bottom: 20px; color: var(--gs8);
+        margin-bottom: 20px; color: var(--gs8);
     }
     footer > div:first-of-type > div form p{
         margin-bottom: 20px;
@@ -313,7 +256,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         border-bottom: 1px solid var(--gs3);
     }
     footer > div:last-of-type > div h3{
-        font-size: 16px; font-weight: 700; padding: 35px 0;
+        padding: 35px 0;
     }
     footer > div:last-of-type > div:not(:last-of-type) h3{
         background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 30px;
@@ -337,7 +280,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         margin-bottom: 20px; line-height: 20px;
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 25px; font-size: 16px; font-weight: 700;
+        margin-top: 25px;
     }
     footer > div:last-of-type > div:last-of-type div ul{
         margin: 10px 0 20px; display: flex; flex-wrap: wrap;
@@ -634,7 +577,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 @media screen and (min-width: 768px){
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid var(--gs10);
-        font-size: 24px; font-weight: 600; width: 96%; box-sizing: border-box;
+        width: 96%; box-sizing: border-box;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
@@ -644,7 +587,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 
     header{
         background-color: var(--gs10); position: fixed; width: 100%; left: 0; top: 0;
-        font-size: 14px; font-weight: 600; color: var(--gs1); z-index: 100;
+        color: var(--gs1); z-index: 100;
     }
     header > ol{
         background-color: var(--gs4); text-align: center; padding: 10px 0;
@@ -679,7 +622,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        font-size: 20px; font-weight: 600; color: var(--gs8);
+        color: var(--gs8);
     }
     footer > div:first-of-type > div form input[type='email']{
         width: 300px; height: 40px; padding-left: 15px; box-sizing: border-box; border: 1px solid var(--gs3);
@@ -696,10 +639,6 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     }
     footer > div:first-of-type > div:last-child address div > span{
         margin-left: 15px;
-    }
-    footer > div:last-of-type > div h3,
-    footer > div:last-of-type > div:last-of-type div h4{
-        font-size: 16px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type p{
         line-height: 20px;
