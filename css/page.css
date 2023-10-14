@@ -665,10 +665,10 @@ input[type="number"]::-webkit-inner-spin-button {
     display: block; margin-bottom: 20px;
 }
 .articleContainer.quebec > div:not(:first-of-type) div:last-of-type a strong{
-    display: block; margin: 0 2.2% 20px;
+    display: block; margin: 0 4% 20px;
 }
 .articleContainer.quebec > div:not(:first-of-type) div:last-of-type a span{
-    display: block; text-align: right; margin: 0 2.2% 20px;
+    display: block; text-align: right; margin: 0 4% 20px;
 }
 .articleContainer.quebec > div:not(:first-of-type) div:last-of-type a span em{
     float: left;
@@ -910,7 +910,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .productContainer #filterPopup ul li ul .radio,
     .productContainer #filterPopup ul li ul .check{
-        margin-left: 10px;
+        margin-left: 5%;
     }
     .productContainer #filterPopup ul li ul .radio label,
     .productContainer #filterPopup ul li ul .check label{
@@ -922,8 +922,11 @@ input[type="number"]::-webkit-inner-spin-button {
     .productContainer #filterPopup .range input[type='range']{
         width: 100%; margin: 0 0 30px;
     }
+    .productContainer #filterPopup div ul li:last-of-type ul{
+        box-sizing: border-box;
+    }
     .productContainer #filterPopup div ul li:last-of-type ul .check{
-        display: inline-block; width: 41.8%;
+        display: inline-block; width: 44.5%;
     }
     .productContainer #filterPopup .range-price{
         margin-bottom: 30px;
@@ -1103,7 +1106,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 40px 0 30px;
     }
     .wineContainer .bx-wrapper:last-of-type{
-        width: 100%; margin-bottom: 60px;
+        width: 100%; margin-bottom: 65px;
     }
     .wineContainer > div:last-of-type .bx-controls-direction a{
         margin-top: -50px;
@@ -1435,7 +1438,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .accountdetailContainer > div > ul > li:last-of-type.active .passwordField,
     .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField{
-        display: block; width: 100%; margin-bottom: 55px;
+        display: block; width: 100%; margin-bottom: 50px;
     }
     .accountdetailContainer > div > ul > li:last-of-type.active .passwordField .vActiveBtn,
     .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField .newvActiveBtn{
@@ -1534,7 +1537,7 @@ input[type="number"]::-webkit-inner-spin-button {
         border: 2px solid var(--gs3);
         display: block;
         text-align: center;
-        margin: 0 auto 3px auto;
+        margin: 0 auto 5px auto;
         border-radius: 50%;
         position: relative;
         z-index: 2;
@@ -1679,7 +1682,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: 30px; text-align: center; display: block;
     }
     .articleContainer.cocktail > div:nth-of-type(2) div{
-        margin: 0 auto; max-width: 680px; margin-bottom: 30px; background-color: var(--gs2); padding: 30px 2%;
+        margin: 0 auto 30px; max-width: 680px; background-color: var(--gs2); padding: 30px 2%;
         box-sizing: border-box;
     }
     .articleContainer.cocktail > div:nth-of-type(2) div h3{
@@ -2036,7 +2039,7 @@ input[type="number"]::-webkit-inner-spin-button {
         float: left; width: 35%; margin-left: 2%;
     }
     .indexContainer > div:last-of-type div span{
-        float: left; width: 54%; margin: 0 2% 0 7%;
+        float: left; width: 55%; margin: 0 2% 0 6%;
     }
     /* ? indexContainer */
 
@@ -2207,7 +2210,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: block;
     }
     .wineContainer > div:last-of-type h3{
-        margin: 200px 0 75px;
+        margin: 200px 0 70px;
     }
     .wineContainer .bx-wrapper:last-of-type{
         width: 100%; margin-bottom: 60px;
@@ -2248,7 +2251,7 @@ input[type="number"]::-webkit-inner-spin-button {
         object-fit: cover; border-radius: 190px;
     }
     .pairingContainer > div div h3{
-        line-height: 60px; width: 225px; margin: 0 0 45px -60px; padding-left: 60px;
+        line-height: 60px; width: 225px; margin: 0 0 45px -65px; padding-left: 60px;
         background-color: var(--cs1);
     }
     .pairingContainer > div div ol li{
@@ -2291,7 +2294,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .accountContainer ul li{
         width: 49%; float: left; border: 1px solid var(--gs3); border-radius: 3px;
-        margin-bottom: 60px; padding: 40px 3% 35px; box-sizing: border-box; min-height: 210px;
+        margin-bottom: 65px; padding: 40px 3% 35px; box-sizing: border-box; min-height: 210px;
     }
     .accountContainer ul li:nth-of-type(2n){
         margin-left: 2%;
@@ -2344,7 +2347,7 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 100%; text-align: center; padding-top: 40px;
     }
     .empty > h4{
-        margin: 110px 0 20px;
+        margin: 100px 0 20px;
     }
     .empty > p{
         margin-bottom: 40px;
@@ -2361,7 +2364,7 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 100%; display: flex; flex-wrap: wrap;
     }
     .addressbookContainer > div > ul > li{
-        margin-bottom: 60px; width: 49%; border: 1px solid var(--gs2); border-radius: 3px;
+        margin-bottom: 65px; width: 49%; border: 1px solid var(--gs2); border-radius: 3px;
         box-sizing: border-box; padding: 40px 3% 25px; box-shadow: 0 0 15px 3px var(--gs3);
     }
     .addressbookContainer > div > ul > li:last-of-type{        
@@ -2699,7 +2702,7 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 55.6%; margin-left: 2%; float: left;
     }
     .indexContainer > div:nth-of-type(4) div{
-        width: 28.4%; margin: 140px 2% 0 12%; float: left;
+        width: 30.4%; margin: 150px 2% 0 10%; float: left;
     }
     .indexContainer > div:nth-of-type(6){
         margin-bottom: 150px;
@@ -2749,7 +2752,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: none;
     }
     .productContainer .filter{
-        width: 20%; margin: 80px 0 0 2%; box-sizing: border-box; float: left; max-width: 288px;
+        width: 20%; margin: 85px 0 0 2%; box-sizing: border-box; float: left; max-width: 288px;
     }
     .productContainer .filter > div > input{
         display: none;
@@ -2869,10 +2872,10 @@ input[type="number"]::-webkit-inner-spin-button {
     /* ? filter */
 
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3){
-        width: 70%; margin: 80px 2% 0 6%; float: left; max-width: 1008px;
+        width: 70%; margin: 85px 2% 0 6%; float: left; max-width: 1008px;
     }
     .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li{
-        width: 28%; margin-left: 8%; margin-bottom: 75px; flex-direction: column; justify-content: center;
+        width: 28%; margin-left: 8%; margin-bottom: 70px; flex-direction: column; justify-content: center;
     }
     .productContainer .pager > div{
         margin: 0 2%;
@@ -2907,7 +2910,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: block; margin-bottom: 300px;
     }
     .wineContainer > div:last-of-type h3{
-        margin: 1380px 0 75px;
+        margin: 1200px 0 75px;
     }
     .wineContainer .bx-wrapper:last-of-type{
         width: 100%; margin-bottom: 200px;
@@ -2919,10 +2922,10 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .suggestContainer h3{
         display: block; background-color: var(--gs1); box-sizing: border-box; margin-left: 2%;
-        float: left; width: 25%; align-self: stretch; padding: 110px 1% 0; line-height: 40px;
+        float: left; width: 25%; align-self: stretch; padding: 100px 1% 0; line-height: 40px;
     }
     .suggestContainer ul{
-        float: left; width: 71%; margin: 110px 2% 110px 0; box-sizing: border-box;
+        float: left; width: 71%; margin: 100px 2% 100px 0; box-sizing: border-box;
     }
     .suggestContainer ul li{
         float: left; margin-left: 2%; width: 31.3%; background-color: var(--gs1);
@@ -2942,7 +2945,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .pairingContainer > div{
         float: left; width: 54%; position: relative; box-sizing: border-box;
-        margin: 110px 0 0 5%;
+        margin: 100px 0 0 5%;
     }
     .pairingContainer > div h2{
         max-width: 55.3%; position: absolute; top: 30px;
@@ -2951,7 +2954,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: none;
     }
     .pairingContainer > div div h3{
-        line-height: 60px; width: 225px; margin: 0 0 45px -11%; padding-left: 75px;
+        line-height: 60px; width: 225px; margin: 0 0 50px -10%; padding-left: 75px;
         background-color: var(--cs1);
     }
     .pairingContainer > div div ol li{
@@ -2959,7 +2962,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: 35px; line-height: 25px; padding-left: 15px;
     }
     .pairingContainer aside{
-        position: relative; float: left; width: 34%; margin: 0 2.5% 0 4.5%;
+        position: relative; float: left; width: 34%; margin: 0 3% 0 4%;
         padding: 115px 3.5% 60px 4%; box-sizing: border-box;
         background-color: var(--gs1); border-radius: 35px; align-self: stretch;
     }
@@ -2968,7 +2971,7 @@ input[type="number"]::-webkit-inner-spin-button {
         object-fit: cover; border-radius: 190px;
     }
     .pairingContainer aside ul:first-of-type{
-        margin-bottom: 80px;
+        margin-bottom: 85px;
     }
     /* ? pairing detail */
 
@@ -3015,7 +3018,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .accountContainer ul li{
         width: 28%; float: left; border: 1px solid var(--gs3); border-radius: 3px;
-        margin: 0 0 60px 8%; padding: 2.4% 1.4%; box-sizing: border-box;
+        margin: 0 0 65px 8%; padding: 2.4% 1.4%; box-sizing: border-box;
     }
     .accountContainer ul li:nth-of-type(3n+1){
         margin-left: 0;
@@ -3054,7 +3057,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .accountBase div h3{
         text-align: center; padding-bottom: 65px; border-bottom: 1px solid var(--gs2);
-        margin-bottom: 45px;
+        margin-bottom: 50px;
     }
     .accountBase > div:first-of-type > div{
         width: 82%; float: left; text-align: center;
@@ -3065,7 +3068,7 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 82%; float: left; text-align: center;
     }
     .empty > h4{
-        margin: 110px 0 20px; margin-right: 22%;
+        margin: 100px 0 20px; margin-right: 22%;
     }
     .empty > p{
         margin-bottom: 40px; margin-right: 22%;
@@ -3083,7 +3086,7 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 82%; display: flex; flex-wrap: wrap;
     }
     .addressbookContainer > div > ul > li{
-        margin: 0 0 60px 10%; width: 40%; border: 1px solid var(--gs2); border-radius: 3px;
+        margin: 0 0 65px 10%; width: 40%; border: 1px solid var(--gs2); border-radius: 3px;
         box-sizing: border-box; padding: 40px 3% 25px; box-shadow: 0 0 15px 3px var(--gs3);
     }
     /* ? addressbook */
@@ -3148,7 +3151,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .cartlistContainer div h3{
         text-align: center; padding-bottom: 65px; border-bottom: 1px solid var(--gs2);
-        margin-bottom: 45px;
+        margin-bottom: 50px;
     }
     .cartlistContainer div > ul{
         float: left; width: 76%;
@@ -3198,7 +3201,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 0 auto; max-width: 1400px;
     }
     .articleContainer ul{
-        margin: 0 2% 110px; padding: 100px 2%;
+        padding: 100px 2%;
     }
     .articleContainer ul li{
         width: 23.5%; float: left; box-sizing: border-box;
@@ -3238,10 +3241,10 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: 0 auto; max-width: 1440px; padding-top: 225px; box-sizing: border-box;
     }
     .aboutusContainer h2:not(first-of-type){
-        margin: 75px 0 50px;
+        margin: 70px 0 50px;
     }
     .aboutusContainer > h2:not(first-of-type){
-        margin: 75px 2% 50px;
+        margin: 70px 2% 50px;
     }
     .aboutusContainer ul+h2{
         margin-top: 100px;
@@ -3326,7 +3329,7 @@ input[type="number"]::-webkit-inner-spin-button {
     /* ? profile */
 
     .aboutusContainer.termsofsale h2:first-of-type{
-        margin-top: 75px;
+        margin-top: 70px;
     }
     /* ? termsofsale */
 }
@@ -3385,7 +3388,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: 20px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect{
-        margin-bottom: 60px; display: flex; flex-flow: row nowrap; height: 595px;
+        margin-bottom: 65px; display: flex; flex-flow: row nowrap; height: 595px;
     }
     .indexContainer > div:last-of-type ol.hoverEffect li{
         flex: 1; transition: flex 0.75s ease-in-out; text-indent: -9999px;
@@ -3445,7 +3448,7 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 100%; height: 70px; display: block; text-align: center; line-height: 70px;
     }
     .wineContainer > div:nth-of-type(2) a:last-of-type{
-        background-color: var(--gs4); margin-bottom: 80px;
+        background-color: var(--gs4); margin-bottom: 85px;
     }
     .wineContainer > div:nth-of-type(2) table tbody td{
         min-width: 250px;
@@ -3481,7 +3484,7 @@ input[type="number"]::-webkit-inner-spin-button {
     /* ? pairing detail */
 
     .loginContainer h2{
-        margin-bottom: 60px;
+        margin-bottom: 65px;
     }
     .loginContainer div form label{
         display: block; margin-bottom: 30px;
@@ -3490,7 +3493,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: 50px; text-decoration: underline; display: block; width: fit-content;
     }
     .loginContainer div form .fillBtn{
-        margin-bottom: 60px; width: 100%; height: 70px; border-radius: 3px;
+        margin-bottom: 65px; width: 100%; height: 70px; border-radius: 3px;
     }
     .loginContainer div form p{
         margin-bottom: 30px; line-height: 24px;
@@ -3508,7 +3511,7 @@ input[type="number"]::-webkit-inner-spin-button {
         background-size: 36px 36px; line-height: 36px;
     }
     .loginContainer > p{
-        margin-bottom: 60px;
+        margin-bottom: 65px;
     }
     /* ? loginContainer */
 
@@ -3598,10 +3601,10 @@ input[type="number"]::-webkit-inner-spin-button {
         background-image: url('../images/ico_cart_empty.png');
     }
     .cartlistContainer div > ul li{
-        display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 80px;
+        display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 85px;
     }
     .cartlistContainer div > ul > li > div > a:first-of-type{
-        display: block; margin: 0 5.5% 80px; width: 89%;
+        display: block; margin: 0 5.5% 85px; width: 89%;
     }
     .cartlistContainer div ul li div .deleteBtn{
         background: none; text-indent: 0; width: fit-content; display: block; float: left;
@@ -3629,7 +3632,7 @@ input[type="number"]::-webkit-inner-spin-button {
         position: relative;
         text-align: center;
         color: var(--gs3);
-        margin-bottom: 90px;
+        margin-bottom: 85px;
     }
     .paymentContainer .numbStepper li:before{
         width: 60px;
@@ -3639,7 +3642,7 @@ input[type="number"]::-webkit-inner-spin-button {
         border: 2px solid var(--gs3);
         display: block;
         text-align: center;
-        margin: 0 auto 3px auto;
+        margin: 0 auto 5px auto;
         border-radius: 50%;
         position: relative;
         z-index: 2;
@@ -3763,10 +3766,10 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     
     .articleContainer.cocktail > div:nth-of-type(2) > b{
-        margin-bottom: 45px; text-align: center; display: block;
+        margin-bottom: 50px; text-align: center; display: block;
     }
     .articleContainer.cocktail > div:nth-of-type(2) div{
-        margin: 0 auto; max-width: 680px; margin-bottom: 50px; background-color: var(--gs2); padding: 20px 2% 50px;
+        margin: 0 auto 50px; max-width: 680px; background-color: var(--gs2); padding: 20px 2% 50px;
         box-sizing: border-box;
     }
     .articleContainer.cocktail > div:nth-of-type(2) div h3{
