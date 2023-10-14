@@ -318,7 +318,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 
     #menuPanel{
         z-index: 101; box-sizing: border-box; position: fixed; background-color: var(--gs1); border: 1px solid var(--gs3);
-        border-radius: 3px; padding: 50px 24px; width: 300px; top: 42px;
+        border-radius: 3px; padding: 50px 25px; width: 300px; top: 42px;
     }
     #menuPanel .closePanel{
         background: url('../images/bul_close.png') no-repeat; background-size: 30px; width: 20px; border: none;
@@ -510,7 +510,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         max-width: 1440px;
     }
     footer > div:first-of-type > div{
-        padding: 50px 0 60px;
+        padding: 50px 0;
     }
     footer > div:first-of-type > div > div{
         float: left; box-sizing: border-box;
@@ -615,7 +615,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     /* ? header */
 
     footer > ul{
-        padding: 155px 0;
+        padding: 150px 0;
     }
     footer > ul li{
         width: 25%; float: left; box-sizing: border-box;
