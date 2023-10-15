@@ -6,7 +6,7 @@ a{
 }
 .crrLanguage{
     background: url('../images/ico_language.svg') no-repeat left top; line-height: 24px;
-    box-sizing: border-box; color: var(--gs1); padding-left: 35px;
+    box-sizing: border-box; color: var(--gs1); padding-left: var(--sp35);
 }
 .bx-wrapper{
     box-shadow: none;
@@ -98,7 +98,7 @@ footer > div:first-of-type > div ul li{
     display: inline-block; width: 30px; height: 30px; text-indent: -9999px;
     background-position: center; background-repeat: no-repeat; background-size: contain;
 }
-footer > div:first-of-type > div ul li:not(:first-child){margin-left: 20px;}
+footer > div:first-of-type > div ul li:not(:first-child){margin-left: var(--sp20);}
 footer > div:first-of-type > div ul li a{
     display: block; width: 100%; height: 100%;
 }
@@ -107,7 +107,7 @@ footer > div:last-of-type > div:last-of-type > a{
     line-height: 35px; color: var(--gs1); background-color: var(--gs3);
 }
 footer > div:last-of-type > div:last-of-type div{
-    margin-top: 20px;
+    margin-top: var(--sp20);
 }
 footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
 footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
@@ -124,55 +124,55 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 @media screen and (max-width: 767px){
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid var(--gs10);
-        width: 96%; margin: 30px 2%; padding: 0 5px; box-sizing: border-box;
+        width: 96%; margin: var(--sp30) 2%; padding: 0 var(--sp5); box-sizing: border-box;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
-        padding: 0; width: 20px; height: 20px; position: absolute; right: 15px; top: 25px; text-indent: -9999px;
+        padding: 0; width: 20px; height: 20px; position: absolute; right: var(--sp15); top: var(--sp35); text-indent: -9999px;
         border: none; background-color: var(--gs1);
     }
 
     #menuPanel{
         z-index: 101; box-sizing: border-box; position: fixed; background-color: var(--gs1); border: 1px solid var(--gs3);
-        border-radius: 3px; padding: 30px 20px; width: 280px; top: 55px;
+        border-radius: 3px; padding: var(--sp30) var(--sp20); width: 280px; top: 55px;
     }
     #menuPanel .closePanel{
         background: url('../images/bul_close.png') no-repeat; background-size: 30px; border: none;
-        text-indent: -9999px; width: 30px; height: 30px; position: absolute; right: 20px;
+        text-indent: -9999px; width: 30px; height: 30px; position: absolute; right: var(--sp20);
     }
     #menuPanel span{
-        line-height: 24px; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid var(--gs3); display: block;
+        line-height: 24px; padding-bottom: var(--sp30); margin-bottom: var(--sp30); border-bottom: 1px solid var(--gs3); display: block;
         width: 240px;
     }
     #menuPanel ul{
-        margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid var(--gs3); width: 240px;
+        margin-bottom: var(--sp30); padding-bottom: var(--sp30); border-bottom: 1px solid var(--gs3); width: 240px;
     }
     #menuPanel ul li{
-        list-style: none; margin-bottom: 30px;
+        list-style: none; margin-bottom: var(--sp30);
     }
     #menuPanel ul li:last-of-type{
         margin-bottom: 0;
     }
     #menuPanel > a{
         background: url('../images/ico_logout.png') no-repeat left; color: var(--gs8); display: block;
-        background-size: 20px; padding: 0 0 0 30px;
+        background-size: 20px; padding: 0 0 0 var(--sp30);
     }
     #menuPanel > a[href="login.html"]{
         background-image: url('../images/ico_login.png');
     }
 
     header{
-        background-color: var(--gs10); padding-bottom: 10px; position: fixed; width: 100%; left: 0; top: 0;
+        background-color: var(--gs10); padding-bottom: var(--sp10); position: fixed; width: 100%; left: 0; top: 0;
         color: var(--gs1); z-index: 100;
     }
     header > ol{
         display: none;
     }
     header > div{
-        margin: 0 auto; position: relative; padding-top: 15px;
+        margin: 0 auto; position: relative; padding-top: var(--sp15);
     }
     header > div > *:not(h1){
-        position: absolute; top: 20px;
+        position: absolute; top: var(--sp20);
     }
     header > div span{
         display: none;
@@ -185,7 +185,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         max-width: 70px; margin: 0 auto;
     }
     header > div ul{
-        right: 2%; top: 20px;
+        right: 2%; top: var(--sp20);
     }
     header > div ul li:nth-child(2){display: none;}
     header > div ul li:nth-child(3){display: none;}
@@ -206,29 +206,29 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         width: 100%; display: inline-block;
     }
     footer > div:first-of-type > div{
-        padding: 30px 0;
+        padding: var(--sp30) 0;
     }
     footer > div:first-of-type > div > div:first-of-type{
-        margin: 0 2% 30px;
+        margin: 0 2% var(--sp30);
     }
     footer > div:first-of-type > div > div:last-of-type{
         margin: 0 2%;
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        margin-bottom: 20px; color: var(--gs8);
+        margin-bottom: var(--sp20); color: var(--gs8);
     }
     footer > div:first-of-type > div form p{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div form label{
         display: none;
     }
     footer > div:first-of-type > div form input{
-        margin-bottom: 25px;
+        margin-bottom: var(--sp25);
     }
     footer > div:first-of-type > div form input[type='email']{
-        width: 100%; height: 40px; padding: 0 15px; box-sizing: border-box; border: 1px solid var(--gs3); margin: 0 auto 15px;
+        width: 100%; height: 40px; padding: 0 var(--sp15); box-sizing: border-box; border: 1px solid var(--gs3); margin: 0 auto var(--sp15);
     }
     footer > div:first-of-type > div form input[type='submit']{
         width: 110px; height: 40px; box-sizing: border-box; color: var(--gs4); border: 1px solid var(--gs4); margin-left: auto; display: block;
@@ -241,22 +241,22 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         font-style: normal;
     }
     footer > div:first-of-type > div:last-child address > span{
-        display: block; margin-bottom: 20px;
+        display: block; margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div:last-child address div{
-        line-height: 20px; min-width: 260px; display: inline-block;
+        line-height: var(--sp20); min-width: 260px; display: inline-block;
     }
     footer > div:first-of-type > div:last-child address div span{
-        display: inline-block; margin-left: 15px; line-height: 24px;
+        display: inline-block; margin-left: var(--sp15); line-height: 24px;
     }
     footer > div:last-of-type{
-        padding: 0 2% 20px;
+        padding: 0 2% var(--sp20);
     }
     footer > div:last-of-type > div:not(:last-of-type){
         border-bottom: 1px solid var(--gs3);
     }
     footer > div:last-of-type > div h3{
-        padding: 35px 0;
+        padding: var(--sp35) 0;
     }
     footer > div:last-of-type > div:not(:last-of-type) h3{
         background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 30px;
@@ -271,23 +271,23 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: block;
     }
     footer > div:last-of-type > div ol li:not(:last-of-type){
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:last-of-type > div ol li:last-of-type{
-        margin-bottom: 35px;
+        margin-bottom: var(--sp35);
     }
     footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 20px; line-height: 20px;
+        margin-bottom: var(--sp20); line-height: 20px;
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 25px;
+        margin-top: var(--sp25);
     }
     footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 20px; display: flex; flex-wrap: wrap;
+        margin: var(--sp10) 0 var(--sp20); display: flex; flex-wrap: wrap;
     }
     footer > div:last-of-type > div:last-of-type div ul li{
-        width: 45px; height: 30px; text-indent: -9999px; margin-right: 10px;
-        background-position: center; background-repeat: no-repeat; margin-bottom: 10px;
+        width: 45px; height: 30px; text-indent: -9999px; margin-right: var(--sp10);
+        background-position: center; background-repeat: no-repeat; margin-bottom: var(--sp10);
     }
     footer > div:last-of-type > div:last-of-type div ul li img{
         width: 45px; height: 30px;
@@ -296,10 +296,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: flex; align-items: center; justify-content: flex-end;
     }
     footer > div:last-of-type > div:last-of-type span img:first-of-type{
-        margin-left: 10px;
+        margin-left: var(--sp10);
     }
     footer > div:last-of-type > div:last-of-type span img:last-of-type{
-        width: 22px; height: 35px; margin-left: 5px;
+        width: 22px; height: 35px; margin-left: var(--sp5);
     }
     /* ? Footer */
 }
@@ -310,49 +310,49 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         top: 130px;
     }
     #searchPanel input[type='text']{
-        margin: 40px 2%; padding: 0 10px;
+        margin: var(--sp40) 2%; padding: 0 var(--sp10);
     }
     #searchPanel input[type='button']{
-        right: 25px; top: 35px;
+        right: var(--sp25); top: var(--sp35);
     }
 
     #menuPanel{
         z-index: 101; box-sizing: border-box; position: fixed; background-color: var(--gs1); border: 1px solid var(--gs3);
-        border-radius: 3px; padding: 50px 25px; width: 300px; top: 42px;
+        border-radius: 3px; padding: var(--sp50) var(--sp25); width: 300px; top: var(--sp40);
     }
     #menuPanel .closePanel{
         background: url('../images/bul_close.png') no-repeat; background-size: 30px; width: 20px; border: none;
-        text-indent: -9999px; width: 30px; height: 30px; position: absolute; right: 40px;
+        text-indent: -9999px; width: 30px; height: 30px; position: absolute; right: var(--sp40);
     }
     #menuPanel span{
-        line-height: 30px; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid var(--gs3); display: block;
+        line-height: 30px; padding-bottom: var(--sp30); margin-bottom: var(--sp30); border-bottom: 1px solid var(--gs3); display: block;
         width: 250px;
     }
     #menuPanel ul{
-        margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid var(--gs3); width: 252px;
+        margin-bottom: var(--sp30); padding-bottom: var(--sp30); border-bottom: 1px solid var(--gs3); width: 252px;
     }
     #menuPanel ul li{
-        list-style: none; margin-bottom: 30px;
+        list-style: none; margin-bottom: var(--sp30);
     }
     #menuPanel ul li:last-of-type{
         margin-bottom: 0;
     }
     #menuPanel > a{
         background: url('../images/ico_logout.png') no-repeat left; color: var(--gs8); display: block;
-        background-size: 20px; padding: 0 0 0 30px;
+        background-size: 20px; padding: 0 0 0 var(--sp30);
     }
     #menuPanel > a[href="login.html"]{
         background-image: url('../images/ico_login.png');
     }
 
     header{
-        padding-bottom: 20px;
+        padding-bottom: var(--sp20);
     }
     header > div span{
         display: none;
     }
     header > div input{
-        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 35px; padding: 0;
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: var(--sp35); padding: 0;
         background-position: center; border: none; text-indent: -9999px;
     }
     header > div h1{
@@ -366,7 +366,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     /* ? header */
 
     footer > div:first-of-type > div{
-        padding: 30px 0 40px;
+        padding: var(--sp30) 0 var(--sp40);
     }
     footer > div:first-of-type > div > div:first-of-type{
         margin: 0 2% 65px;
@@ -376,13 +376,13 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        margin-bottom: 15px;
+        margin-bottom: var(--sp15);
     }
     footer > div:first-of-type > div form p{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div form input{
-        margin-bottom: 25px;
+        margin-bottom: var(--sp25);
     }
     footer > div:first-of-type > div:last-child address span{
         display: inline-block; line-height: 24px;
@@ -394,13 +394,13 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         margin-left: 5%; line-height: 24px; min-width: 260px; float: right;
     }
     footer > div:last-of-type{
-        padding: 0 2% 20px;
+        padding: 0 2% var(--sp20);
     }
     footer > div:last-of-type > div:not(:last-of-type){
         border-bottom: 1px solid var(--gs3);
     }
     footer > div:last-of-type > div h3{
-        padding: 35px 0;
+        padding: var(--sp35) 0;
     }
     footer > div:last-of-type > div:not(:last-of-type) h3{
         background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 30px;
@@ -415,19 +415,19 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: block;
     }
     footer > div:last-of-type > div ol li:not(:last-of-type){
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:last-of-type > div ol li:last-of-type{
-        margin-bottom: 35px;
+        margin-bottom: var(--sp35);
     }
     footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 30px;
+        margin-top: var(--sp30);
     }
     footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 20px;
+        margin: var(--sp10) 0 var(--sp20);
     }
     /* ? Footer */
 }
@@ -441,10 +441,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         max-width: 1440px;
     }
     #searchPanel input[type='text']{
-        margin: 50px 2%; padding: 0 15px;
+        margin: var(--sp50) 2%; padding: 0 var(--sp15);
     }
     #searchPanel input[type='button']{
-        right: 35px; top: 45px; cursor: pointer;
+        right: var(--sp35); top: 45px; cursor: pointer;
     }
 
     #accountPanel{
@@ -454,23 +454,23 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         position: relative; max-width: 1440px; margin: 0 auto;
     }
     #accountPanel div form{
-        background-color: var(--gs1); width: 200px; border-radius: 3px; padding: 10px 0; box-sizing: border-box;
+        background-color: var(--gs1); width: 200px; border-radius: 3px; padding: var(--sp10) 0; box-sizing: border-box;
         position: absolute; right: 2%; background-position: 25px; border: 1px solid var(--gs3);
     }
     #accountPanel div a{
-        color: var(--gs8); margin: 0 20px; line-height: 50px; box-sizing: border-box; display: block;
+        color: var(--gs8); margin: 0 var(--sp20); line-height: 50px; box-sizing: border-box; display: block;
     }
     #accountPanel div a:last-of-type{
         border-bottom: 1px solid var(--gs3);
     }
     #accountPanel div input{
         background: url('../images/ico_logout.png') no-repeat left; color: var(--gs8); display: block;
-        background-size: 20px; padding: 0 0 0 30px; line-height: 50px; box-sizing: border-box; border: none;
-        margin: 0 20px; cursor: pointer;
+        background-size: 20px; padding: 0 0 0 var(--sp30); line-height: 50px; box-sizing: border-box; border: none;
+        margin: 0 var(--sp20); cursor: pointer;
     }
 
     header{
-        padding-bottom: 25px;
+        padding-bottom: var(--sp25);
     }
     header > div{
         max-width: 1440px;
@@ -482,7 +482,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: none;
     }
     header > div h1{
-        max-width: 179px; margin: 0 auto 20px;
+        max-width: 179px; margin: 0 auto var(--sp20);
     }
     header > div ul li:nth-child(1){cursor: pointer;}
     header > div ul li:nth-child(4){cursor: pointer;}
@@ -510,7 +510,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         max-width: 1440px;
     }
     footer > div:first-of-type > div{
-        padding: 50px 0;
+        padding: var(--sp50) 0;
     }
     footer > div:first-of-type > div > div{
         float: left; box-sizing: border-box;
@@ -523,28 +523,28 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div form p{
-        margin-bottom: 25px; max-width: 350px;
+        margin-bottom: var(--sp25); max-width: 350px;
     }
     footer > div:first-of-type > div form input{
-        margin-bottom: 35px;
+        margin-bottom: var(--sp35);
     }
     footer > div:first-of-type > div form input[type='submit']{
         cursor: pointer;
     }
     footer > div:first-of-type > div:last-child address > span:last-of-type{
-        margin-left: 30px;
+        margin-left: var(--sp30);
     }
     footer > div:first-of-type > div:last-child address div{
         display: block; margin: 120px 0 0 auto; max-width: 280px;
     }
     footer > div:first-of-type > div:last-child address div > span{
-        margin-left: 15px;
+        margin-left: var(--sp15);
     }
     footer > div:last-of-type{
-        padding: 40px 0 20px; max-width: 1440px;
+        padding: var(--sp40) 0 var(--sp20); max-width: 1440px;
     }
     footer > div:last-of-type > div{
         float: left;
@@ -556,19 +556,19 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         width: 50%; box-sizing: border-box; margin: 0 2%;
     }
     footer > div:last-of-type > div h3{
-        margin-bottom: 40px;
+        margin-bottom: var(--sp40);
     }
     footer > div:last-of-type > div ol li:not(:last-of-type){
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 25px;
+        margin-bottom: var(--sp25);
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 20px;
+        margin-top: var(--sp20);
     }
     footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 70px;
+        margin: var(--sp10) 0 70px;
     }
     /* ? Footer */
 }
@@ -590,25 +590,25 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         color: var(--gs1); z-index: 100;
     }
     header > ol{
-        background-color: var(--gs4); text-align: center; padding: 10px 0;
+        background-color: var(--gs4); text-align: center; padding: var(--sp10) 0;
     }
     header > ol li{
-        display: none; padding-left: 40px; line-height: 22px;
+        display: none; padding-left: var(--sp40); line-height: 22px;
         background: url('../images/ico_delivery.png') no-repeat left center;
     }
     header > ol li.active{
         display: inline-block;
     }
     header > div{
-        margin: 0 auto; position: relative; padding-top: 25px;
+        margin: 0 auto; position: relative; padding-top: var(--sp25);
     }
     header > div > *:not(h1){
-        position: absolute; top: 35px;
+        position: absolute; top: var(--sp35);
     }
     header > div ul{
         right: 2%;
     }
-    header > div ul li:not(:first-child){margin-left: 10px;}
+    header > div ul li:not(:first-child){margin-left: var(--sp10);}
     header > div ul li:nth-child(2){background-image: url('../images/ico_wishlist.svg');}
     header > div ul li:nth-child(3){background-image: url('../images/ico_cart.svg');}
     header > div ul li:nth-child(4){background-image: url('../images/ico_account.svg');}
@@ -625,7 +625,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         color: var(--gs8);
     }
     footer > div:first-of-type > div form input[type='email']{
-        width: 300px; height: 40px; padding-left: 15px; box-sizing: border-box; border: 1px solid var(--gs3);
+        width: 300px; height: 40px; padding-left: var(--sp15); box-sizing: border-box; border: 1px solid var(--gs3);
     }
     footer > div:first-of-type > div form input[type='submit']{
         width: 110px; height: 40px; box-sizing: border-box; color: var(--gs4); border: 1px solid var(--gs4);
@@ -638,7 +638,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         font-style: normal;
     }
     footer > div:first-of-type > div:last-child address div > span{
-        margin-left: 15px;
+        margin-left: var(--sp15);
     }
     footer > div:last-of-type > div:last-of-type p{
         line-height: 20px;
@@ -653,7 +653,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         float: left; width: 48px; height: 32px; text-indent: -9999px;
         background-position: center; background-repeat: no-repeat;
     }
-    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 5px;}
+    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: var(--sp5);}
     footer > div:last-of-type > div:last-of-type div ul li img{
         width: 48px; height: 32px;
     }
@@ -661,10 +661,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: flex; max-width: 280px; margin-left: auto; align-items: center;
     }
     footer > div:last-of-type > div:last-of-type span img:first-of-type{
-        margin-left: 10px;
+        margin-left: var(--sp10);
     }
     footer > div:last-of-type > div:last-of-type span img:last-of-type{
-        width: 22px; height: 35px; margin-left: 5px;
+        width: 22px; height: 35px; margin-left: var(--sp5);
     }
 }
 /* ? Desktop + Tablet */

@@ -15,7 +15,51 @@
     --cs5: #5b001e;
     --gps2: #f0e1aa;
 
-    -sp10 : 10px;
+    --sp5: 5px;
+    --sp10: 10px;
+    --sp15: 15px;
+    --sp20: 20px;
+    --sp25: 25px;
+    --sp30: 30px;
+    --sp35: 35px;
+    --sp40: 40px;
+    --sp45: 45px;
+    --sp50: 50px;
+    --sp55: 55px;
+    --sp65: 65px;
+    --sp70: 70px;
+    --sp85: 85px;
+    --sp100: 100px;
+    --sp105: 105px;
+    --sp120: 120px;
+    --sp150: 150px;
+    --sp180: 180px;
+    --sp200: 200px;
+    --sp225: 225px;
+    --sp250: 250px;
+    --sp290: 290px;
+    --sp300: 300px;
+    --sp330: 330px;
+    --sp1200: 1200px;
+
+    --sppc1_5: 1.5%;
+    --sppc2: 2%;
+    --sppc2_1: 2.1%;
+    --sppc2_3: 2.3%;
+    --sppc2_5: 2.5%;
+    --sppc3: 3%;
+    --sppc3_5: 3.5%;
+    --sppc4: 4%;
+    --sppc4_5: 4.5%;
+    --sppc5: 5%;
+    --sppc5_5: 5.5%;
+    --sppc6: 6%;
+    --sppc8: 8%;
+    --sppc10: 10%;
+    --sppc12_5: 12.5%;
+    --sppc15: 15%;
+    --sppc22: 22%;
+    --sppc30: 30%;
 }
 
 [class*='nun']{font-family: 'Nunito Sans';}
