@@ -103,9 +103,7 @@
     color: var(--gs3);
 }
 .loginContainer div form input[type='submit'],
-#newAddressPopup .closeBtn,
-#editAddressPopup .closeBtn,
-#contactEndPopup .closeBtn,
+[id$="Popup"] .closeBtn,
 .fillBtn{
     color: var(--gs2);
 }
@@ -2308,9 +2306,9 @@ input[type="number"]::-webkit-inner-spin-button {
     #payEndPopup,
     #contactEndPopup,
     #filterPopup{
-        width: 650px; height: 700px; margin: 0 auto; display: none; padding: 0 var(--sp30); box-sizing: border-box;
+        width: 650px; height: 650px; margin: 0 auto; display: none; padding: 0 var(--sp30); box-sizing: border-box;
         position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1);
-        left: var(--sppc50); top: var(--sp200); transform: translateX(-50%); overflow-y: scroll;
+        left: var(--sppc50); top: var(--sp150); transform: translateX(-50%); overflow-y: scroll;
         box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;
     }
     #filterPopup{
