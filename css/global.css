@@ -34,7 +34,7 @@ input:-webkit-autofill{
 
 #searchPanel{
     background-color: var(--gs1); color: var(--gs3); width: 100%;
-    position: fixed; top: 55px; z-index: 51; border-bottom: 1px solid var(--gs3);
+    position: fixed; top: var(--sp55); z-index: 51; border-bottom: 1px solid var(--gs3);
 }
 #searchPanel div{
     margin: 0 auto; position: relative;
@@ -124,7 +124,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 @media screen and (max-width: 767px){
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid var(--gs10);
-        width: 96%; margin: var(--sp30) 2%; padding: 0 var(--sp5); box-sizing: border-box;
+        width: 96%; margin: var(--sp30) var(--sppc2); padding: 0 var(--sp5); box-sizing: border-box;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
@@ -134,7 +134,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 
     #menuPanel{
         z-index: 101; box-sizing: border-box; position: fixed; background-color: var(--gs1); border: 1px solid var(--gs3);
-        border-radius: 3px; padding: var(--sp30) var(--sp20); width: 280px; top: 55px;
+        border-radius: 3px; padding: var(--sp30) var(--sp20); width: 280px; top: var(--sp55);
     }
     #menuPanel .closePanel{
         background: url('../images/bul_close.png') no-repeat; background-size: 30px; border: none;
@@ -178,14 +178,14 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: none;
     }
     header > div input{
-        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; padding: 0;
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: var(--sppc2); padding: 0;
         background-position: center; border: none; text-indent: -9999px;
     }
     header > div h1{
         max-width: 70px; margin: 0 auto;
     }
     header > div ul{
-        right: 2%; top: var(--sp20);
+        right: var(--sppc2); top: var(--sp20);
     }
     header > div ul li:nth-child(2){display: none;}
     header > div ul li:nth-child(3){display: none;}
@@ -196,7 +196,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     /* ? header */
     
     footer > ul{
-        padding: 100px 0; box-sizing: border-box; overflow: scroll; white-space: nowrap;
+        padding: var(--sp100) 0; box-sizing: border-box; overflow: scroll; white-space: nowrap;
         scrollbar-width: none; -ms-overflow-style: none;
     }
     footer > ul::-webkit-scrollbar{
@@ -209,10 +209,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         padding: var(--sp30) 0;
     }
     footer > div:first-of-type > div > div:first-of-type{
-        margin: 0 2% var(--sp30);
+        margin: 0 var(--sppc2) var(--sp30);
     }
     footer > div:first-of-type > div > div:last-of-type{
-        margin: 0 2%;
+        margin: 0 var(--sppc2);
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
@@ -250,7 +250,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: inline-block; margin-left: var(--sp15); line-height: 24px;
     }
     footer > div:last-of-type{
-        padding: 0 2% var(--sp20);
+        padding: 0 var(--sppc2) var(--sp20);
     }
     footer > div:last-of-type > div:not(:last-of-type){
         border-bottom: 1px solid var(--gs3);
@@ -310,7 +310,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         top: 130px;
     }
     #searchPanel input[type='text']{
-        margin: var(--sp40) 2%; padding: 0 var(--sp10);
+        margin: var(--sp40) var(--sppc2); padding: 0 var(--sp10);
     }
     #searchPanel input[type='button']{
         right: var(--sp25); top: var(--sp35);
@@ -352,7 +352,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: none;
     }
     header > div input{
-        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: var(--sp35); padding: 0;
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: var(--sppc2); top: var(--sp35); padding: 0;
         background-position: center; border: none; text-indent: -9999px;
     }
     header > div h1{
@@ -369,10 +369,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         padding: var(--sp30) 0 var(--sp40);
     }
     footer > div:first-of-type > div > div:first-of-type{
-        margin: 0 2% 65px;
+        margin: 0 var(--sppc2) var(--sp65);
     }
     footer > div:first-of-type > div > div:last-of-type{
-        margin: 0 2%;
+        margin: 0 var(--sppc2);
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
@@ -388,13 +388,13 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: inline-block; line-height: 24px;
     }
     footer > div:first-of-type > div:last-child address > span:last-of-type{
-        margin-left: 4%;
+        margin-left: var(--sppc4);
     }
     footer > div:first-of-type > div:last-child address div{
-        margin-left: 5%; line-height: 24px; min-width: 260px; float: right;
+        margin-left: var(--sppc5); line-height: 24px; min-width: 260px; float: right;
     }
     footer > div:last-of-type{
-        padding: 0 2% var(--sp20);
+        padding: 0 var(--sppc2) var(--sp20);
     }
     footer > div:last-of-type > div:not(:last-of-type){
         border-bottom: 1px solid var(--gs3);
@@ -435,27 +435,27 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 
 @media screen and (min-width: 1280px){
     #searchPanel{
-        top: 200px;
+        top: var(--sp200);
     }
     #searchPanel div{
         max-width: 1440px;
     }
     #searchPanel input[type='text']{
-        margin: var(--sp50) 2%; padding: 0 var(--sp15);
+        margin: var(--sp50) var(--sppc2); padding: 0 var(--sp15);
     }
     #searchPanel input[type='button']{
-        right: var(--sp35); top: 45px; cursor: pointer;
+        right: var(--sp35); top: var(--sp45); cursor: pointer;
     }
 
     #accountPanel{
-        z-index: 101; box-sizing: border-box; position: fixed; top: 100px; width: 100%;
+        z-index: 101; box-sizing: border-box; position: fixed; top: var(--sp100); width: 100%;
     }
     #accountPanel div{
         position: relative; max-width: 1440px; margin: 0 auto;
     }
     #accountPanel div form{
         background-color: var(--gs1); width: 200px; border-radius: 3px; padding: var(--sp10) 0; box-sizing: border-box;
-        position: absolute; right: 2%; background-position: 25px; border: 1px solid var(--gs3);
+        position: absolute; right: var(--sppc2); background-position: 25px; border: 1px solid var(--gs3);
     }
     #accountPanel div a{
         color: var(--gs8); margin: 0 var(--sp20); line-height: 50px; box-sizing: border-box; display: block;
@@ -476,7 +476,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         max-width: 1440px;
     }
     header > div span{
-        left: 2%;
+        left: var(--sppc2);
     }
     header > div input{
         display: none;
@@ -497,7 +497,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: inline-block;
     }
     header > nav ul li:not(:first-child){
-        margin-left: 4%;
+        margin-left: var(--sppc4);
     }
     header > nav ul li a:hover{
         color: var(--cs1);
@@ -516,10 +516,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         float: left; box-sizing: border-box;
     }
     footer > div:first-of-type > div > div:first-of-type{
-        width: 33%; margin-left: 2%;
+        width: 33%; margin-left: var(--sppc2);
     }
     footer > div:first-of-type > div > div:last-of-type{
-        width: 33%; margin: 0 2% 0 30%;
+        width: 33%; margin: 0 var(--sppc2) 0 var(--sppc30);
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
@@ -538,7 +538,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         margin-left: var(--sp30);
     }
     footer > div:first-of-type > div:last-child address div{
-        display: block; margin: 120px 0 0 auto; max-width: 280px;
+        display: block; margin: var(--sp120) 0 0 auto; max-width: 280px;
     }
     footer > div:first-of-type > div:last-child address div > span{
         margin-left: var(--sp15);
@@ -550,10 +550,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         float: left;
     }
     footer > div:last-of-type > div:not(:last-of-type){
-        width: 21%; box-sizing: border-box; margin-left: 2%;
+        width: 21%; box-sizing: border-box; margin-left: var(--sppc2);
     }
     footer > div:last-of-type > div:last-of-type{
-        width: 50%; box-sizing: border-box; margin: 0 2%;
+        width: 50%; box-sizing: border-box; margin: 0 var(--sppc2);
     }
     footer > div:last-of-type > div h3{
         margin-bottom: var(--sp40);
@@ -568,7 +568,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         margin-top: var(--sp20);
     }
     footer > div:last-of-type > div:last-of-type div ul{
-        margin: var(--sp10) 0 70px;
+        margin: var(--sp10) 0 var(--sp70);
     }
     /* ? Footer */
 }
@@ -606,7 +606,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         position: absolute; top: var(--sp35);
     }
     header > div ul{
-        right: 2%;
+        right: var(--sppc2);
     }
     header > div ul li:not(:first-child){margin-left: var(--sp10);}
     header > div ul li:nth-child(2){background-image: url('../images/ico_wishlist.svg');}
@@ -615,7 +615,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     /* ? header */
 
     footer > ul{
-        padding: 150px 0;
+        padding: var(--sp150) 0;
     }
     footer > ul li{
         width: 25%; float: left; box-sizing: border-box;

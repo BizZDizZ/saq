@@ -23,6 +23,7 @@
     --sp30: 30px;
     --sp35: 35px;
     --sp40: 40px;
+    --sp42: 42px;
     --sp45: 45px;
     --sp50: 50px;
     --sp55: 55px;
@@ -60,6 +61,7 @@
     --sppc15: 15%;
     --sppc22: 22%;
     --sppc30: 30%;
+    --sppc50: 50%;
 }
 
 [class*='nun']{font-family: 'Nunito Sans';}
