@@ -60,8 +60,7 @@
 .aboutusContainer,
 .aboutusContainer a,
 #contactSubject,
-.aboutusContainer.contact #firstName,
-.aboutusContainer.contact #lastName,
+.aboutusContainer.contact [id$="Name"],
 .aboutusContainer.contact #userEmail,
 .aboutusContainer.contact #phoneNum,
 .aboutusContainer.contact div:nth-of-type(5) > div > #contactDetail{
