@@ -727,7 +727,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? history */
 
 .aboutusContainer.termsofsale h2{
-    margin: 0 var(--sppc2) var(--sp30);
+    margin: 0 var(--sppc2) var(--sp50);
 }
 .aboutusContainer.termsofsale em{
     font-style: italic;
@@ -1944,14 +1944,14 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: var(--sp30);
     }
     .aboutusContainer.termsofsale h2:nth-of-type(7)+p,
-    .aboutusContainer.termsofsale h2:nth-of-type(10)+p+p+p+p+p{
-        border-bottom: 1px solid var(--gs3); padding-bottom: var(--sp30);
+    .aboutusContainer.termsofsale p:nth-of-type(n+5):nth-of-type(-n+10){
+        border-bottom: 1px solid var(--gs3); padding-bottom: var(--sp30); background-color: red;
     }
     /* ? termsofsale */
 }
 /* ? Mobile */
 
-@media screen and (min-width: 768px) and (max-width: 1279px){    
+@media screen and (min-width: 768px) and (max-width: 1279px){
     #menuPanel span,
     #menuPanel a{
         color: var(--gs8);
@@ -2213,7 +2213,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: var(--sp200) 0 var(--sp70);
     }
     .wineContainer .bx-wrapper:last-of-type{
-        width: 100%; margin-bottom: 60px;
+        width: 100%; margin-bottom: var(--sp65);
     }
     /* ? wine detail */
 
@@ -2527,9 +2527,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer h2:first-of-type{
         margin-bottom: var(--sp50);
     }
-    .aboutusContainer h2:not(:first-of-type){
-        margin: var(--sp50) 0;
-    }
     .aboutusContainer p:last-of-type{
         margin-bottom: 0;
     }
@@ -2640,7 +2637,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? Tablet */
 
-@media screen and (min-width: 1280px){    
+@media screen and (min-width: 1280px){
     .indexContainer > div:nth-of-type(4):after,
     .indexContainer > div:nth-of-type(6):after,
     .pairingContainer:after,
@@ -3327,7 +3324,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? Desktop */
 
-@media screen and (min-width: 768px){    
+@media screen and (min-width: 768px){
     .indexContainer > div:nth-of-type(2):after,
     .indexContainer > div:last-of-type div:after,
     .wineContainer > div:after,
