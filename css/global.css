@@ -307,7 +307,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
     #searchPanel{
-        top: 130px;
+        top: var(--sp130);
     }
     #searchPanel input[type='text']{
         margin: var(--sp40) var(--sppc2); padding: 0 var(--sp10);

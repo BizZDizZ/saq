@@ -60,8 +60,7 @@
 .aboutusContainer,
 .aboutusContainer a,
 #contactSubject,
-.aboutusContainer.contact #firstName,
-.aboutusContainer.contact #lastName,
+.aboutusContainer.contact [id$="Name"],
 .aboutusContainer.contact #userEmail,
 .aboutusContainer.contact #phoneNum,
 .aboutusContainer.contact div:nth-of-type(5) > div > #contactDetail{
@@ -103,9 +102,7 @@
     color: var(--gs3);
 }
 .loginContainer div form input[type='submit'],
-#newAddressPopup .closeBtn,
-#editAddressPopup .closeBtn,
-#contactEndPopup .closeBtn,
+[id$="Popup"] .closeBtn,
 .fillBtn{
     color: var(--gs2);
 }
@@ -716,7 +713,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ? history */
 
 .aboutusContainer.termsofsale h2{
-    margin: 0 var(--sppc2) var(--sp30);
+    margin: 0 var(--sppc2) var(--sp50);
 }
 .aboutusContainer.termsofsale em{
     font-style: italic;
@@ -1940,7 +1937,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? Mobile */
 
-@media screen and (min-width: 768px) and (max-width: 1279px){    
+@media screen and (min-width: 768px) and (max-width: 1279px){
     #menuPanel span,
     #menuPanel a{
         color: var(--gs8);
@@ -2202,7 +2199,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin: var(--sp200) 0 var(--sp70);
     }
     .wineContainer .bx-wrapper:last-of-type{
-        width: 100%; margin-bottom: 60px;
+        width: 100%; margin-bottom: var(--sp65);
     }
     /* ? wine detail */
 
@@ -2297,9 +2294,9 @@ input[type="number"]::-webkit-inner-spin-button {
     #payEndPopup,
     #contactEndPopup,
     #filterPopup{
-        width: 650px; height: 700px; margin: 0 auto; display: none; padding: 0 var(--sp30); box-sizing: border-box;
+        width: 650px; height: 650px; margin: 0 auto; display: none; padding: 0 var(--sp30); box-sizing: border-box;
         position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1);
-        left: var(--sppc50); top: var(--sp200); transform: translateX(-50%); overflow-y: scroll;
+        left: var(--sppc50); top: var(--sp150); transform: translateX(-50%); overflow-y: scroll;
         box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;
     }
     #filterPopup{
@@ -2516,9 +2513,6 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer h2:first-of-type{
         margin-bottom: var(--sp50);
     }
-    .aboutusContainer h2:not(:first-of-type){
-        margin: var(--sp50) 0;
-    }
     .aboutusContainer p:last-of-type{
         margin-bottom: 0;
     }
@@ -2629,7 +2623,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? Tablet */
 
-@media screen and (min-width: 1280px){    
+@media screen and (min-width: 1280px){
     .indexContainer > div:nth-of-type(4):after,
     .indexContainer > div:nth-of-type(6):after,
     .pairingContainer:after,
@@ -3316,7 +3310,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? Desktop */
 
-@media screen and (min-width: 768px){    
+@media screen and (min-width: 768px){
     .indexContainer > div:nth-of-type(2):after,
     .indexContainer > div:last-of-type div:after,
     .wineContainer > div:after,
