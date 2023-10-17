@@ -63,7 +63,8 @@
 .aboutusContainer.contact [id$="Name"],
 .aboutusContainer.contact #userEmail,
 .aboutusContainer.contact #phoneNum,
-.aboutusContainer.contact div:nth-of-type(5) > div > #contactDetail{
+.aboutusContainer.contact div:nth-of-type(5) > div > #contactDetail,
+.lineBtn{
     color: var(--gs8);
 }
 .indexContainer > div:nth-of-type(2) figure figcaption p,
@@ -102,7 +103,6 @@
     color: var(--gs3);
 }
 .loginContainer div form input[type='submit'],
-[id$="Popup"] .closeBtn,
 .fillBtn{
     color: var(--gs2);
 }
@@ -380,45 +380,31 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? account main */
 
-#newAddressPopup.active,
-#editAddressPopup.active,
-#deleteAddressPopup.active,
-#deleteItemPopup.active,
-#payEndPopup.active,
-#contactEndPopup.active,
-#filterPopup.active{
+[id$="Popup"].active{
     display: block;
 }
-#newAddressPopup h4,
-#editAddressPopup h4,
-#deleteAddressPopup h4,
-#deleteItemPopup h4,
-#payEndPopup h4,
-#contactEndPopup h3{
+[id$="Popup"] h4,
+[id$="Popup"] h3{
     margin: var(--sp25) 0 var(--sp30); border-bottom: 1px solid var(--gs3);
     padding-bottom: var(--sp25); display: block;
 }
-#newAddressPopup input:not(.closePopup),
-#newAddressPopup select,
-#editAddressPopup input:not(.closePopup),
-#editAddressPopup select{
+[id$="AddressPopup"] input[type="text"]:not([id$="ZipCode"]),
+[id$="AddressPopup"] select,
+[id$="AddressPopup"] .closeBtn{
     width: 100%; display: block; padding: 0 var(--sppc3); box-sizing: border-box; height: 40px;
     margin-bottom: var(--sp30); border-radius: 3px;
 }
-#newAddressPopup #newZipCode,
-#editAddressPopup #newZipCode{
-    width: 50%;
+[id$="AddressPopup"] [id$="ZipCode"]{
+    width: 50%; display: block; padding: 0 var(--sppc3); box-sizing: border-box; height: 40px;
+    margin-bottom: var(--sp30); border-radius: 3px;
 }
-#newAddressPopup label,
-#editAddressPopup label{
+[id$="AddressPopup"] label{
     margin-bottom: var(--sp20); display: block;
 }
-#newAddressPopup .closeBtn,
-#editAddressPopup .closeBtn{
-    margin-bottom: var(--sp50); width: 30%;
+[id$="AddressPopup"] .closeBtn{
+    margin-bottom: var(--sp50); width: 30%; display: inline-block;
 }
-#deleteAddressPopup input:last-of-type,
-#deleteItemPopup input:last-of-type{
+[id^="delete"] input:last-of-type{
     margin-left: var(--sppc6);
 }
 /* ? Popup */
@@ -476,23 +462,15 @@ input[type="number"]::-webkit-inner-spin-button {
 .accountdetailContainer > div > ul > li > div:first-of-type div{
     float: left;
 }
-.accountdetailContainer #firstName,
-.accountdetailContainer #lastName,
-.accountdetailContainer #birthDay,
-.accountdetailContainer #birthMonth,
-.accountdetailContainer #birthYear{
+.accountdetailContainer [id$="Name"],
+.accountdetailContainer [id^="birth"]{
     height: fit-content; border: none; box-sizing: border-box; padding: 0;
 }
-.accountdetailContainer #firstName:focus,
-.accountdetailContainer #lastName:focus,
-.accountdetailContainer #birthDay:focus,
-.accountdetailContainer #birthMonth:focus,
-.accountdetailContainer #birthYear:focus{
+.accountdetailContainer [id$="Name"]:focus,
+.accountdetailContainer [id^="birth"]:focus{
     outline: none;
 }
-.accountdetailContainer > div > ul > li > div #birthDay,
-.accountdetailContainer > div > ul > li > div #birthMonth,
-.accountdetailContainer > div > ul > li > div #birthYear{
+.accountdetailContainer > div > ul > li > div [id^="birth"]{
     text-align: left;
 }
 .accountdetailContainer > div > ul > li > div:last-of-type label:not(:first-of-type){
@@ -501,20 +479,17 @@ input[type="number"]::-webkit-inner-spin-button {
 .accountdetailContainer > div > ul > li .fillBtn{
     display: none;
 }
-.accountdetailContainer > div > ul > li:last-of-type .passwordField,
-.accountdetailContainer > div > ul > li:last-of-type .newpasswordField,
+.accountdetailContainer > div > ul > li:last-of-type [class$="passwordField"],
 .accountdetailContainer > div > ul > li:last-of-type p{
     display: none;
 }
 .accountdetailContainer > div > ul > li:last-of-type.active span:first-of-type{
     display: none;
 }
-.accountdetailContainer > div > ul > li:last-of-type.active .passwordField label,
-.accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField label{
+.accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] label{
     margin-bottom: var(--sp20); display: block;
 }
-.accountdetailContainer > div > ul > li:last-of-type.active .passwordField #userPW,
-.accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField #newuserPW{
+.accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] [id$="userPW"]{
     height: 40px;
 }
 /* ? account detail */
@@ -732,9 +707,8 @@ input[type="number"]::-webkit-inner-spin-button {
         background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
         padding-left: var(--sp20); position: absolute; left: 0; top: var(--sp85);
     }
-    .passwordField,
-    .newpasswordField{
-        position: relative; height: 40px; display: block;
+    [class$="passwordField"]{
+        position: relative; display: block;
     }
     .passwordField > .vActiveBtn,
     .newpasswordField > .newvActiveBtn{
@@ -746,17 +720,13 @@ input[type="number"]::-webkit-inner-spin-button {
         height: 100px;
     }
     #userEmail,
-    #firstName,
-    #lastName,
-    #birthDay,
-    #birthMonth,
-    #birthYear,
+    [id$="Name"],
+    [id^="birth"],
     #phoneNum{
-        padding: 0 var(--sp10); width: 100%; height: 50px; border-radius: 3px; box-sizing: border-box;
+        width: 100%; height: 25px; border-radius: 3px; box-sizing: border-box;
     }
-    #userPW,
-    #newuserPW{
-        padding: 0 var(--sp50); width: 100%; height: 50px; border-radius: 3px; box-sizing: border-box;
+    [id$="PW"]{
+        padding: 0 var(--sp40); width: 100%; height: 40px; border-radius: 3px; box-sizing: border-box;
     }
 
     .indexContainer{
@@ -1244,14 +1214,8 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     /* ? account main */
 
-    #newAddressPopup,
-    #editAddressPopup,
-    #deleteAddressPopup,
-    #deleteItemPopup,
-    #payEndPopup,
-    #contactEndPopup,
-    #filterPopup{
-        width: 90%; height: 550px; margin: 0 auto; display: none; padding: 0 var(--sp10); box-sizing: border-box;
+    [id$="Popup"]{
+        width: 90%; height: 550px; margin: 0 auto; padding: 0 var(--sp10); box-sizing: border-box;
         position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1);
         left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%); overflow-y: scroll;
         box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;
@@ -1268,17 +1232,14 @@ input[type="number"]::-webkit-inner-spin-button {
     #filterPopup h3{
         margin: var(--sp25) 0; display: block;
     }
-    #newAddressPopup.active .closePopup,
-    #editAddressPopup.active .closePopup,
+    [id$="AddressPopup"].active .closePopup,
     #filterPopup.active .closePopup{
         position: absolute; right: var(--sp10); top: var(--sp25); padding: 0; width: 18px;
     }
-    #payEndPopup a,
-    #contactEndPopup a{
+    [id$="EndPopup"] a{
         width: 230px; height: 45px; display: block; text-align: center; line-height: 45px; margin: 0 auto;
     }
-    #deleteAddressPopup input,
-    #deleteItemPopup input{
+    [id^="delete"] input{
         padding: 0 var(--sppc3); box-sizing: border-box; margin-bottom: var(--sp30); width: 100px; height: 40px;
     }
     /* ? Popup */
@@ -1388,11 +1349,8 @@ input[type="number"]::-webkit-inner-spin-button {
     .accountdetailContainer > div > ul > li.active > div:first-of-type > div:last-of-type{
         width: 48.5%; margin-left: var(--sppc3);
     }
-    .accountdetailContainer li.active #firstName,
-    .accountdetailContainer li.active #lastName,
-    .accountdetailContainer li.active #birthDay,
-    .accountdetailContainer li.active #birthMonth,
-    .accountdetailContainer li.active #birthYear{
+    .accountdetailContainer li.active [id$="Name"],
+    .accountdetailContainer li.active [id^="birth"]{
         height: 40px; border: 1px solid var(--gs3); box-sizing: border-box; padding: 0 var(--sp10);
     }
     .accountdetailContainer > div > ul > li > div:last-of-type{
@@ -1422,16 +1380,13 @@ input[type="number"]::-webkit-inner-spin-button {
     .accountdetailContainer > div > ul > li > .accountEdit{
         background: transparent; border: none; padding: 0;
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active .passwordField,
-    .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField{
-        display: block; width: 100%; margin-bottom: var(--sp50);
+    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"]{
+        display: block; width: 100%; margin-bottom: var(--sp30);
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active .passwordField .vActiveBtn,
-    .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField .newvActiveBtn{
+    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] [class$="vActiveBtn"]{
         width: 20px; background-size: 20px; top: var(--sp45);
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active .passwordField #userPW:focus,
-    .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField #newuserPW:focus{
+    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] [id$="userPW"]:focus{
         outline: none;
     }
     .accountdetailContainer > div > ul > li:last-of-type.active p{
@@ -1748,7 +1703,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: var(--sp30);
     }
     .aboutusContainer h2:not(:first-of-type){
-        margin: var(--sp30) 0;
+        margin: 0 var(--sppc2) var(--sp30);
     }
     .aboutusContainer p,
     .aboutusContainer ul li{
@@ -1826,8 +1781,7 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.contact > div:nth-of-type(5) > div > label{
         display: block;
     }
-    .aboutusContainer.contact #firstName,
-    .aboutusContainer.contact #lastName,
+    .aboutusContainer.contact [id$="Name"],
     .aboutusContainer.contact #userEmail,
     .aboutusContainer.contact #phoneNum{
         height: 50px; margin-bottom: var(--sp30); border: 1px solid var(--gs3); outline: none; padding: 0 var(--sp10);
@@ -2287,14 +2241,8 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     /* ? account main */
 
-    #newAddressPopup,
-    #editAddressPopup,
-    #deleteAddressPopup,
-    #deleteItemPopup,
-    #payEndPopup,
-    #contactEndPopup,
-    #filterPopup{
-        width: 650px; height: 650px; margin: 0 auto; display: none; padding: 0 var(--sp30); box-sizing: border-box;
+    [id$="Popup"]{
+        width: 650px; height: 650px; margin: 0 auto; padding: 0 var(--sp30); box-sizing: border-box;
         position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1);
         left: var(--sppc50); top: var(--sp150); transform: translateX(-50%); overflow-y: scroll;
         box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;
@@ -3007,13 +2955,8 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     /* ? account main */
 
-    #newAddressPopup,
-    #editAddressPopup,
-    #deleteAddressPopup,
-    #deleteItemPopup,
-    #payEndPopup,
-    #contactEndPopup{
-        width: 650px; height: 700px; margin: 0 auto; display: none; padding: 0 40px; box-sizing: border-box;
+    [id$="Popup"]{
+        width: 650px; height: 700px; margin: 0 auto; padding: 0 40px; box-sizing: border-box;
         position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1);
         left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%); overflow-y: scroll;
         box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;
@@ -3328,9 +3271,8 @@ input[type="number"]::-webkit-inner-spin-button {
         clear: both; content: ''; display: block;
     }
 
-    .passwordField,
-    .newpasswordField{
-        position: relative; height: 70px; display: block;
+    [class$="passwordField"]{
+        position: relative; display: block;
     }
     .passwordField > .vActiveBtn,
     .newpasswordField > .newvActiveBtn{
@@ -3338,18 +3280,14 @@ input[type="number"]::-webkit-inner-spin-button {
         background: url('../images/bul_visiblity_off.png') no-repeat; background-size: 40px 40px;
         width: 40px; height: 40px; border: none; text-indent: -9999px;
     }
+    [id$="Name"],
+    [id^="birth"],
     #userEmail,
-    #firstName,
-    #lastName,
-    #birthDay,
-    #birthMonth,
-    #birthYear,
     #phoneNum{
-        padding: 0 var(--sp15); width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
+        width: 100%; height: 25px; border-radius: 3px; box-sizing: border-box;
     }
-    #userPW,
-    #newuserPW{
-        padding: 0 var(--sp40); width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
+    [id$="userPW"]{
+        padding: 0 var(--sp40); width: 100%; height: 40px; border-radius: 3px; box-sizing: border-box;
     }
 
     .indexContainer > div:nth-of-type(2) figure{
@@ -3504,23 +3442,18 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     /* ? account main */
 
-    #deleteAddressPopup,
-    #deleteItemPopup,
-    #payEndPopup,
-    #contactEndPopup{
+    [id^="delete"],
+    [id*="End"]{
         height: 190px; overflow-y: hidden; text-align: center; top: var(--sppc50); transform: translate(-50%, -50%);
     }
-    #newAddressPopup.active .closePopup,
-    #editAddressPopup.active .closePopup{
+    [id$="AddressPopup"].active .closePopup{
         position: absolute; right: 40px; top: var(--sp25); padding: 0; width: 25px;
     }
-    #payEndPopup a,
-    #contactEndPopup a{
+    [id*="End"] a{
         width: 340px; height: 45px; display: block; text-align: center; line-height: 45px;
         margin: 0 auto;
     }
-    #deleteAddressPopup input,
-    #deleteItemPopup input{
+    [id^="delete"] input{
         padding: 0 var(--sppc3); box-sizing: border-box; margin-bottom: var(--sp50); width: 150px; height: 40px;
     }
     /* ? Popup */
@@ -3548,23 +3481,18 @@ input[type="number"]::-webkit-inner-spin-button {
     .accountdetailContainer > div > ul > li h4{
         margin-bottom: var(--sp30);
     }
-    .accountdetailContainer li.active #firstName,
-    .accountdetailContainer li.active #lastName,
-    .accountdetailContainer li.active #birthDay,
-    .accountdetailContainer li.active #birthMonth,
-    .accountdetailContainer li.active #birthYear{
+    .accountdetailContainer li.active [id$="Name"],
+    .accountdetailContainer li.active [id^="birth"]{
         height: 40px; border: 1px solid var(--gs3); box-sizing: border-box; padding: 0 var(--sp15);
     }
     .accountdetailContainer > div > ul > li > div:last-of-type,
     .accountdetailContainer > div > ul > li:last-of-type span:first-of-type{
         margin-bottom: var(--sp30); display: block;
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active .passwordField,
-    .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField{
+    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"]{
         display: block; width: 35%; margin-bottom: var(--sp30);
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active .passwordField .vActiveBtn,
-    .accountdetailContainer > div > ul > li:last-of-type.active .newpasswordField .newvActiveBtn{
+    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] [class$="vActiveBtn"]{
         width: 25px; height: 25px; background-size: 25px; top: 42px; left: var(--sp10);
     }
     .accountdetailContainer > div > ul > li:last-of-type.active p{
@@ -3837,8 +3765,7 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.contact > div:nth-of-type(5) > div > label{
         display: block; width: 49%;
     }
-    .aboutusContainer.contact #firstName,
-    .aboutusContainer.contact #lastName,
+    .aboutusContainer.contact [id$="Name"],
     .aboutusContainer.contact #userEmail,
     .aboutusContainer.contact #phoneNum{
         height: 50px; margin-bottom: var(--sp40); border: 1px solid var(--gs3); outline: none;
@@ -3897,8 +3824,8 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.termsofsale p{
         margin-bottom: var(--sp50);
     }
-    .aboutusContainer.termsofsale h2:nth-of-type(7)+p,
-    .aboutusContainer.termsofsale h2:nth-of-type(10)+p+p+p+p+p{
+    .aboutusContainer.termsofsale p:nth-of-type(13),
+    .aboutusContainer.termsofsale p:nth-of-type(20){
         border-bottom: 1px solid var(--gs3); padding-bottom: var(--sp50);
     }
     /* ? termsofsale */

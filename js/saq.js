@@ -59,7 +59,7 @@ function panelControl(openBtn){
         $(currentPanel).addClass("active");
 
     });
-    $("[class^='close']").click(function(){
+    $("[class*='close']").click(function(){
         $(currentPanel).removeClass("active");
     });
 }

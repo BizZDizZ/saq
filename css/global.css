@@ -187,12 +187,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     header > div ul{
         right: var(--sppc2); top: var(--sp20);
     }
-    header > div ul li:nth-child(2){display: none;}
-    header > div ul li:nth-child(3){display: none;}
-    header > div ul li:nth-child(4){display: none;}
-    header > nav{
-        display: none;
-    }
+    header > div ul li:nth-child(2),
+    header > div ul li:nth-child(3),
+    header > div ul li:nth-child(4),
+    header > nav{display: none;}
     /* ? header */
     
     footer > ul{
@@ -484,7 +482,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     header > div h1{
         max-width: 179px; margin: 0 auto var(--sp20);
     }
-    header > div ul li:nth-child(1){cursor: pointer;}
+    header > div ul li:nth-child(1),
     header > div ul li:nth-child(4){cursor: pointer;}
     header > div ul li:nth-child(4).closePanel{background-image: url('../images/bul_close_white.svg');}
     header > div ul li a{
