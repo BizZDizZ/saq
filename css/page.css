@@ -146,21 +146,10 @@
 .newpasswordField.active > .newvActiveBtn{
     background-image: url('../images/bul_visiblity.png');
 }
-#birthDay,
-#birthMonth,
-#birthYear{
+[id^="birth"]{
     text-align: center;
 }
-#newAddressPopup{
-    display: none;
-}
-#editAddressPopup{
-    display: none;
-}
-#deleteAddressPopup{
-    display: none;
-}
-#deleteItemPopup{
+[id$="Popup"]{
     display: none;
 }
 mark{
@@ -1943,8 +1932,8 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.termsofsale p{
         margin-bottom: var(--sp30);
     }
-    .aboutusContainer.termsofsale h2:nth-of-type(7)+p,
-    .aboutusContainer.termsofsale h2:nth-of-type(10)+p+p+p+p+p{
+    .aboutusContainer.termsofsale p:nth-of-type(13),
+    .aboutusContainer.termsofsale p:nth-of-type(20){
         border-bottom: 1px solid var(--gs3); padding-bottom: var(--sp30);
     }
     /* ? termsofsale */
