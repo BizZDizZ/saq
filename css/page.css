@@ -3286,6 +3286,9 @@ input[type="number"]::-webkit-inner-spin-button {
     #phoneNum{
         width: 100%; height: 25px; border-radius: 3px; box-sizing: border-box;
     }
+    #userEmail{
+        height: 70px;
+    }
     [id$="userPW"]{
         padding: 0 var(--sp40); width: 100%; height: 40px; border-radius: 3px; box-sizing: border-box;
     }
@@ -3425,6 +3428,9 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .loginContainer > p{
         margin-bottom: var(--sp65);
+    }
+    .loginContainer #userPW{
+        height: 70px;
     }
     /* ? loginContainer */
 
