@@ -2,7 +2,12 @@
 .indexContainer > div:nth-of-type(4) div a,
 .indexContainer > div:nth-of-type(6) figure figcaption a,
 .indexContainer > div:last-of-type div span a,
-.loginContainer .backtosign{
+.loginContainer .backtosign,
+.aboutusContainer.accessInfo > div:nth-of-type(2) > div p a,
+.loginContainer div form a,
+.empty > a,
+.empty > input,
+.articleContainer ul li a{
     text-decoration: underline;
 }
 .indexContainer > div:nth-of-type(2) figure figcaption a,
@@ -644,11 +649,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 /* ? aboutus */
 
-.aboutusContainer.accessInfo > div:nth-of-type(2) > div p a{
-    text-decoration: underline;
-}
-/* ? saccesstoInfo */
-
 .aboutusContainer.policy em{
     font-style: italic;
 }
@@ -1155,7 +1155,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: block; margin-bottom: var(--sp20);
     }
     .loginContainer div form a{
-        margin-bottom: var(--sp30); text-decoration: underline; display: block; width: fit-content;
+        margin-bottom: var(--sp30); display: block; width: fit-content;
     }
     .loginContainer div form .fillBtn{
         margin-bottom: var(--sp30); width: 100%; height: 50px; border-radius: 3px;
@@ -1269,11 +1269,8 @@ input[type="number"]::-webkit-inner-spin-button {
     .empty > p{
         margin-bottom: var(--sp30);
     }
-    .empty > a{
-        text-decoration: underline;
-    }
     .empty > input{
-        background: transparent; text-decoration: underline; border: none; padding: 0;
+        background: transparent; border: none; padding: 0;
     }
     /* ? emptylist */
 
@@ -1595,7 +1592,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: var(--sp30);
     }
     .articleContainer ul li a{
-        text-decoration: underline; width: fit-content; margin-left: auto; display: block;
+         width: fit-content; margin-left: auto; display: block;
     }
     .articleContainer > div:first-of-type{
         margin-bottom: var(--sp30);
@@ -2286,11 +2283,8 @@ input[type="number"]::-webkit-inner-spin-button {
     .empty > p{
         margin-bottom: var(--sp40);
     }
-    .empty > a{
-        text-decoration: underline;
-    }
     .empty > input{
-        background: transparent; text-decoration: underline; border: none; padding: 0;
+        background: transparent; border: none; padding: 0;
     }
     /* ? emptylist */
 
@@ -2992,10 +2986,10 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-bottom: var(--sp40); margin-right: var(--sppc22);
     }
     .empty > a{
-        text-decoration: underline; margin-right: var(--sppc22);
+        margin-right: var(--sppc22);
     }
     .empty > input{
-        background: transparent; text-decoration: underline; border: none; margin-right: var(--sppc22);
+        background: transparent; border: none; margin-right: var(--sppc22);
         padding: 0;
     }
     /* ? emptylist */
@@ -3284,10 +3278,7 @@ input[type="number"]::-webkit-inner-spin-button {
     [id^="birth"],
     #userEmail,
     #phoneNum{
-        width: 100%; height: 25px; border-radius: 3px; box-sizing: border-box;
-    }
-    #userEmail{
-        height: 70px;
+        width: 100%; height: 70px; border-radius: 3px; box-sizing: border-box;
     }
     [id$="userPW"]{
         padding: 0 var(--sp40); width: 100%; height: 40px; border-radius: 3px; box-sizing: border-box;
@@ -3406,7 +3397,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: block; margin-bottom: var(--sp30);
     }
     .loginContainer div form a{
-        margin-bottom: var(--sp50); text-decoration: underline; display: block; width: fit-content;
+        margin-bottom: var(--sp50); display: block; width: fit-content;
     }
     .loginContainer div form .fillBtn{
         margin-bottom: var(--sp65); width: 100%; height: 70px; border-radius: 3px;
@@ -3657,9 +3648,6 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .articleContainer ul li p{
         margin-bottom: var(--sp30); line-height: 18px;
-    }
-    .articleContainer ul li a{
-        text-decoration: underline;
     }
     .articleContainer > div figure{
         display: flex; flex-direction: row-reverse; align-items: center;
