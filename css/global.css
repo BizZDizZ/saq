@@ -538,9 +538,6 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     footer > div:first-of-type > div:last-child address div{
         display: block; margin: var(--sp120) 0 0 auto; max-width: 280px;
     }
-    footer > div:first-of-type > div:last-child address div > span{
-        margin-left: var(--sp15);
-    }
     footer > div:last-of-type{
         padding: var(--sp40) 0 var(--sp20); max-width: 1440px;
     }
@@ -636,7 +633,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         font-style: normal;
     }
     footer > div:first-of-type > div:last-child address div > span{
-        margin-left: var(--sp15);
+        margin-left: var(--sp15); display: inline-block;
     }
     footer > div:last-of-type > div:last-of-type p{
         line-height: 20px;
