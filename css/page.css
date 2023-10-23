@@ -1707,7 +1707,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .aboutusContainer p,
     .aboutusContainer ul li{
-        margin-bottom: var(--sp25); line-height: 16px;
+        margin-bottom: var(--sp25); line-height: 18px;
     }
     .aboutusContainer p:last-of-type{
         margin-bottom: 0;
@@ -1784,11 +1784,11 @@ input[type="number"]::-webkit-inner-spin-button {
     .aboutusContainer.contact [id$="Name"],
     .aboutusContainer.contact #userEmail,
     .aboutusContainer.contact #phoneNum{
-        height: 50px; margin-bottom: var(--sp30); border: 1px solid var(--gs3); outline: none; padding: 0 var(--sp10);
+        height: 50px; margin-bottom: var(--sp30); border: 1px solid var(--gs3); outline: none; padding: 0 var(--sp15);
     }
     .aboutusContainer.contact > div:nth-of-type(5) > div > #contactDetail{
         display: block; width: 100%; box-sizing: border-box; margin-bottom: var(--sp30); border-radius: 3px;
-        resize: none; height: 100px; border-color: var(--gs3); padding: var(--sp10); outline: none;
+        resize: none; height: 100px; border-color: var(--gs3); padding: var(--sp10) var(--sp15); outline: none;
     }
     .aboutusContainer.contact > div:nth-of-type(5) > div .fillBtn{
         width: 150px; height: 40px; display: block; margin-left: auto;
@@ -2426,6 +2426,9 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .articleContainer ul li{
         width: 32%; float: left; box-sizing: border-box;
+    }
+    .articleContainer > div:first-of-type:not(.pager){
+        margin-bottom: var(--sp50);
     }
     .articleContainer > div figure img{
         width: 40%; margin: 0 var(--sppc2);
@@ -3122,10 +3125,10 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 23.5%; float: left; box-sizing: border-box;
     }
     .articleContainer > div:first-of-type:not(.pager){
-        margin-bottom: var(--sp100);
+        margin-bottom: var(--sp100); width: 100%;
     }
     .articleContainer > div figure img{
-        width: 48%; margin: 0 var(--sppc2);
+        width: 48%; margin: 0 var(--sppc2); 
     }
     .articleContainer > div figure figcaption{
         width: 46%; margin-left: var(--sppc2);
@@ -3217,7 +3220,7 @@ input[type="number"]::-webkit-inner-spin-button {
     /* ? FAQ */
 
     .aboutusContainer.history ol li h2{
-        line-height: 50px; margin-bottom: var(--sp120); margin-left: var(--sppc5); flex: none; width: 100%;
+        line-height: 50px; margin-bottom: var(--sp120); margin-left: var(--sppc5); width: 100%;
     }
     .aboutusContainer.history ol li div{
         margin-left: var(--sppc15); width: 47%; border-left: 1px solid var(--gs10); box-sizing: border-box;
@@ -3772,7 +3775,7 @@ input[type="number"]::-webkit-inner-spin-button {
     }
     .aboutusContainer.contact > div:nth-of-type(5) > div > #contactDetail{
         display: block; width: 100%; box-sizing: border-box; margin-bottom: var(--sp40); border-radius: 3px;
-        resize: none; height: 100px; border-color: var(--gs3); padding: var(--sp10) var(--sp15); outline: none;
+        resize: none; height: 100px; border-color: var(--gs3); padding: var(--sp10) var(--sp20); outline: none;
     }
     .aboutusContainer.contact > div:nth-of-type(5) > div .fillBtn{
         width: 150px; height: 40px;
@@ -3788,7 +3791,7 @@ input[type="number"]::-webkit-inner-spin-button {
     /* ? FAQ */
 
     .aboutusContainer.history ol li{
-        display: flex; flex-wrap: wrap; margin-bottom: var(--sp50);
+        display: flex; flex-wrap: wrap; margin-bottom: var(--sp50); align-items: center;
     }
     .aboutusContainer.history ol li div strong{
         margin-bottom: var(--sp50); display: block;
