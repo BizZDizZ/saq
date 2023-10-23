@@ -79,14 +79,13 @@
 @media screen and (max-width: 767px){
     [class$='s14']{font-size: 14px;}
     [class$='s16']{font-size: 16px;}
-    [class$='s20'],
+    [class$='s20']{font-size: 18px;}
     [class$='s24']{font-size: 20px;}
     [class$='s40']{font-size: 35px;}
     [class$='s50']{font-size: 40px;}
     [class$='s150']{font-size: 40px;}
     [class$='s200']{font-size: 150px;}
-    [class='nunw4s20'],
-    [class='corw4s20']{font-size: 18px;}
+    [class='nunw7s20']{font-size: 20px;}
     [class='nunw2s24'],
     [class='nunw7s24']{font-size: 14px;}
     [class='nunw4s24'],
@@ -103,8 +102,7 @@
     [class$='s50']{font-size: 50px;}
     [class$='s150']{font-size: 100px;}
     [class$='s200']{font-size: 150px;}
-    [class='nunw4s20'],
-    [class='corw4s20']{font-size: 18px;}
+    [class='nunw7s20']{font-size: 20px;}
     [class='nunw3s30']{font-size: 30px;}
     [class='nunw6s30'],
     [class='corw6s30']{font-size: 26px;}

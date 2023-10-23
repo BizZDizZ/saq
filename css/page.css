@@ -494,10 +494,10 @@ input[type="number"]::-webkit-inner-spin-button {
 .accountdetailContainer > div > ul > li:last-of-type.active span:first-of-type{
     display: none;
 }
-.accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] label{
+.accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"] label{
     margin-bottom: var(--sp20); display: block;
 }
-.accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] [id$="userPW"]{
+.accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"] [id$="PW"]{
     height: 40px;
 }
 /* ? account detail */
@@ -1380,13 +1380,13 @@ input[type="number"]::-webkit-inner-spin-button {
     .accountdetailContainer > div > ul > li > .accountEdit{
         background: transparent; border: none; padding: 0;
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"]{
-        display: block; width: 100%; margin-bottom: var(--sp30);
+    .accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"]{
+        display: block; width: 100%; margin-bottom: var(--sp30); position: relative;
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] [class$="vActiveBtn"]{
+    .accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"] [class$="vActiveBtn"]{
         width: 20px; background-size: 20px; top: var(--sp45);
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] [id$="userPW"]:focus{
+    .accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"] [id$="userPW"]:focus{
         outline: none;
     }
     .accountdetailContainer > div > ul > li:last-of-type.active p{
@@ -2316,7 +2316,7 @@ input[type="number"]::-webkit-inner-spin-button {
         margin-left: var(--sppc2);
     }
     .wishContainer > div > ul li a strong{
-        display: block; margin-bottom: var(--sp20); min-height: 28px;
+        display: block; margin-bottom: var(--sp20);
     }
     /* ? wishlist */
 
@@ -3483,11 +3483,14 @@ input[type="number"]::-webkit-inner-spin-button {
     .accountdetailContainer > div > ul > li:last-of-type span:first-of-type{
         margin-bottom: var(--sp30); display: block;
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"]{
-        display: block; width: 35%; margin-bottom: var(--sp30);
+    .accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"]{
+        display: block; width: 35%; margin-bottom: var(--sp30); position: relative;
     }
-    .accountdetailContainer > div > ul > li:last-of-type.active [class$="passwordField"] [class$="vActiveBtn"]{
+    .accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"] [class$="vActiveBtn"]{
         width: 25px; height: 25px; background-size: 25px; top: 42px; left: var(--sp10);
+    }
+    .accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"] [id$="PW"]{
+        padding-left: var(--sp40);
     }
     .accountdetailContainer > div > ul > li:last-of-type.active p{
         display: block; margin-bottom: var(--sp20); max-width: 30%;
@@ -3604,7 +3607,7 @@ input[type="number"]::-webkit-inner-spin-button {
         width: 48.5%; float: left; margin: 0 0 var(--sp30) var(--sppc3);
     }
     .paymentContainer div:nth-of-type(4) div #saveCard+label{
-        padding-left: var(--sppc6); width: 100%; box-sizing: border-box; margin-bottom: var(--sp35);
+        padding-left: var(--sp40); box-sizing: border-box; margin-bottom: var(--sp35);
         background: url('../images/bul_uncheck_black.png') no-repeat left; background-size: 30px;
     }
     .paymentContainer div:nth-of-type(4) div #saveCard:checked+label{
@@ -3626,7 +3629,7 @@ input[type="number"]::-webkit-inner-spin-button {
         display: block; border-bottom: 1px solid var(--gs2); margin-bottom: var(--sp50);
     }
     .paymentContainer div:nth-of-type(4) div #setUp+label{
-        padding-left: var(--sppc6); width: 100%; box-sizing: border-box; margin-bottom: var(--sp35);
+        padding-left: var(--sp40); box-sizing: border-box; margin-bottom: var(--sp35);
         background: url('../images/bul_uncheck_black.png') no-repeat left; background-size: 30px;
     }
     .paymentContainer div:nth-of-type(4) div #setUp:checked+label{
