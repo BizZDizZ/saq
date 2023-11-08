@@ -98,6 +98,7 @@
 .productContainer > div:nth-of-type(2) > div:nth-of-type(3) ul li a span del,
 .wineContainer > div:nth-of-type(2) b small,
 .wineContainer > div:nth-of-type(2) del,
+.wineContainer .bx-wrapper:last-of-type .discoverslider li a span del,
 .addressbookContainer div div input,
 .wishContainer div div a,
 .wishContainer > div > ul li a span del,
