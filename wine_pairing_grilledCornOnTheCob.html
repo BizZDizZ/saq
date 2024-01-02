@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAQ: Discover our selection of wines, beers and spirits online</title>
+    <script src="js/jquery-3.6.4.slim.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script> 
+    <script src="js/saq.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel" class="dispNone widthMax">
+        <div class="nunw4s24 relativePos">
+            <label for="search"></label>
+            <input type="text" id="search" placeholder="Search products, pairings and content" class="nunw4s24">
+            <input type="submit" value="submit" disabled class="dispNone">
+            <input type="button" value="close" class="closePanel deleteBtn textHide absolutePos">
+        </div>
+    </div>
+    <div id="accountPanel" class="dispNone">
+        <div class="nunw4s16">
+            <form action="index.html">
+                <a href="account_myorder.html" class="gray8">My Orders</a>
+                <a href="account_wishlist.html" class="gray8">Wish List</a>
+                <a href="account_cartlist.html" class="gray8">Cart List</a>
+                <a href="account_detail.html" class="gray8">Account Details</a>
+                <a href="account_addressbook.html" class="gray8">Address Book</a>
+                <a href="account_savedcards.html" class="gray8">Saved Cards</a>
+                <input type="submit" value="Sign out" class="nunw4s16">
+            </form>
+        </div>
+    </div>
+    <div id="menuPanel" class="dispNone">
+        <input type="button" value="close" class="closePanel">
+        <span class="crrLanguage nunw4s14 gray8">English</span>
+        <ul class="nunw6s14">
+            <li><a href="wine_sub_sale_01.html" class="gray8">Sale</a></li>
+            <li><a href="wine_sub_white_01.html" class="gray8">White</a></li>
+            <li><a href="wine_sub_red_01.html" class="gray8">Red</a></li>
+            <li><a href="wine_sub_rose_01.html" class="gray8">Rosé</a></li>
+            <li><a href="wine_sub_sparkling_01.html" class="gray8">Sparkling Wine</a></li>
+            <li><a href="wine_sub_dessert_01.html" class="gray8">Dessert Wine</a></li>
+            <li><a href="wine_sub_pairing_01.html" class="gray8">Pairing</a></li>
+        </ul>
+        <ul class="nunw6s14">
+            <li><a href="account_main.html" class="gray8">My Account</a></li>
+            <li><a href="account_wishlist.html" class="gray8">Wish List</a></li>
+        </ul>
+        <a href="index.html" class="nunw6s14 gray8">Sign out</a>
+    </div>
+    
+    <header class="gray1 nunw6s14 widthMax">
+        <ol>
+            <li class="active"><a href="wine_sub_white_01.html" class="dispB">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
+            <li><a href="wine_sub_white_01.html" class="dispB">Meet a variety of high-quality wines.</a></li>
+            <li><a href="wine_sub_sale_01.html" class="dispB">Spend to save up to 25% sale for a limited time only.</a></li>
+        </ol>   
+        <div class="relativePos">
+            <span class="crrLanguage nunw4s14 absolutePos gray1">English</span>
+            <input type="button" value="menu" data-panel="menuPanel" class="absolutePos">
+            <h1>
+                <a href="index_after.html" class="dispB">
+                    <img src="images/logo_header.png" alt="SAQ" class="widthMax">
+                </a>
+            </h1>
+            <ul class="absolutePos">
+                <li data-panel="searchPanel" class="dispIB textHide">search</li>
+                <li class="dispIB textHide"><a href="account_wishlist.html" class="dispB">wishlist</a></li>
+                <li class="dispIB textHide"><a href="account_cartlist.html" class="dispB">cart</a></li>
+                <li data-panel="accountPanel" class="dispIB textHide">account</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="wine_sub_sale_01.html">Sale</a></li>
+                <li><a href="wine_sub_white_01.html">White</a></li>
+                <li><a href="wine_sub_red_01.html">Red</a></li>
+                <li><a href="wine_sub_rose_01.html">Rosé</a></li>
+                <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
+                <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
+                <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ? Header Fin -->
+    
+    <div class="pairingContainer">
+        <div class="boxSize relativePos gray1">
+            <mark class="nunw4s16 dispB goldPale2">
+                Espace Québec
+                <span class="nunw4s14 gray1">Pairing</span>
+            </mark>
+            <h2 class="corw6s50">Grilled corn on the cob</h2>
+            <img src="images/img_pairing_grilledCornOnTheCob.png" alt="grilledCornOnTheCob">
+            <div>
+                <h3 class="corw6s30">Preparation</h3>
+                <ol class="nunw4s20">
+                    <li>In a bowl, mix together basil, oregano, lemon zest and pepper. Set aside.</li>
+                    <li>Trim the silk sticking out from the tip of the ears (do not peel the husks).</li>
+                    <li>Bring a pot of water to a boil and cook the (unpeeled) cobs for 10 minutes.</li>
+                    <li>Plunge the cobs into cold water to stop the cooking process.</li>
+                    <li>Let cool, then drain water.</li>
+                    <li>Pull the husks down to the base of the stalks, leaving the husks attached.</li>
+                    <li>Using string, tie back the husks (the husks will serve as a handle during grilling).</li>
+                    <li>Preheat the barbecue to high and grill the corn on all sides.</li>
+                    <li>Just before serving, sprinkle corn on the cob with feta, wait until slightly melted and then top with herb and lemon mixture.</li>
+                </ol>
+            </div>
+        </div>
+        <aside class="boxSize">
+            <img src="images/img_pairing_grilledCornOnTheCob.png" alt="grilledCornOnTheCob">
+            <ul class="nunw4s20">
+                <li>Preparation 30 minutes</li>
+                <li>Cooking time 20 minutes</li>
+                <li>Servings 4</li>
+            </ul>
+            <h3 class="corw6s30">Ingredients</h3>
+            <ul class="nunw4s20 boxSize">
+                <li>
+                    <input type="checkbox" id="check1" class="dispNone">
+                    <label for="check1" class="dispIB">8 ears of fresh corn</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check2" class="dispNone">
+                    <label for="check2" class="dispIB">250 ml (1 cup) crumbled feta</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check3" class="dispNone">
+                    <label for="check3" class="dispIB">250 ml (1 cup) chopped basil</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check4" class="dispNone">
+                    <label for="check4" class="dispIB">5 ml (1 tsp) curry powder</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check5" class="dispNone">
+                    <label for="check5" class="dispIB">10 ml (2 tsp) lemon juice</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check6" class="dispNone">
+                    <label for="check6" class="dispIB">10 ml (2 tsp) pepper</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check7" class="dispNone">
+                    <label for="check7" class="dispIB">Zest of 1 lemon</label>
+                </li>
+            </ul>
+        </aside>
+    </div>
+    <!-- ? pairingContainer Fin-->
+    
+    <footer>
+        <ul class="floatContainer">
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_termsofsale.html">Home delivery</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_contactus.html">Contact us</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_termsofsale.html">Free in-store returns</a></li>
+        </ul>
+        <div>
+            <div class="floatContainer">
+                <div>
+                    <form>
+                        <h4 class="corw6s20 gray8">Create my account</h4>
+                        <p class="nunw3s14 gray6">Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
+                        <label for="accountEmail"></label>
+                        <input type="email" id="accountEmail" placeholder="your@address.com" class="nunw3s14 boxSize">
+                        <input type="submit" value="Submit" class="nunw3s14 gray4">
+                    </form>
+                    <ul>
+                        <li class="dispIB textHide"><a href="https://www.youtube.com/user/SAQTchinTchin" class="dispB widthMax">Youtube</a></li>
+                        <li class="dispIB textHide"><a href="https://www.facebook.com/SAQ" class="dispB widthMax">Facebook</a></li>
+                        <li class="dispIB textHide"><a href="https://twitter.com/LaSAQ_officiel" class="dispB widthMax">Twitter</a></li>
+                        <li class="dispIB textHide"><a href="https://www.instagram.com/lasaq/" class="dispB widthMax">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="corw6s20 gray8">Call us</h3>
+                    <address class="nunw3s14">
+                        <span class="gray6">
+                            Toll free: <a href="tel:+18668732020" class="gray6">1 866 873-2020</a>
+                        </span>
+                        <span class="gray6">
+                            Greater Montreal: <a href="tel:+5142542020" class="gray6">514 254-2020</a>
+                        </span>
+                        <div class="gray6">
+                            LOCATION &amp; LANGUAGE<span class="crrLanguage nunw4s14">English</span>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="floatContainer">
+            <div class="gray7">
+                <h3 class="nunw7s16">About your purchase</h3>
+                <ol>
+                    <li class="nunw3s14 mBot20"><a href="account_main.html" class="gray7">My Profile</a></li>
+                    <li class="nunw3s14 mBot20"><a href="account_myorder.html" class="gray7">Track an Orders</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_FAQ.html" class="gray7">Frequently asked questions</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_confidentialpolicy.html" class="gray7">Shipping and delivery</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_termsofsale.html" class="gray7">Terms and conditions</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_confidentialpolicy.html" class="gray7">Confidentiality Policy</a></li>
+                </ol>
+            </div>
+            <div class="gray7">
+                <h3 class="nunw7s16">About the SAQ</h3>
+                <ol>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_profileandmandate.html" class="gray7">Profile and mandate</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_accesstoinformation.html" class="gray7">Access to information</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_contactus.html" class="gray7">Contact Us</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_ourhistory.html" class="gray7">Our history</a></li>
+                    <li class="nunw3s14 mBot20"><a href="inspiration_list.html" class="gray7">Inspiration</a></li>
+                </ol>
+            </div>
+            <div class="gray7">
+                <h3 class="nunw7s16">SAQ pairing recipes</h3>
+                <p class="nunw3s14">Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
+                <a href="wine_sub_pairing_01.html" class="fillBtn gray2 nunw3s14 dispB textCenter gray1">Visit Now</a>
+                <div>
+                    <h4 class="nunw7s16">SAQ ACCEPTS</h4>
+                    <ul>
+                        <li class="textHide">Paypal</li>
+                        <li class="textHide">VISA</li>
+                        <li class="textHide">Mastercard</li>
+                        <li class="textHide">Maestro</li>
+                        <li class="textHide">AmericanExpress</li>
+                        <li class="textHide">JCB</li>
+                        <li class="textHide">UnionPay</li>
+                        <li class="textHide">DELTA</li>
+                        <li class="textHide">applepay</li>
+                        <li class="textHide">klarna</li>
+                    </ul>
+                </div>
+                <span class="nunw3s14">
+                    © All rights reserved, SAQ 2023 <img src="images/logo_spirit.png" alt="the spirit of sharing SAQ."><img src="images/logo_footer.png" alt="logo_footer">
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- ? Footer Fin -->
+</body>
+</html>
