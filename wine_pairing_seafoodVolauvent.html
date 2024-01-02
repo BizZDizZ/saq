@@ -12,65 +12,65 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <div id="searchPanel">
-        <div>
+    <div id="searchPanel" class="dispNone widthMax">
+        <div class="nunw4s24 relativePos">
             <label for="search"></label>
-            <input type="text" id="search" placeholder="Search products, pairings and content" class="nun4_24">
-            <input type="submit" value="submit" disabled>
-            <input type="button" value="close" class="closePanel deleteBtn">
+            <input type="text" id="search" placeholder="Search products, pairings and content" class="nunw4s24">
+            <input type="submit" value="submit" disabled class="dispNone">
+            <input type="button" value="close" class="closePanel deleteBtn textHide absolutePos">
         </div>
     </div>
-    <div id="accountPanel" class="nun4_16">
-        <div>
+    <div id="accountPanel" class="dispNone">
+        <div class="nunw4s16">
             <form action="index.html">
-                <a href="account_myorder.html">My Orders</a>
-                <a href="account_wishlist.html">Wish List</a>
-                <a href="account_cartlist.html">Cart List</a>
-                <a href="account_detail.html">Account Details</a>
-                <a href="account_addressbook.html">Address Book</a>
-                <a href="account_savedcards.html">Saved Cards</a>
-                <input type="submit" value="Sign out" class="4_16">
+                <a href="account_myorder.html" class="gray8">My Orders</a>
+                <a href="account_wishlist.html" class="gray8">Wish List</a>
+                <a href="account_cartlist.html" class="gray8">Cart List</a>
+                <a href="account_detail.html" class="gray8">Account Details</a>
+                <a href="account_addressbook.html" class="gray8">Address Book</a>
+                <a href="account_savedcards.html" class="gray8">Saved Cards</a>
+                <input type="submit" value="Sign out" class="nunw4s16">
             </form>
         </div>
     </div>
-    <div id="menuPanel" class="nun6_14">
+    <div id="menuPanel" class="dispNone">
         <input type="button" value="close" class="closePanel">
-        <span class="crrLanguage nun4_14">English</span>
-        <ul>
-            <li><a href="wine_sub_sale_01.html">Sale</a></li>
-            <li><a href="wine_sub_white_01.html">White</a></li>
-            <li><a href="wine_sub_red_01.html">Red</a></li>
-            <li><a href="wine_sub_rose_01.html">Rosé</a></li>
-            <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
-            <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
-            <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+        <span class="crrLanguage nunw4s14 gray8">English</span>
+        <ul class="nunw6s14">
+            <li><a href="wine_sub_sale_01.html" class="gray8">Sale</a></li>
+            <li><a href="wine_sub_white_01.html" class="gray8">White</a></li>
+            <li><a href="wine_sub_red_01.html" class="gray8">Red</a></li>
+            <li><a href="wine_sub_rose_01.html" class="gray8">Rosé</a></li>
+            <li><a href="wine_sub_sparkling_01.html" class="gray8">Sparkling Wine</a></li>
+            <li><a href="wine_sub_dessert_01.html" class="gray8">Dessert Wine</a></li>
+            <li><a href="wine_sub_pairing_01.html" class="gray8">Pairing</a></li>
         </ul>
-        <ul>
-            <li><a href="account_main.html">My Account</a></li>
-            <li><a href="account_wishlist.html">Wish List</a></li>
+        <ul class="nunw6s14">
+            <li><a href="account_main.html" class="gray8">My Account</a></li>
+            <li><a href="account_wishlist.html" class="gray8">Wish List</a></li>
         </ul>
-        <a href="index.html">Sign out</a>
+        <a href="index.html" class="nunw6s14 gray8">Sign out</a>
     </div>
     
-    <header>
+    <header class="gray1 nunw6s14 widthMax">
         <ol>
-            <li class="active"><a href="wine_sub_white_01.html">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
-            <li><a href="wine_sub_white_01.html">Meet a variety of high-quality wines.</a></li>
-            <li><a href="wine_sub_sale_01.html">Spend to save up to 25% sale for a limited time only.</a></li>
+            <li class="active"><a href="wine_sub_white_01.html" class="dispB">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
+            <li><a href="wine_sub_white_01.html" class="dispB">Meet a variety of high-quality wines.</a></li>
+            <li><a href="wine_sub_sale_01.html" class="dispB">Spend to save up to 25% sale for a limited time only.</a></li>
         </ol>   
-        <div>
-            <span class="crrLanguage">English</span>
-            <input type="button" value="menu" data-panel="menuPanel">
+        <div class="relativePos">
+            <span class="crrLanguage nunw4s14 absolutePos gray1">English</span>
+            <input type="button" value="menu" data-panel="menuPanel" class="absolutePos">
             <h1>
-                <a href="index_after.html">
-                    <img src="images/logo_header.png" alt="SAQ">
+                <a href="index_after.html" class="dispB">
+                    <img src="images/logo_header.png" alt="SAQ" class="widthMax">
                 </a>
             </h1>
-            <ul>
-                <li data-panel="searchPanel">search</li>
-                <li><a href="account_wishlist.html">wishlist</a></li>
-                <li><a href="account_cartlist.html">cart</a></li>
-                <li data-panel="accountPanel">account</li>
+            <ul class="absolutePos">
+                <li data-panel="searchPanel" class="dispIB textHide">search</li>
+                <li class="dispIB textHide"><a href="account_wishlist.html" class="dispB">wishlist</a></li>
+                <li class="dispIB textHide"><a href="account_cartlist.html" class="dispB">cart</a></li>
+                <li data-panel="accountPanel" class="dispIB textHide">account</li>
             </ul>
         </div>
         <nav>
@@ -88,16 +88,16 @@
     <!-- ? Header Fin -->
     
     <div class="pairingContainer">
-        <div>
-            <mark>
+        <div class="boxSize relativePos gray1">
+            <mark class="nunw4s16 dispB goldPale2">
                 Espace Québec
-                <span>Pairing</span>
+                <span class="nunw4s14 gray1">Pairing</span>
             </mark>
-            <h2>Seafood vol-au-vent</h2>
+            <h2 class="corw6s50">Seafood vol-au-vent</h2>
             <img src="images/img_pairing_seafoodVolauvent.png" alt="seafoodVolauvent">
             <div>
-                <h3>Preparation</h3>
-                <ol>
+                <h3 class="corw6s30">Preparation</h3>
+                <ol class="nunw4s20">
                     <li>In a saucepan, melt 50 ml (1/4 cup) of butter over medium heat.</li>
                     <li>Cook for 1 minute and remove from the heat.</li>
                     <li>Using a whisk, stir to thicken the sauce. Season with salt and pepper.</li>
@@ -111,58 +111,58 @@
                 </ol>
             </div>
         </div>
-        <aside>
+        <aside class="boxSize">
             <img src="images/img_pairing_seafoodVolauvent.png" alt="seafoodVolauvent">
-            <ul>
+            <ul class="nunw4s20">
                 <li>Preparation 10 minutes</li>
                 <li>Cooking time 20 minutes</li>
                 <li>Servings 4</li>
             </ul>
-            <h3>Ingredients</h3>
-            <ul>
+            <h3 class="corw6s30">Ingredients</h3>
+            <ul class="nunw4s20 boxSize">
                 <li>
-                    <input type="checkbox" id="check1">
-                    <label for="check1">75 ml (1/4 cup + 1 tbsp) butter</label>
+                    <input type="checkbox" id="check1" class="dispNone">
+                    <label for="check1" class="dispIB">75 ml (1/4 cup + 1 tbsp) butter</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check2">
-                    <label for="check2">125 ml (1/2 cup) flour</label>
+                    <input type="checkbox" id="check2" class="dispNone">
+                    <label for="check2" class="dispIB">125 ml (1/2 cup) flour</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check3">
-                    <label for="check3">1 egg, beaten</label>
+                    <input type="checkbox" id="check3" class="dispNone">
+                    <label for="check3" class="dispIB">1 egg, beaten</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check4">
-                    <label for="check4">4 vol-au-vent shells</label>
+                    <input type="checkbox" id="check4" class="dispNone">
+                    <label for="check4" class="dispIB">4 vol-au-vent shells</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check5">
-                    <label for="check5">15 ml (1 tbsp) vegetable oil</label>
+                    <input type="checkbox" id="check5" class="dispNone">
+                    <label for="check5" class="dispIB">15 ml (1 tbsp) vegetable oil</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check6">
-                    <label for="check6">225 g (1/2 lb) mushrooms</label>
+                    <input type="checkbox" id="check6" class="dispNone">
+                    <label for="check6" class="dispIB">225 g (1/2 lb) mushrooms</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check7">
-                    <label for="check7">45 ml (3 tbsp) French shallots</label>
+                    <input type="checkbox" id="check7" class="dispNone">
+                    <label for="check7" class="dispIB">45 ml (3 tbsp) French shallots</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check8">
-                    <label for="check8">1 garlic clove, minced</label>
+                    <input type="checkbox" id="check8" class="dispNone">
+                    <label for="check8" class="dispIB">1 garlic clove, minced</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check9">
-                    <label for="check9">12 raw shrimp, 16/20</label>
+                    <input type="checkbox" id="check9" class="dispNone">
+                    <label for="check9" class="dispIB">12 raw shrimp, 16/20</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check10">
-                    <label for="check10">12 scallops, 15/25</label>
+                    <input type="checkbox" id="check10" class="dispNone">
+                    <label for="check10" class="dispIB">12 scallops, 15/25</label>
                 </li>
                 <li>
-                    <input type="checkbox" id="check11">
-                    <label for="check11">180 g (6 oz) calamari, in rings</label>
+                    <input type="checkbox" id="check11" class="dispNone">
+                    <label for="check11" class="dispIB">180 g (6 oz) calamari, in rings</label>
                 </li>
             </ul>
         </aside>
@@ -170,87 +170,87 @@
     <!-- ? pairingContainer Fin-->
     
     <footer>
-        <ul>
-            <li><a class="nun3_16" href="aboutus_termsofsale.html">Home delivery</a></li>
-            <li><a class="nun3_16" href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
-            <li><a class="nun3_16" href="aboutus_contactus.html">Contact us</a></li>
-            <li><a class="nun3_16" href="aboutus_termsofsale.html">Free in-store returns</a></li>
+        <ul class="floatContainer">
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_termsofsale.html">Home delivery</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_contactus.html">Contact us</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_termsofsale.html">Free in-store returns</a></li>
         </ul>
         <div>
-            <div>
+            <div class="floatContainer">
                 <div>
                     <form>
-                        <h4 class="cor6_20">Create my account</h4>
-                        <p class="nun3_14">Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
+                        <h4 class="corw6s20 gray8">Create my account</h4>
+                        <p class="nunw3s14 gray6">Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
                         <label for="accountEmail"></label>
-                        <input type="email" id="accountEmail" placeholder="your@address.com" class="nun3_14">
-                        <input type="submit" value="Submit" class="nun3_14">
+                        <input type="email" id="accountEmail" placeholder="your@address.com" class="nunw3s14 boxSize">
+                        <input type="submit" value="Submit" class="nunw3s14 gray4">
                     </form>
                     <ul>
-                        <li><a href="https://www.youtube.com/user/SAQTchinTchin">Youtube</a></li>
-                        <li><a href="https://www.facebook.com/SAQ">Facebook</a></li>
-                        <li><a href="https://twitter.com/LaSAQ_officiel">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/lasaq/">Instagram</a></li>
+                        <li class="dispIB textHide"><a href="https://www.youtube.com/user/SAQTchinTchin" class="dispB widthMax">Youtube</a></li>
+                        <li class="dispIB textHide"><a href="https://www.facebook.com/SAQ" class="dispB widthMax">Facebook</a></li>
+                        <li class="dispIB textHide"><a href="https://twitter.com/LaSAQ_officiel" class="dispB widthMax">Twitter</a></li>
+                        <li class="dispIB textHide"><a href="https://www.instagram.com/lasaq/" class="dispB widthMax">Instagram</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="cor6_20">Call us</h3>
-                    <address class="nun3_14">
-                        <span>
-                            Toll free: <a href="tel:+18668732020">1 866 873-2020</a>
+                    <h3 class="corw6s20 gray8">Call us</h3>
+                    <address class="nunw3s14">
+                        <span class="gray6">
+                            Toll free: <a href="tel:+18668732020" class="gray6">1 866 873-2020</a>
                         </span>
-                        <span>
-                            Greater Montreal: <a href="tel:+5142542020">514 254-2020</a>
+                        <span class="gray6">
+                            Greater Montreal: <a href="tel:+5142542020" class="gray6">514 254-2020</a>
                         </span>
-                        <div>
-                            LOCATION &amp; LANGUAGE<span class="crrLanguage nun4_14">English</span>
+                        <div class="gray6">
+                            LOCATION &amp; LANGUAGE<span class="crrLanguage nunw4s14">English</span>
                         </div>
                     </address>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <h3 class="nun7_16">About your purchase</h3>
+        <div class="floatContainer">
+            <div class="gray7">
+                <h3 class="nunw7s16">About your purchase</h3>
                 <ol>
-                    <li class="nun3_14"><a href="account_main.html">My Profile</a></li>
-                    <li class="nun3_14"><a href="account_myorder.html">Track an Orders</a></li>
-                    <li class="nun3_14"><a href="aboutus_FAQ.html">Frequently asked questions</a></li>
-                    <li class="nun3_14"><a href="aboutus_confidentialpolicy.html">Shipping and delivery</a></li>
-                    <li class="nun3_14"><a href="aboutus_termsofsale.html">Terms and conditions</a></li>
-                    <li class="nun3_14"><a href="aboutus_confidentialpolicy.html">Confidentiality Policy</a></li>
+                    <li class="nunw3s14 mBot20"><a href="account_main.html" class="gray7">My Profile</a></li>
+                    <li class="nunw3s14 mBot20"><a href="account_myorder.html" class="gray7">Track an Orders</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_FAQ.html" class="gray7">Frequently asked questions</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_confidentialpolicy.html" class="gray7">Shipping and delivery</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_termsofsale.html" class="gray7">Terms and conditions</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_confidentialpolicy.html" class="gray7">Confidentiality Policy</a></li>
                 </ol>
             </div>
-            <div>
-                <h3 class="nun7_16">About the SAQ</h3>
+            <div class="gray7">
+                <h3 class="nunw7s16">About the SAQ</h3>
                 <ol>
-                    <li class="nun3_14"><a href="aboutus_profileandmandate.html">Profile and mandate</a></li>
-                    <li class="nun3_14"><a href="aboutus_accesstoinformation.html">Access to information</a></li>
-                    <li class="nun3_14"><a href="aboutus_contactus.html">Contact Us</a></li>
-                    <li class="nun3_14"><a href="aboutus_ourhistory.html">Our history</a></li>
-                    <li class="nun3_14"><a href="inspiration_list.html">Inspiration</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_profileandmandate.html" class="gray7">Profile and mandate</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_accesstoinformation.html" class="gray7">Access to information</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_contactus.html" class="gray7">Contact Us</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_ourhistory.html" class="gray7">Our history</a></li>
+                    <li class="nunw3s14 mBot20"><a href="inspiration_list.html" class="gray7">Inspiration</a></li>
                 </ol>
             </div>
-            <div>
-                <h3 class="nun7_16">SAQ pairing recipes</h3>
-                <p class="nun3_14">Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
-                <a href="wine_sub_pairing_01.html" class="fillBtn nun3_14">Visit Now</a>
+            <div class="gray7">
+                <h3 class="nunw7s16">SAQ pairing recipes</h3>
+                <p class="nunw3s14">Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
+                <a href="wine_sub_pairing_01.html" class="fillBtn gray2 nunw3s14 dispB textCenter gray1">Visit Now</a>
                 <div>
-                    <h4 class="7_14">SAQ ACCEPTS</h4>
+                    <h4 class="nunw7s16">SAQ ACCEPTS</h4>
                     <ul>
-                        <li>Paypal</li>
-                        <li>VISA</li>
-                        <li>Mastercard</li>
-                        <li>Maestro</li>
-                        <li>AmericanExpress</li>
-                        <li>JCB</li>
-                        <li>UnionPay</li>
-                        <li>DELTA</li>
-                        <li>applepay</li>
-                        <li>klarna</li>
+                        <li class="textHide">Paypal</li>
+                        <li class="textHide">VISA</li>
+                        <li class="textHide">Mastercard</li>
+                        <li class="textHide">Maestro</li>
+                        <li class="textHide">AmericanExpress</li>
+                        <li class="textHide">JCB</li>
+                        <li class="textHide">UnionPay</li>
+                        <li class="textHide">DELTA</li>
+                        <li class="textHide">applepay</li>
+                        <li class="textHide">klarna</li>
                     </ul>
                 </div>
-                <span class="nun3_14">
+                <span class="nunw3s14">
                     © All rights reserved, SAQ 2023 <img src="images/logo_spirit.png" alt="the spirit of sharing SAQ."><img src="images/logo_footer.png" alt="logo_footer">
                 </span>
             </div>

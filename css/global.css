@@ -1,103 +1,31 @@
-#searchPanel input[type='text'],
-#accountPanel,
-#accountPanel input,
-#menuPanel,
-header,
-footer > ul li a,
-footer div:first-of-type,
-footer div:last-of-type,
-.indexContainer div figure figcaption a,
-.indexContainer > div .carouselSlider li strong,
-.indexContainer div:nth-of-type(3) div span,
-.indexContainer div:nth-of-type(3) div a,
-.indexContainer div:nth-of-type(4) div a,
-.indexContainer div:nth-of-type(5) div a,
-.indexContainer > div:last-of-type div span a,
-.productContainer,
-.productContainer .filter > div > input,
-.productContainer .filter > div > ul li .cp input,
-.productContainer div:nth-of-type(2) > div:nth-of-type(3) .sortmenu,
-.wineContainer,
-.suggestContainer,
-.pairingContainer,
-.loginContainer input,
-.loginContainer > a,
-.loginContainer > p,
-.loginContainer > div,
-.accountContainer,
-#newAddressPopup,
-#newAddressPopup input,
-#newAddressPopup select,
-#editAddressPopup,
-#editAddressPopup input,
-#editAddressPopup select,
-#deleteAddressPopup input,
-#contactEndPopup,
-#contactEndPopup .closeBtn,
-.addressbookContainer,
-.wishContainer,
-.wishContainer > div > ul li .fillBtn,
-.savecardContainer,
-.cartlistContainer,
-.cartlistContainer div aside form .fillBtn,
-.myorderContainer,
-.accountdetailContainer,
-.accountdetailContainer input,
-.paymentContainer,
-.paymentContainer input,
-.articleContainer,
-.fillBtn,
-.lineBtn,
-.aboutusContainer,
-.aboutusContainer.contact #contactsubject,
-.aboutusContainer.contact input,
-.aboutusContainer.contact textarea,
-.aboutusContainer.contact select{
-    font-family: 'Nunito Sans';
+.paymentContainer .numbStepper li.active{
+    color: var(--cs2);
 }
-.indexContainer div figure figcaption strong,
-.indexContainer div figure figcaption p,
-.indexContainer div:nth-of-type(3) div h2,
-.indexContainer div:nth-of-type(3) div p,
-.indexContainer div:nth-of-type(4) div h2,
-.indexContainer div:nth-of-type(4) div p,
-.indexContainer div:nth-of-type(5) div h2,
-.indexContainer div:nth-of-type(5) div p,
-.indexContainer > div:last-of-type div strong,
-.indexContainer > div:last-of-type div span,
-.pairingContainer > div h2,
-.pairingContainer > div div h3,
-.pairingContainer aside h3,
-.loginContainer h2,
-.accountContainer ul a b,
-.accountBase div h3,
-.addressbookContainer div div h4,
-.addressbookContainer div div p,
-.wishContainer div div h4,
-.wishContainer div div p,
-.savecardContainer div div h4,
-.savecardContainer div div p,
-.cartlistContainer div div h4,
-.cartlistContainer div div p,
-.myorderContainer div div h4,
-.myorderContainer div div p,
-.accountdetailContainer h4,
-.cartlistContainer > div h3,
-.paymentContainer h2,
-.aboutusContainer.history h2,
-footer div div form h4,
-footer div:first-of-type div h3{
-    font-family: 'Cormorant';
+header > nav ul li a:hover{
+    color: var(--cs1);
+}
+[id$="Popup"]{
+    -ms-overflow-style: none;
+}
+[id$="Popup"]::-webkit-scrollbar {
+    display: none;
 }
 a{
     text-decoration: none;
+}
+mark{
+    background-color: transparent;
+}
+mark,
+em{
+    font-style: normal;
 }
 .bg{
     background-repeat: no-repeat; background-position: center top;
 }
 .crrLanguage{
     background: url('../images/ico_language.svg') no-repeat left top; line-height: 24px;
-    box-sizing: border-box; color: var(--gs1); font-size: 14px; font-weight: 400; padding-left: 35px;
+    box-sizing: border-box; padding-left: var(--sp35);
 }
 .bx-wrapper{
     box-shadow: none;
@@ -109,83 +37,81 @@ a{
     -ms-touch-action: pan-y;
     touch-action: pan-y;
 }
-footer:before{
-    display: block; content: ''; clear: both;
+.fillBtn{
+    border: none; background-color: var(--cs4); border-radius: 3px; padding: 0; cursor: pointer;
+}
+.lineBtn{
+    border: 1px solid var(--gs9); background-color: transparent; border-radius: 3px; cursor: pointer;
+}
+[class*='Container'] li{
+    list-style: none;
 }
 input:-webkit-autofill{
     -webkit-box-shadow: 0 0 0 1000px var(--gs1) inset;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none; margin: 0;
+}
 
-[id$='Panel']{
-    display: none;
+[id$="Popup"].active{
+    display: block;
 }
 [id$='Panel'].active{
     display: block;
 }
-
 #searchPanel{
-    background-color: var(--gs1); color: var(--gs3); width: 100%;
-    position: fixed; top: 55px; z-index: 51; border-bottom: 1px solid var(--gs3);
+    background-color: var(--gs1); position: fixed; top: var(--sp55); z-index: 51; border-bottom: 1px solid var(--gs3);
 }
 #searchPanel div{
-    margin: 0 auto; position: relative;
+    margin: 0 auto;
 }
-#searchPanel input[type='text']:focus{
-    outline: none;
+#menuPanel .crrLanguage{
+    color: var(--gs10);
 }
-#searchPanel input[type='submit']{
-    display: none;
+#welcomePopup{
+    width: 350px; height: 450px; left: var(--sppc15); top: var(--sppc15); transform: none; padding: 0 var(--sp25);
 }
+#welcomePopup .closePopup{
+    right: var(--sp25); bottom: var(--sp20); text-indent: 0; padding-right: 160px; background-position: right; line-height: 28px;
+}
+#welcomePopup p{
+    line-height: 22px;
+}
+
+.pager > div > div,
+.pager > div > div > a{
+    line-height: 16px;
+}
+.pager > div > div:first-of-type a:first-of-type{
+    background: url('../images/bul_firstpage.svg') no-repeat; width: 16px; height: 16px; left: var(--sppc8); top: var(--sp15);
+}
+.pager > div > div:last-of-type a:last-of-type{
+    background: url('../images/bul_lastpage.svg') no-repeat; width: 16px; height: 16px; right: var(--sppc8); top: var(--sp15);
+}
+.pager > div > div > a.deactive{
+    opacity: 40%;
+}
+/* ? pager */
+
 header a{
-    color: inherit; display: block;
-}
-header > div h1 a img{
-    width: 100%;
+    color: inherit;
 }
 header > div ul li{
-    display: inline-block; width: 20px; height: 20px; text-indent: -9999px;
-    background-position: center; background-repeat: no-repeat; background-size: 20px;
+    width: 20px; height: 20px; background-position: center; background-repeat: no-repeat; background-size: 20px;
 }
 header > div ul li:nth-child(1){background-image: url('../images/ico_search.svg');}
 
-footer > div:first-of-type > div form input,
-footer > div:first-of-type > div form p,
-footer > div:first-of-type > div:last-child address,
-footer > div:last-of-type > div ol li,
-footer > div:last-of-type > div p,
-footer > div:last-of-type > div > a,
-footer > div:last-of-type > div span{
-    font-size: 14px; font-weight: 300;
-}
-footer > div:first-of-type > div form p,
-footer > div:first-of-type > div:last-child address span,
-footer > div:first-of-type > div:last-child address div,
-footer > div:first-of-type > div:last-child address a{
-    color: var(--gs6);
-}
-footer > div:last-of-type > div ol li a,
-footer > div:last-of-type > div,
-footer > div:last-of-type > div > a{
-    color: var(--gs7);
-}
 footer > ul,
 footer > div:first-of-type > div,
 footer > div:last-of-type{
-    margin: 0 auto; box-sizing: border-box;
+    margin: 0 auto;
 }
 footer li{
     list-style: none;
 }
-footer > ul:after,
-footer > div:first-of-type > div:after,
-footer > div:last-of-type:after{
-    clear: both; content: ''; display: block;
-}
-footer > ul li a{
-    font-size: 16px; font-weight: 300; color: var(--gs10); display: block; text-align: center;
-}
 footer > ul li a:before{
-    display: block; margin: 0 auto;
+    margin: 0 auto; display: block;
 }
 footer > ul li:nth-child(1) a:before{content: url('../images/img_footer_01.png');}
 footer > ul li:nth-child(2) a:before{content: url('../images/img_footer_02.png');}
@@ -195,19 +121,19 @@ footer > div:first-of-type{
     background-color: var(--gs2);
 }
 footer > div:first-of-type > div ul li{
-    display: inline-block; width: 30px; height: 30px; text-indent: -9999px;
-    background-position: center; background-repeat: no-repeat; background-size: contain;
+    width: 30px; height: 30px; background-position: center; background-repeat: no-repeat; background-size: contain;
 }
-footer > div:first-of-type > div ul li:not(:first-child){margin-left: 20px;}
+footer > div:first-of-type > div ul li:not(:first-child){
+    margin-left: var(--sp20);
+}
 footer > div:first-of-type > div ul li a{
-    display: block; width: 100%; height: 100%;
+    height: 100%;
 }
 footer > div:last-of-type > div:last-of-type > a{
-    display: block; margin-left: auto; width: 100px; height: 35px; text-align: center;
-    line-height: 35px; color: var(--gs1); background-color: var(--gs3);
+    margin-left: auto; width: 100px; height: 35px; line-height: 35px; background-color: var(--gs3);
 }
 footer > div:last-of-type > div:last-of-type div{
-    margin-top: 20px;
+    margin-top: var(--sp20);
 }
 footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
 footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(2){background-image: url('../images/ico_Visa.png')}
@@ -222,82 +148,152 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 /* ? Global */
 
 @media screen and (max-width: 767px){
+    .bg{
+        height: 100px;
+    }
+    .deleteBtn,
+    .closePopup{
+        background: url('../images/bul_close.png') no-repeat;
+        background-color: transparent; width: 18px; height: 18px; border: none;
+        background-size: 18px; padding: 0; text-indent: -9999px;
+    }
+    .backBtn{
+        background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
+        padding-left: var(--sp20); left: 0; top: var(--sp85); position: absolute;
+    }
+    #userEmail,
+    [id$="Name"],
+    [id^="birth"],
+    #phoneNum{
+        padding: 0 var(--sp20); height: 50px; border-radius: 3px;
+    }
+    [id$="PW"]{
+        padding: 0 0 0 var(--sp40); height: 50px; border-radius: 3px;
+    }
+    [id$="Popup"]{
+        width: 90%; height: 550px; margin: 0 auto; padding: 0 var(--sp20);
+        position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1);
+        left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%); overflow-y: scroll;
+        box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;
+    }
+    #filterPopup{
+        width: 90%; height: 550px; left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%);
+    }
+    #filterPopup h3{
+        margin: var(--sp25) 0; display: block; border: none; padding: 0;
+    }
+    [id$="Popup"]:not(#filterPopup){
+        height: 190px; overflow-y: hidden; top: var(--sppc50); transform: translate(-50%, -50%);
+    }
+    [id$="AddressPopup"].active .closePopup,
+    #filterPopup.active .closePopup{
+        position: absolute; right: var(--sp20); top: var(--sp20); padding: 0; width: 25px; height: 25px; background-size: 25px;
+    }
+    [id$="EndPopup"] a{
+        width: 230px; height: 45px; display: block; text-align: center; line-height: 45px; margin: 0 auto;
+    }
+    [id^="delete"] input{
+        padding: 0 var(--sppc3); margin-bottom: var(--sp30); width: 100px; height: 40px;
+    }
+    /* ? Popup */
+
     #searchPanel input[type='text']{
-        border: none; border-bottom: 3px solid var(--gs10);
-        font-size: 14px; font-weight: 200; width: 96%;
-        margin: 20px 2%; padding: 0 5px; box-sizing: border-box;
+        border: none; border-bottom: 3px solid var(--gs10); font-size: 14px;
+        width: 96%; margin: var(--sp30) var(--sppc2); padding: 0 var(--sp5); box-sizing: border-box;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
-        padding: 0; width: 20px; height: 20px; position: absolute; right: 15px; top: 18px; text-indent: -9999px;
-        border: none; background-color: var(--gs1);
+        padding: 0; width: 15px; height: 15px; right: var(--sppc2); top: var(--sp30); border: none; background-color: var(--gs1);
     }
 
     #menuPanel{
         z-index: 101; box-sizing: border-box; position: fixed; background-color: var(--gs1); border: 1px solid var(--gs3);
-        border-radius: 3px; padding: 30px 20px; width: 280px; top: 55px;
+        border-radius: 3px; padding: var(--sp20) var(--sp20); width: 280px; top: var(--sp55);
     }
     #menuPanel .closePanel{
         background: url('../images/bul_close.png') no-repeat; background-size: 30px; border: none;
-        text-indent: -9999px; width: 30px; height: 30px; position: absolute; right: 20px;
+        text-indent: -9999px; width: 30px; height: 30px; position: absolute; right: var(--sp20); top: var(--sp15);
     }
     #menuPanel span{
-        line-height: 24px; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid var(--gs3); display: block;
+        line-height: 24px; padding-bottom: var(--sp20); margin-bottom: var(--sp30); border-bottom: 1px solid var(--gs3); display: block;
         width: 240px;
     }
     #menuPanel ul{
-        margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid var(--gs3); width: 240px;
+        margin-bottom: var(--sp30); padding-bottom: var(--sp30); border-bottom: 1px solid var(--gs3); width: 240px;
     }
     #menuPanel ul li{
-        list-style: none; margin-bottom: 30px;
+        list-style: none; margin-bottom: var(--sp30);
     }
     #menuPanel ul li:last-of-type{
         margin-bottom: 0;
     }
     #menuPanel > a{
-        background: url('../images/ico_logout.png') no-repeat left; color: var(--gs8); display: block;
-        background-size: 20px; padding: 0 0 0 30px;
+        background: url('../images/ico_logout.png') no-repeat left; display: block; background-size: 20px; padding: 0 0 0 var(--sp30);
     }
     #menuPanel > a[href="login.html"]{
         background-image: url('../images/ico_login.png');
     }
+    #welcomePopup{
+        width: 90%; left: var(--sppc5);
+    }
+    #welcomePopup .closePopup{
+        line-height: 20px;
+    }
+
+    .pager{
+        width: 96%; margin: 0 var(--sppc2);
+    }
+    .pager > a{
+        background: url('../images/bul_backtotop.svg') no-repeat;
+        width: 35px; height: 35px; border: 1px solid var(--gs3); border-radius: 50%; background-position: 50%;
+        margin-bottom: var(--sp15); background-size: 15px;
+    }
+    .pager > div{
+        border-top: 1px; border-color: var(--gs3); border-style: solid; opacity: 50%; padding-top: var(--sp15);
+    }
+    .pager > div > div:first-of-type a:last-of-type{
+        background: url('../images/bul_previouspage.svg') no-repeat left; width: 16px; height: 16px; padding-left: var(--sp30);
+        left: var(--sppc22); top: var(--sp15); text-indent: -9999px;
+    }
+    .pager > div > div:last-of-type a:first-of-type{
+        background: url('../images/bul_nextpage.svg') no-repeat right; width: 16px; height: 16px; padding-right: var(--sp50);
+        right: var(--sppc22); top: var(--sp15); text-indent: -9999px;
+    }
+    /* ? pager */
 
     header{
-        background-color: var(--gs10); padding-bottom: 10px; position: fixed; width: 100%; left: 0; top: 0;
-        font-size: 14px; font-weight: 600; color: var(--gs1); z-index: 100;
+        background-color: var(--gs10); padding-bottom: var(--sp10); position: fixed; left: 0; top: 0; z-index: 100;
     }
     header > ol{
         display: none;
     }
     header > div{
-        margin: 0 auto; position: relative; padding-top: 15px;
+        margin: 0 auto; padding-top: var(--sp15);
     }
     header > div > *:not(h1){
-        position: absolute; top: 20px;
+        top: var(--sp20);
     }
     header > div span{
         display: none;
     }
     header > div input{
-        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; padding: 0;
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: var(--sppc2); padding: 0;
         background-position: center; border: none; text-indent: -9999px;
     }
     header > div h1{
         max-width: 70px; margin: 0 auto;
     }
     header > div ul{
-        right: 2%; top: 20px;
+        right: var(--sppc2); top: var(--sp20);
     }
-    header > div ul li:nth-child(2){display: none;}
-    header > div ul li:nth-child(3){display: none;}
-    header > div ul li:nth-child(4){display: none;}
-    header > nav{
-        display: none;
-    }
+    header > div ul li:nth-child(2),
+    header > div ul li:nth-child(3),
+    header > div ul li:nth-child(4),
+    header > nav{display: none;}
     /* ? header */
     
     footer > ul{
-        padding: 100px 0; box-sizing: border-box; overflow: scroll; white-space: nowrap;
+        padding: var(--sp100) 0; box-sizing: border-box; overflow: scroll; white-space: nowrap;
         scrollbar-width: none; -ms-overflow-style: none;
     }
     footer > ul::-webkit-scrollbar{
@@ -307,32 +303,32 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         width: 100%; display: inline-block;
     }
     footer > div:first-of-type > div{
-        padding: 30px 0;
+        padding: var(--sp30) 0;
     }
     footer > div:first-of-type > div > div:first-of-type{
-        margin: 0 2% 30px;
+        margin: 0 var(--sppc2) var(--sp30);
     }
     footer > div:first-of-type > div > div:last-of-type{
-        margin: 0 2%;
+        margin: 0 var(--sppc2);
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        font-size: 20px; font-weight: 600; margin-bottom: 20px; color: var(--gs8);
+        margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div form p{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div form label{
         display: none;
     }
     footer > div:first-of-type > div form input{
-        margin-bottom: 25px;
+        margin-bottom: var(--sp25);
     }
     footer > div:first-of-type > div form input[type='email']{
-        width: 100%; height: 40px; padding: 0 15px; box-sizing: border-box; border: 1px solid var(--gs3); margin: 0 auto 15px;
+        width: 100%; height: 40px; padding: 0 var(--sp15); border: 1px solid var(--gs3); margin: 0 auto var(--sp15);
     }
     footer > div:first-of-type > div form input[type='submit']{
-        width: 110px; height: 40px; box-sizing: border-box; color: var(--gs4); border: 1px solid var(--gs4); margin-left: auto; display: block;
+        width: 110px; height: 40px; border: 1px solid var(--gs4); margin-left: auto; display: block;
     }
     footer > div:first-of-type > div ul li:nth-child(1){background-image: url('../images/ico_sns_01.png'); background-size: 30px;}
     footer > div:first-of-type > div ul li:nth-child(2){background-image: url('../images/ico_sns_02.png'); background-size: 30px;}
@@ -342,22 +338,22 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         font-style: normal;
     }
     footer > div:first-of-type > div:last-child address > span{
-        display: block; margin-bottom: 20px;
+        display: block; margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div:last-child address div{
-        line-height: 20px; min-width: 260px; display: inline-block;
+        line-height: var(--sp20); min-width: 260px; display: inline-block;
     }
     footer > div:first-of-type > div:last-child address div span{
-        display: inline-block; margin-left: 15px; line-height: 24px;
+        display: inline-block; margin-left: var(--sp15); line-height: 24px;
     }
     footer > div:last-of-type{
-        padding: 0 2% 20px;
+        padding: 0 var(--sppc2) var(--sp20);
     }
     footer > div:last-of-type > div:not(:last-of-type){
         border-bottom: 1px solid var(--gs3);
     }
     footer > div:last-of-type > div h3{
-        font-size: 16px; font-weight: 700; padding: 35px 0;
+        padding: var(--sp35) 0;
     }
     footer > div:last-of-type > div:not(:last-of-type) h3{
         background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 30px;
@@ -371,24 +367,21 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     footer > div:last-of-type > div:not(:last-of-type).active *:not(h3){
         display: block;
     }
-    footer > div:last-of-type > div ol li:not(:last-of-type){
-        margin-bottom: 20px;
-    }
     footer > div:last-of-type > div ol li:last-of-type{
-        margin-bottom: 35px;
+        margin-bottom: var(--sp35);
     }
     footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 20px; line-height: 20px;
+        margin-bottom: var(--sp20); line-height: 20px;
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 25px; font-size: 14px; font-weight: 700;
+        margin-top: var(--sp25);
     }
     footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 20px; display: flex; flex-wrap: wrap;
+        margin: var(--sp10) 0 var(--sp20); display: flex; flex-wrap: wrap;
     }
     footer > div:last-of-type > div:last-of-type div ul li{
-        width: 45px; height: 30px; text-indent: -9999px; margin-right: 10px;
-        background-position: center; background-repeat: no-repeat; margin-bottom: 10px;
+        width: 45px; height: 30px; margin-right: var(--sp10);
+        background-position: center; background-repeat: no-repeat; margin-bottom: var(--sp10);
     }
     footer > div:last-of-type > div:last-of-type div ul li img{
         width: 45px; height: 30px;
@@ -397,63 +390,94 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: flex; align-items: center; justify-content: flex-end;
     }
     footer > div:last-of-type > div:last-of-type span img:first-of-type{
-        margin-left: 10px;
+        margin-left: var(--sp10);
     }
     footer > div:last-of-type > div:last-of-type span img:last-of-type{
-        width: 22px; height: 35px; margin-left: 5px;
+        width: 22px; height: 35px; margin-left: var(--sp5);
     }
     /* ? Footer */
 }
 /* ? Mobile */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
+    .bg{
+        height: 200px;
+    }
+    .backBtn{
+        background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
+        padding-left: var(--sp20); left: 0; top: var(--sp180); position: absolute;
+    }
+
+    [id$="Popup"]{
+        width: 650px; height: 700px; margin: 0 auto; padding: 0 var(--sp30);
+        position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1);
+        left: var(--sppc48); top: var(--sppc50); transform: translate(-50%, -50%); overflow-y: scroll;
+        box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;
+    }
+    .deleteBtn,
+    .closePopup{
+        background: url('../images/bul_close.png') no-repeat;
+        background-color: transparent; width: 25px; height: 25px; border: none;
+        background-size: 25px; padding: 0; text-indent: -9999px;
+    }
+
     #searchPanel{
-        top: 130px;
+        top: var(--sp130);
     }
     #searchPanel input[type='text']{
-        margin: 30px 2%; padding: 0 10px;
+        margin: var(--sp40) var(--sppc2); padding: 0 var(--sp10);
     }
     #searchPanel input[type='button']{
-        right: 25px; top: 35px;
+        right: var(--sppc2); top: var(--sp45);
     }
 
     #menuPanel{
         z-index: 101; box-sizing: border-box; position: fixed; background-color: var(--gs1); border: 1px solid var(--gs3);
-        border-radius: 3px; padding: 50px 24px; width: 300px; top: 42px;
+        border-radius: 3px; padding: var(--sp50) var(--sp25); width: 300px; top: var(--sp40);
     }
     #menuPanel .closePanel{
-        background: url('../images/bul_close.png') no-repeat; background-size: 20px; width: 20px; border: none;
-        text-indent: -9999px; width: 20px; height: 20px; position: absolute; right: 40px;
+        background: url('../images/bul_close.png') no-repeat; background-size: 30px; width: 20px; border: none;
+        text-indent: -9999px; width: 30px; height: 30px; position: absolute; right: var(--sp25); top: var(--sp45);
     }
     #menuPanel span{
-        line-height: 24px; padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid var(--gs3); display: block;
+        line-height: 30px; padding-bottom: var(--sp30); margin-bottom: var(--sp30); border-bottom: 1px solid var(--gs3); display: block;
         width: 250px;
     }
     #menuPanel ul{
-        margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid var(--gs3); width: 252px;
+        margin-bottom: var(--sp30); padding-bottom: var(--sp30); border-bottom: 1px solid var(--gs3); width: 252px;
     }
     #menuPanel ul li{
-        list-style: none; margin-bottom: 30px;
+        list-style: none; margin-bottom: var(--sp30);
     }
     #menuPanel ul li:last-of-type{
         margin-bottom: 0;
     }
     #menuPanel > a{
-        background: url('../images/ico_logout.png') no-repeat left; color: var(--gs8); display: block;
-        background-size: 20px; padding: 0 0 0 30px;
+        background: url('../images/ico_logout.png') no-repeat left; display: block; background-size: 20px; padding: 0 0 0 var(--sp30);
     }
     #menuPanel > a[href="login.html"]{
         background-image: url('../images/ico_login.png');
     }
+    
+    #filterPopup{
+        width: 450px; height: 600px; left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%);
+    }
+    #filterPopup h3{
+        margin: var(--sp25) 0; display: block; border: none; padding: 0;
+    }
+    #filterPopup.active .closePopup{
+        position: absolute; right: var(--sp30); top: var(--sp25); padding: 0; width: 25px;
+    }
+    /* ? Popup */
 
     header{
-        padding-bottom: 20px;
+        padding-bottom: var(--sp20);
     }
     header > div span{
         display: none;
     }
     header > div input{
-        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: 2%; top: 35px; padding: 0;
+        background: url('../images/ico_menu.svg') no-repeat; background-size: 20px; width: 20px; left: var(--sppc2); top: var(--sp35); padding: 0;
         background-position: center; border: none; text-indent: -9999px;
     }
     header > div h1{
@@ -467,41 +491,41 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     /* ? header */
 
     footer > div:first-of-type > div{
-        padding: 30px 0 40px;
+        padding: var(--sp30) 0 var(--sp40);
     }
     footer > div:first-of-type > div > div:first-of-type{
-        margin: 0 2% 65px;
+        margin: 0 var(--sppc2) var(--sp65);
     }
     footer > div:first-of-type > div > div:last-of-type{
-        margin: 0 2%;
+        margin: 0 var(--sppc2);
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        margin-bottom: 15px;
+        margin-bottom: var(--sp15);
     }
     footer > div:first-of-type > div form p{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div form input{
-        margin-bottom: 25px;
+        margin-bottom: var(--sp25);
     }
     footer > div:first-of-type > div:last-child address span{
         display: inline-block; line-height: 24px;
     }
     footer > div:first-of-type > div:last-child address > span:last-of-type{
-        margin-left: 4%;
+        margin-left: var(--sppc4);
     }
     footer > div:first-of-type > div:last-child address div{
-        margin-left: 5%; line-height: 24px; min-width: 260px; float: right;
+        margin-left: var(--sppc5); line-height: 24px; min-width: 260px; float: right;
     }
     footer > div:last-of-type{
-        padding: 0 2% 20px;
+        padding: 0 var(--sppc2) var(--sp20);
     }
     footer > div:last-of-type > div:not(:last-of-type){
         border-bottom: 1px solid var(--gs3);
     }
     footer > div:last-of-type > div h3{
-        padding: 35px 0;
+        padding: var(--sp35) 0;
     }
     footer > div:last-of-type > div:not(:last-of-type) h3{
         background: url('../images/bul_arrow_down.png') no-repeat right; background-size: 30px;
@@ -515,77 +539,94 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     footer > div:last-of-type > div:not(:last-of-type).active *:not(h3){
         display: block;
     }
-    footer > div:last-of-type > div ol li:not(:last-of-type){
-        margin-bottom: 20px;
-    }
     footer > div:last-of-type > div ol li:last-of-type{
-        margin-bottom: 35px;
+        margin-bottom: var(--sp35);
     }
     footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 30px;
+        margin-top: var(--sp30);
     }
     footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 20px;
+        margin: var(--sp10) 0 var(--sp20);
     }
     /* ? Footer */
 }
 /* ? Tablet */
 
 @media screen and (min-width: 1280px){
+    [id$="Popup"]{
+        width: 650px; height: 700px; margin: 0 auto; padding: 0 var(--sp30);
+        position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1);
+        left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%); overflow-y: scroll;
+        box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;
+    }
+    .bg{
+        height: 300px;
+    }
+    .deleteBtn,
+    .closePopup{
+        background: url('../images/bul_close.png') no-repeat;
+        background-color: transparent; width: 25px; height: 25px; border: none;
+        background-size: 25px; padding: 0; cursor: pointer; text-indent: -9999px;
+    }
+    .backBtn{
+        background: url('../images/bul_arrow_left.png') no-repeat left; background-size: 8px;
+        padding-left: var(--sp20); left: 0; top: var(--sp290); cursor: pointer; position: absolute;
+    }
+    
     #searchPanel{
-        top: 200px;
+        top: var(--sp200);
     }
     #searchPanel div{
         max-width: 1440px;
     }
     #searchPanel input[type='text']{
-        margin: 40px 2%; padding: 0 15px;
+        margin: var(--sp50) var(--sppc2); padding: 0 var(--sp15);
     }
     #searchPanel input[type='button']{
-        right: 35px; top: 45px; cursor: pointer;
+        right: var(--sppc2); top: var(--sp55); cursor: pointer;
     }
 
     #accountPanel{
-        z-index: 101; box-sizing: border-box; position: fixed; top: 100px; width: 100%;
+        z-index: 101; box-sizing: border-box; position: fixed; top: var(--sp100); width: 100%;
     }
     #accountPanel div{
         position: relative; max-width: 1440px; margin: 0 auto;
     }
     #accountPanel div form{
-        background-color: var(--gs1); width: 200px; border-radius: 3px; padding: 10px 0; box-sizing: border-box;
-        position: absolute; right: 2%; background-position: 25px; border: 1px solid var(--gs3);
+        background-color: var(--gs1); width: 200px; border-radius: 3px; padding: var(--sp10) 0; box-sizing: border-box;
+        position: absolute; right: var(--sppc2); background-position: 25px; border: 1px solid var(--gs3);
     }
     #accountPanel div a{
-        color: var(--gs8); margin: 0 20px; line-height: 50px; box-sizing: border-box; display: block;
+        margin: 0 var(--sp20); line-height: 50px; box-sizing: border-box; display: block;
     }
     #accountPanel div a:last-of-type{
         border-bottom: 1px solid var(--gs3);
     }
     #accountPanel div input{
-        background: url('../images/ico_logout.png') no-repeat left; color: var(--gs8); display: block;
-        background-size: 20px; padding: 0 0 0 30px; line-height: 50px; box-sizing: border-box; border: none;
-        margin: 0 20px; cursor: pointer;
+        background: url('../images/ico_logout.png') no-repeat left; display: block;
+        background-size: 20px; padding: 0 0 0 var(--sp30); line-height: 50px; box-sizing: border-box; border: none;
+        margin: 0 var(--sp20); cursor: pointer;
     }
 
     header{
-        padding-bottom: 25px;
+        padding-bottom: var(--sp25);
     }
     header > div{
         max-width: 1440px;
     }
     header > div span{
-        left: 2%;
+        left: var(--sppc2);
     }
     header > div input{
         display: none;
     }
     header > div h1{
-        max-width: 179px; margin: 0 auto 20px;
+        max-width: 179px; margin: 0 auto var(--sp20);
     }
-    header > div ul li:nth-child(1){cursor: pointer;}
+    header > div ul li:nth-child(1),
     header > div ul li:nth-child(4){cursor: pointer;}
     header > div ul li:nth-child(4).closePanel{background-image: url('../images/bul_close_white.svg');}
     header > div ul li a{
@@ -598,10 +639,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: inline-block;
     }
     header > nav ul li:not(:first-child){
-        margin-left: 4%;
-    }
-    header > nav ul li a:hover{
-        color: var(--cs1);
+        margin-left: var(--sppc4);
     }
     /* ? header */
 
@@ -611,125 +649,139 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         max-width: 1440px;
     }
     footer > div:first-of-type > div{
-        padding: 50px 0 60px;
+        padding: var(--sp50) 0;
     }
     footer > div:first-of-type > div > div{
         float: left; box-sizing: border-box;
     }
     footer > div:first-of-type > div > div:first-of-type{
-        width: 33%; margin-left: 2%;
+        width: 41%; margin-left: var(--sppc2);
     }
     footer > div:first-of-type > div > div:last-of-type{
-        width: 33%; margin: 0 2% 0 30%;
+        width: 33%; margin: 0 var(--sppc2) 0 var(--sppc22);
     }
     footer > div:first-of-type > div form h4,
     footer > div:first-of-type > div:last-of-type h3{
-        margin-bottom: 20px;
+        margin-bottom: var(--sp20);
     }
     footer > div:first-of-type > div form p{
-        margin-bottom: 25px; max-width: 350px;
+        margin-bottom: var(--sp25); max-width: 350px;
     }
     footer > div:first-of-type > div form input{
-        margin-bottom: 35px;
+        margin-bottom: var(--sp35);
     }
     footer > div:first-of-type > div form input[type='submit']{
         cursor: pointer;
     }
     footer > div:first-of-type > div:last-child address > span:last-of-type{
-        margin-left: 30px;
+        margin-left: var(--sp30);
     }
     footer > div:first-of-type > div:last-child address div{
-        display: block; margin: 120px 0 0 auto; max-width: 280px;
-    }
-    footer > div:first-of-type > div:last-child address div > span{
-        margin-left: 15px;
+        display: block; margin: var(--sp120) 0 0 auto; max-width: 280px;
     }
     footer > div:last-of-type{
-        padding: 40px 0 20px; max-width: 1440px;
+        padding: var(--sp40) 0 var(--sp20); max-width: 1440px;
     }
     footer > div:last-of-type > div{
         float: left;
     }
     footer > div:last-of-type > div:not(:last-of-type){
-        width: 21%; box-sizing: border-box; margin-left: 2%;
+        width: 21%; box-sizing: border-box; margin-left: var(--sppc2);
     }
     footer > div:last-of-type > div:last-of-type{
-        width: 50%; box-sizing: border-box; margin: 0 2%;
+        width: 50%; box-sizing: border-box; margin: 0 var(--sppc2);
     }
     footer > div:last-of-type > div h3{
-        margin-bottom: 40px;
-    }
-    footer > div:last-of-type > div ol li:not(:last-of-type){
-        margin-bottom: 20px;
+        margin-bottom: var(--sp40);
     }
     footer > div:last-of-type > div:last-of-type p{
-        margin-bottom: 25px;
+        margin-bottom: var(--sp25);
     }
     footer > div:last-of-type > div:last-of-type div h4{
-        margin-top: 20px;
+        margin-top: var(--sp20);
     }
     footer > div:last-of-type > div:last-of-type div ul{
-        margin: 10px 0 70px;
+        margin: var(--sp10) 0 var(--sp70);
     }
     /* ? Footer */
 }
 /* ? Desktop */
 
 @media screen and (min-width: 768px){
+    #userEmail,[id$="Name"],[id^="birth"],#phoneNum{padding: 0 var(--sp20); height: 70px; border-radius: 3px;}
+    [id$="PW"]{
+        padding: 0 0 0 var(--sp70); height: 70px; border-radius: 3px;
+    }
+
     #searchPanel input[type='text']{
         border: none; border-bottom: 3px solid var(--gs10);
-        font-size: 24px; font-weight: 400; width: 96%; box-sizing: border-box;
+        width: 96%; box-sizing: border-box;
     }
     #searchPanel input[type='button']{
         background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain;
-        padding: 0; width: 25px; height: 25px; position: absolute; text-indent: -9999px;
-        border: none; background-color: var(--gs1);
+        padding: 0; width: 25px; height: 25px; border: none; background-color: var(--gs1);
     }
+        
+    .pager{
+        width: 100%; margin: 0 auto;
+    }
+    .pager > a{
+        background: url('../images/bul_backtotop.svg') no-repeat;
+        width: 35px; height: 35px; border: 1px solid var(--gs3); border-radius: 50%; background-position: 50%;
+        margin-bottom: var(--sp15); background-size: 15px;
+    }
+    .pager > div{
+        border-top: 1px; border-color: var(--gs3); border-style: solid; opacity: 50%; padding-top: var(--sp15); margin: 0 var(--sppc2);
+    }
+    .pager > div > div:first-of-type a:last-of-type{
+        background: url('../images/bul_previouspage.svg') no-repeat left; width: 16px; height: 16px; padding-left: var(--sp30);
+        left: var(--sppc15); top: var(--sp15);
+    }
+    .pager > div > div:last-of-type a:first-of-type{
+        background: url('../images/bul_nextpage.svg') no-repeat right; width: 16px; height: 16px; padding-right: var(--sp50);
+        right: var(--sppc15); top: var(--sp15);
+    }
+    /* ? pager */
 
     header{
-        background-color: var(--gs10); position: fixed; width: 100%; left: 0; top: 0;
-        font-size: 14px; font-weight: 600; color: var(--gs1); z-index: 100;
+        background-color: var(--gs10); position: fixed; left: 0; top: 0; z-index: 100;
     }
     header > ol{
-        background-color: var(--gs4); text-align: center; padding: 10px 0;
+        background-color: var(--gs4); text-align: center; padding: var(--sp10) 0;
     }
     header > ol li{
-        display: none; padding-left: 40px; line-height: 22px;
+        display: none; padding-left: var(--sp40); line-height: 22px;
         background: url('../images/ico_delivery.png') no-repeat left center;
     }
     header > ol li.active{
         display: inline-block;
     }
     header > div{
-        margin: 0 auto; position: relative; padding-top: 25px;
+        margin: 0 auto; padding-top: var(--sp25);
     }
     header > div > *:not(h1){
-        position: absolute; top: 35px;
+        position: absolute; top: var(--sp35);
     }
     header > div ul{
-        right: 2%;
+        right: var(--sppc2);
     }
-    header > div ul li:not(:first-child){margin-left: 10px;}
+    header > div ul li:not(:first-child){margin-left: var(--sp10);}
     header > div ul li:nth-child(2){background-image: url('../images/ico_wishlist.svg');}
     header > div ul li:nth-child(3){background-image: url('../images/ico_cart.svg');}
     header > div ul li:nth-child(4){background-image: url('../images/ico_account.svg');}
     /* ? header */
 
     footer > ul{
-        padding: 155px 0;
+        padding: var(--sp150) 0;
     }
     footer > ul li{
         width: 25%; float: left; box-sizing: border-box;
     }
-    footer > div:first-of-type > div form h4,
-    footer > div:first-of-type > div:last-of-type h3{
-        font-size: 20px; font-weight: 600; color: var(--gs8);
-    }
     footer > div:first-of-type > div form input[type='email']{
-        width: 300px; height: 40px; padding-left: 15px; box-sizing: border-box; border: 1px solid var(--gs3);
+        width: 300px; height: 40px; padding-left: var(--sp15); border: 1px solid var(--gs3);
     }
     footer > div:first-of-type > div form input[type='submit']{
-        width: 110px; height: 40px; box-sizing: border-box; color: var(--gs4); border: 1px solid var(--gs4);
+        width: 110px; height: 40px; border: 1px solid var(--gs4);
     }
     footer > div:first-of-type > div ul li:nth-child(1){background-image: url('../images/ico_sns_01.png'); background-size: 30px;}
     footer > div:first-of-type > div ul li:nth-child(2){background-image: url('../images/ico_sns_02.png'); background-size: 30px;}
@@ -739,16 +791,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         font-style: normal;
     }
     footer > div:first-of-type > div:last-child address div > span{
-        margin-left: 15px;
-    }
-    footer > div:last-of-type > div h3{
-        font-size: 16px; font-weight: 700;
+        margin-left: var(--sp15); display: inline-block;
     }
     footer > div:last-of-type > div:last-of-type p{
         line-height: 20px;
-    }
-    footer > div:last-of-type > div:last-of-type div h4{
-        font-size: 14px; font-weight: 700;
     }
     footer > div:last-of-type > div:last-of-type div{
         max-width: 525px; margin-left: auto;
@@ -757,10 +803,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         clear: both; content: ''; display: block;
     }
     footer > div:last-of-type > div:last-of-type div ul li{
-        float: left; width: 48px; height: 32px; text-indent: -9999px;
+        float: left; width: 48px; height: 32px;
         background-position: center; background-repeat: no-repeat;
     }
-    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: 5px;}
+    footer > div:last-of-type > div:last-of-type div ul li:not(:first-of-type){margin-left: var(--sp5);}
     footer > div:last-of-type > div:last-of-type div ul li img{
         width: 48px; height: 32px;
     }
@@ -768,10 +814,10 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         display: flex; max-width: 280px; margin-left: auto; align-items: center;
     }
     footer > div:last-of-type > div:last-of-type span img:first-of-type{
-        margin-left: 10px;
+        margin-left: var(--sp10);
     }
     footer > div:last-of-type > div:last-of-type span img:last-of-type{
-        width: 22px; height: 35px; margin-left: 5px;
+        width: 22px; height: 35px; margin-left: var(--sp5);
     }
 }
 /* ? Desktop + Tablet */

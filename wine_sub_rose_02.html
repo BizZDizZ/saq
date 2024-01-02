@@ -12,65 +12,65 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <div id="searchPanel">
-        <div>
+    <div id="searchPanel" class="dispNone widthMax">
+        <div class="nunw4s24 relativePos">
             <label for="search"></label>
-            <input type="text" id="search" placeholder="Search products, pairings and content" class="nun4_24">
-            <input type="submit" value="submit" disabled>
-            <input type="button" value="close" class="closePanel deleteBtn">
+            <input type="text" id="search" placeholder="Search products, pairings and content" class="nunw4s24">
+            <input type="submit" value="submit" disabled class="dispNone">
+            <input type="button" value="close" class="closePanel deleteBtn textHide absolutePos">
         </div>
     </div>
-    <div id="accountPanel" class="nun4_16">
-        <div>
+    <div id="accountPanel" class="dispNone">
+        <div class="nunw4s16">
             <form action="index.html">
-                <a href="account_myorder.html">My Orders</a>
-                <a href="account_wishlist.html">Wish List</a>
-                <a href="account_cartlist.html">Cart List</a>
-                <a href="account_detail.html">Account Details</a>
-                <a href="account_addressbook.html">Address Book</a>
-                <a href="account_savedcards.html">Saved Cards</a>
-                <input type="submit" value="Sign out" class="4_16">
+                <a href="account_myorder.html" class="gray8">My Orders</a>
+                <a href="account_wishlist.html" class="gray8">Wish List</a>
+                <a href="account_cartlist.html" class="gray8">Cart List</a>
+                <a href="account_detail.html" class="gray8">Account Details</a>
+                <a href="account_addressbook.html" class="gray8">Address Book</a>
+                <a href="account_savedcards.html" class="gray8">Saved Cards</a>
+                <input type="submit" value="Sign out" class="nunw4s16">
             </form>
         </div>
     </div>
-    <div id="menuPanel" class="nun6_14">
+    <div id="menuPanel" class="dispNone">
         <input type="button" value="close" class="closePanel">
-        <span class="crrLanguage nun4_14">English</span>
-        <ul>
-            <li><a href="wine_sub_sale_01.html">Sale</a></li>
-            <li><a href="wine_sub_white_01.html">White</a></li>
-            <li><a href="wine_sub_red_01.html">Red</a></li>
-            <li><a href="wine_sub_rose_01.html">Rosé</a></li>
-            <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
-            <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
-            <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+        <span class="crrLanguage nunw4s14 gray8">English</span>
+        <ul class="nunw6s14">
+            <li><a href="wine_sub_sale_01.html" class="gray8">Sale</a></li>
+            <li><a href="wine_sub_white_01.html" class="gray8">White</a></li>
+            <li><a href="wine_sub_red_01.html" class="gray8">Red</a></li>
+            <li><a href="wine_sub_rose_01.html" class="gray8">Rosé</a></li>
+            <li><a href="wine_sub_sparkling_01.html" class="gray8">Sparkling Wine</a></li>
+            <li><a href="wine_sub_dessert_01.html" class="gray8">Dessert Wine</a></li>
+            <li><a href="wine_sub_pairing_01.html" class="gray8">Pairing</a></li>
         </ul>
-        <ul>
-            <li><a href="account_main.html">My Account</a></li>
-            <li><a href="account_wishlist.html">Wish List</a></li>
+        <ul class="nunw6s14">
+            <li><a href="account_main.html" class="gray8">My Account</a></li>
+            <li><a href="account_wishlist.html" class="gray8">Wish List</a></li>
         </ul>
-        <a href="index.html">Sign out</a>
+        <a href="index.html" class="nunw6s14 gray8">Sign out</a>
     </div>
     
-    <header>
+    <header class="gray1 nunw6s14 widthMax">
         <ol>
-            <li class="active"><a href="wine_sub_white_01.html">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
-            <li><a href="wine_sub_white_01.html">Meet a variety of high-quality wines.</a></li>
-            <li><a href="wine_sub_sale_01.html">Spend to save up to 25% sale for a limited time only.</a></li>
+            <li class="active"><a href="wine_sub_white_01.html" class="dispB">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
+            <li><a href="wine_sub_white_01.html" class="dispB">Meet a variety of high-quality wines.</a></li>
+            <li><a href="wine_sub_sale_01.html" class="dispB">Spend to save up to 25% sale for a limited time only.</a></li>
         </ol>   
-        <div>
-            <span class="crrLanguage">English</span>
-            <input type="button" value="menu" data-panel="menuPanel">
+        <div class="relativePos">
+            <span class="crrLanguage nunw4s14 absolutePos gray1">English</span>
+            <input type="button" value="menu" data-panel="menuPanel" class="absolutePos">
             <h1>
-                <a href="index_after.html">
-                    <img src="images/logo_header.png" alt="SAQ">
+                <a href="index_after.html" class="dispB">
+                    <img src="images/logo_header.png" alt="SAQ" class="widthMax">
                 </a>
             </h1>
-            <ul>
-                <li data-panel="searchPanel">search</li>
-                <li><a href="account_wishlist.html">wishlist</a></li>
-                <li><a href="account_cartlist.html">cart</a></li>
-                <li data-panel="accountPanel">account</li>
+            <ul class="absolutePos">
+                <li data-panel="searchPanel" class="dispIB textHide">search</li>
+                <li class="dispIB textHide"><a href="account_wishlist.html" class="dispB">wishlist</a></li>
+                <li class="dispIB textHide"><a href="account_cartlist.html" class="dispB">cart</a></li>
+                <li data-panel="accountPanel" class="dispIB textHide">account</li>
             </ul>
         </div>
         <nav>
@@ -89,435 +89,229 @@
 
     <div class="productContainer">
         <div class="bg rose">
-            <div>
-                <h2>Rosé wine</h2>
+            <div class="relativePos">
+                <h2 class="nunw3s150 absolutePos gray1">Rosé wine</h2>
             </div>
         </div>
         <div>
-            <div id="filterPopup">
-                <div>
-                    <h3>Filter</h3>
-                    <input type="button" value="closePopup" class="closePopup">
+            <div id="filterPopup" class="dispNone boxSize">
+                <div class="nunw4s14">
+                    <h3 class="nunw7s16">Filter</h3>
+                    <input type="button" value="closePopup" class="closePopup absolutePos">
                     <ul>
                         <li>
-                            <strong>Category</strong>
+                            <strong class="nunw7s14 gray8">Category</strong>
                             <ul>
                                 <li class="cp radio">
-                                    <input type="radio" name="category" id="whiteWinePopup">
-                                    <label for="whiteWinePopup">White Wine</label>
+                                    <input type="radio" name="category" id="whiteWinePop">
+                                    <label for="whiteWinePop">White Wine</label>
                                 </li>
                                 <li class="cp radio">
-                                    <input type="radio" name="category" id="redWinePopup">
-                                    <label for="redWinePopup">Red Wine</label>
+                                    <input type="radio" name="category" id="redWinePop">
+                                    <label for="redWinePop">Red Wine</label>
                                 </li>
                                 <li class="cp radio">
-                                    <input type="radio" name="category" id="RoséWinePopup">
-                                    <label for="RoséWinePopup">Rosé Wine</label>
+                                    <input type="radio" name="category" id="RoséWinePop">
+                                    <label for="RoséWinePop">Rosé Wine</label>
                                 </li>
                                 <li class="cp radio">
-                                    <input type="radio" name="category" id="SparklingWinePopup">
-                                    <label for="SparklingWinePopup">Sparkling Wine</label>
+                                    <input type="radio" name="category" id="SparklingWinePop">
+                                    <label for="SparklingWinePop">Sparkling Wine</label>
                                 </li>
                                 <li class="cp radio">
-                                    <input type="radio" name="category" id="DessertWinePopup">
-                                    <label for="DessertWinePopup">Dessert Wine</label>
+                                    <input type="radio" name="category" id="DessertWinePop">
+                                    <label for="DessertWinePop">Dessert Wine</label>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <strong>Sugar content</strong>
-                            <div class="cp range" id="sugarPopup">
+                            <strong class="nunw7s14 gray8">Sugar content</strong>
+                            <div class="cp range" id="sugarPop">
                                 <div class="range-price">      
                                     <div>
-                                        <label for="sugarminPopup">Min (g/L)</label>
-                                        <input type="number" class="min" id="sugarminPopup" value="1" readonly>
+                                        <label for="sugarminPop">Min (g/L)</label>
+                                        <input type="number" class="min" id="sugarminPop" value="1" readonly>
                                     </div>
                                     <div>
-                                        <label for="sugarmaxPopup">Max (g/L)</label>
-                                        <input type="number" class="max" id="sugarmaxPopup" value="271" readonly>
+                                        <label for="sugarmaxPop">Max (g/L)</label>
+                                        <input type="number" class="max" id="sugarmaxPop" value="271" readonly>
                                     </div>   
                                 </div>
                                 <div class="range-slider">
                                     <span class="range-selected"></span>
                                 </div>
                                 <div class="range-input">
-                                    <label for="sugarminRangePopup"></label>
-                                    <input type="range" class="sugarmin" id="sugarminRangePopup" min="1" max="271" value="1" step="1">
-                                    <label for="sugarmaxRangePopup"></label>
-                                    <input type="range" class="sugarmax" id="sugarmaxRangePopup" min="1" max="271" value="271" step="1">
+                                    <label for="sugarminRangePop"></label>
+                                    <input type="range" class="sugarmin" id="sugarminRangePop" min="1" max="271" value="1" step="1">
+                                    <label for="sugarmaxRangePop"></label>
+                                    <input type="range" class="sugarmax" id="sugarmaxRangePop" min="1" max="271" value="271" step="1">
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <strong>Degree of alcohol</strong>
-                            <div class="cp range" id="alcoholPopup">
-                                <div class="range-price">      
-                                    <div>
-                                        <label for="alcoholminPopup">Min (%)</label>
-                                        <input type="number" class="min" id="alcoholminPopup" value="10" readonly>
-                                    </div>
-                                    <div>
-                                        <label for="alcoholmaxPopup">Max (%)</label>
-                                        <input type="number" class="max" id="alcoholmaxPopup" value="16" readonly>
-                                    </div>   
-                                </div>
-                                <div class="range-slider">
-                                    <span class="range-selected"></span>
-                                </div>
-                                <div class="range-input">
-                                    <label for="alcoholminRangePopup"></label>
-                                    <input type="range" class="alcoholmin" id="alcoholminRangePopup" min="10" max="16" value="10" step="1">
-                                    <label for="alcoholmaxRangePopup"></label>
-                                    <input type="range" class="alcoholmax" id="alcoholmaxRangePopup" min="10" max="16" value="16" step="1">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Grape variety</strong>
+                            <strong class="nunw7s14 gray8">Degree of alcohol</strong>
                             <ul>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="AcadieblancPopup">
-                                    <label for="AcadieblancPopup">Acadie blanc</label>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_10_Alcohol">
+                                    <label for="c_box_10_Alcohol">≤10%</label>
                                 </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="ChardonnayPopup">
-                                    <label for="ChardonnayPopup">Chardonnay</label>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_11_Alcohol">
+                                    <label for="c_box_11_Alcohol">11%</label>
                                 </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="EonaPopup">
-                                    <label for="EonaPopup">Eona</label>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_12_Alcohol">
+                                    <label for="c_box_12_Alcohol">12%</label>
                                 </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="FrontenacPopup">
-                                    <label for="FrontenacPopup">Frontenac</label>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_13_Alcohol">
+                                    <label for="c_box_13_Alcohol">13%</label>
                                 </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="FrontenacblancPopup">
-                                    <label for="FrontenacblancPopup">Frontenac blanc</label>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_14_Alcohol">
+                                    <label for="c_box_14_Alcohol">14%</label>
                                 </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="FrontenacGrisPopup">
-                                    <label for="FrontenacGrisPopup">Frontenac Gris</label>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_15_Alcohol">
+                                    <label for="c_box_15_Alcohol">15%</label>
                                 </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="GeisenheimPopup">
-                                    <label for="GeisenheimPopup">Geisenheim</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="LouiseSwensonPopup">
-                                    <label for="LouiseSwensonPopup">Louise Swenson</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="LucieKuhlmannPopup">
-                                    <label for="LucieKuhlmannPopup">Lucie Kuhlmann</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="MaréchalFochPopup">
-                                    <label for="MaréchalFochPopup">Maréchal Foch</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="MarquettePopup">
-                                    <label for="MarquettePopup">Marquette</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="PerlenoirePopup">
-                                    <label for="PerlenoirePopup">Perle noire</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="PinotnoirPopup">
-                                    <label for="PinotnoirPopup">Pinot noir</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="RadissonPopup">
-                                    <label for="RadissonPopup">Radisson</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="RieslingPopup">
-                                    <label for="RieslingPopup">Riesling</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="SabrevoisPopup">
-                                    <label for="SabrevoisPopup">Sabrevois</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="SainteCroixPopup">
-                                    <label for="SainteCroixPopup">Sainte-Croix</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="SeyvalPopup">
-                                    <label for="SeyvalPopup">Seyval</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="SeyvalNoirPopup">
-                                    <label for="SeyvalNoirPopup">Seyval Noir</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="SomersetPopup">
-                                    <label for="SomersetPopup">Somerset</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="StPépinPopup">
-                                    <label for="StPépinPopup">St-Pépin</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="VandalClichePopup">
-                                    <label for="VandalClichePopup">Vandal-Cliche</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="VidalPopup">
-                                    <label for="VidalPopup">Vidal</label>
+                                <li class="check">
+                                    <input type="checkbox" id="c_box_16_Alcohol">
+                                    <label for="c_box_16_Alcohol">16%≤</label>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <strong>Vintage</strong>
+                            <strong class="nunw7s14 gray8">Grape variety</strong>
                             <ul>
-                                <li class="check">
-                                    <input type="checkbox" id="c_box_2011_popup">
-                                    <label for="c_box_2011_popup">2011</label>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="AcadieblancPop">
+                                    <label for="AcadieblancPop">Acadie blanc</label>
                                 </li>
-                                <li class="check">
-                                    <input type="checkbox" id="c_box_2015_popup">
-                                    <label for="c_box_2015_popup">2015</label>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="ChardonnayPop">
+                                    <label for="ChardonnayPop">Chardonnay</label>
                                 </li>
-                                <li class="check">
-                                    <input type="checkbox" id="c_box_2017_popup">
-                                    <label for="c_box_2017_popup">2017</label>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="EonaPop">
+                                    <label for="EonaPop">Eona</label>
                                 </li>
-                                <li class="check">
-                                    <input type="checkbox" id="c_box_2018_popup">
-                                    <label for="c_box_2018_popup">2018</label>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="FrontenacPop">
+                                    <label for="FrontenacPop">Frontenac</label>
                                 </li>
-                                <li class="check">
-                                    <input type="checkbox" id="c_box_2019_popup">
-                                    <label for="c_box_2019_popup">2019</label>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="FrontenacblancPop">
+                                    <label for="FrontenacblancPop">Frontenac blanc</label>
                                 </li>
-                                <li class="check">
-                                    <input type="checkbox" id="c_box_2020_popup">
-                                    <label for="c_box_2020_popup">2020</label>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="FrontenacGrisPop">
+                                    <label for="FrontenacGrisPop">Frontenac Gris</label>
                                 </li>
-                                <li class="check">
-                                    <input type="checkbox" id="c_box_2021_popup">
-                                    <label for="c_box_2021_popup">2021</label>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="GeisenheimPop">
+                                    <label for="GeisenheimPop">Geisenheim</label>
                                 </li>
-                                <li class="check">
-                                    <input type="checkbox" id="c_box_2022_popup">
-                                    <label for="c_box_2022_popup">2022</label>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="LouiseSwensonPop">
+                                    <label for="LouiseSwensonPop">Louise Swenson</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="LucieKuhlmannPop">
+                                    <label for="LucieKuhlmannPop">Lucie Kuhlmann</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="MaréchalFochPop">
+                                    <label for="MaréchalFochPop">Maréchal Foch</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="MarquettePop">
+                                    <label for="MarquettePop">Marquette</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="PerlenoirePop">
+                                    <label for="PerlenoirePop">Perle noire</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="PinotnoirPop">
+                                    <label for="PinotnoirPop">Pinot noir</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="RadissonPop">
+                                    <label for="RadissonPop">Radisson</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="RieslingPop">
+                                    <label for="RieslingPop">Riesling</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SabrevoisPop">
+                                    <label for="SabrevoisPop">Sabrevois</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SainteCroixPop">
+                                    <label for="SainteCroixPop">Sainte-Croix</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SeyvalPop">
+                                    <label for="SeyvalPop">Seyval</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SeyvalNoirPop">
+                                    <label for="SeyvalNoirPop">Seyval Noir</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="SomersetPop">
+                                    <label for="SomersetPop">Somerset</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="StPépinPop">
+                                    <label for="StPépinPop">St-Pépin</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="VandalClichePop">
+                                    <label for="VandalClichePop">Vandal-Cliche</label>
+                                </li>
+                                <li class="cp radio">
+                                    <input type="radio" name="Grape" id="VidalPop">
+                                    <label for="VidalPop">Vidal</label>
                                 </li>
                             </ul>
                         </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="filter">
-                <div>
-                    <input type="button" value="Filter" class="filterBtn" data-popup="filterPopup">
-                    <span>34 Results</span>
-                    <ul>
                         <li>
-                            <strong>Category</strong>
-                            <ul>
-                                <li class="cp radio">
-                                    <input type="radio" name="category" id="whiteWine">
-                                    <label for="whiteWine">White Wine</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="category" id="redWine">
-                                    <label for="redWine">Red Wine</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="category" id="RoséWine">
-                                    <label for="RoséWine">Rosé Wine</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="category" id="SparklingWine">
-                                    <label for="SparklingWine">Sparkling Wine</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="category" id="DessertWine">
-                                    <label for="DessertWine">Dessert Wine</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Sugar content</strong>
-                            <div class="cp range" id="sugar">
-                                <div class="range-price">      
-                                    <div>
-                                        <label for="sugarmin">Min (g/L)</label>
-                                        <input type="number" class="min" id="sugarmin" value="1" readonly>
-                                    </div>
-                                    <div>
-                                        <label for="sugarmax">Max (g/L)</label>
-                                        <input type="number" class="max" id="sugarmax" value="271" readonly>
-                                    </div>   
-                                </div>
-                                <div class="range-slider">
-                                    <span class="range-selected"></span>
-                                </div>
-                                <div class="range-input">
-                                    <label for="sugarminRange"></label>
-                                    <input type="range" class="sugarmin" id="sugarminRange" min="1" max="271" value="1" step="1">
-                                    <label for="sugarmaxRange"></label>
-                                    <input type="range" class="sugarmax" id="sugarmaxRange" min="1" max="271" value="271" step="1">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Degree of alcohol</strong>
-                            <div class="cp range" id="alcohol">
-                                <div class="range-price">      
-                                    <div>
-                                        <label for="alcoholmin">Min (%)</label>
-                                        <input type="number" class="min" id="alcoholmin" value="10" readonly>
-                                    </div>
-                                    <div>
-                                        <label for="alcoholmax">Max (%)</label>
-                                        <input type="number" class="max" id="alcoholmax" value="16" readonly>
-                                    </div>   
-                                </div>
-                                <div class="range-slider">
-                                    <span class="range-selected"></span>
-                                </div>
-                                <div class="range-input">
-                                    <label for="alcoholminRange"></label>
-                                    <input type="range" class="alcoholmin" id="alcoholminRange" min="10" max="16" value="10" step="1">
-                                    <label for="alcoholmaxRange"></label>
-                                    <input type="range" class="alcoholmax" id="alcoholmaxRange" min="10" max="16" value="16" step="1">
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Grape variety</strong>
-                            <ul>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Acadieblanc">
-                                    <label for="Acadieblanc">Acadie blanc</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Chardonnay">
-                                    <label for="Chardonnay">Chardonnay</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Eona">
-                                    <label for="Eona">Eona</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Frontenac">
-                                    <label for="Frontenac">Frontenac</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Frontenacblanc">
-                                    <label for="Frontenacblanc">Frontenac blanc</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="FrontenacGris">
-                                    <label for="FrontenacGris">Frontenac Gris</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Geisenheim">
-                                    <label for="Geisenheim">Geisenheim</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="LouiseSwenson">
-                                    <label for="LouiseSwenson">Louise Swenson</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="LucieKuhlmann">
-                                    <label for="LucieKuhlmann">Lucie Kuhlmann</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="MaréchalFoch">
-                                    <label for="MaréchalFoch">Maréchal Foch</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Marquette">
-                                    <label for="Marquette">Marquette</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Perlenoire">
-                                    <label for="Perlenoire">Perle noire</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Pinotnoir">
-                                    <label for="Pinotnoir">Pinot noir</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Radisson">
-                                    <label for="Radisson">Radisson</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Riesling">
-                                    <label for="Riesling">Riesling</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Sabrevois">
-                                    <label for="Sabrevois">Sabrevois</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="SainteCroix">
-                                    <label for="SainteCroix">Sainte-Croix</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Seyval">
-                                    <label for="Seyval">Seyval</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="SeyvalNoir">
-                                    <label for="SeyvalNoir">Seyval Noir</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Somerset">
-                                    <label for="Somerset">Somerset</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="StPépin">
-                                    <label for="StPépin">St-Pépin</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="VandalCliche">
-                                    <label for="VandalCliche">Vandal-Cliche</label>
-                                </li>
-                                <li class="cp radio">
-                                    <input type="radio" name="Grape" id="Vidal">
-                                    <label for="Vidal">Vidal</label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="active">
-                            <strong>Vintage</strong>
+                            <strong class="nunw7s14 gray8">Vintage</strong>
                             <ul>
                                 <li class="check">
-                                    <input type="checkbox" id="c_box_2011">
-                                    <label for="c_box_2011">2011</label>
+                                    <input type="checkbox" id="c_box_2011_Vintage">
+                                    <label for="c_box_2011_Vintage">2011</label>
                                 </li>
                                 <li class="check">
-                                    <input type="checkbox" id="c_box_2015">
-                                    <label for="c_box_2015">2015</label>
+                                    <input type="checkbox" id="c_box_2015_Vintage">
+                                    <label for="c_box_2015_Vintage">2015</label>
                                 </li>
                                 <li class="check">
-                                    <input type="checkbox" id="c_box_2017">
-                                    <label for="c_box_2017">2017</label>
+                                    <input type="checkbox" id="c_box_2017_Vintage">
+                                    <label for="c_box_2017_Vintage">2017</label>
                                 </li>
                                 <li class="check">
-                                    <input type="checkbox" id="c_box_2018">
-                                    <label for="c_box_2018">2018</label>
+                                    <input type="checkbox" id="c_box_2018_Vintage">
+                                    <label for="c_box_2018_Vintage">2018</label>
                                 </li>
                                 <li class="check">
-                                    <input type="checkbox" id="c_box_2019">
-                                    <label for="c_box_2019">2019</label>
+                                    <input type="checkbox" id="c_box_2019_Vintage">
+                                    <label for="c_box_2019_Vintage">2019</label>
                                 </li>
                                 <li class="check">
-                                    <input type="checkbox" id="c_box_2020">
-                                    <label for="c_box_2020">2020</label>
+                                    <input type="checkbox" id="c_box_2020_Vintage">
+                                    <label for="c_box_2020_Vintage">2020</label>
                                 </li>
                                 <li class="check">
-                                    <input type="checkbox" id="c_box_2021">
-                                    <label for="c_box_2021">2021</label>
+                                    <input type="checkbox" id="c_box_2021_Vintage">
+                                    <label for="c_box_2021_Vintage">2021</label>
                                 </li>
                                 <li class="check">
-                                    <input type="checkbox" id="c_box_2022">
-                                    <label for="c_box_2022">2022</label>
+                                    <input type="checkbox" id="c_box_2022_Vintage">
+                                    <label for="c_box_2022_Vintage">2022</label>
                                 </li>
                             </ul>
                         </li>
@@ -526,9 +320,10 @@
             </div>
             <!-- ? Filter Fin -->
             
-            <div>
+            <div class="relativePos">
+                <input type="button" value="Filter" class="filterBtn nunw4s14 absolutePos" data-popup="filterPopup">
                 <label for="sort"></label>
-                <select class="sortmenu" id="sort">
+                <select class="sortmenu nunw4s14 dispB gray4" id="sort">
                     <option value="atoz">Product name(A-Z)</option>
                     <option value="ztoa">Product name(Z-A)</option>
                     <option value="hightolow">Price High to Low</option>
@@ -536,85 +331,11 @@
                 </select>
                 <ul>
                     <li>
-                        <a href="wine_rose_019.html">
-                            <img src="images/img_rosewine_019.png" alt="rosewine019">
-                            <strong>Le Chat Botté Gris de Gris 2021</strong>
-                            <span>
-                                <em>
-                                    Rosé wine
-                                </em>
-                                <del>$22.75</del>
-                                <mark>$20.75</mark>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="wine_rose_020.html">
-                            <img src="images/img_rosewine_020.png" alt="rosewine020">
-                            <strong>Le Chat Botté Pamplemousse 2017</strong>
-                            <span>
-                                <em>
-                                    Rosé wine
-                                </em>
-                                $13.05
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="wine_rose_021.html">
-                            <img src="images/img_rosewine_021.png" alt="rosewine021">
-                            <strong>Le Château de la Grange Le Chant des Vignes</strong>
-                            <span>
-                                <em>
-                                    Rosé wine
-                                </em>
-                                <del>$18.00</del>
-                                <mark>$17.50</mark>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="wine_rose_022.html">
-                            <img src="images/img_rosewine_022.png" alt="rosewine022">
-                            <strong>Le Mas des Patriotes Hortensias 2021</strong>
-                            <span>
-                                <em>
-                                    Rosé wine
-                                </em>
-                                $19.90
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="wine_rose_023.html">
-                            <img src="images/img_rosewine_023.png" alt="rosewine023">
-                            <strong>Léon Courville Vigneron Cuvée Détente 2021</strong>
-                            <span>
-                                <em>
-                                    Rosé wine
-                                </em>
-                                $16.25
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="wine_rose_024.html">
-                            <img src="images/img_rosewine_024.png" alt="rosewine024">
-                            <strong>Les Artisans du Terroir Prémices 2021</strong>
-                            <span>
-                                <em>
-                                    Rosé wine
-                                </em>
-                                $17.15
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="wine_rose_025.html">
-                            <img src="images/img_rosewine_025_01.png" alt="rosewine025">
-                            <strong>Les Artisans du Terroir Roze 2018</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_025.html" class="dispB">
+                            <img src="images/img_rosewine_025_01.png" alt="rosewine025" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Les Artisans du Terroir Roze 2018</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $14.35
@@ -622,11 +343,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_026.html">
-                            <img src="images/img_rosewine_026.png" alt="rosewine026">
-                            <strong>Les Bacchantes Rs1 2021</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_026.html" class="dispB">
+                            <img src="images/img_rosewine_026.png" alt="rosewine026" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Les Bacchantes Rs1 2021</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $17.15
@@ -634,11 +355,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_027.html">
-                            <img src="images/img_rosewine_027.png" alt="rosewine027">
-                            <strong>Les Petits Cailloux 2021</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_027.html" class="dispB">
+                            <img src="images/img_rosewine_027.png" alt="rosewine027" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Les Petits Cailloux 2021</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $17.55
@@ -646,11 +367,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_028.html">
-                            <img src="images/img_rosewine_028.png" alt="rosewine028">
-                            <strong>Les Vents d'Ange Marie-Rose 2021</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_028.html" class="dispB">
+                            <img src="images/img_rosewine_028.png" alt="rosewine028" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Les Vents d'Ange Marie-Rose 2021</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $13.90
@@ -658,11 +379,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_029.html">
-                            <img src="images/img_rosewine_029.png" alt="rosewine029">
-                            <strong>Union Libre UL 2021</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_029.html" class="dispB">
+                            <img src="images/img_rosewine_029.png" alt="rosewine029" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Union Libre UL 2021</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $17.95
@@ -670,11 +391,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_030.html">
-                            <img src="images/img_rosewine_030.png" alt="rosewine030">
-                            <strong>Vignoble 1292 St. Croix Radisson 2021</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_030.html" class="dispB">
+                            <img src="images/img_rosewine_030.png" alt="rosewine030" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Vignoble 1292 St. Croix Radisson 2021</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $15.95
@@ -682,11 +403,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_031.html">
-                            <img src="images/img_rosewine_031_01.png" alt="rosewine031">
-                            <strong>Vignoble de la Bauge Rosez 2017</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_031.html" class="dispB">
+                            <img src="images/img_rosewine_031_01.png" alt="rosewine031" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Vignoble de la Bauge Rosez 2017</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $14.50
@@ -694,24 +415,24 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_032.html">
-                            <img src="images/img_rosewine_032.png" alt="rosewine032">
-                            <strong>Vignoble du Marathonien Rosé Marie-Line 2020</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_032.html" class="dispB">
+                            <img src="images/img_rosewine_032.png" alt="rosewine032" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Vignoble du Marathonien Rosé Marie-Line 2020</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
-                                <del>$15.75</del>
-                                <mark>$14.75</mark>
+                                <del class="gray3">$15.75</del>
+                                <mark class="nunw4s14 color3">$14.75</mark>
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_033.html">
-                            <img src="images/img_rosewine_033.png" alt="rosewine033">
-                            <strong>Vignoble Lano d'Or Nao 2021</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_033.html" class="dispB">
+                            <img src="images/img_rosewine_033.png" alt="rosewine033" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Vignoble Lano d'Or Nao 2021</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $19.10
@@ -719,11 +440,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="wine_rose_034.html">
-                            <img src="images/img_rosewine_034.png" alt="rosewine034">
-                            <strong>Vignoble Rivière du Chêne Le Rosé Gabrielle 2021</strong>
-                            <span>
-                                <em>
+                        <a href="wine_rose_034.html" class="dispB">
+                            <img src="images/img_rosewine_034.png" alt="rosewine034" class="widthMax mBot20">
+                            <strong class="nunw7s14 mBot20 dispB gray8">Vignoble Rivière du Chêne Le Rosé Gabrielle 2021</strong>
+                            <span class="nunw4s14 dispB textRight gray4">
+                                <em class="leftPos">
                                     Rosé wine
                                 </em>
                                 $17.25
@@ -733,16 +454,16 @@
                 </ul>
             </div>
         </div>
-        <div class="pager">
-            <a href="#">back to top</a>
-            <div>
+        <div class="pager nunw4s14 textCenter">
+            <a href="#" class="dispIB textHide">back to top</a>
+            <div class="relativePos">
                 <div>
-                    <a href="wine_sub_rose_01.html">FirstPage</a>
-                    <a href="wine_sub_rose_01.html">Previous</a>        
+                    <a href="wine_sub_rose_01.html" class="textHide absolutePos gray10">FirstPage</a>
+                    <a href="wine_sub_rose_01.html" class="absolutePos gray10">Previous</a>         
                 </div>
                 <div>
-                    <a class="deactive">Next</a>
-                    <a class="deactive">LastPage</a>        
+                    <a class="deactive absolutePos gray10">Next</a>
+                    <a class="deactive textHide absolutePos gray10">LastPage</a>        
                 </div>
                 page <span>2</span> of <span>2</span> 
             </div>
@@ -751,87 +472,87 @@
     <!-- ? suggestContainer Fin -->
 
     <footer>
-        <ul>
-            <li><a class="nun3_16" href="aboutus_termsofsale.html">Home delivery</a></li>
-            <li><a class="nun3_16" href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
-            <li><a class="nun3_16" href="aboutus_contactus.html">Contact us</a></li>
-            <li><a class="nun3_16" href="aboutus_termsofsale.html">Free in-store returns</a></li>
+        <ul class="floatContainer">
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_termsofsale.html">Home delivery</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_contactus.html">Contact us</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_termsofsale.html">Free in-store returns</a></li>
         </ul>
         <div>
-            <div>
+            <div class="floatContainer">
                 <div>
                     <form>
-                        <h4 class="cor6_20">Create my account</h4>
-                        <p class="nun3_14">Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
+                        <h4 class="corw6s20 gray8">Create my account</h4>
+                        <p class="nunw3s14 gray6">Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
                         <label for="accountEmail"></label>
-                        <input type="email" id="accountEmail" placeholder="your@address.com" class="nun3_14">
-                        <input type="submit" value="Submit" class="nun3_14">
+                        <input type="email" id="accountEmail" placeholder="your@address.com" class="nunw3s14 boxSize">
+                        <input type="submit" value="Submit" class="nunw3s14 gray4">
                     </form>
                     <ul>
-                        <li><a href="https://www.youtube.com/user/SAQTchinTchin">Youtube</a></li>
-                        <li><a href="https://www.facebook.com/SAQ">Facebook</a></li>
-                        <li><a href="https://twitter.com/LaSAQ_officiel">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/lasaq/">Instagram</a></li>
+                        <li class="dispIB textHide"><a href="https://www.youtube.com/user/SAQTchinTchin" class="dispB widthMax">Youtube</a></li>
+                        <li class="dispIB textHide"><a href="https://www.facebook.com/SAQ" class="dispB widthMax">Facebook</a></li>
+                        <li class="dispIB textHide"><a href="https://twitter.com/LaSAQ_officiel" class="dispB widthMax">Twitter</a></li>
+                        <li class="dispIB textHide"><a href="https://www.instagram.com/lasaq/" class="dispB widthMax">Instagram</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="cor6_20">Call us</h3>
-                    <address class="nun3_14">
-                        <span>
-                            Toll free: <a href="tel:+18668732020">1 866 873-2020</a>
+                    <h3 class="corw6s20 gray8">Call us</h3>
+                    <address class="nunw3s14">
+                        <span class="gray6">
+                            Toll free: <a href="tel:+18668732020" class="gray6">1 866 873-2020</a>
                         </span>
-                        <span>
-                            Greater Montreal: <a href="tel:+5142542020">514 254-2020</a>
+                        <span class="gray6">
+                            Greater Montreal: <a href="tel:+5142542020" class="gray6">514 254-2020</a>
                         </span>
-                        <div>
-                            LOCATION &amp; LANGUAGE<span class="crrLanguage nun4_14">English</span>
+                        <div class="gray6">
+                            LOCATION &amp; LANGUAGE<span class="crrLanguage nunw4s14">English</span>
                         </div>
                     </address>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <h3 class="nun7_16">About your purchase</h3>
+        <div class="floatContainer">
+            <div class="gray7">
+                <h3 class="nunw7s16">About your purchase</h3>
                 <ol>
-                    <li class="nun3_14"><a href="account_main.html">My Profile</a></li>
-                    <li class="nun3_14"><a href="account_myorder.html">Track an Orders</a></li>
-                    <li class="nun3_14"><a href="aboutus_FAQ.html">Frequently asked questions</a></li>
-                    <li class="nun3_14"><a href="aboutus_confidentialpolicy.html">Shipping and delivery</a></li>
-                    <li class="nun3_14"><a href="aboutus_termsofsale.html">Terms and conditions</a></li>
-                    <li class="nun3_14"><a href="aboutus_confidentialpolicy.html">Confidentiality Policy</a></li>
+                    <li class="nunw3s14 mBot20"><a href="account_main.html" class="gray7">My Profile</a></li>
+                    <li class="nunw3s14 mBot20"><a href="account_myorder.html" class="gray7">Track an Orders</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_FAQ.html" class="gray7">Frequently asked questions</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_confidentialpolicy.html" class="gray7">Shipping and delivery</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_termsofsale.html" class="gray7">Terms and conditions</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_confidentialpolicy.html" class="gray7">Confidentiality Policy</a></li>
                 </ol>
             </div>
-            <div>
-                <h3 class="nun7_16">About the SAQ</h3>
+            <div class="gray7">
+                <h3 class="nunw7s16">About the SAQ</h3>
                 <ol>
-                    <li class="nun3_14"><a href="aboutus_profileandmandate.html">Profile and mandate</a></li>
-                    <li class="nun3_14"><a href="aboutus_accesstoinformation.html">Access to information</a></li>
-                    <li class="nun3_14"><a href="aboutus_contactus.html">Contact Us</a></li>
-                    <li class="nun3_14"><a href="aboutus_ourhistory.html">Our history</a></li>
-                    <li class="nun3_14"><a href="inspiration_list.html">Inspiration</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_profileandmandate.html" class="gray7">Profile and mandate</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_accesstoinformation.html" class="gray7">Access to information</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_contactus.html" class="gray7">Contact Us</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_ourhistory.html" class="gray7">Our history</a></li>
+                    <li class="nunw3s14 mBot20"><a href="inspiration_list.html" class="gray7">Inspiration</a></li>
                 </ol>
             </div>
-            <div>
-                <h3 class="nun7_16">SAQ pairing recipes</h3>
-                <p class="nun3_14">Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
-                <a href="wine_sub_pairing_01.html" class="fillBtn nun3_14">Visit Now</a>
+            <div class="gray7">
+                <h3 class="nunw7s16">SAQ pairing recipes</h3>
+                <p class="nunw3s14">Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
+                <a href="wine_sub_pairing_01.html" class="fillBtn gray2 nunw3s14 dispB textCenter gray1">Visit Now</a>
                 <div>
-                    <h4 class="7_14">SAQ ACCEPTS</h4>
+                    <h4 class="nunw7s16">SAQ ACCEPTS</h4>
                     <ul>
-                        <li>Paypal</li>
-                        <li>VISA</li>
-                        <li>Mastercard</li>
-                        <li>Maestro</li>
-                        <li>AmericanExpress</li>
-                        <li>JCB</li>
-                        <li>UnionPay</li>
-                        <li>DELTA</li>
-                        <li>applepay</li>
-                        <li>klarna</li>
+                        <li class="textHide">Paypal</li>
+                        <li class="textHide">VISA</li>
+                        <li class="textHide">Mastercard</li>
+                        <li class="textHide">Maestro</li>
+                        <li class="textHide">AmericanExpress</li>
+                        <li class="textHide">JCB</li>
+                        <li class="textHide">UnionPay</li>
+                        <li class="textHide">DELTA</li>
+                        <li class="textHide">applepay</li>
+                        <li class="textHide">klarna</li>
                     </ul>
                 </div>
-                <span class="nun3_14">
+                <span class="nunw3s14">
                     © All rights reserved, SAQ 2023 <img src="images/logo_spirit.png" alt="the spirit of sharing SAQ."><img src="images/logo_footer.png" alt="logo_footer">
                 </span>
             </div>

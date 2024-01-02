@@ -3,8 +3,7 @@ $(document).ready(function(){
     sliders(".discoverslider", false, true, 4, 1, 300, 80);
     sliders(".carouselSlider", false, true, 4, 1, 270, 60);
     panelControl("header > div ul li:first-of-type");
-    panelControl("header > div ul li:last-of-type");
-    panelcloseControl("header > div ul li:last-of-type");
+    panelcloseControl();
     panelControl("header > div input");
     panelControl(".newAdd");
     panelControl(".editAdd");
@@ -13,6 +12,7 @@ $(document).ready(function(){
     panelControl(".payEnd");
     panelControl(".contactEnd");
     panelControl(".filterBtn");
+    popupcloseControl();
     foldControl(".productContainer #filterPopup > div > ul > li > strong");
     foldControl(".productContainer .filter > div > ul > li > strong");
     foldControl(".wineContainer table caption");
@@ -57,20 +57,22 @@ function panelControl(openBtn){
             currentPanel = "#" + $(this).attr("data-popup");
         }
         $(currentPanel).addClass("active");
-
     });
-    $("[class^='close']").click(function(){
+    $("[class*='close']").click(function(){
         $(currentPanel).removeClass("active");
     });
 }
-function panelcloseControl(target){
+function popupcloseControl(){
+    $("#welcomePopup > .closePopup").click(function(){
+        $("#welcomePopup > .closePopup").parent().removeClass("active");
+    })
+}
+function panelcloseControl(){
     var currentPanel = null;
-    $(target).click(function(){
+    $("header > div ul li:last-of-type").click(function(){
         $(this).toggleClass("closePanel");
-        if($(this).attr("class") != "closePanel"){
-            currentPanel = "#" + $(this).attr("data-panel");
-            $(currentPanel).toggleClass("active");
-        }
+        currentPanel = "#" + $(this).attr("data-panel");
+        $(currentPanel).toggleClass("active");
     });
 }
 function foldControl(target){

@@ -12,65 +12,65 @@
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <div id="searchPanel">
-        <div>
+    <div id="searchPanel" class="dispNone widthMax">
+        <div class="nunw4s24 relativePos">
             <label for="search"></label>
-            <input type="text" id="search" placeholder="Search products, pairings and content" class="nun4_24">
-            <input type="submit" value="submit" disabled>
-            <input type="button" value="close" class="closePanel deleteBtn">
+            <input type="text" id="search" placeholder="Search products, pairings and content" class="nunw4s24">
+            <input type="submit" value="submit" disabled class="dispNone">
+            <input type="button" value="close" class="closePanel deleteBtn textHide absolutePos">
         </div>
     </div>
-    <div id="accountPanel" class="nun4_16">
-        <div>
+    <div id="accountPanel" class="dispNone">
+        <div class="nunw4s16">
             <form action="index.html">
-                <a href="account_myorder.html">My Orders</a>
-                <a href="account_wishlist.html">Wish List</a>
-                <a href="account_cartlist.html">Cart List</a>
-                <a href="account_detail.html">Account Details</a>
-                <a href="account_addressbook.html">Address Book</a>
-                <a href="account_savedcards.html">Saved Cards</a>
-                <input type="submit" value="Sign out" class="4_16">
+                <a href="account_myorder.html" class="gray8">My Orders</a>
+                <a href="account_wishlist.html" class="gray8">Wish List</a>
+                <a href="account_cartlist.html" class="gray8">Cart List</a>
+                <a href="account_detail.html" class="gray8">Account Details</a>
+                <a href="account_addressbook.html" class="gray8">Address Book</a>
+                <a href="account_savedcards.html" class="gray8">Saved Cards</a>
+                <input type="submit" value="Sign out" class="nunw4s16">
             </form>
         </div>
     </div>
-    <div id="menuPanel" class="nun6_14">
+    <div id="menuPanel" class="dispNone">
         <input type="button" value="close" class="closePanel">
-        <span class="crrLanguage nun4_14">English</span>
-        <ul>
-            <li><a href="wine_sub_sale_01.html">Sale</a></li>
-            <li><a href="wine_sub_white_01.html">White</a></li>
-            <li><a href="wine_sub_red_01.html">Red</a></li>
-            <li><a href="wine_sub_rose_01.html">Rosé</a></li>
-            <li><a href="wine_sub_sparkling_01.html">Sparkling Wine</a></li>
-            <li><a href="wine_sub_dessert_01.html">Dessert Wine</a></li>
-            <li><a href="wine_sub_pairing_01.html">Pairing</a></li>
+        <span class="crrLanguage nunw4s14 gray8">English</span>
+        <ul class="nunw6s14">
+            <li><a href="wine_sub_sale_01.html" class="gray8">Sale</a></li>
+            <li><a href="wine_sub_white_01.html" class="gray8">White</a></li>
+            <li><a href="wine_sub_red_01.html" class="gray8">Red</a></li>
+            <li><a href="wine_sub_rose_01.html" class="gray8">Rosé</a></li>
+            <li><a href="wine_sub_sparkling_01.html" class="gray8">Sparkling Wine</a></li>
+            <li><a href="wine_sub_dessert_01.html" class="gray8">Dessert Wine</a></li>
+            <li><a href="wine_sub_pairing_01.html" class="gray8">Pairing</a></li>
         </ul>
-        <ul>
-            <li><a href="account_main.html">My Account</a></li>
-            <li><a href="account_wishlist.html">Wish List</a></li>
+        <ul class="nunw6s14">
+            <li><a href="account_main.html" class="gray8">My Account</a></li>
+            <li><a href="account_wishlist.html" class="gray8">Wish List</a></li>
         </ul>
-        <a href="index.html">Sign out</a>
+        <a href="index.html" class="nunw6s14 gray8">Sign out</a>
     </div>
     
-    <header>
+    <header class="gray1 nunw6s14 widthMax">
         <ol>
-            <li class="active"><a href="wine_sub_white_01.html">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
-            <li><a href="wine_sub_white_01.html">Meet a variety of high-quality wines.</a></li>
-            <li><a href="wine_sub_sale_01.html">Spend to save up to 25% sale for a limited time only.</a></li>
+            <li class="active"><a href="wine_sub_white_01.html" class="dispB">Free in-store delivery for orders of $75+ within an estimated 3 to 5 business days.</a></li>
+            <li><a href="wine_sub_white_01.html" class="dispB">Meet a variety of high-quality wines.</a></li>
+            <li><a href="wine_sub_sale_01.html" class="dispB">Spend to save up to 25% sale for a limited time only.</a></li>
         </ol>   
-        <div>
-            <span class="crrLanguage">English</span>
-            <input type="button" value="menu" data-panel="menuPanel">
+        <div class="relativePos">
+            <span class="crrLanguage nunw4s14 absolutePos gray1">English</span>
+            <input type="button" value="menu" data-panel="menuPanel" class="absolutePos">
             <h1>
-                <a href="index_after.html">
-                    <img src="images/logo_header.png" alt="SAQ">
+                <a href="index_after.html" class="dispB">
+                    <img src="images/logo_header.png" alt="SAQ" class="widthMax">
                 </a>
             </h1>
-            <ul>
-                <li data-panel="searchPanel">search</li>
-                <li><a href="account_wishlist.html">wishlist</a></li>
-                <li><a href="account_cartlist.html">cart</a></li>
-                <li data-panel="accountPanel">account</li>
+            <ul class="absolutePos">
+                <li data-panel="searchPanel" class="dispIB textHide">search</li>
+                <li class="dispIB textHide"><a href="account_wishlist.html" class="dispB">wishlist</a></li>
+                <li class="dispIB textHide"><a href="account_cartlist.html" class="dispB">cart</a></li>
+                <li data-panel="accountPanel" class="dispIB textHide">account</li>
             </ul>
         </div>
         <nav>
@@ -91,82 +91,82 @@
         <div>
             <ul>
                 <li>
-                    <img src="images/img_sparklingwine_012.png" alt="sparklingwine012">
+                    <img src="images/img_sparklingwine_012.png" alt="sparklingwine012" class="widthMax">
                 </li>
             </ul>
         </div>
         <div>
-            <b>
+            <b class="nunw4s16 dispB gray8">
                 Espace Québec
-                <small>Sparkling wine</small>
+                <small class="nunw4s14 gray3">Sparkling wine</small>
             </b>
-            <h2>Vignoble de la Rivière du Chêne Monde Les Bulles</h2>
-            <span>$29.85</span>
-            <a href="account_cartlist.html">Add to Cart</a>
-            <a href="account_wishlist.html">Add to Wishlist</a>
-            <table>
-                <caption>Detailed Info</caption>
-                <tbody>
-                    <tr>
-                        <td>Country</td>
-                        <th>Canada</th>
+            <h2 class="nunw6s50">Vignoble de la Rivière du Chêne Monde Les Bulles</h2>
+            <span class="nunw3s30 dispB">$29.85</span>
+            <a href="account_cartlist.html" class="nun4s20 dispB textCenter gray1">Add to Cart</a>
+            <a href="account_wishlist.html" class="nun4s20 dispB textCenter gray1">Add to Wishlist</a>
+            <table class="nunw6s30 widthMax">
+                <caption class="textLeft">Detailed Info</caption>
+                <tbody class="dispNone gray8">
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Country</td>
+                        <th class="nunw7s24 textLeft">Canada</th>
                     </tr>
-                    <tr>
-                        <td>Region</td>
-                        <th>Quebec, Montérégie</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Region</td>
+                        <th class="nunw7s24 textLeft">Quebec, Montérégie</th>
                     </tr>
-                    <tr>
-                        <td>Regulated Designation</td>
-                        <th>Protected geographical indication (PGI)</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Regulated Designation</td>
+                        <th class="nunw7s24 textLeft">Protected geographical indication (PGI)</th>
                     </tr>
-                    <tr>
-                        <td>Grape varieties</td>
-                        <th>Frontenac Gris 48 %, Prairie Star 35 %, Frontenac blanc 17 %</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Grape varieties</td>
+                        <th class="nunw7s24 textLeft">Frontenac Gris 48 %, Prairie Star 35 %, Frontenac blanc 17 %</th>
                     </tr>
-                    <tr>
-                        <td>Degree of alcohol</td>
-                        <th>12.5 %</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Degree of alcohol</td>
+                        <th class="nunw7s24 textLeft">12.5 %</th>
                     </tr>
-                    <tr>
-                        <td>Sugar content</td>
-                        <th>21 g/L</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Sugar content</td>
+                        <th class="nunw7s24 textLeft">21 g/L</th>
                     </tr>
-                    <tr>
-                        <td>Color</td>
-                        <th>white</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Color</td>
+                        <th class="nunw7s24 textLeft">white</th>
                     </tr>
-                    <tr>
-                        <td>Size</td>
-                        <th>750 ml</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Size</td>
+                        <th class="nunw7s24 textLeft">750 ml</th>
                     </tr>
-                    <tr>
-                        <td>Producer</td>
-                        <th>Vignoble de la Rivière du Chêne</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Producer</td>
+                        <th class="nunw7s24 textLeft">Vignoble de la Rivière du Chêne</th>
                     </tr>
-                    <tr>
-                        <td>SAQ code</td>
-                        <th>12359871</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">SAQ code</td>
+                        <th class="nunw7s24 textLeft">12359871</th>
                     </tr>
-                    <tr>
-                        <td>UPC code</td>
-                        <th>00827924036256</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">UPC code</td>
+                        <th class="nunw7s24 textLeft">00827924036256</th>
                     </tr>
-                    <tr>
-                        <td>Product of Québec</td>
-                        <th>Origine Québec</th>
+                    <tr class="dispB mBot30">
+                        <td class="nunw2s24">Product of Québec</td>
+                        <th class="nunw7s24 textLeft">Origine Québec</th>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <div>
-            <h3>To discover</h3>
+        <div class="exMobileFloatContainer">
+            <h3 class="nunw6s30">To discover</h3>
             <ul class="discoverslider">
                 <li>
                     <a href="wine_sparkling_002.html">
-                        <img src="images/img_sparklingwine_002.png" alt="sparklingwine002">
-                        <strong>Coteau Rougemont Bulles Versant</strong>
-                        <span>
-                            <em>
+                        <img src="images/img_sparklingwine_002.png" alt="sparklingwine002" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Coteau Rougemont Bulles Versant</strong>
+                        <span class="nunw4s14 dispB textRight gray8">
+                            <em class="leftPos gray4">
                                 Sparkling wine
                             </em>
                             $19.75
@@ -175,10 +175,10 @@
                 </li>
                 <li>
                     <a href="wine_sparkling_003.html">
-                        <img src="images/img_sparklingwine_003.png" alt="sparklingwine003">
-                        <strong>Domaine Bergeville Le Blanc Brut 2020</strong>
-                        <span>
-                            <em>
+                        <img src="images/img_sparklingwine_003.png" alt="sparklingwine003" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Domaine Bergeville Le Blanc Brut 2020</strong>
+                        <span class="nunw4s14 dispB textRight gray8">
+                            <em class="leftPos gray4">
                                 Sparkling wine
                             </em>
                             $29.85
@@ -187,10 +187,10 @@
                 </li>
                 <li>
                     <a href="wine_sparkling_005.html">
-                        <img src="images/img_sparklingwine_005.png" alt="sparklingwine005">
-                        <strong>Domaine St-Jacques Brut 2019</strong>
-                        <span>
-                            <em>
+                        <img src="images/img_sparklingwine_005.png" alt="sparklingwine005" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Domaine St-Jacques Brut 2019</strong>
+                        <span class="nunw4s14 dispB textRight gray8">
+                            <em class="leftPos gray4">
                                 Sparkling wine
                             </em>
                             $33.75
@@ -199,10 +199,10 @@
                 </li>
                 <li>
                     <a href="wine_sparkling_006.html">
-                        <img src="images/img_sparklingwine_006.png" alt="sparklingwine006">
-                        <strong>L'Orpailleur Brut</strong>
-                        <span>
-                            <em>
+                        <img src="images/img_sparklingwine_006.png" alt="sparklingwine006" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">L'Orpailleur Brut</strong>
+                        <span class="nunw4s14 dispB textRight gray8">
+                            <em class="leftPos gray4">
                                 Sparkling wine
                             </em>
                             $30.50
@@ -211,10 +211,10 @@
                 </li>
                 <li>
                     <a href="wine_sparkling_007.html">
-                        <img src="images/img_sparklingwine_007_01.png" alt="sparklingwine007">
-                        <strong>L'Orpailleur Brut Édition 375e</strong>
-                        <span>
-                            <em>
+                        <img src="images/img_sparklingwine_007_01.png" alt="sparklingwine007" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">L'Orpailleur Brut Édition 375e</strong>
+                        <span class="nunw4s14 dispB textRight gray8">
+                            <em class="leftPos gray4">
                                 Sparkling wine
                             </em>
                             $28.70
@@ -223,10 +223,10 @@
                 </li>
                 <li>
                     <a href="wine_sparkling_008.html">
-                        <img src="images/img_sparklingwine_008.png" alt="sparklingwine008">
-                        <strong>Le Chat Botté Pet Nat Orange 2021</strong>
-                        <span>
-                            <em>
+                        <img src="images/img_sparklingwine_008.png" alt="sparklingwine008" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Le Chat Botté Pet Nat Orange 2021</strong>
+                        <span class="nunw4s14 dispB textRight gray8">
+                            <em class="leftPos gray4">
                                 Sparkling wine
                             </em>
                             $34.75
@@ -235,10 +235,10 @@
                 </li>
                 <li>
                     <a href="wine_sparkling_011.html">
-                        <img src="images/img_sparklingwine_011.png" alt="sparklingwine011">
-                        <strong>Vignoble Côte de Vaudreuil Les Bulles de la Côte 2020</strong>
-                        <span>
-                            <em>
+                        <img src="images/img_sparklingwine_011.png" alt="sparklingwine011" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Vignoble Côte de Vaudreuil Les Bulles de la Côte 2020</strong>
+                        <span class="nunw4s14 dispB textRight gray8">
+                            <em class="leftPos gray4">
                                 Sparkling wine
                             </em>
                             $28.85
@@ -247,10 +247,10 @@
                 </li>
                 <li>
                     <a href="wine_sparkling_013.html">
-                        <img src="images/img_sparklingwine_013.png" alt="sparklingwine013">
-                        <strong>Vignoble Gagliano Cuvée G 2019</strong>
-                        <span>
-                            <em>
+                        <img src="images/img_sparklingwine_013.png" alt="sparklingwine013" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Vignoble Gagliano Cuvée G 2019</strong>
+                        <span class="nunw4s14 dispB textRight gray8">
+                            <em class="leftPos gray4">
                                 Sparkling wine
                             </em>
                             $18.30
@@ -264,31 +264,31 @@
 
     <div class="suggestContainer">
         <div>
-            <h3>Suggested pairings</h3>
-            <ul>
+            <h3 class="nunw6s30 dispB boxSize">Suggested pairings</h3>
+            <ul class="boxSize">
                 <li>
-                    <a href="wine_pairing_crabCake.html">
-                        <img src="images/img_pairing_crabCake.png" alt="crabCake">
-                        <strong>Crab cakes</strong>
-                        <span>
+                    <a href="wine_pairing_crabCake.html" class="dispB gray8">
+                        <img class="widthMax" src="images/img_pairing_crabCake.png" alt="crabCake" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Crab cakes</strong>
+                        <span class="nunw4s14 dispB">
                             Preparation 15 minutes<br>Cooking time 15 to 20 minutes
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a href="wine_pairing_deepFriedWhiteFishFillet.html">
-                        <img src="images/img_pairing_deepFriedWhiteFishFillet.png" alt="deepFriedWhiteFishFillet">
-                        <strong>Deep-fried white fish fillet</strong>
-                        <span>
+                    <a href="wine_pairing_deepFriedWhiteFishFillet.html" class="dispB gray8">
+                        <img class="widthMax" src="images/img_pairing_deepFriedWhiteFishFillet.png" alt="deepFriedWhiteFishFillet" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Deep-fried white fish fillet</strong>
+                        <span class="nunw4s14 dispB">
                             Preparation 20 minutes<br>Cooking time 8 to 10 minutes
                         </span>
                     </a>
                 </li>
                 <li>
-                    <a href="wine_pairing_whippedFetaDip.html">
-                        <img src="images/img_pairing_whippedFetaDip.png" alt="whippedFetaDip">
-                        <strong>Whipped feta dip</strong>
-                        <span>
+                    <a href="wine_pairing_whippedFetaDip.html" class="dispB gray8">
+                        <img class="widthMax" src="images/img_pairing_whippedFetaDip.png" alt="whippedFetaDip" class="mBot20">
+                        <strong class="nunw7s14 dispB mBot20 gray8">Whipped feta dip</strong>
+                        <span class="nunw4s14 dispB">
                             Preparation 10 minutes<br>Cooking time none
                         </span>
                     </a>
@@ -299,87 +299,87 @@
     <!-- ? suggestContainer Fin -->
 
     <footer>
-        <ul>
-            <li><a class="nun3_16" href="aboutus_termsofsale.html">Home delivery</a></li>
-            <li><a class="nun3_16" href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
-            <li><a class="nun3_16" href="aboutus_contactus.html">Contact us</a></li>
-            <li><a class="nun3_16" href="aboutus_termsofsale.html">Free in-store returns</a></li>
+        <ul class="floatContainer">
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_termsofsale.html">Home delivery</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_confidentialpolicy.html">In-store delivery Express pickup</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_contactus.html">Contact us</a></li>
+            <li><a class="nunw7s16 dispB textCenter gray10" href="aboutus_termsofsale.html">Free in-store returns</a></li>
         </ul>
         <div>
-            <div>
+            <div class="floatContainer">
                 <div>
                     <form>
-                        <h4 class="cor6_20">Create my account</h4>
-                        <p class="nun3_14">Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
+                        <h4 class="corw6s20 gray8">Create my account</h4>
+                        <p class="nunw3s14 gray6">Enjoy tons of advantages with an SAQ account: buying online, adding favourite products and more.</p>
                         <label for="accountEmail"></label>
-                        <input type="email" id="accountEmail" placeholder="your@address.com" class="nun3_14">
-                        <input type="submit" value="Submit" class="nun3_14">
+                        <input type="email" id="accountEmail" placeholder="your@address.com" class="nunw3s14 boxSize">
+                        <input type="submit" value="Submit" class="nunw3s14 gray4">
                     </form>
                     <ul>
-                        <li><a href="https://www.youtube.com/user/SAQTchinTchin">Youtube</a></li>
-                        <li><a href="https://www.facebook.com/SAQ">Facebook</a></li>
-                        <li><a href="https://twitter.com/LaSAQ_officiel">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/lasaq/">Instagram</a></li>
+                        <li class="dispIB textHide"><a href="https://www.youtube.com/user/SAQTchinTchin" class="dispB widthMax">Youtube</a></li>
+                        <li class="dispIB textHide"><a href="https://www.facebook.com/SAQ" class="dispB widthMax">Facebook</a></li>
+                        <li class="dispIB textHide"><a href="https://twitter.com/LaSAQ_officiel" class="dispB widthMax">Twitter</a></li>
+                        <li class="dispIB textHide"><a href="https://www.instagram.com/lasaq/" class="dispB widthMax">Instagram</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="cor6_20">Call us</h3>
-                    <address class="nun3_14">
-                        <span>
-                            Toll free: <a href="tel:+18668732020">1 866 873-2020</a>
+                    <h3 class="corw6s20 gray8">Call us</h3>
+                    <address class="nunw3s14">
+                        <span class="gray6">
+                            Toll free: <a href="tel:+18668732020" class="gray6">1 866 873-2020</a>
                         </span>
-                        <span>
-                            Greater Montreal: <a href="tel:+5142542020">514 254-2020</a>
+                        <span class="gray6">
+                            Greater Montreal: <a href="tel:+5142542020" class="gray6">514 254-2020</a>
                         </span>
-                        <div>
-                            LOCATION &amp; LANGUAGE<span class="crrLanguage nun4_14">English</span>
+                        <div class="gray6">
+                            LOCATION &amp; LANGUAGE<span class="crrLanguage nunw4s14">English</span>
                         </div>
                     </address>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <h3 class="nun7_16">About your purchase</h3>
+        <div class="floatContainer">
+            <div class="gray7">
+                <h3 class="nunw7s16">About your purchase</h3>
                 <ol>
-                    <li class="nun3_14"><a href="account_main.html">My Profile</a></li>
-                    <li class="nun3_14"><a href="account_myorder.html">Track an Orders</a></li>
-                    <li class="nun3_14"><a href="aboutus_FAQ.html">Frequently asked questions</a></li>
-                    <li class="nun3_14"><a href="aboutus_confidentialpolicy.html">Shipping and delivery</a></li>
-                    <li class="nun3_14"><a href="aboutus_termsofsale.html">Terms and conditions</a></li>
-                    <li class="nun3_14"><a href="aboutus_confidentialpolicy.html">Confidentiality Policy</a></li>
+                    <li class="nunw3s14 mBot20"><a href="account_main.html" class="gray7">My Profile</a></li>
+                    <li class="nunw3s14 mBot20"><a href="account_myorder.html" class="gray7">Track an Orders</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_FAQ.html" class="gray7">Frequently asked questions</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_confidentialpolicy.html" class="gray7">Shipping and delivery</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_termsofsale.html" class="gray7">Terms and conditions</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_confidentialpolicy.html" class="gray7">Confidentiality Policy</a></li>
                 </ol>
             </div>
-            <div>
-                <h3 class="nun7_16">About the SAQ</h3>
+            <div class="gray7">
+                <h3 class="nunw7s16">About the SAQ</h3>
                 <ol>
-                    <li class="nun3_14"><a href="aboutus_profileandmandate.html">Profile and mandate</a></li>
-                    <li class="nun3_14"><a href="aboutus_accesstoinformation.html">Access to information</a></li>
-                    <li class="nun3_14"><a href="aboutus_contactus.html">Contact Us</a></li>
-                    <li class="nun3_14"><a href="aboutus_ourhistory.html">Our history</a></li>
-                    <li class="nun3_14"><a href="inspiration_list.html">Inspiration</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_profileandmandate.html" class="gray7">Profile and mandate</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_accesstoinformation.html" class="gray7">Access to information</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_contactus.html" class="gray7">Contact Us</a></li>
+                    <li class="nunw3s14 mBot20"><a href="aboutus_ourhistory.html" class="gray7">Our history</a></li>
+                    <li class="nunw3s14 mBot20"><a href="inspiration_list.html" class="gray7">Inspiration</a></li>
                 </ol>
             </div>
-            <div>
-                <h3 class="nun7_16">SAQ pairing recipes</h3>
-                <p class="nun3_14">Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
-                <a href="wine_sub_pairing_01.html" class="fillBtn nun3_14">Visit Now</a>
+            <div class="gray7">
+                <h3 class="nunw7s16">SAQ pairing recipes</h3>
+                <p class="nunw3s14">Tastings with renowned producer, gourmet dinners, festive aperitifs, you’re given access to unique experiences filled with discovery.</p>
+                <a href="wine_sub_pairing_01.html" class="fillBtn gray2 nunw3s14 dispB textCenter gray1">Visit Now</a>
                 <div>
-                    <h4 class="7_14">SAQ ACCEPTS</h4>
+                    <h4 class="nunw7s16">SAQ ACCEPTS</h4>
                     <ul>
-                        <li>Paypal</li>
-                        <li>VISA</li>
-                        <li>Mastercard</li>
-                        <li>Maestro</li>
-                        <li>AmericanExpress</li>
-                        <li>JCB</li>
-                        <li>UnionPay</li>
-                        <li>DELTA</li>
-                        <li>applepay</li>
-                        <li>klarna</li>
+                        <li class="textHide">Paypal</li>
+                        <li class="textHide">VISA</li>
+                        <li class="textHide">Mastercard</li>
+                        <li class="textHide">Maestro</li>
+                        <li class="textHide">AmericanExpress</li>
+                        <li class="textHide">JCB</li>
+                        <li class="textHide">UnionPay</li>
+                        <li class="textHide">DELTA</li>
+                        <li class="textHide">applepay</li>
+                        <li class="textHide">klarna</li>
                     </ul>
                 </div>
-                <span class="nun3_14">
+                <span class="nunw3s14">
                     © All rights reserved, SAQ 2023 <img src="images/logo_spirit.png" alt="the spirit of sharing SAQ."><img src="images/logo_footer.png" alt="logo_footer">
                 </span>
             </div>
