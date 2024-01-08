@@ -178,7 +178,7 @@
     [class*='nunw4s24'],
     [class*='nunw3s30']{font-size: 24px;}
     [class*='nunw6s30'],
-    [class*='corw6s30']{font-size: 26px;}
+    [class*='corw6s30']{font-size: 24px;}
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     [class*='s14']{font-size: 14px;}
@@ -192,7 +192,7 @@
     [class*='nunw7s20']{font-size: 20px;}
     [class*='nunw3s30'],
     [class*='nunw6s30'],
-    [class*='corw6s30']{font-size: 26px;}
+    [class*='corw6s30']{font-size: 24px;}
 }
 @media screen and (min-width: 1280px){
     [class*='s14']{font-size: 14px;}

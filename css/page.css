@@ -366,7 +366,7 @@
 @media screen and (max-width: 767px){
     .passwordField > .vActiveBtn,
     .newpasswordField > .newvActiveBtn{
-        left: var(--sp15); top: var(--sp15); padding: 0; margin: 0;
+        right: var(--sp15); top: var(--sp15); padding: 0; margin: 0;
         background: url('../images/bul_visiblity_off.png') no-repeat; background-size: 20px;
         width: 20px; height: 20px; border: none;
     }
@@ -1286,7 +1286,7 @@
     }
     .aboutusContainer.FAQ div .accComponent li h4{
         padding: var(--sp30) 0; border-bottom: 1px solid var(--gs3); background: url('../images/bul_arrow_down.png') no-repeat right;
-        background-size: 32px; padding-right: var(--sp35); line-height: 20px;
+        background-size: 32px; padding-right: var(--sp35); line-height: 24px;
     }
     .aboutusContainer.FAQ div .accComponent li.active h4{
         border-bottom: none; background: url('../images/bul_arrow_up.png') no-repeat right; background-size: 32px;
@@ -2615,9 +2615,9 @@
 @media screen and (min-width: 768px){
     .passwordField > .vActiveBtn,
     .newpasswordField > .newvActiveBtn{
-        left: var(--sp20); top: var(--sp15); padding: 0; margin: 0;
+        right: var(--sp20); top: var(--sp15); padding: 0; margin: 0;
         background: url('../images/bul_visiblity_off.png') no-repeat; background-size: 40px 40px;
-        width: 40px; height: 40px; border: none;
+        width: 40px; height: 40px; border: none; cursor: pointer;
     }
 
     .indexContainer > div:nth-of-type(2) figure{

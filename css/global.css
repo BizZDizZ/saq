@@ -61,10 +61,13 @@ input[type="number"]::-webkit-inner-spin-button{
     display: block;
 }
 #searchPanel{
-    background-color: var(--gs1); position: fixed; top: var(--sp55); z-index: 51; border-bottom: 1px solid var(--gs3);
+    background-color: var(--gs1); position: fixed; top: var(--sp55); z-index: 51; border-bottom: 1px solid var(--gs3); outline: none;
 }
 #searchPanel div{
     margin: 0 auto;
+}
+#searchPanel div input[type="text"]{
+    outline: none;
 }
 #menuPanel .crrLanguage{
     color: var(--gs10);
@@ -168,7 +171,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         padding: 0 var(--sp20); height: 50px; border-radius: 3px;
     }
     [id$="PW"]{
-        padding: 0 0 0 var(--sp40); height: 50px; border-radius: 3px;
+        padding: 0 var(--sp40) 0 var(--sp20); height: 50px; border-radius: 3px;
     }
     [id$="Popup"]{
         width: 90%; height: 550px; margin: 0 auto; padding: 0 var(--sp20);
@@ -182,7 +185,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     #filterPopup h3{
         margin: var(--sp25) 0; display: block; border: none; padding: 0;
     }
-    [id$="Popup"]:not(#filterPopup){
+    [id$="Popup"]:not(#filterPopup, #welcomePopup){
         height: 190px; overflow-y: hidden; top: var(--sppc50); transform: translate(-50%, -50%);
     }
     [id$="AddressPopup"].active .closePopup,
@@ -234,7 +237,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
         background-image: url('../images/ico_login.png');
     }
     #welcomePopup{
-        width: 90%; left: var(--sppc5);
+        width: 250px; left: var(--sppc5);
     }
     #welcomePopup .closePopup{
         line-height: 20px;
@@ -710,7 +713,7 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 @media screen and (min-width: 768px){
     #userEmail,[id$="Name"],[id^="birth"],#phoneNum{padding: 0 var(--sp20); height: 70px; border-radius: 3px;}
     [id$="PW"]{
-        padding: 0 0 0 var(--sp70); height: 70px; border-radius: 3px;
+        padding: 0 var(--sp70) 0 var(--sp20); height: 70px; border-radius: 3px;
     }
 
     #searchPanel input[type='text']{
