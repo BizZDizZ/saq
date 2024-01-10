@@ -117,12 +117,9 @@
     [class*='s150']{font-size: 40px;}
     [class*='s200']{font-size: 150px;}
     [class*='nunw7s20']{font-size: 20px;}
-    [class*='nunw2s24'],
-    [class*='nunw7s24']{font-size: 14px;}
-    [class*='nunw4s24'],
-    [class*='nunw3s30']{font-size: 24px;}
-    [class*='nunw6s30'],
-    [class*='corw6s30']{font-size: 24px;}
+    [class*='nunw2s24'],[class*='nunw7s24']{font-size: 14px;}
+    [class*='nunw4s24'],[class*='nunw3s30']{font-size: 24px;}
+    [class*='nunw6s30'],[class*='corw6s30']{font-size: 24px;}
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     [class*='s14']{font-size: 14px;}
@@ -134,9 +131,7 @@
     [class*='s150']{font-size: 100px;}
     [class*='s200']{font-size: 150px;}
     [class*='nunw7s20']{font-size: 20px;}
-    [class*='nunw3s30'],
-    [class*='nunw6s30'],
-    [class*='corw6s30']{font-size: 24px;}
+    [class*='nunw3s30'],[class*='nunw6s30'],[class*='corw6s30']{font-size: 24px;}
 }
 @media screen and (min-width: 1280px){
     [class*='s14']{font-size: 14px;}
