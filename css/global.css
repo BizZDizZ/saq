@@ -1,51 +1,17 @@
-.paymentContainer .numbStepper li.active{
-    color: var(--cs2);
-}
-header > nav ul li a:hover{
-    color: var(--cs1);
-}
-[id$="Popup"]{
-    -ms-overflow-style: none;
-}
-[id$="Popup"]::-webkit-scrollbar {
-    display: none;
-}
-a{
-    text-decoration: none;
-}
-mark{
-    background-color: transparent;
-}
+.paymentContainer .numbStepper li.active{color: var(--cs2);}
+header > nav ul li a:hover{color: var(--cs1);}
+[id$="Popup"]{-ms-overflow-style: none;}
+[id$="Popup"]::-webkit-scrollbar{display: none;}
+a{text-decoration: none;}
+mark{background-color: transparent;}
 mark,
-em{
-    font-style: normal;
-}
-.bg{
-    background-repeat: no-repeat; background-position: center top;
-}
-.crrLanguage{
-    background: url('../images/ico_language.svg') no-repeat left top; line-height: 24px;
-    box-sizing: border-box; padding-left: var(--sp35);
-}
-.bx-wrapper{
-    box-shadow: none;
-    border: none;
-    background: var(--gs1);
-    position: relative;
-    margin-bottom: 0;
-    padding: 0;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-}
-.fillBtn{
-    border: none; background-color: var(--cs4); border-radius: 3px; padding: 0; cursor: pointer;
-}
-.lineBtn{
-    border: 1px solid var(--gs9); background-color: transparent; border-radius: 3px; cursor: pointer;
-}
-[class*='Container'] li{
-    list-style: none;
-}
+em{font-style: normal;}
+.bg{background-repeat: no-repeat; background-position: center top;}
+.crrLanguage{background: url('../images/ico_language.svg') no-repeat left top; line-height: 24px; box-sizing: border-box; padding-left: var(--sp35);}
+.bx-wrapper{box-shadow: none; border: none; background: var(--gs1); position: relative; margin-bottom: 0; padding: 0; -ms-touch-action: pan-y; touch-action: pan-y;}
+.fillBtn{border: none; background-color: var(--cs4); border-radius: 3px; padding: 0; cursor: pointer;}
+.lineBtn{border: 1px solid var(--gs9); background-color: transparent; border-radius: 3px; cursor: pointer;}
+[class*='Container'] li{list-style: none;}
 input:-webkit-autofill{
     -webkit-box-shadow: 0 0 0 1000px var(--gs1) inset;
 }

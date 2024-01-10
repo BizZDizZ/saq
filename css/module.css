@@ -77,91 +77,35 @@
 [class*='w7']{font-weight: 700;}
 [class*='w8']{font-weight: 800;}
 
-.gray10{
-    color: var(--gs10);
-}
-.gray9{
-    color: var(--gs9);
-}
-.gray8{
-    color: var(--gs8);
-}
-.gray7{
-    color: var(--gs7);
-}
-.gray6{
-    color: var(--gs6);
-}
-.gray4{
-    color: var(--gs4);
-}
-.gray3{
-    color: var(--gs3);
-}
-.gray2{
-    color: var(--gs2);
-}
-.gray1{
-    color: var(--gs1);
-}
-.color4{
-    color: var(--cs4);
-}
-.color3{
-    color: var(--cs3);
-}
-.goldPale2{
-    color: var(--gps2);
-}
+.gray10{color: var(--gs10);}
+.gray9{color: var(--gs9);}
+.gray8{color: var(--gs8);}
+.gray7{color: var(--gs7);}
+.gray6{color: var(--gs6);}
+.gray4{color: var(--gs4);}
+.gray3{color: var(--gs3);}
+.gray2{color: var(--gs2);}
+.gray1{color: var(--gs1);}
+.color4{color: var(--cs4);}
+.color3{color: var(--cs3);}
+.goldPale2{color: var(--gps2);}
 
-.floatContainer:after{
-    clear: both; content: ''; display: block;
-}
-.dispNone{
-    display: none;
-}
-.dispIB{
-    display: inline-block;
-}
-.dispB{
-    display: block;
-}
-.widthMax{
-    width: 100%;
-}
-.leftPos{
-    float: left;
-}
-.textDecoUnder{
-    text-decoration: underline;
-}
-.textCenter{
-    text-align: center;
-}
-.textLeft{
-    text-align: left;
-}
-.textRight{
-    text-align: right;
-}
-.boxSize{
-    box-sizing: border-box;
-}
-.textHide{
-    text-indent: -9999px;
-}
-.mBot20{
-    margin-bottom: var(--sp20);
-}
-.mBot30{
-    margin-bottom: var(--sp30);
-}
-.relativePos{
-    position: relative;
-}
-.absolutePos{
-    position: absolute;
-}
+.floatContainer:after{clear: both; content: ''; display: block;}
+.dispNone{display: none;}
+.dispIB{display: inline-block;}
+.dispB{display: block;}
+.widthMax{width: 100%;}
+.leftPos{float: left;}
+.textDecoUnder{text-decoration: underline;}
+.textCenter{text-align: center;}
+.textLeft{text-align: left;}
+.textRight{text-align: right;}
+.boxSize{box-sizing: border-box;}
+.textHide{text-indent: -9999px;}
+.mBot20{margin-bottom: var(--sp20);}
+.mBot30{margin-bottom: var(--sp30);}
+.relativePos{position: relative;}
+.absolutePos{position: absolute;}
 
 @media screen and (max-width: 767px){
     [class*='s14']{font-size: 14px;}
@@ -206,7 +150,5 @@
     [class*='s200']{font-size: 200px;}
 }
 @media screen and (min-width: 768px){
-    .exMobileFloatContainer:after{
-        clear: both; content: ''; display: block;
-    }
+    .exMobileFloatContainer:after{clear: both; content: ''; display: block;}
 }
