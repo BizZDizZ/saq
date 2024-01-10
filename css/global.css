@@ -42,6 +42,7 @@ footer > ul li:nth-child(4) a:before{content: url('../images/img_footer_04.png')
 footer > div:first-of-type{background-color: var(--gs2);}
 footer > div:first-of-type > div ul li{width: 30px; height: 30px; background-position: center; background-repeat: no-repeat; background-size: contain;}
 footer > div:first-of-type > div ul li:not(:first-child){margin-left: var(--sp20);}
+footer > div:first-of-type > div ul li a{height: 100%;}
 footer > div:last-of-type > div:last-of-type > a{margin-left: auto; width: 100px; height: 35px; line-height: 35px; background-color: var(--gs3);}
 footer > div:last-of-type > div:last-of-type div{margin-top: var(--sp20);}
 footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
