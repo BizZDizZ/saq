@@ -27,9 +27,9 @@
 .wineContainer div:first-of-type ul li{align-self: center;}
 .wineContainer > div:nth-of-type(2) > span mark{margin-left: var(--sp10);}
 .wineContainer > div:nth-of-type(2) a:first-of-type{background-color: var(--cs4); margin-bottom: var(--sp25);}
+.wineContainer > div:nth-of-type(2) table caption.active{background-image: url('../images/bul_arrow_up.png');}
 .wineContainer > div:nth-of-type(2) table caption.active+tbody{display: block;}
 .wineContainer > div:nth-of-type(2) table tbody tr:last-of-type{margin: 0;}
-.wineContainer > div:nth-of-type(2) table caption.active{background-image: url('../images/bul_arrow_up.png');}
 .wineContainer .bx-wrapper:last-of-type .discoverslider li a strong{line-height: 16px;}
 .wineContainer .bx-wrapper:last-of-type .discoverslider li a span mark{margin-left: var(--sp10);}
 
@@ -65,8 +65,7 @@
 
 .wishContainer > div > ul li a span mark{margin-left: var(--sp10);}
 
-.accountdetailContainer li.active [id$="Name"],
-.accountdetailContainer li.active [id^="birth"]{box-sizing: border-box;}
+.accountdetailContainer li.active [id$="Name"],.accountdetailContainer li.active [id^="birth"]{box-sizing: border-box;}
 .accountdetailContainer > div > ul > li.active > div label,.accountdetailContainer > div > ul > li.active > div:first-of-type,.accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"] label,
 .accountdetailContainer > div > ul > li:last-of-type.active p{margin-bottom: var(--sp20);}
 .accountdetailContainer > div > ul > li:last-of-type.active [class*="passwordField"]{margin-bottom: var(--sp30);}

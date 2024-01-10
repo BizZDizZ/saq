@@ -12,12 +12,10 @@ mark,em{font-style: normal;}
 .lineBtn{border: 1px solid var(--gs9); background-color: transparent; border-radius: 3px; cursor: pointer;}
 [class*='Container'] li{list-style: none;}
 input:-webkit-autofill{-webkit-box-shadow: 0 0 0 1000px var(--gs1) inset;}
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button{-webkit-appearance: none; margin: 0;}
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button{-webkit-appearance: none; margin: 0;}
 
-[id$="Popup"].active{display: block;}
-[id$='Panel'].active{display: block;}
-#searchPanel{background-color: var(--gs1); position: fixed; top: var(--sp55); z-index: 51; border-bottom: 1px solid var(--gs3); outline: none;}
+[id$="Popup"].active,[id$='Panel'].active{display: block;}
+#searchPanel{background-color: var(--gs1); position: fixed; top: var(--sp55); z-index: 51; border-bottom: 1px solid var(--gs3);}
 #searchPanel div{margin: 0 auto;}
 #searchPanel div input[type="text"]{outline: none;}
 #menuPanel .crrLanguage{color: var(--gs10);}
@@ -44,7 +42,6 @@ footer > ul li:nth-child(4) a:before{content: url('../images/img_footer_04.png')
 footer > div:first-of-type{background-color: var(--gs2);}
 footer > div:first-of-type > div ul li{width: 30px; height: 30px; background-position: center; background-repeat: no-repeat; background-size: contain;}
 footer > div:first-of-type > div ul li:not(:first-child){margin-left: var(--sp20);}
-footer > div:first-of-type > div ul li a{height: 100%;}
 footer > div:last-of-type > div:last-of-type > a{margin-left: auto; width: 100px; height: 35px; line-height: 35px; background-color: var(--gs3);}
 footer > div:last-of-type > div:last-of-type div{margin-top: var(--sp20);}
 footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(1){background-image: url('../images/ico_Paypal.png')}
@@ -65,12 +62,14 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     #userEmail,[id$="Name"],[id^="birth"],#phoneNum{padding: 0 var(--sp20); height: 50px; border-radius: 3px;}
     [id$="PW"]{padding: 0 var(--sp40) 0 var(--sp20); height: 50px; border-radius: 3px;}
     [id$="Popup"]{width: 90%; height: 550px; margin: 0 auto; padding: 0 var(--sp20); position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1); left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%); overflow-y: scroll; box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;}
-    #filterPopup{width: 90%; height: 550px; left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%);}
-    #filterPopup h3{margin: var(--sp25) 0; display: block; border: none; padding: 0;}
     [id$="Popup"]:not(#filterPopup, #welcomePopup){height: 190px; overflow-y: hidden; top: var(--sppc50); transform: translate(-50%, -50%);}
     [id$="AddressPopup"].active .closePopup,#filterPopup.active .closePopup{position: absolute; right: var(--sp20); top: var(--sp20); padding: 0; width: 25px; height: 25px; background-size: 25px;}
     [id$="EndPopup"] a{width: 230px; height: 45px; display: block; text-align: center; line-height: 45px; margin: 0 auto;}
     [id^="delete"] input{padding: 0 var(--sppc3); margin-bottom: var(--sp30); width: 100px; height: 40px;}
+    #filterPopup{width: 90%; height: 550px; left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%);}
+    #filterPopup h3{margin: var(--sp25) 0; display: block; border: none; padding: 0;}
+    #welcomePopup{width: 250px; left: var(--sppc5);}
+    #welcomePopup .closePopup{line-height: 20px;}
 
     #searchPanel input[type='text']{border: none; border-bottom: 3px solid var(--gs10); font-size: 14px; width: 96%; margin: var(--sp30) var(--sppc2); padding: 0 var(--sp5); box-sizing: border-box;}
     #searchPanel input[type='button']{background-image: url('../images/bul_close.png'); background-repeat: no-repeat; background-size: contain; padding: 0; width: 15px; height: 15px; right: var(--sppc2); top: var(--sp30); border: none; background-color: var(--gs1);}
@@ -82,8 +81,6 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     #menuPanel ul li:last-of-type{margin-bottom: 0;}
     #menuPanel > a{background: url('../images/ico_logout.png') no-repeat left; display: block; background-size: 20px; padding: 0 0 0 var(--sp30);}
     #menuPanel > a[href="login.html"]{background-image: url('../images/ico_login.png');}
-    #welcomePopup{width: 250px; left: var(--sppc5);}
-    #welcomePopup .closePopup{line-height: 20px;}
 
     .pager{width: 96%; margin: 0 var(--sppc2);}
     .pager > a{background: url('../images/bul_backtotop.svg') no-repeat; width: 35px; height: 35px; border: 1px solid var(--gs3); border-radius: 50%; background-position: 50%; margin-bottom: var(--sp15); background-size: 15px;}
@@ -145,6 +142,9 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
 
     [id$="Popup"]{width: 650px; height: 700px; margin: 0 auto; padding: 0 var(--sp30); position: fixed; border: 1px solid var(--gs3); background-color: var(--gs1); left: var(--sppc48); top: var(--sppc50); transform: translate(-50%, -50%); overflow-y: scroll; box-shadow: 5px 5px 3px 3px var(--gs3); z-index: 102;}
     .deleteBtn,.closePopup{background: url('../images/bul_close.png') no-repeat; background-color: transparent; width: 25px; height: 25px; border: none; background-size: 25px; padding: 0; text-indent: -9999px;}
+    #filterPopup{width: 450px; height: 600px; left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%);}
+    #filterPopup h3{margin: var(--sp25) 0; display: block; border: none; padding: 0;}
+    #filterPopup.active .closePopup{position: absolute; right: var(--sp30); top: var(--sp25); padding: 0; width: 25px;}
 
     #searchPanel{top: var(--sp130);}
     #searchPanel input[type='text']{margin: var(--sp40) var(--sppc2); padding: 0 var(--sp10);}
@@ -158,9 +158,6 @@ footer > div:last-of-type > div:last-of-type div ul li:nth-of-type(10){backgroun
     #menuPanel > a{background: url('../images/ico_logout.png') no-repeat left; display: block; background-size: 20px; padding: 0 0 0 var(--sp30);}
     #menuPanel > a[href="login.html"]{background-image: url('../images/ico_login.png');}
     
-    #filterPopup{width: 450px; height: 600px; left: var(--sppc50); top: var(--sppc50); transform: translate(-50%, -50%);}
-    #filterPopup h3{margin: var(--sp25) 0; display: block; border: none; padding: 0;}
-    #filterPopup.active .closePopup{position: absolute; right: var(--sp30); top: var(--sp25); padding: 0; width: 25px;}
 
     header{padding-bottom: var(--sp20);}
     header > div span{display: none;}
