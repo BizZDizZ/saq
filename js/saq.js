@@ -49,7 +49,7 @@ function sliders(target,indicator,conVal,maxVal,minVal,slideW,slideM){
     });
 }
 function panelControl(openBtn){
-    var currentPanel = null;
+    let currentPanel = null;
     $(openBtn).click(function(){
         if($(this).attr("data-panel")){
             currentPanel = "#" + $(this).attr("data-panel");
@@ -68,7 +68,7 @@ function popupcloseControl(){
     })
 }
 function panelcloseControl(){
-    var currentPanel = null;
+    let currentPanel = null;
     $("header > div ul li:last-of-type").click(function(){
         $(this).toggleClass("closePanel");
         currentPanel = "#" + $(this).attr("data-panel");
@@ -106,10 +106,10 @@ function newvisibleControl(target){
     });
 }
 function classchange(){
-	var count = 0;
+	let count = 0;
 	setInterval(time, 3000);
 	function time(){
-		var list = $("header ol li");
+		const list = $("header ol li");
 		list.removeClass("active");
 		list.eq(count).addClass("active");
 		count++;
