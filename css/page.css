@@ -874,7 +874,7 @@
     .paymentContainer .numbStepper li:after{background-color: var(--gs3); top: var(--sp30);}
     .paymentContainer > h2{padding-bottom: var(--sp20); border-bottom: 1px solid var(--gs3); margin-bottom: var(--sp40);}
     .paymentContainer form h3{padding-bottom: var(--sp40); border-bottom: 1px solid var(--gs2);}
-    .paymentContainer form div:first-of-type label,.paymentContiainer form div:last-of-type label{padding: var(--sp40) var(--sp50); background: url('../images/bul_radio_unchecked.png') no-repeat left; background-size: 25px; border-bottom: 1px solid var(--gs3);}
+    .paymentContainer form div:first-of-type label,.paymentContainer form div:last-of-type label{padding: var(--sp40) var(--sp50); background: url('../images/bul_radio_unchecked.png') no-repeat left; background-size: 25px; border-bottom: 1px solid var(--gs3);}
     .paymentContainer form div:last-of-type label{margin-bottom: var(--sp50);}
     .paymentContainer div div h3{padding-bottom: var(--sp40);}
     .paymentContainer div div address{font-style: normal; padding-bottom: var(--sp50); border-bottom: 1px solid var(--gs2); margin-bottom: var(--sp40);}
